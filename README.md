@@ -4,46 +4,50 @@
 
 ### 反击平民进攻
 
-> [CombatDamage]►AutoRepel=yes  ; Ares 0.7
-> [CombatDamage]►PlayerAutoRepel=yes  ; Ares 0.7
+'''ini
+[CombatDamage]
+AutoRepel=yes  ; Ares 0.7
+[CombatDamage]
+PlayerAutoRepel=yes  ; Ares 0.7
+'''
 
 ### Bounty 赏金规则
 
-> [General]►BountyEnablers=none ; Ares 0.C (list of BuildingTypes)
-> [AudioVisual]►BountyDisplay=yes  ; Ares 0.C
-> [TechnoType]►Bounty=yes  ; Ares 0.C
+- [General]►BountyEnablers=none ; Ares 0.C (list of BuildingTypes)
+- [AudioVisual]►BountyDisplay=yes  ; Ares 0.C
+- [TechnoType]►Bounty=yes  ; Ares 0.C
 [TechnoType]►Bounty.Value=  ; Ares 0.C
 
 ### 中立建筑
 
-> [General]►ReturnStructures=yes  ; Ares 0.6
+- [General]►ReturnStructures=yes  ; Ares 0.6
 
 ### 替换间谍逻辑
 
 > SpyEffect.Custom=yes  ; Ares 0.1
-> [GACNST],[NACNST],[YACNST],[GAAIRC],[AMRADR]
+- [GACNST],[NACNST],[YACNST],[GAAIRC],[AMRADR] 
 > SpyEffect.RevealProduction=yes  ; Ares 0.B
-> [GAREFN],[NAREFN],[YAREFN]
+- [GAREFN],[NAREFN],[YAREFN]
 > SpyEffect.StolenMoneyPercentage=.5 ; Ares 0.1
 > SpyEffect.RevealProduction=yes  ; Ares 0.B
-> [NARADR]
+- [NARADR]
 > SpyEffect.ResetRadar=yes  ; Ares 0.1
-> [GASPYSAT]
+- [GASPYSAT]
 > SpyEffect.RevealRadar=yes  ; Ares 0.1
-> [GAPOWR],[NAPOWR],[NANRCT],[YAPOWR]
+- [GAPOWR],[NAPOWR],[NANRCT],[YAPOWR]
 > SpyEffect.PowerOutageDuration=  ; Ares 0.1 (integer - frames) (1000) see [General]►SpyPowerBlackout
-> [NAINDP],[NACLON],[CAOILD]
+- [NAINDP],[NACLON],[CAOILD]
 > SpyEffect.StolenMoneyAmount= ; Ares 0.1 (integer - credits)
-> [GAOREP]
+- [GAOREP]
 > SpyEffect.StolenMoneyPercentage=.6 ; Ares 0.1 (float - multiplier) (.5) see [General]►SpyMoneyStealPercent
-> [AMRADR],[GACSPH],[NARADR],[NAIRON],[NAPSIS],[YAGNTC],[CAAIRP]
+- [AMRADR],[GACSPH],[NARADR],[NAIRON],[NAPSIS],[YAGNTC],[CAAIRP]
 > SpyEffect.ResetSuperweapons=yes  ; Ares 0.B
 > SpyEffect.SuperWeapon= ; Ares 0.B (SuperWeaponType)
 > SpyEffect.StolenTechIndex=  ; Ares 0.B  (list of integers)
-> [GAPILE],[GAWEAP],[NAHAND],[NAWEAP],[YABRCK],[YAWEAP]
+- [GAPILE],[GAWEAP],[NAHAND],[NAWEAP],[YABRCK],[YAWEAP]
 > SpyEffect.UnitVeterancy=yes  ; Ares 0.1
 > SpyEffect.RevealProduction=yes  ; Ares 0.B
-> [GAROBO]
+- [GAROBO]
 > SpyEffect.SabotageDelay=  ; Ares 0.E (integer - frames)
 
 ### 箱子金钱浮动(未验证)
@@ -54,7 +58,7 @@
 
 #### 外部导入光标
 
-> TS
+- TS
 > StealCash=517,10,4,100,10,Center,Middle
 > Sabotage=527,10,4,100,10,Center,Middle
 > NoTogglePower=537,1,0,-1,-1,Center,Middle
@@ -62,7 +66,7 @@
 
 #### 显式定义
 
-> [MouseCursors]
+- [MouseCursors]
 - 新建光标
 > GuardEscort=68,5,4,73,5,Center,Middle
 > UnDeploy=120,9,4,-1,-1,Center,Middle
@@ -91,51 +95,51 @@
 #### 光标更改
 
 - 进入建筑光标
-> [YAGRND]
+- [YAGRND]
 > Cursor.Enter=SellUnit  ; Ares 0.D
-> [GADEPT],[GAYARD],[NADEPT],[NAYARD],[YAYARD],[CAOUTP]
+- [GADEPT],[GAYARD],[NADEPT],[NAYARD],[YAYARD],[CAOUTP]
 > Cursor.Enter=RepairDepot  ; Ares 0.D
 - 建筑集合点(NoRally无效果))
-> [GAPILE],[GAWEAP],[GADEPT],[GAYARD],[NAHAND],[NAWEAP],[NADEPT],[NAYARD],[YABRCK],[YAWEAP],[YAYARD],[NACLON]
+- [GAPILE],[GAWEAP],[GADEPT],[GAYARD],[NAHAND],[NAWEAP],[NADEPT],[NAYARD],[YABRCK],[YAWEAP],[YAYARD],[NACLON]
 > Cursor.Move=Rally  ; Ares 0.D
 > Cursor.NoMove=NoRally  ; Ares 0.D
 - 无武器单位移动光标
-> [CMIN],[AMCV],[SMCV],[PCV],[LCRF],[SAPC],[YHVR],[ENGINEER],[SPY],[SENGINEER],[YENGINEER]
+- [CMIN],[AMCV],[SMCV],[PCV],[LCRF],[SAPC],[YHVR],[ENGINEER],[SPY],[SENGINEER],[YENGINEER]
 > Cursor.Move=Tote  ; Ares 0.D
 > Cursor.NoMove=NoTote  ; Ares 0.D
 - 部署光标
-> [E1],[GGI]
+- [E1],[GGI]
 > Cursor.Deploy=GIDeploy  ; Ares 0.D
-> [DESO]
+- [DESO]
 > Cursor.Deploy=DesolatorDeploy  ; Ares 0.D
-> [YURI],[YURIG],[YURIPR]
+- [YURI],[YURIG],[YURIPR]
 > Cursor.Deploy=PsiWave  ; Ares 0.D
-> [CAOS]
+- [CAOS]
 > Cursor.Deploy=DeployMove  ; Ares 0.D
 - 反部署光标
-> [SCHD]
+- [SCHD]
 > Cursor.Deploy=UnDeploy  ; Ares 0.D
-> [GACNST],[NACNST],[YACNST],[YAREFN]
+- [GACNST],[NACNST],[YACNST],[YAREFN]
 > Cursor.Move=UnDeploy  ; Ares 0.D
 - 间谍光标
-> [GAREFN],[NAREFN],[YAREFN]
+- [GAREFN],[NAREFN],[YAREFN]
 > Cursor.Spy=StealCash  ; Ares 0.D
-> [GAAIRC],[AMRADR],[GASPYSAT],[GACSPH],[GAWEAT],[NARADR],[NAIRON],[NAMISL],[NAPSIS],[YAGNTC],[YAPPET]
+- [GAAIRC],[AMRADR],[GASPYSAT],[GACSPH],[GAWEAT],[NARADR],[NAIRON],[NAMISL],[NAPSIS],[YAGNTC],[YAPPET]
 > Cursor.Spy=Sabotage  ; Ares 0.D
-> [NATECH], [YATECH], [GATECH]
+- [NATECH], [YATECH], [GATECH]
 > Cursor.Spy=SpyTech  ; Ares 0.D
-> [GAPOWR],[NAPOWR],[NANRCT],[YAPOWR]
+- [GAPOWR],[NAPOWR],[NANRCT],[YAPOWR]
 > Cursor.Spy=SpyPower  ; Ares 0.D
 - 生化反应炉人力发电
-> [YAPOWR]
+- [YAPOWR]
 > Cursor.Enter=InfantryAbsorb  ; Ares 0.D
 - 武器攻击光标
-> [MakeupKit]
+- [MakeupKit]
 > Cursor.Attack=Disguise  ; Ares 0.D
 > Cursor.AttackOutOfRange=Disguise  ; Ares 0.D
-> [Demobomb]
+- [Demobomb]
 > Cursor.AttackOutOfRange=Nuke  ; Ares 0.D
-> [MindControl],[MindControlE],[SuperMindControl],[SuperMindControlE],[MultipleMindControlTank],[MultipleMindControlTower],[SuperMindControlG]
+- [MindControl],[MindControlE],[SuperMindControl],[SuperMindControlE],[MultipleMindControlTank],[MultipleMindControlTower],[SuperMindControlG]
 > Cursor.Attack=MindControl  ; Ares 0.D
 > Cursor.AttackOutOfRange=MindControl  ; Ares 0.D
 
@@ -181,7 +185,7 @@
 - 超武卖单位动作;
 > Action=SellUnit
 - 两栖单位可改变外观;
-> [VehicleType]►WaterImage=
+- [VehicleType]►WaterImage=
 - EMP,可装备磁能坦克;
 - Firestorm Wall; Laser Fences;
 - Multi Engineer, Multi Engineer Checkbox;
@@ -193,7 +197,7 @@
 - AlternateTheaterArt shp动画单位可根据地图气候换肤;
 - AttachEffect 附魔特效;
 - 飞机可空中爆炸而非坠机;
-> [AircraftType]►Crashable=
+- [AircraftType]►Crashable=
 - 载具碾压损耗;
 > Crush Damage
 - Reverse Engineer logic 技术复制逻辑;
@@ -227,18 +231,18 @@
 ### Ares 新增UI
 
 - 在 uimd.ini 可增加新战役的任务图标(至多4个);
-> [UISettings]►CampaignX=
+- [UISettings]►CampaignX=
 - 直接退出游戏,不确认;
-> [UISettings]►QuickExit=
+- [UISettings]►QuickExit=
 - 新增可编辑快捷键:
   - FPS Counter;
   - Toggle Power;
 - 自定义主菜单按钮;
-> [UISettings]►WWOnlineButton=
+- [UISettings]►WWOnlineButton=
 - uimd.ini(Ares 0.8): 指明 MOD 版本;方便调试,且*影响存档*!
-> [VersionInfo]►Name= (string)
+- [VersionInfo]►Name= (string)
 The name of the modification in unspecified format. Maximum 63 characters. Defaults to *Yuri’s Revenge*.
-> [VersionInfo]►Version= (string)
+- [VersionInfo]►Version= (string)
 The version of the modification in unspecified format. Maximum 63 characters. Defaults to *1.001*.
 
 ### 单位
@@ -313,7 +317,7 @@ The version of the modification in unspecified format. Maximum 63 characters. De
   - (美国)空降部队配置: 6 大兵 + 2 重装;
 - 防御建筑射程显示(裂缝产生器的效果);
 - 箱子金钱浮动(未验证);
-> [CrateRules]►RandomCrateMoney=1000
+- [CrateRules]►RandomCrateMoney=1000
 
 ### 新增单位及UI
 
