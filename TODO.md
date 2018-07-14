@@ -48,6 +48,18 @@
 - Radar Jammers 雷达干扰;
 - Saboteurs 建筑爆破步兵;
 - Self Heal 自定义自愈逻辑;
+- Survivors 建筑载具生还;
+- Team Retaliate 队伍反击;
+- Turret ROT 载具炮塔转速;
+- Type Selection Groups 混编队伍(狗、工程师);
+- Veteran and Elite Abilities 新升级能力;
+- Academies 建筑效果赋予经验;
+- Assaulter 定义爆破等级;
+- Custom Building Foundations 自定义建筑占地;
+- Enemy Wrench 敌军建筑维修显示;
+- Factories and Cloning 指定建造或复制;
+- Fakes 伪建筑;
+- Force Shield 力场护盾持续时间分化;
 
 ## Ares 新增UI
 
