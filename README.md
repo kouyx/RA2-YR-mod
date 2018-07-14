@@ -1,11 +1,14 @@
 # Modifications in YR
 
+Modifications logged in [*log.md*](./LOG.md) would be classified on the following aspects.
+
 1. [Ares 建议](#ares-advice)
-1. [武器相关](#weapon)
-1. [科技相关](#technology)
-1. [升级相关](#veterancy-and-promotion)
 1. [全局逻辑](#global)
-1. [单位相关](#units-and-ui)
+1. [UI](#ui)
+1. [科技](#technology)
+1. [建筑](#building)
+1. [单位](#units)
+1. [武器](#weapon)
 
 ## Ares Advice
 
@@ -16,16 +19,66 @@
 - bombcurs.shp
   > 删除最后一帧;
 
-## Weapon
+## Global
 
-- 新增精英武器:
-  - `HIND`同夜莺;
-  - `YURIPR`控制数增至 3;
-  - `HOWI`伤害, 攻速, 射程提升; 弹头效果小幅提升; 造价提升;
-  - `FV`模式: 工程师, 美国大兵, 防空步兵, 磁暴步兵, 尤里新兵, 重装步兵;
-- 新增武器:
-  - `AEGIS`: 新增对地武器; 造价提升;
-  - `FV`模式: `BORIS`;
+- 伞兵调整:
+  - (美国) 空降部队配置: 6 大兵 + 2 重装;
+- 箱子金钱浮动 1000 (未验证);
+- 伊文炸弹可手动引爆;
+- 单位反击中立单位袭击;
+- 遭遇战中战败方返还中立建筑;
+
+## UI
+
+### 单位图标
+
+- 新建图标:
+  - `HIND` (YR)
+  - `NIMITZ` (网图)
+  - `HWTZ` (YR)
+  - `VLAD` (无畏镜像)
+- 恢复升级图标:
+  - `IVAN` (疯狂伊文)
+  - `CIVAN` (超时空伊文)
+
+### 防卫建筑射程显示
+
+扫描半径效果 (裂缝产生器):
+
+- `[GAPILL]`
+- `[NASAM]`
+- `[ATESLA]`
+- `[GTGCAN]`
+- `[NALASR]`
+- `[NAFLAK]`
+- `[TESLA]`
+- `[YAGGUN]`
+- `[YAPSYT]`
+- `[CAOUTP]`
+
+### 游戏中光标
+
+- 移植自 TS:
+  - 间谍偷钱 (原卖建筑);
+  - 间谍渗透妨碍;
+  - 切换断电;
+  - 单位返厂维修;
+- 新增光标:
+  - 反部署 (如建造厂->MCV);
+  - 建筑集合点;
+  - 尤里脑波武器;
+  - 心灵控制;
+  - 无武器单位移动;
+  - 移动部署 (如神经突击车);
+  - 大兵部署;
+  - 辐射工兵部署;
+  - 间谍伪装;
+  - 间谍偷科技;
+  - 间谍断电;
+  - 卖单位 (部队回收厂);
+  - 步兵吸收 (生化炉);
+- 更改光标:
+  - 自爆卡车射程外攻击 -> 核袭击;
 
 ## Technology
 
@@ -56,12 +109,46 @@
     - \+ `GASPYSAT` (未验证),
     - \+ `NANRCT` (未验证);
 
-## Veterancy and Promotion
+## Building
+
+### 间谍渗透逻辑
+
+- 窥视生产/建造信息 (渗透后选中)
+  - 建筑建造: `[GACNST]`,`[NACNST]`,`[YACNST]`;
+  - 步兵动员: `[GAPILE]`,`[NAHAND]`,`[YABRCK]`;
+  - 载具/飞机生产: `[GAWEAP]`,`[NAWEAP]`,`[YAWEAP]`,`[GAAIRC]`,`[AMRADR]`;
+  - 显示金钱: `[GAREFN]`,`[NAREFN]`,`[YAREFN]`;
+  - 显示电力: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`;
+- 偷钱
+  - 定额窃取: `[NAINDP]`,`[NACLON]`,`[CAOILD]`;
+  - 比例窃取: `[GAOREP]`;
+- 获得雷达视野: `[GASPYSAT]`
+- 断电时间分化: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`
+- 超武重置 + 获得一发
+  - 第二超武: `[GACSPH]`,`[NAIRON]`,`[YAGNTC]`
+  - 雷达超武: `[NARADR]`,`[NAPSIS]`
+  - 伞兵超武: `[AMRADR]`,`[CAAIRP]`
+- 建筑爆破: `[GAROBO]`
+
+## Units
+
+### 新增单位
+
+- 重制单位:
+  - `NIMITZ` (原`CARRIERB`设定, vxl credit to **Mig Eater** from [*Project Perfect Mod*](https://ppmforums.com/viewtopic.php?highlight=nimitz&t=19484))
+  - `HIND` (螺旋桨与机体分离)
+- 复刻单位: `YURIG` (RA2尤里改)
+
+### 单位晋升
 
 - 单位可升级:
   - `IVAN`;
   - `CIVAN`;
-  - `YURI`
+  - `YURI`;
+  - `YURIPR`;
+  - `MIND`;
+  - `CARRIER` (未定义精英武器);
+  - `NIMITZ` (未定义精英武器);
 - 分享子机经验 (Ares 0.2, spawn/spawner):
   - `DEST`        0.5/0.5;
   - `CDEST`       0.5/0.5;
@@ -70,39 +157,37 @@
 - 分享空袭经验 (Ares 0.2): BORIS` (0.5);
 - 满级后分享驻兵经验 (Ares 0.2):
   - `FV`                 0.6;
-  - `TTNK` (新增驻兵)      0.8;
-  - `TNKD` (新增驻兵)      0.8;
-  - `BFRT`                0.6;
+  - `TTNK`               0.8;
+  - `TNKD`               0.8;
+  - `BFRT`               0.6;
 - 分享心控经验 (Ares 0.2, controller/victim):
   - `YURIG`       0.3/0.7;
   - `YURI`        0.1/0.9;
   - `YURIPR`      0.4/0.6;
   - `MIND`        0.2/0.8;
-- 升级能力增强:
+- 晋升获得能力:
   - 舰载反潜机:
     - 老兵: 自愈, 火力;
     - 精英: 护甲, 火力;
 
-## Global
+### 调整单位
 
-- 伞兵增强:
-  - (美国) 空降部队配置: 6 大兵 + 2 重装;
-- 防御建筑射程显示 (裂缝产生器的效果);
-- 箱子金钱浮动 1000 (未验证);
-- 伊文炸弹可手动引爆;
+- 载具可驻兵攻击:
+  - `TTNK` (1);
+  - `TNKD` (1);
 
-## Units and UI
+## Weapon
 
-- 重制单位:
-  - `NIMITZ` (原`CARRIERB`设定, vxl credit to **Mig Eater** from [*Project Perfect Mod*](https://ppmforums.com/viewtopic.php?highlight=nimitz&t=19484))
-  - `HIND` (螺旋桨与机体分离)
-- 复刻单位: `YURIG` (RA2尤里改)
-- 单位图标调整:
-  - 新建图标:
-    - `HIND` (YR)
-    - `NIMITZ` (网图)
-    - `HWTZ` (YR)
-    - `VLAD` (无畏镜像)
-  - 恢复升级图标:
-    - `IVAN` (疯狂伊文)
-    - `CIVAN` (超时空伊文)
+### 精英武器
+
+- 尤里: 控制数 +2; 射程 +1; 攻击间隔 -20%;
+- 脑车: 控制数 +2; 射程 +1;
+- `HIND`同夜莺;
+- `YURIPR`控制数增至 3;
+- `HOWI`伤害, 攻速, 射程提升; 弹头效果小幅提升; 造价提升;
+- `FV`模式: 工程师, 美国大兵, 防空步兵, 磁暴步兵, 尤里新兵, 重装步兵;
+
+### 新增武器
+
+- `AEGIS`: 新增对地武器; 造价提升;
+- `FV`模式: `BORIS`;

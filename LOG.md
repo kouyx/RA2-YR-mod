@@ -1,6 +1,6 @@
 # Log modifications in YR
 
-## 反击平民袭击
+## 反击中立单位袭击
 
 ```ini
 [CombatDamage]
@@ -112,8 +112,8 @@ RandomCrateMoney=1000  ; Ares 0.C
 
 ### 重新定义
 
-> Import following cursors from Command & Conquer: Tiberian Sun  
-> StealCash (Sell), Sabotage, NoTogglePower, RepairDepot (UnitRepair)
+> StealCash (Sell), Sabotage, NoTogglePower, RepairDepot (UnitRepair)  
+> imported from Command & Conquer: Tiberian Sun.
 
 ```ini
 [MouseCursors]  ; Ares 0.D
@@ -270,4 +270,11 @@ FireOnce=yes
 OmniFire=yes;doesn't need turret to shoot any direction
 Cursor.Attack=MindControl  ; Ares 0.D
 Cursor.AttackOutOfRange=MindControl  ; Ares 0.D
+```
+
+## 防卫建筑射程显示
+
+```ini
+[GAPILL],[NASAM],[ATESLA],[GTGCAN],[NALASR],[NAFLAK],[TESLA],[YAGGUN],[YAPSYT],[CAOUTP]
+HasRadialIndicator=true ;no
 ```
