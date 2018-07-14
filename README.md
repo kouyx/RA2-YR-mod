@@ -120,7 +120,7 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
   - 显示金钱: `[GAREFN]`,`[NAREFN]`,`[YAREFN]`;
   - 显示电力: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`;
 - 偷钱
-  - 定额窃取: `[NAINDP]`,`[NACLON]`,`[CAOILD]`;
+  - 定额窃取: `[NAINDP]`,`[NACLON]`;
   - 比例窃取: `[GAOREP]`;
 - 获得雷达视野: `[GASPYSAT]`
 - 断电时间分化: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`

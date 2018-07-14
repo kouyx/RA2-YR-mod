@@ -68,7 +68,7 @@ SpyEffect.RevealProduction=yes  ; Ares 0.B
 ```ini
 [GAOREP]
 SpyEffect.StolenMoneyPercentage=.6 ; Ares 0.1 (float - multiplier) (.5) see [General]
-[NAINDP],[NACLON],[CAOILD]
+[NAINDP],[NACLON]
 SpyEffect.StolenMoneyAmount= ; Ares 0.1 (integer - credits)
 ```
 
