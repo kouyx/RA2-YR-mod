@@ -1,11 +1,11 @@
 # Modifications in YR
 
 1. [Ares 建议](#ares-advice)
-1. [武器相关](#Weapon)
-1. [科技相关](#Technology)
-1. [升级相关](#Veterancy-and-Promotion)
-1. [全局逻辑](#Global)
-1. [单位相关](#Units-and-UI)
+1. [武器相关](#weapon)
+1. [科技相关](#technology)
+1. [升级相关](#veterancy-and-promotion)
+1. [全局逻辑](#global)
+1. [单位相关](#units-and-ui)
 
 ## Ares Advice
 
@@ -104,5 +104,5 @@
     - `HWTZ` (YR)
     - `VLAD` (无畏镜像)
   - 恢复升级图标:
-    - `IVAN` (疯狂伊文),
+    - `IVAN` (疯狂伊文)
     - `CIVAN` (超时空伊文)
