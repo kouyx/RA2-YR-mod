@@ -95,8 +95,8 @@
 ## 科技条件
 
 - `HIND`
-- `NIMITZ`
-- `YURIG`
-- `HWTZ`
-- `VLAD`
+- `HOWI`
 - `LUNR`
+- `NIMITZ`
+- `VLAD`
+- `YURIG`

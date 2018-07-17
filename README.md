@@ -86,29 +86,31 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
   - 三方作战实验室;
   - 秘密科技实验室;
 - 科技实验室视为高科建筑;
-- 实验室科技将在每次占领后重置为当前不可建造的;
+- 实验室科技将在每次占领后重置;
 - 科技实验室调整科技:
-  - 步兵 (6):
+  - 步兵 (4):
+    - \+ `LUNR`,
     - \+ `SPY`,
     - \+ `VIRUS` (未验证),
-    - \+ `LUNR` (未验证)
+    - \+ `YURIG` (未验证),
     - \- `TERROR`;
-  - 飞机&战车&舰船 (9):
-    - \+ `HOWI`,
-    - \+ `BEAG` (未验证),
-    - \+ `SMIN` (未验证),
-    - \+ `FV` (未验证),
+  - 飞机&战车&舰船 (8):
+    - \+ `BEAG`,
     - \+ `BFRT` (未验证),
-    - \+ `VLAD` (未验证),
+    - \+ `HIND` (未验证),
+    - \+ `HOWI` (未验证),
+    - \+ `FV` (未验证),
     - \+ `NIMITZ` (未验证)
+    - \+ `SMIN` (未验证),
+    - \+ `VLAD`,
     - \- `DTRUCK`;
-  - 建筑 (7):
+  - 建筑 (6):
     - \+ `GAOREP` (未验证),
-    - \+ `NAPSIS` (未验证),
-    - \+ `NAINDP` (未验证),
-    - \+ `NACLON` (未验证),
     - \+ `GASPYSAT` (未验证),
+    - \+ `NACLON` (未验证),
+    - \+ `NAINDP` (未验证),
     - \+ `NANRCT` (未验证);
+    - \+ `NAPSIS` (未验证),
 
 ## Building
 
