@@ -17,8 +17,8 @@
 - 弹头对护甲有效性和攻击行为分开;
 - Aircraft-Specific ReloadRate 指定飞机装弹时间;
 - AirRate 直升机升空动画;
-- AlternateTheaterArt shp动画单位可根据地图气候换肤;
-- AttachEffect 附魔特效;
+- AlternateTheaterArt SHP动画单位可根据地图气候换肤;
+- AttachEffect 附加持续效果;
 - 飞机可空中爆炸而非坠机`[AircraftType]Crashable=`;
 - Crush Damage 载具碾压损耗;
 - Reverse Engineer logic 技术复制逻辑;
@@ -60,6 +60,17 @@
 - Factories and Cloning 指定建造或复制;
 - Fakes 伪建筑;
 - Force Shield 力场护盾持续时间分化;
+- Lightning Rods 避雷针;
+- Prism Forwarding 光棱塔逻辑;
+- Oil Derricks 油井设置（版本可能变化）;
+- Repair and Insufficient Funds 缺钱维修中断;
+- Solid Buildings 建筑遮挡逻辑（影响弹道;不遮挡激光武器但承受伤害）;
+- Toggle Power 断电逻辑;
+- Trivial Structure Damage 建筑停电损耗;
+- Tunnel Networks 传送门逻辑（隧道）;
+- Urban Combat - Trenches 战壕、废墟逻辑;
+- Cloak, Stealth and Sensor Arrays 隐形与反隐逻辑;
+- Bounty 各单位赏金;
 
 ## Ares 新增UI
 

@@ -1,5 +1,13 @@
 # Log modifications in YR
 
+## 秘密科技实验室
+
+```ini
+[CASLAB]
+SecretLab.PossibleBoons=SPY,VIRUS,LUNR,HOWI,BEAG,SMIN,FV,BFRT,VLAD,NIMITZ,GAOREP,NAPSIS,NAINDP,NACLON,GASPYSAT,NANRCT ; Ares 0.9 (list of TechnoTypes)
+SecretLab.GenerateOnCapture=yes ; Ares 0.9 (boolean)
+```
+
 ## 反击中立单位袭击
 
 ```ini

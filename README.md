@@ -86,6 +86,7 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
   - 三方作战实验室;
   - 秘密科技实验室;
 - 科技实验室视为高科建筑;
+- 实验室科技将在每次占领后重置为当前不可建造的;
 - 科技实验室调整科技:
   - 步兵 (6):
     - \+ `SPY`,
