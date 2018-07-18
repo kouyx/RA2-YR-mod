@@ -53,7 +53,7 @@ Spyable=yes
 [GAPILE],[GAWEAP],[NAHAND],[NAWEAP],[YABRCK],[YAWEAP]
 SpyEffect.UnitVeterancy=yes  ; Ares 0.1
 ; 矿场偷钱
-[GAREFN],[NAREFN],[YAREFN]
+[GAREFN],[NAREFN]
 SpyEffect.StolenMoneyPercentage=.5 ; Ares 0.1
 ; 重置视野
 [GAAIRC],[NARADR],[AMRADR],[NAPSIS]
@@ -66,7 +66,7 @@ SpyEffect.ResetRadar=yes  ; Ares 0.1
 [GACNST],[NACNST],[YACNST],  ; 建筑建造
 [GAPILE],[NAHAND],[YABRCK],  ; 步兵动员
 [GAWEAP],[NAWEAP],[YAWEAP],[GAAIRC],[AMRADR],  ; 载具/飞机生产
-[GAREFN],[NAREFN],[YAREFN],  ; 当前金钱
+[GAREFN],[NAREFN],  ; 当前金钱
 [GAPOWR],[NAPOWR],[NANRCT],[YAPOWR]  ; 当前电力
 SpyEffect.RevealProduction=yes  ; Ares 0.B
 ```

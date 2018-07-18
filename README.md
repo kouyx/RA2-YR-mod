@@ -92,7 +92,7 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
     - \+ `LUNR`,
     - \+ `SPY`,
     - \+ `VIRUS` (未验证),
-    - \+ `YURIG` (未验证),
+    - \+ `YURIG`
     - \- `TERROR`;
   - 飞机&战车&舰船 (8):
     - \+ `BEAG`,
@@ -100,7 +100,7 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
     - \+ `HIND` (未验证),
     - \+ `HOWI` (未验证),
     - \+ `FV` (未验证),
-    - \+ `NIMITZ` (未验证)
+    - \+ `NIMITZ`
     - \+ `SMIN` (未验证),
     - \+ `VLAD`,
     - \- `DTRUCK`;
@@ -120,7 +120,7 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
   - 建筑建造: `[GACNST]`,`[NACNST]`,`[YACNST]`;
   - 步兵动员: `[GAPILE]`,`[NAHAND]`,`[YABRCK]`;
   - 载具/飞机生产: `[GAWEAP]`,`[NAWEAP]`,`[YAWEAP]`,`[GAAIRC]`,`[AMRADR]`;
-  - 显示金钱: `[GAREFN]`,`[NAREFN]`,`[YAREFN]`;
+  - 显示金钱: `[GAREFN]`,`[NAREFN]`;
   - 显示电力: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`;
 - 偷钱
   - 定额窃取: `[NAINDP]`,`[NACLON]`;
