@@ -97,8 +97,8 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
   - 飞机&战车&舰船 (8):
     - \+ `BEAG`,
     - \+ `BFRT` (未验证),
-    - \+ `HIND` (未验证),
-    - \+ `HOWI` (未验证),
+    - \+ `HIND`,
+    - \+ `HOWI`,
     - \+ `FV` (未验证),
     - \+ `NIMITZ`
     - \+ `SMIN` (未验证),
@@ -114,17 +114,22 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
 
 ## Building
 
+### 学院建筑逻辑
+
+- 科技前哨站升级空军(飞行单位)至老兵等级;
+- 科技实验室升级海军至老兵等级;
+- 科技医院加生命单位初始经验 50% (新兵至老兵);
+- 科技机器商店加生命单位初始经验 50% (新兵至老兵);
+
 ### 间谍渗透逻辑
 
 - 窥视生产/建造信息 (渗透后选中)
   - 建筑建造: `[GACNST]`,`[NACNST]`,`[YACNST]`;
   - 步兵动员: `[GAPILE]`,`[NAHAND]`,`[YABRCK]`;
   - 载具/飞机生产: `[GAWEAP]`,`[NAWEAP]`,`[YAWEAP]`,`[GAAIRC]`,`[AMRADR]`;
-  - 显示金钱: `[GAREFN]`,`[NAREFN]`;
   - 显示电力: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`;
-- 偷钱
-  - 定额窃取: `[NAINDP]`,`[NACLON]`;
-  - 比例窃取: `[GAOREP]`;
+- 偷钱 (比例窃取无效果)
+  - 定额窃取: `[NAINDP]`,`[NACLON]`,`[GAOREP]`;
 - 获得雷达视野: `[GASPYSAT]`
 - 断电时间分化: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`
 - 超武重置 + 获得一发

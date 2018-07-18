@@ -1,5 +1,35 @@
 # Log modifications in YR
 
+## 学院建筑逻辑
+
+- 科技前哨站升级空军(飞行单位)至老兵等级;
+
+```ini
+[CAOUTP]
+Academy.AircraftVeterancy=1.0  ; Ares 0.8
+```
+
+- 科技实验室升级海军至老兵等级;
+
+```ini
+[CASLAB]
+Academy.InfantryVeterancy=1.0  ; Ares 0.8
+Academy.VehicleVeterancy=1.0  ; Ares 0.8
+Academy.Types=  ; Ares 0.8
+```
+
+- 科技医院加生命单位初始经验 50% (新兵至老兵);
+
+```ini
+[CATHOSP]►Academy.InfantryVeterancy=0.5  ; Ares 0.8
+```
+
+- 科技机器商店加载具初始经验 50% (新兵至老兵);
+
+```ini
+[CAMACH]►Academy.VehicleVeterancy=0.5  ; Ares 0.8
+```
+
 ## 秘密科技实验室逻辑
 
 ```ini
@@ -52,9 +82,6 @@ Spyable=yes
 ; 步兵/载具升级
 [GAPILE],[GAWEAP],[NAHAND],[NAWEAP],[YABRCK],[YAWEAP]
 SpyEffect.UnitVeterancy=yes  ; Ares 0.1
-; 矿场偷钱
-[GAREFN],[NAREFN]
-SpyEffect.StolenMoneyPercentage=.5 ; Ares 0.1
 ; 重置视野
 [GAAIRC],[NARADR],[AMRADR],[NAPSIS]
 SpyEffect.ResetRadar=yes  ; Ares 0.1
@@ -66,7 +93,6 @@ SpyEffect.ResetRadar=yes  ; Ares 0.1
 [GACNST],[NACNST],[YACNST],  ; 建筑建造
 [GAPILE],[NAHAND],[YABRCK],  ; 步兵动员
 [GAWEAP],[NAWEAP],[YAWEAP],[GAAIRC],[AMRADR],  ; 载具/飞机生产
-[GAREFN],[NAREFN],  ; 当前金钱
 [GAPOWR],[NAPOWR],[NANRCT],[YAPOWR]  ; 当前电力
 SpyEffect.RevealProduction=yes  ; Ares 0.B
 ```
@@ -74,10 +100,8 @@ SpyEffect.RevealProduction=yes  ; Ares 0.B
 - 偷钱
 
 ```ini
-[GAOREP]
-SpyEffect.StolenMoneyPercentage=.6 ; Ares 0.1 (float - multiplier) (.5) see [General]
-[NAINDP],[NACLON]
-SpyEffect.StolenMoneyAmount= ; Ares 0.1 (integer - credits)
+[NAINDP],[NACLON],[GAOREP]
+SpyEffect.StolenMoneyAmount=2000 ; Ares 0.1 (integer - credits)
 ```
 
 - 获得雷达视野
