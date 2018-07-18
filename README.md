@@ -32,14 +32,27 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
 
 ### 单位图标
 
-- 新建图标:
+- 新增图标(带相应升级图标):
   - `HIND` (YR)
   - `NIMITZ` (网图)
-  - `HWTZ` (YR)
+  - `HOWI` (YR)
   - `VLAD` (无畏镜像)
 - 恢复升级图标:
   - `IVAN` (疯狂伊文)
   - `CIVAN` (超时空伊文)
+- 新增升级图标:
+  - `AEGIS`
+  - `BEAG`
+  - `BPLN`
+  - `BSUB`
+  - `CARRIER`
+  - `DEST`
+  - `DLPH`
+  - `DRED`
+  - `HYD`
+  - `ORCA`
+  - `SQD`
+  - `SUB`
 
 ### 防卫建筑射程显示
 
