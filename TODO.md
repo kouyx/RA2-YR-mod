@@ -53,7 +53,6 @@
 - Turret ROT 载具炮塔转速;
 - Type Selection Groups 混编队伍(狗、工程师);
 - Veteran and Elite Abilities 新升级能力;
-- Academies 建筑效果赋予经验;
 - Assaulter 定义爆破等级;
 - Custom Building Foundations 自定义建筑占地;
 - Enemy Wrench 敌军建筑维修显示;
@@ -71,6 +70,19 @@
 - Urban Combat - Trenches 战壕、废墟逻辑;
 - Cloak, Stealth and Sensor Arrays 隐形与反隐逻辑;
 - Bounty 各单位赏金;
+- Sensor Arrays 探测阵列;
+- Projectile Range 导弹航程;
+- Ivan Bombs 伊文炸弹自定义;
+- Damage Airborne Units 弹头影响空军;
+- Nuke Flash 核爆光辐射时间;
+- Disable Weapons 沉默;
+- Permanent Mind-Control 永久控制;
+- Deployed Infantry Damage multiplier 部署步兵防御变化;
+- InfDeathAnim 步兵阵亡动画 可设置突变;
+- Berserk Reloading Time Modifier 狂暴状态攻速;
+- Suppress Death Weapons 熄火死亡武器;
+- Suppress Unit Lost Message 静默杀手;
+- Cost 超武花费;
 
 ## Ares 新增UI
 
