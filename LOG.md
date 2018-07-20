@@ -1,5 +1,25 @@
 # Log modifications in YR
 
+## 混编队伍
+
+- 部署单位分组
+
+```ini
+[General]
+TypeSelectUseDeploy=no  ; Ares 0.5 (boolean)
+```
+
+- 同类单位合编
+
+```ini
+[ADOG],[YADOG],[YDOG]
+GroupAs=DOG  ; Ares 0.5 (string)
+[SENGINEER],[YENGINEER]
+GroupAs=ENGINEER  ; Ares 0.5 (string)
+[YAREFN]
+GroupAs=SMIN  ; Ares 0.5 (string)
+```
+
 ## 学院建筑逻辑
 
 - 科技前哨站升级空军(飞行单位)至老兵等级;

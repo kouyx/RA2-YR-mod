@@ -51,7 +51,6 @@
 - Survivors 建筑载具生还;
 - Team Retaliate 队伍反击;
 - Turret ROT 载具炮塔转速;
-- Type Selection Groups 混编队伍(狗、工程师);
 - Veteran and Elite Abilities 新升级能力;
 - Assaulter 定义爆破等级;
 - Custom Building Foundations 自定义建筑占地;

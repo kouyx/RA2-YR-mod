@@ -153,6 +153,12 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
 
 ## Units
 
+### 混编队伍
+
+- 部署后实际不同注册名的单位分组 (如 MCV 和奴矿);
+  > `DeploysInto` and `UndeploysInto`
+- 实质同类单位合编 (如狗和工程师).
+
 ### 新增单位
 
 - 重制单位:
