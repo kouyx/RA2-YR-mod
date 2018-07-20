@@ -104,7 +104,7 @@ Modifications logged in [*log.md*](./LOG.md) would be classified on the followin
   - 步兵 (4):
     - \+ `LUNR`,
     - \+ `SPY`,
-    - \+ `VIRUS` (未验证),
+    - \+ `SNIPE` (未验证),
     - \+ `YURIG`
     - \- `TERROR`;
   - 飞机&战车&舰船 (8):

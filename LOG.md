@@ -35,7 +35,7 @@ Academy.Types=  ; Ares 0.8
 ```ini
 [CASLAB]
 SecretLab.GenerateOnCapture=yes ; Ares 0.9 (boolean)
-SecretLab.PossibleBoons=BEAG,BFRT,FV,GAOREP,GASPYSAT,HOWI,LUNR,NACLON,NAINDP,NANRCT,NAPSIS,NIMITZ,SMIN,SPY,VIRUS,VLAD ; Ares 0.9 (list of TechnoTypes)
+SecretLab.PossibleBoons=BEAG,BFRT,FV,GAOREP,GASPYSAT,HOWI,LUNR,NACLON,NAINDP,NANRCT,NAPSIS,NIMITZ,SMIN,SPY,SNIPE,VLAD ; Ares 0.9 (list of TechnoTypes)
 ```
 
 ## 反击中立单位袭击
