@@ -1,4 +1,21 @@
-# Modifications in YR
+# Details of Modifications in Code Files
+
+1. [Path](#path)
+1. [artmd.ini](#artmdini)
+1. [rulesmd.ini](#rulesmdini)
+    1. [Global](#global)
+    1. [House & Side](#house--side)
+    1. [Infantry](#infantry)
+    1. [Vehicle](#vehicle)
+    1. [Aircraft](#aircraft)
+    1. [Building](#building)
+    1. [Weapon](#weapon)
+    1. [Projectile](#projectile)
+    1. [Particle & Particle System](#particle--particle-system)
+    1. [Warhead](#warhead)
+    1. [Terrain & Smudge & Overlay](#terrain--smudge--overlay)
+    1. [Super Weapon](#super-weapon)
+    1. [Animation](#animation)
 
 ## Path
 
@@ -158,6 +175,8 @@ RepairDepot=538,20,4,100,10,Center,Middle
 
 ### House & Side
 
+(No modifications yet)
+
 ### Infantry
 
 Register list below
@@ -296,7 +315,7 @@ Experience.PromotePassengers=yes ; Ares 0.2
 Experience.PassengerModifier=0.8 ; Ares 0.2
 
 ; Tank Destroyer
-[TNKD] 
+[TNKD]
 ; Add Passenger
 PipScale=Passengers
 Passengers=1
@@ -316,14 +335,14 @@ Experience.PassengerModifier=0.6 ; Ares 0.2
 Experience.PromotePassengers=yes ; Ares 0.2
 Experience.PassengerModifier=0.6 ; Ares 0.2
 
-EliteWeapon2=RepairBulletE	;Engineer
-EliteWeapon3=CRM60E			;GI
-EliteWeapon4=CRFlakGuyGunE		;Flak Troop ;Rocketeer
-EliteWeapon7=CRElectricBoltE	;ShockTrooper
-Weapon13=CRAKM		;Boris  CowShot		;Cow
-EliteWeapon13=CRAKME		;Boris  CowShot		;Cow
-EliteWeapon14=CRPsychicJabE		;Initiate
-EliteWeapon17=CRMissileLauncherE		;Guardian GI
+EliteWeapon2=RepairBulletE  ;Engineer
+EliteWeapon3=CRM60E  ;GI
+EliteWeapon4=CRFlakGuyGunE    ;Flak Troop ;Rocketeer
+EliteWeapon7=CRElectricBoltE  ;ShockTrooper
+Weapon13=CRAKM    ;Boris  CowShot    ;Cow
+EliteWeapon13=CRAKME    ;Boris  CowShot    ;Cow
+EliteWeapon14=CRPsychicJabE    ;Initiate
+EliteWeapon17=CRMissileLauncherE    ;Guardian GI
 
 CowTurretIndex=1 ;3
 
@@ -391,7 +410,7 @@ SinkingSound=GenLargeWaterDie
 Locomotor={2BEA74E1-7CCA-11d3-BE14-00104B62A16C};{4A582741-9839-11d1-B709-00A024DDAFD1}
 SpeedType=Float
 MovementZone=Water
-ThreatPosed=30 ;25	; This value MUST be 0 for all building addons
+ThreatPosed=30 ;25  ; This value MUST be 0 for all building addons
 DamageParticleSystems=SparkSys,SmallGreySSys
 VeteranAbilities=STRONGER,FIREPOWER,ROF,SIGHT,FASTER
 EliteAbilities=SELF_HEAL,STRONGER,FIREPOWER,ROF,SENSORS,FASTER,GUARD_AREA
@@ -604,7 +623,7 @@ Damage=35 ;30
 ROF=40
 Range=8
 Burst=4 ;2
-Projectile=AAHeatSeeker2	;AirToGroundMissile
+Projectile=AAHeatSeeker2  ;AirToGroundMissile
 Speed=45 ;30 ;40
 Warhead=GUARDWH
 Report=GuardianGIDeployedAttack
@@ -631,13 +650,13 @@ Projectile=Electricbounce;InvisibleLow
 IsElectricBolt=true
 AssaultAnim=UCELEC;the anim to play when a UC building is cleared (assaulters need this on their primary weapon)
 
-[CRFlakGuyGunE]		; Anti-surface gun for the Flak Trooper
+[CRFlakGuyGunE]    ; Anti-surface gun for the Flak Trooper
 Damage=35;30;20
 ROF=12;15;20
 Range=7;5
 Projectile=FlakTProj
 Speed=50
-Report=FlakTrackAttackGround		; put in new sound for this
+Report=FlakTrackAttackGround    ; put in new sound for this
 Warhead=FlakTWH
 Anim=GUNFIRE
 
@@ -790,6 +809,8 @@ SubjectToWalls=yes  ;no
 
 ### Particle & Particle System
 
+(No modifications yet)
+
 ### Warhead
 
 Register list below.
@@ -801,7 +822,7 @@ Register list below.
 ```
 
 ```ini
-[MDSWH]	; For anti-surface weapon MedusaS
+[MDSWH]  ; For anti-surface weapon MedusaS
 CellSpread=.3
 PercentAtMax=1
 Verses=100%,75%,50%,75%,50%,25%,0%,0%,0%,100%,100%
@@ -809,7 +830,7 @@ Verses=100%,75%,50%,75%,50%,25%,0%,0%,0%,100%,100%
 InfDeath=3
 AnimList=XGRYSML1,XGRYSML2,EXPLOSML
 ProneDamage=100%
-Conventional=yes	; Go splash in the water.
+Conventional=yes  ; Go splash in the water.
 
 ;Howitzer Elite
 [HowitzerWHE]
@@ -826,7 +847,11 @@ ProneDamage=50%
 
 ### Terrain & Smudge & Overlay
 
+(No modifications yet)
+
 ### Super Weapon
+
+(No modifications yet)
 
 ### Animation
 

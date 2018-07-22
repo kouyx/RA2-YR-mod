@@ -1,14 +1,25 @@
-# 尤里的复仇 MOD 内容
+# Modifications in YR
 
-Modifications logged in [*LOG.md*](./LOG.md) would be classified on the following aspects.
+Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the following aspects.
 
-1. [Ares 建议](#ares-advice)
-1. [全局逻辑](#global)
-1. [UI](#ui)
-1. [科技](#technology)
-1. [建筑](#building)
-1. [单位](#units)
-1. [武器](#weapon)
+- [Ares 建议](#ares-advice)
+- [全局逻辑](#global)
+- [UI](#ui)
+  - [单位图标](#单位图标)
+  - [防卫建筑射程显示](#防卫建筑射程显示)
+  - [游戏中光标](#游戏中光标)
+- [科技](#technology)
+- [建筑](#building)
+  - [学院建筑逻辑](#学院建筑逻辑)
+  - [间谍渗透逻辑](#间谍渗透逻辑)
+- [单位](#units)
+  - [混编队伍](#混编队伍)
+  - [新增单位](#新增单位)
+  - [单位晋升](#单位晋升)
+  - [调整单位](#调整单位)
+- [武器](#weapon)
+  - [精英武器](#精英武器)
+  - [新增武器](#新增武器)
 
 ## Ares Advice
 
@@ -40,7 +51,7 @@ Modifications logged in [*LOG.md*](./LOG.md) would be classified on the followin
 - 恢复升级图标:
   - `IVAN` (疯狂伊文)
   - `CIVAN` (超时空伊文)
-- 新增升级图标:
+- 新增升级图标(未使用):
   - `AEGIS`
   - `BEAG`
   - `BPLN`
