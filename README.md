@@ -1,6 +1,6 @@
-# Modifications in YR
+# 尤里的复仇 MOD 内容
 
-Modifications logged in [*log.md*](./LOG.md) would be classified on the following aspects.
+Modifications logged in [*LOG.md*](./LOG.md) would be classified on the following aspects.
 
 1. [Ares 建议](#ares-advice)
 1. [全局逻辑](#global)
