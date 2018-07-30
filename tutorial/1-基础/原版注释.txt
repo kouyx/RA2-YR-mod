@@ -1,0 +1,413 @@
+考虑到你们这些小白的英语水平，本神就替你们欢译了大部分原版注释，解释这些标签的功能。
+如果代码词典的其他部分和本翻译冲突，以本翻译为准。
+仅凭记忆。如果在modenc上查到别的解释，以modenc为准
+
+http://modenc.renegadeprojects.com/Main_Page
+
+
+
+
+
+
+
+
+
+
+默认是否类标签填写yes或no
+     数字类写数字
+
+如果解释是“可以XX”“是XX”，意思是这是个是否型标签
+
+
+AllowedToStartInMultiplayer =是否允许作为遭遇战起始单位，默认是，不写此代码的单位直接出现在起始单位里
+
+; Ammo = 弹药数，默认-1，就是无限
+; Armor = 装甲类型，none, flak, plate light, medium, heavy, wood, steel, concrete special_1, special_2中任选,和单位类型无关，前3种【通常】用于步兵，然后3种坦克，3种建筑，蜘蛛，子机导弹
+
+; BuildLimit = 建造限制 不写就是无限 写负数就是建造绝对值次数后图标消失
+; Cloakable = 隐形？默认否
+; Cost = 价格，决定了升级
+; Category = 种类，用于AI判断 "Soldier", "Civilian", "VIP", "Ship",
+;            "Recon", "AFV", "IFV", "LRFS", "Support", "Transport", "AirPower", "AirLift"
+
+; CloakStop =不移动时是否隐形，默认否,此标签无效
+; Crewed = 是否逃出残兵，默认否
+; Gunner = 仅用于注册名为FV的单位才有效，即多功能步兵车
+; CrushSound = 被压扁时候的声音名
+; DeployFire = 展开时候发射武器
+; DeployFireWeapon = 填0或1，发射主武器或副武器
+; DeployTime = 展开的僵直时间，帧数
+; DamageReducesReadiness = 是的话，此单位受伤会减少其弹药量
+; Disableable = 是否可以被特殊对战选项屏蔽，默认是
+; DistributedFire = 是否攻击一次后立刻更换目标，如果只有一个目标则会停止一下
+; DoubleOwned =废弃代码
+; EmptyReload =子弹打空后的装弹时间，-1是用正常值
+; Explodes = 是否被打死后在周围造成伤害，和单位生命值有关
+; Explosion = 坦克类被消灭后的动画名
+; FireAngle = 开火角度，没有太大作用，0是水平64是垂直
+; Gate = 是否是个闸门
+; GateCloseDelay = 闸门打开后保持开放的时间
+; GuardRange = 搜寻敌人的距离，默认是武器射程
+; Image = 单位的图形，引用ART注册名
+; Immune = 此单位不灭
+; ImmuneToPsionics = 免疫心灵武器如毒气
+; ImmuneToRadiation = 免疫辐射
+; ImmuneToVeins = 免疫泰矿藤蔓，废弃代码
+; InitialAmmo =初始弹药量
+; Invisible = 是否对敌人永远隐形
+; Insignificant = 敌人不会主动攻击它
+; LegalTarget = 无法攻击此单位
+; Name =没用，纯属写给自己看的
+; Nominal = 用他的CSF名而不是“敌方单位”
+; OmniFire = 全向开火，不需要转炮塔
+; OpportunityFire = 移动开火
+; Owner = 拥有者，填写国家名
+; PipScale =格子的内容，填 [Passengers, Tiberium, Ammo, Power]
+; PipWrap = 多少个内容显示为1个格子
+; Points = 绝不是什么“升级经验”，就是遭遇战积分用的
+; Prerequisite = 需要以下建筑作为前提
+; PreventAttackMove = 不会移动攻击？比如禁止电脑的磁电移动攻击
+; PreventAutoDeploy =不会主动展开（没用的代码，因为RA2没有自动展开）
+; Primary = 主武器名
+; Secondary = 副武器名
+; ElitePrimary = 精英主武器名
+; EliteSecondary =精英副武器名
+; RadarVisible = 雷达上可见
+; ROT = 旋转速度，数字越大旋转越快
+; ReadinessReductionMultiplier = 伤害导致弹药减少的比例，估计没用
+; Reload = 重新装弹的间隔
+; ReloadIncrement = 每个((MaxAmmo / PipWrap) %0)增加的装弹时间。弹药越多装弹越慢 
+; RadarInvisible = 雷达不可见
+; RadialFireSegments = 指示射程圈的起始位置，填0到180
+; SelfHealing = 自动回复
+; Selectable = 可以选择
+; Sensors = 探测隐形
+; Sight = 视野，不要大于20
+; Size = 装进运输工具时候占的空间
+; SizeLimit = 此运输工具最大只能容纳的单一单位体积，比如要塞里装不进坦克
+; Storage = 矿车采集量，1金矿是25钱
+; Strength = 生命值
+; TargetLaser = 是否绘制红瞄准线效果
+; Trainable = 可以升级
+; Turret = 带炮塔，只能用于建筑和坦克
+; TurretSpins =炮塔像飞碟一样一直转
+; TechLevel = 科技等级，和地图有关，-1不能造，等级越高出现在建造栏的位置越低
+; ToProtect = 电脑在此单位被攻击时候会支援
+; TypeImmune = 不受同一所鼠方同类单位的伤害
+; UndeployDelay = 自动反部署之前的间隔
+; VoiceSelect = 选择此单位时候的语音
+; VoiceMove = 命令行走的语音
+; VoiceAttack = 命令攻击的语音
+; DieSound = 死亡语音
+; VoiceFeedback = 恐惧的语音
+; Locomotor = 运动模式 建议抄袭原版单位
+; VeteranAbilities = 老兵级别的升级
+; EliteAbilities = 精英级别的技能，在general的开头设定具体升级项目的数值
+;     [FASTER,STRONGER,FIREPOWER,SCATTER,ROF,SIGHT,
+;      CLOAK,TIBERIUM_PROOF,VEIN_PROOF,SELF_HEAL,EXPLODES,
+;      RADAR_INVISIBLE,SENSORS,FEARLESS,C4,TIBERIUM_HEAL,
+;      GUARD_AREA,CRUSHER]
+
+      【运动更快，血厚，火力加强，躲导弹和碾压，开火加快，视野扩大，隐形，免疫泰矿，免疫藤蔓，自动回血，死亡爆炸，雷达隐身，探测隐形，不会匍匐，获得C4，泰矿上回血，守卫区域，碾压步兵】
+
+
+; LeadershipRating = 当部队混编时听其中数值最高单位的语音
+
+;  <<< 仅用于步兵 >>>
+;    Agent = 间谍
+;    Fearless = 不会匍匐
+;    VoiceComment = 空闲时候的语音
+;    Pip = 放进建筑和车的小人颜色[green,yellow,white,red,blue] 
+;    C4 =C4爆建筑
+;    Cyborg = 电子人式断成两截的死亡方式
+;    Fraidycat = 平民被吓得到处乱跑
+;    TiberiumProof = 泰矿免疫，废弃代码
+;    Infiltrate = 间谍
+;    IsCanine = 狗狗 废弃代码
+;    Civilian = 平民单位
+;    FemaleVoice = 使用女性平民语音
+;    Engineer = 工程师
+;    Disguised = 自动伪装
+;    Agent = 间谍
+;    Thief = 小偷，RA1残留，无用
+;    VehicleThief = 偷坦克
+
+;  <<< 用于飞机和车辆，船只也是车辆>>>
+;    MoveToShroud = 可以命令他开进黑雾里
+;    Dock = 指定停靠建筑，矿车-矿场 灰机-机场
+;    TiberiumHeal =泰矿的代码，无效
+;    Passengers = 总运输空间
+;    Speed = 运动速度，用SHP的单位速度不得超过20，一般12就是极限
+;    ManualReload = 必须进装弹建筑才能装弹，RA1布雷车萝鸡残留
+;    WalkRate = 行走动画播放速度，越大越慢
+;    IsSelectableCombatant=是否可以用选择单位快捷键选中
+
+;  <<< 用于多炮塔单位如光棱 >>>
+;    TurretCount=炮塔数目
+光棱的炮塔动画是靠换炮塔实现的
+;    WeaponX=X号武器的名字
+;    YTurretIndex=换炮塔之类的生僻代码
+;    HasTurretTooltips=不知所云，估计没用
+
+;  <<< 用于陆地车辆 >>>
+;    CrateGoodie = 宝箱中出现
+;    Crushable = 可以被碾压，也可以用于一些小型建筑
+;    Crusher = 可以压步兵
+;    MovingFire = 可以移动开火
+;    DeployToFire = 开火指令会让此坦克部署
+;    Harvester =是否是矿车
+;    Weeder =废弃代码
+;    Deployer = 可以部署
+;    IsTilter = 在斜坡上倾斜
+;    CarriesCrate = 被消灭时产生箱子，只有在特定地图里有效
+;  <<< 仅用于飞机 >>>
+;    Carryall = 吊运车辆
+;    Landable = 可以着陆
+;    PitchSpeed = 不明，和飞机拐弯有关
+;    PitchAngle = 用于非直升机的飞机拐弯
+;    RollAngle = 拐弯时候的倾斜度数
+;  <<< 仅用于建筑 >>>
+;    Adjacent = 可以离自己的建筑多远摆放
+;    BaseNormal = 可以在它周围摆放建筑
+;    Barrel = 油桶爆炸萝鸡，0血时延时一下再爆炸
+;    Bib = 带有可停靠的部分
+;    Capturable = 可以被占领
+;    DockUnload =停靠此建筑的车辆进行卸货动作
+;    Factory = 建造 [InfantryType, AircraftType, UnitType, BuildingType, VesselType]程度的能力
+;    Fake = RA1假建筑残余代码
+;    FreeUnit = 赠送的车辆单位，通常只用于矿场送矿车
+;    Power = 电力，正数为发电，负数为耗电
+;    Powered = 有电时候才能工作
+;    Radar = 提供雷达地图
+;    Repairable = 可以修
+;    RevealToAll= 建造完成时对对方显示其位置
+;    UnitReload = 给单位装弹
+;    UnitRepair = 修复单位
+;    Unsellable = 不能卖。没建造动画的建筑即使设定为可以卖也卖不掉
+;    Wall = 是墙
+;    WaterBound = 只能放在水里
+;    Upgrades = 加载物的数目
+;    ShipYard = 是船厂
+;    SAM = 是SAM发射器
+;    ConstructionYard = 是建造厂
+;    Refinery = 是矿场
+;    WeaponsFactory = 重工
+;    CloakGenerator = 隐形发生器
+;    LaserFencePost =鸡光墙，无效
+
+;    LightIntensity = 灯塔效果的数值
+;    LightVisibility= 灯塔效果能看得见的距离
+;    LightRedTint   = 红光效果
+;    LightGreenTint = 绿光效果
+;    LightBlueTint  = 蓝光 默认1
+;    InvisibleInGame= 此建筑游戏中不可见
+
+;    PowersUpBuilding = 加载物的加载对象
+;    PowersUpToLevel =安装此加载物则提升加载对象的加载物数目值若干
+
+;    Hospital = 医院
+;    Armory = 步兵训练，可变精英级，训练数目是ammo
+;    PlaceAnywhere = 无视建造地点的需求
+;    Weeder = 废弃
+;    TogglePower = 废弃
+;	 WST 6/23/99. Below are new zbuffer adjustment for units
+;	 ZFudgeCliff // fudge for units behind cliffs showing through rocks
+;	 ZFudgeColumn // fudge for units behind bridge overpass support columns
+;	 ZFudgeTunnel // fudge for unit behind tunnel entrances
+;	 ZFudgeBridge // fudge for tall units when they are under a bridge... eg mammoth mk2
+
+被各种地形遮挡时候的设定，懒得欢译了
+
+
+
+;Sight= 民房被占领提供的视野
+;ClickRepairable= 可以用扳手维修
+;CanBeOccupied=yes 可以进驻士兵
+;MaxNumberOccupants= 最高进驻士兵数目
+;DistributedFire=yes 对所有目标射击
+;CanOccupyFire=yes 民房可以射击   最好别动
+;
+;Selectable=yes    可以选择，否则你的兵就不能命令撤退了
+
+
+;NavalTargeting= 填数字
+;	UNDERWATER_NEVER = 0,			不能攻击水下
+;	UNDERWATER_SECONDARY = 1,	副武器攻击水下
+;	UNDERWATER_ONLY = 2,			只能攻击水下
+;	ORGANIC_SECONDARY = 3,		副武器攻击生物单位如乌贼海豚雷鸣
+;	SEAL_SPECIAL = 4,	主武器攻击两栖和生物，副武器攻击海军和潜艇
+;	NAVAL_ALL = 5,						用主武器攻击一切
+; NAVAL_NONE = 6,					不能攻击水中
+; NAVAL_PRIMARY = 7主武器攻击海军副武器攻击陆军
+
+;LandTargeting
+;	LAND_OKAY = 0,				可以攻击地面
+;	LAND_NOT_OKAY = 1,			不能攻击地面 （原注释这里傻逼了）
+;	LAND_SECONDARY = 2			副武器攻击地面
+
+
+
+
+
+
+
+
+
+
+; ******* Weapon Statistics *******
+武器注释
+
+; Anim = 开火动画
+; AreaFire = 攻击动作是攻击其所在单元格
+; Bright =创造亮光效果，会导致卡
+; Burst = 一次攻击动作发射几次
+; Camera = 打开黑雾，侦查鸡用，似乎是无效代码因为侦查鸡的效果是程序内定的
+; Charges = 无效，用IsAnimDelayedFire代替了，见磁暴线圈的ART
+; Damage =每发攻击的伤害
+; Floater = 将吊运的坦克伞降
+; IonSensitive = 无效代码
+; Lobber = 超高抛物线
+; MinimumRange = 最小射程，注意你不能用射程圈的方式让单位选择武器，在两个武器都能攻击的情况下单位永远会用主武器。即使主武器的最小射程由副武器填充，单位也只会跑开到主武器能攻击的地方攻击
+; Projectile = 【抛射体关联语句】
+; RadLevel = 辐射量。原版不得小于100
+; Range = 射程
+; ROF = 每两个攻击动作的间隔，以帧为单位
+; Report =开火声音
+; Speed = 抛射体速度，只对导弹类有效
+; Supress = 无效代码
+; TurboBoost = 打飞机的速度获得加成
+; UseFireParticles =使用喷火粒子系统，ROF无效，用粒子系统的存在时间计算
+; Warhead = 【弹头关联语句】
+; UseSparkParticles=使用火花粒子系统。并不一定是火花系统，此语句的武器ROF有效
+; AttachedParticleSystem=和粒子系统的那一套配合使用，填粒子系统名
+
+
+
+
+
+
+
+; ******* Warhead Characteristics *******
+弹头注释
+
+; Spread =杀伤范围，无效代码
+; Wall =可以毁墙
+; WallAbsoluteDestroyer =秒杀墙
+; Wood = 毁树
+; Fire = 无效代码
+; Radiation = 是否是辐射，和免疫萝鸡有关
+; Tiberium =摧毁矿石
+; Sparky = 必须写no否则IE，EIP表里有修复办法
+; Conventional =攻击水面激发水花而不播放弹头动画
+; Rocker =气浪，和ROF，damage有关，和实际伤害无关，伤害9999弹头比例0照样产生气浪
+; AnimList = 爆炸动画
+; Verses = 伤害比率，见护甲系统说明
+;           -vs- None, Flak, Plate //infantry
+;				Light, Medium, Heavy //units
+;				Wood, Steel, Concrete //buildings
+;				Special_1, Special_2 //dunno yet
+
+
+0% 不能强制攻击，不能还击，不能攻击
+1% 不能还击，不主动攻击
+2% 不主动攻击（由于WW的疏忽，这个无效）
+
+; InfDeath =士兵死亡方式
+;             0=instant die, 1=twirl die, 2=explodes, 3=flying death, 4=burn death, 5=electro
+; NEW ONES 6=Yuri head explode 7=Nuke Melt
+; Even Newer 8=Virus explosion 9=Brute transformation
+; Brand spankin new 10=get smashed into pieces by a brute
+
+0直接爆炸消失 1枪击死 2爆炸死 3 坦克炮弹砸死 4烧死 5电死 6尤里波死 7核融化 8 病毒死 9 变身狂受人 10 被狂受人打死
+
+; Deform = 改变地形
+; DeformThreshhold = 超过此伤害才可以改变地形
+; Particle =此弹头作用时触发的粒子系统
+; ProneDamage = 对匍匐步兵的伤害比例
+; Bright =是否产生亮光，优先级低于武器里的
+; CombatLightSize = % 最大亮光的缩小比例
+; Bullets = 是否是子弹，据说如果是，则弹头亮光会在开火时一直保持
+; CellSpread (def 0)= 伤害范围，最大不能超过10，0是只伤害攻击的目标
+
+; CellInset 用于自动展开
+; PercentAtMax 此弹头影响范围最边界受到的伤害比例，根据此比例运算出递增或者递减，1就是伤害值恒定
+
+
+
+
+
+
+;抛射体注释
+
+
+; AA = 对空
+; AG =对地
+; AN = 对海
+; AS = 反潜
+; ASW = 反正记得只有AAAG有效
+; Acceleration = 加速度，默认3
+; Airburst =是否使用空爆弹萝鸡
+  AirburstWeapon=空爆弹萝鸡爆出的子武器
+; Arcing =炮弹类的标志
+; Bouncy = 弹跳
+; Cluster = 空爆弹中锁定为⑨，非空爆弹中即一个炮弹这么多个爆炸
+; Color = VXL抛射体的颜色
+; CourseLockDuration = 导弹类出膛后经过这么多帧后才锁定目标
+; Degenerates =不明，估计无效
+; Dropping = 炸膛……
+; Level = 保持高度不变
+; Elasticity = 弹跳能力，1-0，默认0.75
+; Image = 炮弹图形
+; Inaccurate = 不精准如防空炮
+; Inviso = 瞬间命中抛射体的标志
+; Parachuted =无效
+; Proximity = 靠近目标即爆炸
+; ROT = 导弹抛射体的标志，不写0就是自导导弹，推荐0-100
+; Ranged = yes为不能无限追击
+; Scalable = 导弹翻滚……
+; Shadow =抛射体是否有影子
+; SubjectToCliffs = 会撞山吗
+; SubjectToElevation = 高处攻击有射程加成吗
+; SubjectToWalls = 不能穿墙
+; VeryHigh = 灰得很高
+  ShrapnelWeapon=溅射子武器名
+  ShrapnelCount=子武器数目
+
+
+
+; ***粒子系统注释 ***
+;
+; HoldsWhat = 填写粒子的名字
+; Spawns =是否用此系统不停刷出粒子
+; SpawnFrames =和上一句连用，刷粒子的间隔
+; ParticleCap = 此粒子系统最高产生的粒子数目
+其他标签参考具体的粒子系统，都是简单的英语
+
+http://tieba.baidu.com/f?kz=865014555
+这是轨道炮的说明
+
+
+; *** 粒子注释 ***
+;
+; Image = 此粒子的外形
+; Persistent =永远是yes，当成无效代码好了
+; MaxDC = 此粒子开始产生伤害之前的帧数
+; MaxEC =此粒子的存在时间
+; Damage = 每次产生的伤害数目
+; Warhead = 用来产生伤害的弹头 
+; StartFrame = 粒子动画的起始帧号
+; NumLoopFrames =多少帧是一个循环
+; WindEffect = 风力影响，改数值貌似没用
+; Velocity =速度，默认0
+; Radius = 伤害范围？貌似无效，粒子最多影响1X1
+;
+; BehavesLike=
+Spark   火花
+Smoke   烟雾
+Fire    火焰
+Gas     毒气
+RailGun 轨道炮
+
+
+注意粒子系统和粒子的behaveslike不一定是同类的。
+Railgun粒子系统如果用smoke粒子形态就可以自定义轨道炮粒子的动画，用GAS的话更可以直接散布大量粒子
