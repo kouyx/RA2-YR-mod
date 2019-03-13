@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Customizable Veterancy &mdash; Ares 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/customstyle.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Ares 2.0 documentation" href="../index.html" />
+    <link rel="up" title="New &amp; Enhanced In-Game Logic" href="index.html" />
+    <link rel="next" title="Custom Missiles" href="custommissiles.html" />
+    <link rel="prev" title="Customizable Parachute Animations" href="customizableparachuteanimations.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="custommissiles.html" title="Custom Missiles"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="customizableparachuteanimations.html" title="Customizable Parachute Animations"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Ares 2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">New &amp; Enhanced In-Game Logic</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Customizable Veterancy</a><ul>
+<li><a class="reference internal" href="#from-passengers">From Passengers</a></li>
+<li><a class="reference internal" href="#from-airstrikes">From Airstrikes</a></li>
+<li><a class="reference internal" href="#from-mind-controlled">From Mind-Controlled</a></li>
+<li><a class="reference internal" href="#from-spawns">From Spawns</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="customizableparachuteanimations.html"
+                        title="previous chapter">Customizable Parachute Animations</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="custommissiles.html"
+                        title="next chapter">Custom Missiles</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="customizable-veterancy">
+<h1>Customizable Veterancy<a class="headerlink" href="#customizable-veterancy" title="Permalink to this headline">¶</a></h1>
+<p>Configure the way units get experience from killing enemies.</p>
+<p><span><code class="docutils literal"><span class="pre">Trainable=no</span></code></span> is always honored, no untrainable unit will get any
+experience. Mind that an open-topped vehicle in the unmodified game also could
+promote its passengers (but without the mind-control check) if it had
+<span><code class="docutils literal"><span class="pre">Trainable=no</span></code></span> set.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.</span></p>
+</div>
+<div class="section" id="from-passengers">
+<span id="index-0"></span><h2>From Passengers<a class="headerlink" href="#from-passengers" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><span><code class="definition docutils literal"><span class="pre">[TechnoType]►Experience.FromPassengers=</span></code><span class="type definition"> (boolean)</span></span></dt>
+<dd>Allow <span><code class="docutils literal"><span class="pre">OpenTopped=yes</span></code></span> and <span><code class="docutils literal"><span class="pre">Gunner=yes</span></code></span> units to gain experience
+when a passenger kills an enemy. If this is <cite>no</cite> the unit only gets
+promoted when killing enemies itself. For gunners like the IFV this means the
+vehicle may not have any passengers to gain experience. Defaults to
+<cite>yes</cite>.</dd>
+<dt><span><code class="definition docutils literal"><span class="pre">[TechnoType]►Experience.PromotePassengers=</span></code><span class="type definition"> (boolean)</span></span></dt>
+<dd>If an <span><code class="docutils literal"><span class="pre">OpenTopped=yes</span></code></span> or <span><code class="docutils literal"><span class="pre">Gunner=yes</span></code></span> unit is trainable and already
+elite,  the passenger shooting will get the experience instead. If this is
+<cite>no</cite> the additional experience will be lost as the vehicle is elite
+already. Defaults to <cite>no</cite>.</dd>
+<dt><span><code class="definition docutils literal"><span class="pre">[TechnoType]►Experience.PassengerModifier=</span></code><span class="type definition"> (float - multiplier)</span></span></dt>
+<dd>If a kill gets credited to a passenger, the experience gain is multiplied by
+this value. Defaults to <cite>100%</cite>.</dd>
+</dl>
+</div>
+<div class="section" id="from-airstrikes">
+<span id="index-1"></span><h2>From Airstrikes<a class="headerlink" href="#from-airstrikes" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><span><code class="definition docutils literal"><span class="pre">[TechnoType]►Experience.FromAirstrike=</span></code><span class="type definition"> (boolean)</span></span></dt>
+<dd>If a kill gets credited to an aircraft that was called in by an air strike,
+the designator will get the experience instead of the actual aircraft.
+Defaults to <cite>no</cite>.</dd>
+<dt><span><code class="definition docutils literal"><span class="pre">[TechnoType]►Experience.AirstrikeModifier=</span></code><span class="type definition"> (float - multiplier)</span></span></dt>
+<dd>If <span><code class="docutils literal"><span class="pre">Experience.FromAircraft=yes</span></code></span> is set on the designator of an airstrike
+(like Boris), the experience gain is multiplied by this value. Defaults to
+<cite>100%</cite>.</dd>
+</dl>
+</div>
+<div class="section" id="from-mind-controlled">
+<span id="index-2"></span><h2>From Mind-Controlled<a class="headerlink" href="#from-mind-controlled" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><span><code class="definition docutils literal"><span class="pre">[TechnoType]►Experience.MindControlSelfModifier=</span></code><span class="type definition"> (float - multiplier)</span></span></dt>
+<dd>If a mind-controlled unit kills an enemy, its controller gets this percentage
+of the experience the original killer can get (the amount before
+<span><code class="docutils literal"><span class="pre">Experience.MindControlVictimModifier</span></code></span> is applied). This additional
+experience is not subtracted from the experience gained by the original
+killer. Defaults to <cite>0%</cite>.</dd>
+<dt><span><code class="definition docutils literal"><span class="pre">[TechnoType]►Experience.MindControlVictimModifier=</span></code><span class="type definition"> (float - multiplier)</span></span></dt>
+<dd>If a mind-controlled unit kills an enemy, its gained experience is multiplied
+by this value. Use this for example to subtract the amount the unit&#8217;s
+controller gets by having this value and
+<span><code class="docutils literal"><span class="pre">Experience.MindControlSelfModifier</span></code></span> sum up to 100%. Defaults to
+<cite>100%</cite>.</dd>
+</dl>
+<p>Mind-controlled open-topped vehicles will not gain any experience from their
+passengers if the mind-controller&#8217;s and the open-topped&#8217;s players aren&#8217;t allied.
+Mind-controllers will not gain experience from killing enemies with a captured
+allied unit.</p>
+</div>
+<div class="section" id="from-spawns">
+<span id="index-3"></span><h2>From Spawns<a class="headerlink" href="#from-spawns" title="Permalink to this headline">¶</a></h2>
+<p>Spawners like the Aircraft Carrier or the Destroyer can get experience from
+their spawned aircrafts&#8217; kills. For this to work, both the spawn and the spawner
+must be <span><code class="docutils literal"><span class="pre">Trainable=yes</span></code></span>. The following two tags go on the unit that spawns,
+not the spawns themselves.</p>
+<dl class="docutils">
+<dt><span><code class="definition docutils literal"><span class="pre">[TechnoType]►Experience.SpawnOwnerModifier=</span></code><span class="type definition"> (float - multiplier)</span></span></dt>
+<dd>The percentage of experience the unit owning a spawn gains when the spawn
+kills an enemy. This tag has to be set on the spawner unit, not the spawn.
+Defaults to <cite>0%</cite>.</dd>
+<dt><span><code class="definition docutils literal"><span class="pre">[TechnoType]►Experience.SpawnModifier=</span></code><span class="type definition"> (float - multiplier)</span></span></dt>
+<dd>The percentage of experience a spawn of this unit gains when the spawn kills
+an enemy. This tag has to be set on the spawner unit, not the spawn.
+Defaults to <cite>100%</cite>.</dd>
+</dl>
+<p>To split the experience between spawner and spawns, make these values sum up to
+100%. This is not required, though.</p>
+<p>If a spawner is mind-controlled, both the spawner&#8217;s and the spawn&#8217;s experience
+is multiplied by <span><code class="docutils literal"><span class="pre">Experience.MindControlVictimModifier</span></code></span>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="custommissiles.html" title="Custom Missiles"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="customizableparachuteanimations.html" title="Customizable Parachute Animations"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Ares 2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >New &amp; Enhanced In-Game Logic</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, The Ares Contributors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

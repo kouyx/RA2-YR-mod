@@ -1,0 +1,111 @@
+
+  Kill Driver; Neutralize vehicles
+  Warheads; Kill the driver of a vehicle
+  Universe; Kill drivers like Jarmen Kell or neutron rounds
+
+Killing Drivers
+
+
+Requested as a "Jarmen Kell" functionality
+, this feature allows
+specific warheads to kill the driver of a vehicle instead of damaging
+it, and allows others to take over the now-neutral vehicle.
+
+ 0.2
+
+ 0.E
+
+
+Warhead Settings
+
+
+This logic supports CellSpread and respects all immunities as any other
+conventional warhead like ImmuneToPoison as well as their veteran
+abilities, AffectsAllies, and AffectsEnemies.
+
+Whether this effect is applied when no conventional damage is dealt can be
+customized. See ....
+
+[Warhead]KillDriver=boolean
+  Specifies whether this warhead kills the driver of the vehicle, instead of
+  damaging the vehicle itself. The first passenger matching the vehicle's
+  Operator is considered the driver. All other passengers will be
+  ejected. Defaults to no.
+[Warhead]KillDriver.Owner=enumeration - civilian,special,neutral
+  Specifies the house the units are assigned to. Defaults to special.
+[Warhead]KillDriver.KillBelowPercent=float
+  Specifies the percentage of health a unit cannot exceed to have its driver
+  killed by a KillDriver=yes warhead. A unit above this health level
+  is only damaged and the driver is not killed. Defaults to 100%.
+[Warhead]KillDriver.Chance=float - percentage
+  Specifies the chance that a unit hit by a KillDriver=yes warhead will
+  have its driver killed. Defaults to 100%.
+[Warhead]KillDriver.RemoveVeterancy=boolean
+  Whether a unit will revert to rookie rank when the driver is killed and the
+  unit changes owner. Not applied if the owner does not change. Defaults to
+  no.
+
+
+.. _killingdrivers-immunity:
+
+
+  Kill Driver; Protect drivers of vehicles
+  TechnoTypes; Driver can't be killed
+
+Protected Drivers
+
+
+The following settings can make a unit immune to the Kill Driver logic:
+
+[TechnoType]ProtectedDriver=boolean
+  Whether the driver of this vehicle cannot be killed, i.e. whether this vehicle
+  is immune to KillDriver. Organic=yes and Natural=yes
+  units are always immune to KillDriver. Defaults to no.
+[TechnoType]ProtectedDriver.MinHealth=double - percentage
+  The minimum health below which the driver of this unit can be killed. If the
+  unit's health is above this, the driver cannot be killed. If
+  KillDriver.KillBelowPercent is also defined on the warhead, the
+  minimum of the two values is used, that is, this tag can make a unit more
+  resistant against driver killing weapons. Defaults to 0.0 if
+  ProtectedDriver=yes, to 1.0 otherwise.
+
+Driver protection can also be granted by specifying PROTECTED_DRIVER
+under VeteranAbilities or EliteAbilities. If specified, the unit's
+driver becomes protected unconditionally against KillDriver (which means
+that ProtectedDriver.MinHealth is no longer checked), but not against
+damage or other special warhead effects.
+
+
+
+  Kill Driver; Reclaim vehicles
+  Infantry; Capture units that had their drivers killed
+
+Reclaim Vehicles
+
+
+Drivers are infantry units that can capture neutral vehicles, like ones that had
+their driver killed.
+
+[TechnoType]CanDrive=boolean
+  Whether this InfantryType can act as the driver of vehicles whose
+  driver has been killed, effectively reclaiming the vehicle. If the vehicle
+  requires an Operator the infantry driver turns the unit and enters as
+  passenger that can be ejected later, otherwise the driver is swallowed,
+  becoming the permanent driver of the vehicle. Defaults to no.
+
+[TechnoType]CanBeDriven=boolean
+  Whether this unit can be reclaimed by a driver. If no, this unit
+  cannot be captured by a driver after the original driver has been killed.
+  If yes, ownership and other still might still prevent the unit from
+  being captured. Defaults to yes.
+
+[Country]CanBeDriven=boolean
+  Whether units owned by this country can be captured by CanDrive=yes
+  infantry. This can be used to place units owned by neutral countries on the
+  map without them being capturable. Defaults to MultiplayPassive.
+
+ Vehicle Thieves cannot drive neutralized vehicles by default, but
+  VehicleThief=yes can be combined with CanDrive=yes without
+  problems.
+
+See ... for more options that relate to CanDrive.

@@ -1,0 +1,39 @@
+
+  Aircraft; Carryall settings to disallow certain cargo
+  Carryalls; Disallow cargo by type or by size
+
+Carryalls
+
+
+Carryalls were a feature of Tiberian Sun. AircraftTypes with
+Carryall=yes could pick up UnitTypes from the battlefield, carry
+them around the map and place them anywhere. The carryall logic was not used in
+Red Alert 2 and was not updated for naval units and other new features.
+Ares updates the logic and adds new options.
+
+If a unit can be picked up, the cursor named Tote is shown. See how to
+customize this Mouse Cursor.
+
+[AircraftType]Carryall.SizeLimit=integer
+  The maximum Size= that this carryall can lift. Use -1 to allow
+  any size. Defaults to -1.
+
+[UnitType]Carryall.Allowed=boolean
+  Can this unit be picked up by a carryall? If not set, Organic=yes and
+  NonVehicle=yes units cannot be picked up. If specified,
+  Carryall.Allowed overrules those considerations. Currently it is not
+  possible to "unset" this tag to use the default again. You have to set it
+  explicitly.
+  
+   Units infected with a Parasite (Terror Drone/Squid) cannot be picked
+    up.
+
+ For the Carryall to work it must have AirportBound=no and no
+  Dock= set, otherwise they will be unable to pick up units.
+
+ By default, carryalls can pick up vessels, which are UnitTypes
+  with Naval=yes set, but they cannot be placed back on water again. If a
+  ship is placed on ground, it will explode and take the carryall with it. To
+  prevent this, set Carryall.Allowed=no on the ship.
+
+ 0.2

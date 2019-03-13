@@ -1,0 +1,96 @@
+
+  Tiberium; Units can heal on tiberium
+  Universe; Tiberium heals units
+
+Tiberium Heal
+
+
+Tiberium Heal is the effect of units gaining hitpoints when standing or moving
+over cells containing tiberium. This feature from Tiberian Sun has been
+restored and made more customizable.
+
+ 0.5
+
+
+Enabling Tiberium Heal
+
+
+Ares requires a new tag to be set to enable the Heal feature, and it
+does no longer heal units that are positioned above [General]►HoverHeight.
+
+[General]TiberiumHealEnabled=boolean
+  Whether tiberium is allowed to heal units. Required for the following tags to
+  work. Defaults to no.
+
+[General]TiberiumHeal=float - minutes
+  The interval between healing steps being applied in minutes. Defaults to
+  1.13333 (once each 68 seconds).
+
+
+Who will heal
+
+
+Enabling the Tiberium Heal feature depending on the unit type can be done by
+setting a tag or by granting the TIBERIUM_HEAL veteran ability like in
+Tiberian Sun.
+
+[TechnoType]TiberiumHeal=boolean
+  Whether this unit heals if standing on a cell containing Tiberium. Defaults to
+  no.
+
+   If yes, units leave behind a random amount of tiberium when
+    destroyed or killed by default. This can be customized. See Tiberium
+    Remains.
+
+
+How much how often
+
+
+The delay between the effect being applied and amount of hitpoints to be
+restored can be customized for each unit type and for each of the
+Tiberiums. The default tags are also used for other repair logics, so
+the following tags can be used to balance the Tiberium Heal independently from
+them.
+
+.. note Note that Tiberian Sun did not make a distinction between
+  VehicleTypes and AircraftTypes. It applied
+  [General]►RepairStep to both.
+
+[Tiberium]Heal.Delay=float - minutes
+  The interval between healing steps being applied in minutes. Defaults to
+  [General]►TiberiumHeal.
+
+[Tiberium]Heal.Step=integer
+  The health to restore for AircraftTypes after each delay. Defaults to
+  [General]►RepairStep.
+
+[Tiberium]Heal.IStep=integer
+  The health to restore for InfantryTypes after each delay. Defaults to
+  [General]►IRepairStep.
+
+[Tiberium]Heal.UStep=integer
+  The health to restore for VehicleTypes after each delay. Defaults to
+  [General]►URepairStep.
+
+
+.. _tiberium-remains:
+
+ Tiberium; Units leave behind tiberium when destroyed
+
+Tiberium Remains
+
+
+In Tiberian Sun units that had TiberiumHeal=yes (not the
+TIBERIUM_HEAL veteran ability) left behind a random amount of tiberium
+when destroyed or killed. This hardcoded behavior is now customizable and
+working independently of Tiberium Heal.
+
+Up to five bails are left behind in the adjacent cells, depending on whether the
+tiberium can be added to them.
+
+[TechnoType]TiberiumRemains=boolean
+  Whether this unit leaves behind tiberium when destroyed. Defaults to
+  TiberiumHeal if [General]►TiberiumHealEnabled=yes, to no
+  otherwise.
+
+ 0.5

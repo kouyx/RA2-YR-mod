@@ -1,0 +1,23 @@
+
+  EVA; "New construction options" no longer announced erratically
+  Bugs; "New construction options" (NCO) no longer announced erratically
+
+
+New Construction Options
+
+
+One cause of the NCO bug (where the EVA will announce "new construction options"
+when, in fact, there aren't any) was the game's failure to check if the player
+had the appropriate factory type to build the unit concerned (e.g. a
+VehicleType factory for VehicleTypes). Such a check will now
+take place, thus removing this cause of the NCO bug.
+
+ 0.1
+
+Another cause of the NCO bug is when a house is not listed as a
+buildable building's owner. Ares's prerequisite system does not check
+for that, thereby eliminating this type of bug.
+
+Owners still affect AI base planning.
+
+ 0.2

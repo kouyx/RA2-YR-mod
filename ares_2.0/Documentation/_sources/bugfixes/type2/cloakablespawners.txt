@@ -1,0 +1,15 @@
+ Cloak; Spawner units can be cloakable
+
+
+Cloakable Spawners
+
+
+The moment a Spawner=yes unit cloaked, all spawns would be destroyed and
+had to respawn, because the spawns did not differentiate between a carrier going
+out of sight or being destroyed.
+
+Ares changes this and it is now possible to have cloakable Aircraft
+Carriers or Destroyers. Spawned aircraft will not crash when the spawning unit
+cloaks.
+
+ 0.6

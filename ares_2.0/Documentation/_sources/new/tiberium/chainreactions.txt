@@ -1,0 +1,76 @@
+
+  Tiberium; Chain Reactions
+  Universe; Tiberium chain reactions
+
+Chain Reactions
+
+
+There are two distinct logics that have their part in the tiberium chain
+reactions as seen in Tiberian Sun. Chain Reactions were not supported
+in Yuri's Revenge and have now been restored, and both have been made
+more customizable.
+
+ 0.5
+
+
+Tiberium Explosion
+
+
+Tiberium Explosion occurs if an animation with TiberiumChainReaction=yes
+hits a cell containing tiberium. There is a chance that debris is spawned. For a
+more detailed description, refer to TiberiumChainReaction on ModEnc
+.
+
+The warhead, the damage delivered and the chance to spawn debris can be
+customized for each of the Tiberiums.
+
+
+Chain Reaction
+
+
+Overlay can be made to trigger a chain reaction when damaged. An animation is
+spawned on the neighbor cells that can propagate the effect. For a more detailed
+description, refer to ChainReaction on ModEnc
+.
+
+The logic has been restored and new works as in Tiberian Sun. The
+warhead can be customized for each of the Tiberiums.
+
+
+Customizable Settings
+
+
+[Tiberium]ExplosionWarhead=warhead
+  The warhead used to deliver the damage of the chain reaction effect, as well
+  as the damage of the Tiberium Explosion effect. Defaults to
+  [General]►C4Warhead.
+  
+   \ Tiberian Sun's C4Warhead was HE, which had
+    Spread set. Red Alert 2 uses Super, which does
+    not.
+
+[Tiberium]ExplosionDamage=integer
+  The damage an animation with TiberiumChainReaction=yes deals to the
+  cell it impacts at. Defaults to [CombatDamage]►TiberiumExplosionDamage.
+
+[Tiberium]Debris.Chance=integer - percent
+  The chance a cell containing this tiberium type hit by an animation with
+  TiberiumChainReaction=yes will spawn one of its Debris. Defaults
+  to 33.
+
+
+ Overlay; Explodes=yes and minimum damage
+
+Minimum Damage to Trigger Explodes=yes
+
+
+Overlay with Explodes=yes detonates when taking even the slightest amount
+of damage. With Ares you can raise this limit so overlay only explodes
+if the damage is higher than a certain value.
+
+[General]OverlayExplodeThreshold=integer
+  Only if the damage to a cell is higher than this does an overlay with
+  Explodes=yes explode. Below this value, the overlay stays intact.
+  Defaults to 0.
+
+ 0.5

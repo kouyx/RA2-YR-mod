@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>String Table Enhancements &mdash; Ares 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/customstyle.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Ares 2.0 documentation" href="../../index.html" />
+    <link rel="up" title="Miscellaneous Modding Enhancements" href="index.html" />
+    <link rel="next" title="List Lengths" href="listlengths.html" />
+    <link rel="prev" title="[#include]" href="include.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="listlengths.html" title="List Lengths"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="include.html" title="[#include]"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Ares 2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >New &amp; Enhanced In-Game Logic</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Miscellaneous Modding Enhancements</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">String Table Enhancements</a><ul>
+<li><a class="reference internal" href="#more-string-tables">More String Tables</a></li>
+<li><a class="reference internal" href="#nostr-prefix">NOSTR Prefix</a></li>
+<li><a class="reference internal" href="#maximum-number-of-strings">Maximum Number of Strings</a></li>
+<li><a class="reference internal" href="#language-neutral-string-tables">Language-Neutral String Tables</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="include.html"
+                        title="previous chapter"><span><span class="type">[#include]</span></span></a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="listlengths.html"
+                        title="next chapter">List Lengths</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="string-table-enhancements">
+<h1>String Table Enhancements<a class="headerlink" href="#string-table-enhancements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="more-string-tables">
+<h2>More String Tables<a class="headerlink" href="#more-string-tables" title="Permalink to this headline">¶</a></h2>
+<p>In addition to <code class="file docutils literal"><span class="pre">ra2md.csf</span></code>, the game will now load &#8211;
+<code class="file docutils literal"><span class="pre">stringtable00.csf</span></code> through <code class="file docutils literal"><span class="pre">stringtable99.csf</span></code>. These string tables
+will add to or replace strings that were included in previously loaded string
+tables.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.1.</span></p>
+</div>
+</div>
+<div class="section" id="nostr-prefix">
+<span id="index-0"></span><h2>NOSTR Prefix<a class="headerlink" href="#nostr-prefix" title="Permalink to this headline">¶</a></h2>
+<p>It is also now possible to name objects in INI code (without having to create a
+string table entry) by using the <cite>NOSTR:</cite> prefix. For example,
+<span><code class="docutils literal"><span class="pre">UIName=NOSTR:Sonar</span> <span class="pre">Pulse</span></code></span> will be displayed as &#8220;Sonar Pulse&#8221;. However, the
+string (including the prefix) cannot exceed 31 characters.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.1.</span></p>
+</div>
+</div>
+<div class="section" id="maximum-number-of-strings">
+<span id="index-1"></span><h2>Maximum Number of Strings<a class="headerlink" href="#maximum-number-of-strings" title="Permalink to this headline">¶</a></h2>
+<p>The maximum number of strings in the string table has been increased to 20000.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.2.</span></p>
+</div>
+</div>
+<div class="section" id="language-neutral-string-tables">
+<span id="index-2"></span><h2>Language-Neutral String Tables<a class="headerlink" href="#language-neutral-string-tables" title="Permalink to this headline">¶</a></h2>
+<p>String tables can now be marked as &#8216;language neutral&#8217; by setting the language
+field in the header to <cite>-1</cite> (or <cite>FF FF FF FF</cite> in hexadecimal).
+Files that are language neutral will always load, no matter what language the
+main string table <code class="file docutils literal"><span class="pre">ra2md.csf</span></code> is.</p>
+<p>If your string table editor does not support setting the language manually, use
+a hex editor to set the four bytes starting at offset 0x14 directly.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.A.</span></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="listlengths.html" title="List Lengths"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="include.html" title="[#include]"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Ares 2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >New &amp; Enhanced In-Game Logic</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Miscellaneous Modding Enhancements</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, The Ares Contributors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

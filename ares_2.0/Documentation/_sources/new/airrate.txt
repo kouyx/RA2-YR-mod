@@ -1,0 +1,20 @@
+
+  Vehicles; Always play HVA animation when unit in air
+  Art; Always play HVA animation when unit in air
+
+AirRate
+
+
+When a unit is moving, WalkRate is used to control the unit's animation,
+when it is idle, IdleRate is used. A unit counted as idle if it wasn't
+moving, which also included taking off, landing and hovering, and thus
+helicopter style units would not play their rotor animation even if they clearly
+were in air. Ares adds a new tag for this situation.
+
+[TechnoType]AirRate=integer - number of frames
+  If higher than 0, defines after how many frames the unit's animation
+  is to be advanced to the next frame when the unit is in air. AirRate
+  takes precedence over WalkRate and IdleRate. 0 disables
+  AirRate. Defaults to 0.
+
+ 0.6

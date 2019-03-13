@@ -1,0 +1,21 @@
+
+  Powered Unit; Multiple powered units like the Robot Tank
+  TechnoTypes; Alternative to PowersUnit
+
+New Powered Unit Logic
+
+
+In original Yuri's Revenge, the PowersUnit= tag logic dictated
+that there could only be one powered UnitType, and one building
+providing power, per side. Ares extends this with PoweredBy=,
+which allows each side to have multiple buildings power multiple units.
+
+[UnitType]PoweredBy=list of BuildingType
+  Allows multiple powered units to exist, as well as allowing multiple buildings
+  to provide power. Defaults to none.
+
+ \ PoweredBy= can use multiple buildings, but be advised, using
+  a comma to separate multiple buildings will be parsed as "or" rather than
+  "and". There is no "and" capacity.
+
+ 0.2

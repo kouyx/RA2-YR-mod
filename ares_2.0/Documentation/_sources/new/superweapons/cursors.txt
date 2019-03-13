@@ -1,0 +1,23 @@
+
+  Super Weapons; Custom cursors
+  Cursors; Super weapon cursors
+
+Cursors
+
+
+Ares allows you to specify custom mouse cursors for the super weapon,
+using the following flags. See Mouse Cursors on how
+to define them.
+
+[SuperWeapon]Cursor=mouse cursor
+  Cursor to use when it is ok to fire the super weapon at the given location.
+  Defaults to Attack, if not stated otherwise.
+
+[SuperWeapon]NoCursor=mouse cursor
+  Cursor to use when the super weapon is not allowed to fire at the given
+  location. This may be because the selected target is not of the required type
+  or its owner is not allowed, or the target is out of range, or there is no
+  designator nearby. Defaults to Disallowed, if not stated otherwise.
+
+ 0.1
+ 0.D

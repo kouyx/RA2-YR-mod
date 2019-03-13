@@ -1,0 +1,12 @@
+
+  Weapons; Radiation color was hardcoded for snow theater
+  Theaters; Radiation color was hardcoded for snow theater
+
+
+Radiation Color and Snow Theater
+
+
+In Yuri's Revenge the red and blue components of the radiation color was
+hardcoded for the snow theater. This hardcoding has been removed.
+
+ 0.3

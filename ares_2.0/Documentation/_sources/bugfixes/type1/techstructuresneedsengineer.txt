@@ -1,0 +1,16 @@
+
+  Tech Structures; NeedsEngineer is honored when playing animations
+  Glitches; Tech structures start to play active animations when damaged
+
+
+Tech Structures and Animations
+
+
+NeedsEngineer controls whether a tech building is offline until it is
+captured by an engineer. Until then, it should not play any active animations,
+yet when a building with NeedsEngineer=yes was damaged into yellow health
+and switched to the damaged graphics, the animations started to play as if it
+had been captured. This did not affect the functionality, though. With
+Ares the animations will not start to play in this case.
+
+ 0.6

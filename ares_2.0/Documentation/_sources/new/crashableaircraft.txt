@@ -1,0 +1,37 @@
+Crashing
+
+
+ Aircraft; Non-Crashable aircraft
+
+Crashable and Aircraft
+
+
+Any AircraftType being destroyed in air would explode and crash, causing
+damage on the ground. A tag, Crashable, exists, but it only works for the
+other TechnoTypes, so aircraft cannot be made to not crash. Ares
+adds support for Crashable=no and aircraft.
+
+[AircraftType]Crashable=boolean
+  Whether the aircraft will explode and fall down crashing into the ground when
+  destroyed. Otherwise the aircraft will explode in mid-air and disappear.
+  Defaults to yes.
+
+ 0.4
+
+
+ Aircraft; Spinning while crashing
+
+Spinning
+
+
+Aircraft that is going to crash starts to spin uncontrollably. For larger planes
+this can look silly and Ares adds an option for this to turn it off.
+
+[AircraftType]CrashSpin=boolean
+  Whether the aircraft should spin when crashing, opposed to gliding down to the
+  ground. Defaults to yes.
+
+   This setting only works for aircraft. JumpJet=yes
+    VehicleType\ s do not support it.
+
+ 0.6

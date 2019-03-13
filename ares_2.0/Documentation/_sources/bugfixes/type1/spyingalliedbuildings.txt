@@ -1,0 +1,15 @@
+
+  Spies; Bonuses won't be granted when infiltrating allied buildings
+  Exploits; Infiltrating allied buildings with a spy grants bonuses
+  Bugs; Spies could infiltrate allied buildings and grant bonuses
+
+
+Spying on Allied Buildings
+
+
+In Yuri's Revenge players are not supposed to infiltrate own or allied
+buildings, yet it was possible to order a spy to do so. When a spy entered a
+building that was owned by a player allied to the spy owner, the spy effects
+would still apply. This could be exploited easily. Ares prevents this.
+
+ 0.4

@@ -1,0 +1,17 @@
+
+  Terrain; Destroyable cliffs can be destroyed by non-particle weapons
+  Universe; Destroyable cliffs work again
+
+
+Destroyable Cliffs
+
+
+In Tiberian Sun, destroyable cliffs could be made to collapse with any
+weapon. In Yuri's Revenge, destroyable cliffs are still targetable, but
+only particle weapons like the rail gun or sonic weapons were able to damage
+cliffs and make them collapse into ramps.
+
+Ares fixes this, so any weapon can make destroyable cliffs collapse.
+[CombatDamage]►CollapseChance= is respected.
+
+ 0.2

@@ -1,0 +1,8 @@
+
+ObjectClass::GetCell
+
+
+A commonly used function, ``ObjectClass::GetCell``, performed the same tasks
+twice.
+
+ 0.1

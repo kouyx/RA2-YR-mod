@@ -1,0 +1,51 @@
+String Table Enhancements
+
+
+More String Tables
+
+
+In addition to ra2md.csf, the game will now load --
+stringtable00.csf through stringtable99.csf. These string tables
+will add to or replace strings that were included in previously loaded string
+tables.
+
+ 0.1
+
+
+ String Tables; NOSTR prefix
+
+NOSTR Prefix
+
+
+It is also now possible to name objects in INI code (without having to create a
+string table entry) by using the NOSTR: prefix. For example,
+UIName=NOSTR:Sonar Pulse will be displayed as "Sonar Pulse". However, the
+string (including the prefix) cannot exceed 31 characters.
+
+ 0.1
+
+
+ String Tables; Maximum number of strings increased.
+
+Maximum Number of Strings
+
+
+The maximum number of strings in the string table has been increased to 20000.
+
+ 0.2
+
+
+ String Tables; Language-neutral string tables
+
+Language-Neutral String Tables
+
+
+String tables can now be marked as 'language neutral' by setting the language
+field in the header to -1 (or FF FF FF FF in hexadecimal).
+Files that are language neutral will always load, no matter what language the
+main string table ra2md.csf is.
+
+If your string table editor does not support setting the language manually, use
+a hex editor to set the four bytes starting at offset 0x14 directly.
+
+ 0.A

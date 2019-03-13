@@ -1,0 +1,13 @@
+
+  Shipyards; Units being repaired are no longer immune to damage
+  Bugs; Ships being repaired by a Shipyard are immune to damage
+
+
+Units Being Repaired on Shipyards are Immune to Damage
+
+
+In Yuri's Revenge, a unit being repaired by a shipyard would not take
+damage from conventional weapons. As long as it was repaired, the unit was
+immune. Ares fixes this.
+
+ 0.6
