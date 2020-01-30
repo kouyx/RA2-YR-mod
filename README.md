@@ -148,12 +148,16 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 ### 间谍渗透逻辑
 
 - 窥视生产/建造信息 (渗透后选中)
+  - 当前资金: `[GAREFN]`,`[NAREFN]`,`[YAREFN]`
   - 建筑建造: `[GACNST]`,`[NACNST]`,`[YACNST]`;
   - 步兵动员: `[GAPILE]`,`[NAHAND]`,`[YABRCK]`;
   - 载具/飞机生产: `[GAWEAP]`,`[NAWEAP]`,`[YAWEAP]`,`[GAAIRC]`,`[AMRADR]`;
   - 显示电力: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`;
-- 偷钱
+- 窃取资金
   - 定额窃取: `[NAINDP]`,`[NACLON]`,`[GAOREP]`;
+- 渗透后训练单位获得老兵等级
+  - 海军渗透：`[GACNST]`,`[NACNST]`,`[YACNST]`
+  - 空军渗透: `[GAAIRC]`,`[AMRADR]`,`[NARADR]`,`[NAPSIS]`
 - 获得雷达视野: `[GASPYSAT]`
 - 断电时间分化: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`
 - 超武重置 + 获得一发
@@ -192,7 +196,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
   1. `CDEST`       0.5/0.5;
   1. `NIMITZ`      0.6/0.6;
   1. `CARRIER`     0.5/0.5;
-- 分享空袭经验 (Ares 0.2): BORIS` (0.5);
+- 分享空袭经验 (Ares 0.2): `BORIS` (0.2);
 - 满级后分享驻兵经验 (Ares 0.2):
   1. `FV`                 0.6;
   1. `TTNK`               0.8;

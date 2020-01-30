@@ -217,7 +217,7 @@ Bounty=yes  ; Ares 0.C
 [BORIS]
 IFVMode=12 ;4
 Experience.FromAirstrike=yes ; Ares 0.2
-Experience.AirstrikeModifier=0.5 ; Ares 0.2
+Experience.AirstrikeModifier=0.2 ; Ares 0.2
 Bounty=yes  ; Ares 0.C
 
 [YURI] ;Bender of spoons!
@@ -475,20 +475,27 @@ SpyEffect.Custom=yes  ; Ares 0.1
 SpyEffect.RevealProduction=yes  ; Ares 0.B
 Cursor.Spy=SpyTech  ; Ares 0.D
 Cursor.Move=UnDeploy  ; Ares 0.D
+SpyEffect.NavalVeterancy=yes  ; Ares 2.0
 
 [GAAIRC]
 Cursor.Spy=Sabotage  ; Ares 0.D
 SpyEffect.Custom=yes  ; Ares 0.1
 SpyEffect.ResetRadar=yes  ; Ares 0.1
 SpyEffect.RevealProduction=yes  ; Ares 0.B
+SpyEffect.AircraftVeterancy=yes  ; Ares 2.0
 
 [GAPILE],[GAWEAP],[NAHAND],[NAWEAP],[YABRCK],[YAWEAP]
 Cursor.Move=Rally  ; Ares 0.D
 Cursor.NoMove=NoRally  ; Ares 0.D
 Cursor.Spy=SpyTech  ; Ares 0.D
 SpyEffect.Custom=yes  ; Ares 0.1
-SpyEffect.UnitVeterancy=yes  ; Ares 0.1
 SpyEffect.RevealProduction=yes  ; Ares 0.B
+
+[GAPILE],[NAHAND],[YABRCK]
+SpyEffect.InfantryVeterancy=yes  ; Ares 2.0
+
+[GAWEAP],[NAWEAP],[YAWEAP]
+SpyEffect.VehicleVeterancy=yes  ; Ares 2.0
 
 [GAROBO]
 Spyable=yes
@@ -502,6 +509,7 @@ SpyEffect.Custom=yes  ; Ares 0.1
 SpyEffect.ResetRadar=yes  ; Ares 0.1
 SpyEffect.ResetSuperweapons=yes  ; Ares 0.B
 SpyEffect.SuperWeapon= ; Ares 0.B (SuperWeaponType)
+SpyEffect.AircraftVeterancy=yes  ; Ares 2.0
 
 [GASPYSAT]
 Spyable=yes
@@ -536,12 +544,14 @@ SpyEffect.Custom=yes  ; Ares 0.1
 SpyEffect.PowerOutageDuration=  ; Ares 0.1 (1000) see [General]►SpyPowerBlackout
 SpyEffect.RevealProduction=yes  ; Ares 0.B
 
-[GAREFN],[NAREFN],
+[GAREFN],[NAREFN],[YAREFN]
 Cursor.Spy=StealCash  ; Ares 0.D
+SpyEffect.Custom=yes  ; Ares 0.1
+SpyEffect.RevealProduction=yes  ; Ares 0.B
+SpyEffect.StolenMoneyPercentage=0.2  ; Ares 0.B
 
 [YAREFN]
 Cursor.Move=UnDeploy  ; Ares 0.D
-Cursor.Spy=StealCash  ; Ares 0.D
 GroupAs=SMIN  ; Ares 0.5 (string)
 
 [GADEPT],[GAYARD],[NADEPT],[NAYARD],[YAYARD]
