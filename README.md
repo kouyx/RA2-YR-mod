@@ -24,9 +24,9 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 ## Ares Advice
 
 - rulesmd.ini
-  > 将 `APOCEXP` 添加到 `[Animations]` 列表;
+  > 将 `APOCEXP` 添加到 `Animations` 列表;
 - artmd.ini
-  > 新增 `[TELE]` 的 `SecondaryFireFLH`;
+  > 新增 `TELE` 的 `SecondaryFireFLH`;
 - bombcurs.shp
   > 删除最后一帧;
 
@@ -69,16 +69,16 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 扫描半径效果 (裂缝产生器):
 
-1. `[GAPILL]`
-1. `[NASAM]`
-1. `[ATESLA]`
-1. `[GTGCAN]`
-1. `[NALASR]`
-1. `[NAFLAK]`
-1. `[TESLA]`
-1. `[YAGGUN]`
-1. `[YAPSYT]`
-1. `[CAOUTP]`
+1. `GAPILL`
+1. `NASAM`
+1. `ATESLA`
+1. `GTGCAN`
+1. `NALASR`
+1. `NAFLAK`
+1. `TESLA`
+1. `YAGGUN`
+1. `YAPSYT`
+1. `CAOUTP`
 
 ### 游戏中光标
 
@@ -148,23 +148,23 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 ### 间谍渗透逻辑
 
 - 窥视生产/建造信息 (渗透后选中)
-  - 当前资金: `[GAREFN]`,`[NAREFN]`,`[YAREFN]`
-  - 建筑建造: `[GACNST]`,`[NACNST]`,`[YACNST]`;
-  - 步兵动员: `[GAPILE]`,`[NAHAND]`,`[YABRCK]`;
-  - 载具/飞机生产: `[GAWEAP]`,`[NAWEAP]`,`[YAWEAP]`,`[GAAIRC]`,`[AMRADR]`;
-  - 显示电力: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`;
+  - 当前资金: `GAREFN`,`NAREFN`,`YAREFN`
+  - 建筑建造: `GACNST`,`NACNST`,`YACNST`;
+  - 步兵动员: `GAPILE`,`NAHAND`,`YABRCK`;
+  - 载具/飞机生产: `GAWEAP`,`NAWEAP`,`YAWEAP`,`GAAIRC`,`AMRADR`;
+  - 显示电力: `GAPOWR`,`NAPOWR`,`NANRCT`,`YAPOWR`;
 - 窃取资金
-  - 定额窃取: `[NAINDP]`,`[NACLON]`,`[GAOREP]`;
+  - 定额窃取: `NAINDP`,`NACLON`,`GAOREP`;
 - 渗透后训练单位获得老兵等级
-  - 海军渗透：`[GACNST]`,`[NACNST]`,`[YACNST]`
-  - 空军渗透: `[GAAIRC]`,`[AMRADR]`,`[NARADR]`,`[NAPSIS]`
-- 获得雷达视野: `[GASPYSAT]`
-- 断电时间分化: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`
+  - 海军渗透：`GACNST`,`NACNST`,`YACNST`
+  - 空军渗透: `GAAIRC`,`AMRADR`,`NARADR`,`NAPSIS`
+- 获得雷达视野: `GASPYSAT`
+- 断电时间分化: `GAPOWR`,`NAPOWR`,`NANRCT`,`YAPOWR`
 - 超武重置 + 获得一发
-  - 第二超武: `[GACSPH]`,`[NAIRON]`,`[YAGNTC]`
-  - 雷达超武: `[NARADR]`,`[NAPSIS]`
-  - 伞兵超武: `[AMRADR]`,`[CAAIRP]`
-- 建筑爆破: `[GAROBO]`
+  - 第二超武: `GACSPH`,`NAIRON`,`YAGNTC`
+  - 雷达超武: `NARADR`,`NAPSIS`
+  - 伞兵超武: `AMRADR`,`CAAIRP`
+- 建筑爆破: `GAROBO`
 
 ## Units
 
@@ -185,28 +185,28 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 - 单位可升级:
   1. `IVAN`;
-  1. `CIVAN`;
-  1. `YURI`;
-  1. `YURIPR`;
-  1. `MIND`;
-  1. `CARRIER` (未定义精英武器);
-  1. `NIMITZ` (未定义精英武器);
+  2. `CIVAN`;
+  3. `YURI`;
+  4. `YURIPR`;
+  5. `MIND`;
+  6. `CARRIER` (未定义精英武器);
+  7. `NIMITZ` (未定义精英武器);
 - 分享子机经验 (Ares 0.2, spawn/spawner):
   1. `DEST`        0.5/0.5;
-  1. `CDEST`       0.5/0.5;
-  1. `NIMITZ`      0.6/0.6;
-  1. `CARRIER`     0.5/0.5;
+  2. `CDEST`       0.5/0.5;
+  3. `CARRIER`     0.5/0.5;
+  4. `NIMITZ`      0.6/0.6;
 - 分享空袭经验 (Ares 0.2): `BORIS` (0.2);
 - 满级后分享驻兵经验 (Ares 0.2):
   1. `FV`                 0.6;
-  1. `TTNK`               0.8;
-  1. `TNKD`               0.8;
-  1. `BFRT`               0.6;
+  2. `BFRT`               0.6;
+  3. `TNKD`               0.8;
+  4. `TTNK`               0.8;
 - 分享心控经验 (Ares 0.2, controller/victim):
-  1. `YURIG`       0.3/0.7;
   1. `YURI`        0.1/0.9;
-  1. `YURIPR`      0.4/0.6;
-  1. `MIND`        0.2/0.8;
+  2. `MIND`        0.2/0.8;
+  3. `YURIG`       0.3/0.7;
+  4. `YURIPR`      0.4/0.6;
 - 晋升获得能力:
   1. 舰载反潜机:
      - 老兵: 自愈, 火力;
@@ -217,6 +217,15 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 - 载具可驻兵攻击:
   1. `TTNK` (1);
   1. `TNKD` (1);
+- 赏金猎人: `TANY`, `BORIS` 消灭以下单位时将获得赏金：
+  1. `TANY`
+  2. `BORIS`
+  3. `YURIG`
+  4. `YURIPR`
+  5. `CMIN`
+  6. `HARV`
+  7. `SMIN`
+  8. `YAREFN`
 
 ## Weapon
 

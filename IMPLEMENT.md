@@ -213,12 +213,18 @@ Cursor.NoMove=NoTote  ; Ares 0.D
 
 [TANY]
 Bounty=yes  ; Ares 0.C
+Bounty.RookieValue=700  ; Ares 0.C
+Bounty.VeteranValue=1000  ; Ares 0.C
+Bounty.EliteValue=1500  ; Ares 0.C
 
 [BORIS]
 IFVMode=12 ;4
 Experience.FromAirstrike=yes ; Ares 0.2
 Experience.AirstrikeModifier=0.2 ; Ares 0.2
 Bounty=yes  ; Ares 0.C
+Bounty.RookieValue=700  ; Ares 0.C
+Bounty.VeteranValue=1000  ; Ares 0.C
+Bounty.EliteValue=1500  ; Ares 0.C
 
 [YURI] ;Bender of spoons!
 Trainable=yes  ;no
@@ -248,7 +254,7 @@ Speed=6
 Owner=Russians,Confederation,Africans,Arabs
 AllowedToStartInMultiplayer=no
 Cost=2000
-Soylent=250
+Soylent=1000 ;250
 Points=50
 IsSelectableCombatant=yes
 VoiceSelect=YuriSelect
@@ -277,6 +283,9 @@ IFVMode=8
 Experience.MindControlSelfModifier=0.3  ; Ares 0.2
 Experience.MindControlVictimModifier=0.7  ; Ares 0.2
 ursor.Deploy=PsiWave  ; Ares 0.D
+Bounty.RookieValue=1000  ; Ares 0.C
+Bounty.VeteranValue=1500  ; Ares 0.C
+Bounty.EliteValue=2000  ; Ares 0.C
 
 [YURIPR]
 ImmuneToPsionicWeapons=yes ;gs Patch
@@ -285,6 +294,9 @@ ElitePrimary=SuperMindControlE
 Experience.MindControlSelfModifier=0.4  ; Ares 0.2
 Experience.MindControlVictimModifier=0.6  ; Ares 0.2
 Cursor.Deploy=PsiWave  ; Ares 0.D
+Bounty.RookieValue=700  ; Ares 0.C
+Bounty.VeteranValue=1000  ; Ares 0.C
+Bounty.EliteValue=1500  ; Ares 0.C
 ```
 
 ### Vehicle
@@ -442,6 +454,19 @@ ElitePrimary=BlackHawkCannonE
 Cursor.Move=Tote  ; Ares 0.D
 Cursor.NoMove=NoTote  ; Ares 0.D
 
+[CMIN]
+Bounty.Value=1000  ; Ares 0.C
+
+[HARV]
+Bounty.RookieValue=700  ; Ares 0.C
+Bounty.VeteranValue=1000  ; Ares 0.C
+Bounty.EliteValue=1400  ; Ares 0.C
+
+[SMIN]
+Bounty.RookieValue=700  ; Ares 0.C
+Bounty.VeteranValue=1000  ; Ares 0.C
+Bounty.EliteValue=1500  ; Ares 0.C
+
 [CAOS]
 Cursor.Deploy=DeployMove  ; Ares 0.D
 
@@ -553,6 +578,9 @@ SpyEffect.StolenMoneyPercentage=0.2  ; Ares 0.B
 [YAREFN]
 Cursor.Move=UnDeploy  ; Ares 0.D
 GroupAs=SMIN  ; Ares 0.5 (string)
+Bounty.RookieValue=700  ; Ares 0.C
+Bounty.VeteranValue=1000  ; Ares 0.C
+Bounty.EliteValue=1500  ; Ares 0.C
 
 [GADEPT],[GAYARD],[NADEPT],[NAYARD],[YAYARD]
 Cursor.Enter=RepairDepot  ; Ares 0.D
