@@ -1,1 +1,1 @@
-Syringe "gamemd.exe" %*
+Syringe "gamemd.exe" %* -SPEEDCONTROL
