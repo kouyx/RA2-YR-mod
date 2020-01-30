@@ -2,24 +2,24 @@
 
 Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the following aspects.
 
-- [Ares 建议](#ares-advice)
-- [全局逻辑](#global)
+- [Ares Advice](#ares-advice)
+- [Global](#global)
 - [UI](#ui)
-  - [单位图标](#单位图标)
-  - [防卫建筑射程显示](#防卫建筑射程显示)
-  - [游戏中光标](#游戏中光标)
-- [科技](#technology)
-- [建筑](#building)
-  - [学院建筑逻辑](#学院建筑逻辑)
-  - [间谍渗透逻辑](#间谍渗透逻辑)
-- [单位](#units)
-  - [混编队伍](#混编队伍)
-  - [新增单位](#新增单位)
-  - [单位晋升](#单位晋升)
-  - [调整单位](#调整单位)
-- [武器](#weapon)
-  - [精英武器](#精英武器)
-  - [新增武器](#新增武器)
+  - [单位图标](#%e5%8d%95%e4%bd%8d%e5%9b%be%e6%a0%87)
+  - [防卫建筑射程显示](#%e9%98%b2%e5%8d%ab%e5%bb%ba%e7%ad%91%e5%b0%84%e7%a8%8b%e6%98%be%e7%a4%ba)
+  - [游戏中光标](#%e6%b8%b8%e6%88%8f%e4%b8%ad%e5%85%89%e6%a0%87)
+- [Technology](#technology)
+- [Building](#building)
+  - [学院建筑逻辑](#%e5%ad%a6%e9%99%a2%e5%bb%ba%e7%ad%91%e9%80%bb%e8%be%91)
+  - [间谍渗透逻辑](#%e9%97%b4%e8%b0%8d%e6%b8%97%e9%80%8f%e9%80%bb%e8%be%91)
+- [Units](#units)
+  - [混编队伍](#%e6%b7%b7%e7%bc%96%e9%98%9f%e4%bc%8d)
+  - [新增单位](#%e6%96%b0%e5%a2%9e%e5%8d%95%e4%bd%8d)
+  - [单位晋升](#%e5%8d%95%e4%bd%8d%e6%99%8b%e5%8d%87)
+  - [调整单位](#%e8%b0%83%e6%95%b4%e5%8d%95%e4%bd%8d)
+- [Weapon](#weapon)
+  - [精英武器加强](#%e7%b2%be%e8%8b%b1%e6%ad%a6%e5%99%a8%e5%8a%a0%e5%bc%ba)
+  - [新增武器](#%e6%96%b0%e5%a2%9e%e6%ad%a6%e5%99%a8)
 
 ## Ares Advice
 
@@ -44,97 +44,97 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 ### 单位图标
 
 - 新增图标(带相应升级图标):
-  - `HIND` (YR)
-  - `NIMITZ` (网图)
-  - `HOWI` (YR)
-  - `VLAD` (无畏镜像)
+  1. `HIND` (YR)
+  1. `NIMITZ` (网图)
+  1. `HOWI` (YR)
+  1. `VLAD` (无畏镜像)
 - 恢复升级图标:
-  - `IVAN` (疯狂伊文)
-  - `CIVAN` (超时空伊文)
+  1. `IVAN` (疯狂伊文)
+  1. `CIVAN` (超时空伊文)
 - 新增升级图标(未使用):
-  - `AEGIS`
-  - `BEAG`
-  - `BPLN`
-  - `BSUB`
-  - `CARRIER`
-  - `DEST`
-  - `DLPH`
-  - `DRED`
-  - `HYD`
-  - `ORCA`
-  - `SQD`
-  - `SUB`
+  1. `AEGIS`
+  1. `BEAG`
+  1. `BPLN`
+  1. `BSUB`
+  1. `CARRIER`
+  1. `DEST`
+  1. `DLPH`
+  1. `DRED`
+  1. `HYD`
+  1. `ORCA`
+  1. `SQD`
+  1. `SUB`
 
 ### 防卫建筑射程显示
 
 扫描半径效果 (裂缝产生器):
 
-- `[GAPILL]`
-- `[NASAM]`
-- `[ATESLA]`
-- `[GTGCAN]`
-- `[NALASR]`
-- `[NAFLAK]`
-- `[TESLA]`
-- `[YAGGUN]`
-- `[YAPSYT]`
-- `[CAOUTP]`
+1. `[GAPILL]`
+1. `[NASAM]`
+1. `[ATESLA]`
+1. `[GTGCAN]`
+1. `[NALASR]`
+1. `[NAFLAK]`
+1. `[TESLA]`
+1. `[YAGGUN]`
+1. `[YAPSYT]`
+1. `[CAOUTP]`
 
 ### 游戏中光标
 
 - 移植自 TS:
-  - 间谍偷钱 (原卖建筑);
-  - 间谍渗透妨碍;
-  - 切换断电;
-  - 单位返厂维修;
+  1. 间谍偷钱 (原卖建筑);
+  1. 间谍渗透妨碍;
+  1. 切换断电;
+  1. 单位返厂维修;
 - 新增光标:
-  - 反部署 (如建造厂->MCV);
-  - 建筑集合点;
-  - 尤里脑波武器;
-  - 心灵控制;
-  - 无武器单位移动;
-  - 移动部署 (如神经突击车);
-  - 大兵部署;
-  - 辐射工兵部署;
-  - 间谍伪装;
-  - 间谍偷科技;
-  - 间谍断电;
-  - 卖单位 (部队回收厂);
-  - 步兵吸收 (生化炉);
+  1. 反部署 (如建造厂->MCV);
+  1. 建筑集合点;
+  1. 尤里脑波武器;
+  1. 心灵控制;
+  1. 无武器单位移动;
+  1. 移动部署 (如神经突击车);
+  1. 大兵部署;
+  1. 辐射工兵部署;
+  1. 间谍伪装;
+  1. 间谍偷科技;
+  1. 间谍断电;
+  1. 卖单位 (部队回收厂);
+  1. 步兵吸收 (生化炉);
 - 更改光标:
-  - 自爆卡车射程外攻击 -> 核袭击;
+  1. 自爆卡车射程外攻击 -> 核袭击;
 
 ## Technology
 
 - 实验室可升级步兵至精英 (1人次):
-  - 三方作战实验室;
-  - 秘密科技实验室;
+  1. 三方作战实验室;
+  1. 秘密科技实验室;
 - 科技实验室视为高科建筑;
 - 实验室科技将在每次占领后重置;
 - 科技实验室调整科技:
-  - 步兵 (4):
-    - \+ `LUNR`,
-    - \+ `SPY`,
-    - \+ `SNIPE` (未验证),
-    - \+ `YURIG`
-    - \- `TERROR`;
-  - 飞机&战车&舰船 (8):
-    - \+ `BEAG`,
-    - \+ `BFRT` (未验证),
-    - \+ `HIND`,
-    - \+ `HOWI`,
-    - \+ `FV` (未验证),
-    - \+ `NIMITZ`
-    - \+ `SMIN` (未验证),
-    - \+ `VLAD`,
-    - \- `DTRUCK`;
-  - 建筑 (6):
-    - \+ `GAOREP` (未验证),
-    - \+ `GASPYSAT` (未验证),
-    - \+ `NACLON` (未验证),
-    - \+ `NAINDP` (未验证),
-    - \+ `NANRCT` (未验证);
-    - \+ `NAPSIS` (未验证),
+  - 步兵:
+    1. \+ `LUNR`,
+    2. \+ `SPY`,
+    3. \+ `SNIPE` (未验证),
+    4. \+ `YURIG`
+    5. \- `TERROR`;
+  - 飞机&战车&舰船:
+    1. \+ `BEAG`,
+    2. \+ `BFRT` (未验证),
+    3. \+ `HIND`,
+    4. \+ `HOWI`,
+    5. \+ `FV` (未验证),
+    6. \+ `NIMITZ`
+    7. \+ `SMIN` (未验证),
+    8. \+ `VLAD`,
+    9. \- `DTRUCK`;
+  - 建筑:
+    1. \+ `GAOREP` (未验证),
+    2. \+ `GASPYSAT` (未验证),
+    3. \+ `NACLON` (未验证),
+    4. \+ `NAINDP` (未验证),
+    5. \+ `NANRCT` (未验证);
+    6. \+ `NAPSIS` (未验证),
 
 ## Building
 
@@ -152,7 +152,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
   - 步兵动员: `[GAPILE]`,`[NAHAND]`,`[YABRCK]`;
   - 载具/飞机生产: `[GAWEAP]`,`[NAWEAP]`,`[YAWEAP]`,`[GAAIRC]`,`[AMRADR]`;
   - 显示电力: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`;
-- 偷钱 (比例窃取无效果)
+- 偷钱
   - 定额窃取: `[NAINDP]`,`[NACLON]`,`[GAOREP]`;
 - 获得雷达视野: `[GASPYSAT]`
 - 断电时间分化: `[GAPOWR]`,`[NAPOWR]`,`[NANRCT]`,`[YAPOWR]`
@@ -168,7 +168,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 - 部署后实际不同注册名的单位分组 (如 MCV 和奴矿);
   > `DeploysInto` and `UndeploysInto`
-- 实质同类单位合编 (如狗和工程师).
+- 实质同类单位合编 (如不同阵营的警犬和工程师).
 
 ### 新增单位
 
@@ -180,43 +180,43 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 ### 单位晋升
 
 - 单位可升级:
-  - `IVAN`;
-  - `CIVAN`;
-  - `YURI`;
-  - `YURIPR`;
-  - `MIND`;
-  - `CARRIER` (未定义精英武器);
-  - `NIMITZ` (未定义精英武器);
+  1. `IVAN`;
+  1. `CIVAN`;
+  1. `YURI`;
+  1. `YURIPR`;
+  1. `MIND`;
+  1. `CARRIER` (未定义精英武器);
+  1. `NIMITZ` (未定义精英武器);
 - 分享子机经验 (Ares 0.2, spawn/spawner):
-  - `DEST`        0.5/0.5;
-  - `CDEST`       0.5/0.5;
-  - `NIMITZ`      0.6/0.6;
-  - `CARRIER`     0.5/0.5;
+  1. `DEST`        0.5/0.5;
+  1. `CDEST`       0.5/0.5;
+  1. `NIMITZ`      0.6/0.6;
+  1. `CARRIER`     0.5/0.5;
 - 分享空袭经验 (Ares 0.2): BORIS` (0.5);
 - 满级后分享驻兵经验 (Ares 0.2):
-  - `FV`                 0.6;
-  - `TTNK`               0.8;
-  - `TNKD`               0.8;
-  - `BFRT`               0.6;
+  1. `FV`                 0.6;
+  1. `TTNK`               0.8;
+  1. `TNKD`               0.8;
+  1. `BFRT`               0.6;
 - 分享心控经验 (Ares 0.2, controller/victim):
-  - `YURIG`       0.3/0.7;
-  - `YURI`        0.1/0.9;
-  - `YURIPR`      0.4/0.6;
-  - `MIND`        0.2/0.8;
+  1. `YURIG`       0.3/0.7;
+  1. `YURI`        0.1/0.9;
+  1. `YURIPR`      0.4/0.6;
+  1. `MIND`        0.2/0.8;
 - 晋升获得能力:
-  - 舰载反潜机:
-    - 老兵: 自愈, 火力;
-    - 精英: 护甲, 火力;
+  1. 舰载反潜机:
+     - 老兵: 自愈, 火力;
+     - 精英: 护甲, 火力;
 
 ### 调整单位
 
 - 载具可驻兵攻击:
-  - `TTNK` (1);
-  - `TNKD` (1);
+  1. `TTNK` (1);
+  1. `TNKD` (1);
 
 ## Weapon
 
-### 精英武器
+### 精英武器加强
 
 - 尤里: 控制数 +2; 射程 +1; 攻击间隔 -20%;
 - 脑车: 控制数 +2; 射程 +1;
