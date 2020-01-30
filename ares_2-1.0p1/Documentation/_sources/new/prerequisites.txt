@@ -1,0 +1,219 @@
+Prerequisites
+
+
+The prerequisite system has been enhanced in several ways. New flags are
+described below, and an issue has been resolved with regard to upgrades as
+prerequisites (see
+...).
+
+ Prerequisites; Require the map to be a specific theater (desert/snow/lunar/etc)
+
+Require Theater
+
+
+[TechnoType]Prerequisite.RequiredTheaters=list of theater names
+  The map theaters in which the type is available. Defaults to all theaters. For
+  example, if only the SNOW theater were specified then the type would
+  only be available on arctic maps. This allows you to implement, for example,
+  the AlternateArcticArt functionality used on the Navy SEAL, but for all
+  types and all theaters (however this may present challenges for your AI). The
+  theater names are:
+
+    + TEMPERATE - most maps
+    + SNOW - arctic/snowy maps
+    + URBAN - some city maps
+    + DESERT - some desert maps, older maps use Temperate
+    + LUNAR - Soviet Mission 6
+    + NEWURBAN - most YR urban maps
+
+   \ PrerequisiteOverride does *not* override
+    Prerequisite.RequiredTheaters.
+
+ 0.1
+
+
+ Prerequisites; Make an object unavailable if a listed building is owned
+
+Negative Prerequisites
+
+
+[TechnoType]Prerequisite.Negative=list of BuildingTypes
+  The buildings that preclude construction of the type. If the player owns one
+  or more of the buildings on this list then the type will not be available.
+  Defaults to none.
+
+   \ PrerequisiteOverride does *not* override
+    Prerequisite.Negative.
+
+ 0.1
+
+
+ Prerequisites; Multiple separate prerequisite lists
+
+Multiple Alternative Prerequisites Lists
+
+
+Ares supports more than one prerequisite list. Each prerequisite list
+acts as an independent copy of the existing Prerequisite flag, and a
+minimum of one of the prerequisite lists must be satisfied for this type to
+become buildable.
+
+For example, if you set Prerequisite=GAPILE,GATECH and
+Prerequisite.List1=NAHAND,NATECH then the object will be available to any
+player who owns both an Allied Barracks and Battle Lab, or a Soviet Barracks and
+Battle Lab.
+
+ Either Prerequisite or Prerequisite.List0 has to be
+  specified, because these are only *additional* lists and the original
+  prerequisites list is still used. If this is ignored and the list is left
+  empty, the object will become always buildable, because an empty list is
+  always satisfied.
+
+[TechnoType]Prerequisite.Lists=integer
+  Specifies how many extra Prerequisite lists complimentary to the one default
+  list are available. Defaults to 0.
+
+[TechnoType]Prerequisite.List#=list of BuildingTypes (where # is the 1-based index of the prerequisite list, the maximum specified by Prerequisite.Lists)
+  The BuildingTypes required to satisfy this prerequisite list. Each
+  list is checked on its own, and if any list is satisfied, the Prerequisite
+  requirement is satisfied.
+  
+   \ Prerequisite.List0, if specified, overrides the existing
+    Prerequisite flag.
+
+ 0.1
+
+
+ Prerequisites; Require stolen tech 
+
+Require Stolen Technology
+
+
+[TechnoType]Prerequisite.StolenTechs=list of integers
+  The list of stealable technology types that must be stolen before this object
+  can be built. See Stolen Technology for more
+  information.
+
+ 0.1
+
+
+ Prerequisites; Require building initially built by certain country
+
+Require Factory Built By Country
+
+
+Satisfying prerequisites can be tied to the initial owner of a factory building.
+The initial owner is the player who owned it first: the player who built it, or
+the owner of buildings pre-placed on the map. For neutral structures, this would
+be the neutral country.
+
+[BuildingType]FactoryOwners.HasAllPlans=boolean
+  Whether this building provides plans for all factory types of the initial
+  owner. If yes, this building satisfies FactoryOwner requirements of
+  all object types. If the building is lost, the plans are lost. Defaults to
+  no.
+[BuildingType]FactoryOwners.Permanent=boolean
+  Whether a player capturing a building of this type would permanently gain all
+  plans of its initial owner. Supported on upgrades. Defaults to no.
+[TechnoType]FactoryOwners=list of houses
+  The list of countries whose factories can build this object. If empty, every
+  country is allowed to build this object. Otherwise, players need to own at
+  least one factory built by a country in this list or the plans of at least one
+  of these countries to produce it.
+[TechnoType]FactoryOwners.Forbidden=list of houses
+  The list of countries whose factories cannot build this object. Players owning
+  only factories built by countries in this list and only having plans of these
+  countries are prevented from producing it.
+
+ AI ignores FactoryOwners and FactoryOwners.Forbidden on
+  buildings, but not on units.
+
+ 0.6
+ 2.0
+
+
+Overview
+
+
+Below is a flowchart of the current prerequisite system. Blue sections
+are unchanged from the original system. Pink sections have been
+modified or added by Ares.
+
+ /images/prerequisite_system.svg
+  :alt: Flowchart of the current prerequisite system
+  :align: center
+
+
+ Prerequisites; Prerequisite groups
+
+Generic Prerequisite Groups
+
+
+You can now create custom generic prerequisite groups like the existing
+POWER (PrerequisitePower), FACTORY
+(PrerequisiteFactory), BARRACKS (PrerequisiteBarracks),
+RADAR (PrerequisiteRadar), TECH
+(PrerequisiteTech) and PROC (PrerequisiteProc and
+PrerequisiteProcAlternate) groups.
+
+To create new groups simply include the new [GenericPrerequisites]►
+section and add flags with the format GROUPNAME= (list of BuildingTypes).
+For example:
+
+
+::
+
+    [GenericPrerequisites]
+    NAVALYARD=GAYARD,NAYARD,YAYARD
+    etc...
+
+
+::
+
+    [TechnoType]
+    ...
+    Prerequisites=NAVALYARD
+    ...
+
+
+If you declare any of the existing groups (POWER/FACTORY/\
+BARRACKS/RADAR/TECH/PROC) then the
+BuildingTypes specified in the [GenericPrerequisites]► section will be
+used *instead* of those specified on the original PrerequisiteGroup flags
+(i.e. [GenericPrerequisites]►POWER=, if specified, overrides
+[General]►PrerequisitePower=). Take note that
+[GenericPrerequisites]►PROC= does not override or nullify
+[General]►PrerequisiteProcAlternate=.
+
+ 0.1
+
+
+
+  Prerequisites; Generalized alternate prerequisite groups
+  Prerequisites; Units as prerequisite
+
+Alternate Prerequisites with Non-Buildings
+
+
+To support the Slave Miner as prerequisite, Yuri's Revenge added the
+option to satisfy the PROC requirement by either owning the deployed
+building or alternatively the undeployed Slave Miner vehicle. This was done only
+for the refinery group by adding [General]►PrerequisiteProcAlternate=,
+which accepted one VehicleType.
+
+Ares adds alternate prerequisites support for all Generic Prerequisite
+Groups and expands this feature to support multiple items of arbitrary
+TechnoTypes.
+
+[General]PrerequisiteXAlternate=list of TechnoTypes
+  A list of types that alternatively satisfy this requirement if player does not
+  own a building from the [General]►PrerequisiteX= list.
+
+  Replace X with a key from [GenericPrerequisites]►, first
+  character upper case, all others lower case. For instance, NAVALYARD
+  from above would become Navalyard.
+
+   Using BuildingTypes is not supported and adding them here
+    might give unexpected results. For example, upgrades will not work.
+
+ 0.B

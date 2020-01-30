@@ -1,0 +1,74 @@
+Cloak Depending On State
+
+
+.. index: Cloak; CloakStop restored
+
+Cloak Only If Standing Still (CloakStop)
+
+
+In Tiberian Sun units were supposed to be made to cloak only when they
+stopped moving using CloakStop=yes. This tag was never actually working
+though. Ares implements it.
+
+ \ CloakStop=yes is not supported for BalloonHover=yes
+  units. It does not work without Cloakable=yes. CLOAK ability
+  will not be affected by it.
+
+ 0.5
+
+
+.. index: Cloak; Cloakable only if infantry is deployed
+
+Cloak Only If Deployed
+
+
+Infantry can be made cloakable only when deployed. When undeployed, the infantry
+will decloak again. This applies to all active cloaking abilities like
+Cloakable=yes or the CLOAK ability. Only Cloak Generators will
+cloak the infantry even if not deployed.
+
+[InfantryType]Cloakable.Deployed=boolean
+  Whether this infantry is only allowed to self-cloak when deployed. Requires
+  Deployer=yes and Cloakable=yes. Defaults to no.
+
+ 0.5
+
+
+.. index: Cloak; Cloakable only if building has power
+
+Cloak Only If Powered
+
+
+Powered=yes buildings stay cloaked even if they have no power. This can
+be changed using the following tag. This does not affect buildings cloaked by a
+Cloak Generator.
+
+[BuildingType]Cloakable.Powered=boolean
+  Whether this building will uncloak when shut down or in low-power situations.
+  Otherwise the building will be allowed to cloak. Defaults to no.
+
+ 0.5
+
+
+.. index:
+  Cloak; Non-cloakable technos
+  TechnoTypes; Make non-cloakable
+  Universe; Non-cloakable Disruption Tower
+
+Disallow Cloaking
+
+
+This can be used to create Tiberium Wars-style stealth generators like
+the Disruption Tower, which cloaks everything around but stays uncloaked itself,
+even if other Disruption Towers are placed nearby.
+
+[TechnoType]Cloakable.Allowed=boolean
+  Whether this techno is allowed to cloak at all. If set to no, this
+  techno is not allowed to be cloaked (neither through self-cloak nor through
+  Cloak Generators). Defaults to yes.
+  
+If a unit is disallowed from cloaking, it will not receive cloak bonuses through
+crates. In case a crate provides the cloaking ability, it will fall back to
+money.
+
+ 0.5

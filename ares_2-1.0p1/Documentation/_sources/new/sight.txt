@@ -1,0 +1,18 @@
+Sight
+
+
+Sight was using a lookup table almost like CellSpread, thus it was
+limited to a maximum value of 10. Ares increases this and now larger
+values can be used.
+
+ For performance reasons, Sight values larger than 10 should
+  be used judiciously. It is not designed for full map reveal.
+
+ Using larger Sight values will result in a distinct octagonal
+  shaped field of view. That is how CellSpread logic works and thus no
+  bug. The logic used for Sight values larger than 10 might change in the
+  future.
+
+ Sight; Values larger than 10 are possible.
+
+ 0.6

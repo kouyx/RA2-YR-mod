@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>New &amp; Enhanced In-Game Logic &mdash; Ares 2.0p1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/customstyle.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0p1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Ares 2.0p1 documentation" href="../index.html" />
+    <link rel="next" title="Additional ArmorTypes and Verses" href="additionalarmortypesandverses.html" />
+    <link rel="prev" title="Vehicle Thief" href="../restored/vehicle-thief.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="additionalarmortypesandverses.html" title="Additional ArmorTypes and Verses"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../restored/vehicle-thief.html" title="Vehicle Thief"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Ares 2.0p1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../restored/vehicle-thief.html"
+                        title="previous chapter">Vehicle Thief</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="additionalarmortypesandverses.html"
+                        title="next chapter">Additional <span class="type docutils literal">ArmorTypes</span> and <span><span class="type">Verses</span></span></a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="new-enhanced-in-game-logic">
+<h1>New &amp; Enhanced In-Game Logic<a class="headerlink" href="#new-enhanced-in-game-logic" title="Permalink to this headline">¶</a></h1>
+<p>This chapter documents all the completely new features that have been added to
+the game.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="additionalarmortypesandverses.html">Additional <span class="type docutils literal">ArmorTypes</span> and <span><span class="type">Verses</span></span></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="additionalarmortypesandverses.html#warhead-verses-special-values">Warhead <span><span class="type">Verses</span></span>&#8216; Special Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="additionalarmortypesandverses.html#immunities">Immunities</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aircraftreload.html">Aircraft-Specific <span><span class="type">ReloadRate</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="aircraftsmoke.html">Aircraft Smoke</a></li>
+<li class="toctree-l1"><a class="reference internal" href="airrate.html"><span><span class="type">AirRate</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="airstrike.html">Airstrike Voices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternatetheaterart.html"><span><span class="type">AlternateTheaterArt</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="animations.html">Animation Damage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="animations.html#using-a-weapon">Using a Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="animations.html#damage-delay">Damage Delay</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="attacheffect.html">AttachEffect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bounty.html">Bounty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buildtime.html">Build Time</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canpassiveaquire.html"><span><span class="type">CanPassiveAquire</span></span> Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="carryalls.html">Carryalls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chronoprisons.html">Chrono Prisons / Abductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chronoshift.html">Chronoshift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="civilianenemies.html">Civilian Enemies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="civilianenemies.html#treat-civilians-as-enemies">Treat Civilians as Enemies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="civilianenemies.html#repelling-civilian-attacks">Repelling Civilian Attacks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="crashableaircraft.html">Crashing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="crashableaircraft.html#crashable-and-aircraft"><span><span class="type">Crashable</span></span> and Aircraft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="crashableaircraft.html#spinning">Spinning</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="crates.html">Crate Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crushdamage.html">Crush Damage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cursors.html">Cursors on Units and Structures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cursors.html#movement">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cursors.html#deploy">Deploy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cursors.html#enter">Enter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cursors.html#spy-infiltration">Spy Infiltration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="customanimationandprojectilepalettes.html">Custom Animation and Projectile Palettes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customcameopalettes.html">Custom Cameo Palettes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customizableinsignia.html">Veterancy Insignia</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="customizableinsignia.html#chevrons">Chevrons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="customizableinsignia.html#hiding-enemy-insignia">Hiding Enemy Insignia</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="customizableparachuteanimations.html">Customizable Parachute Animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customizableveterancy.html">Customizable Veterancy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="customizableveterancy.html#from-passengers">From Passengers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="customizableveterancy.html#from-airstrikes">From Airstrikes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="customizableveterancy.html#from-mind-controlled">From Mind-Controlled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="customizableveterancy.html#from-spawns">From Spawns</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="custommissiles.html">Custom Missiles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="custommissiles.html#making-aircraft-a-missile">Making Aircraft a Missile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custommissiles.html#custom-missile-settings">Custom Missile Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custommissiles.html#warheads-and-damage">Warheads and Damage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custommissiles.html#alternatively-using-weapons">Alternatively Using Weapons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custommissiles.html#trailer-and-take-off-animations">Trailer and Take-Off Animations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="damageparticlesystems.html">Damage Particle Systems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="damageparticlesystems.html#damage-sparks">Damage Sparks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="damageparticlesystems.html#smoke-and-spark-damageparticlesystems">Smoke and Spark <span><span class="type">DamageParticleSystems</span></span></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deploydir.html"><span><span class="type">DeployDir</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="dig.html">Dig Animation and Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dimming.html">Dimming Deactivated Units</a></li>
+<li class="toctree-l1"><a class="reference internal" href="disklaser.html">Disk Laser Animations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doggie.html">Tiberian Fiends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drain.html">Drain Weapon Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="droppod.html">Drop Pods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="droppod.html#trailer">Trailer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="droppod.html#global-super-weapon-defaults">Global Super Weapon Defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="droppod.html#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="enemyuiname.html"><span><span class="type">EnemyUIName</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="evatypes.html">EVA Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="facings.html"><span><span class="type">Facings</span></span> on Units</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factoryplant.html">Factory Plant Effect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fakeof.html"><span><span class="type">FakeOf</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="fallrate.html">Fall Rate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="forestfires.html">Forest Fires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gattlingcycle.html">Gattling Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gunner.html"><span><span class="type">Gunner</span></span> IFVs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gunner.html#multiple-ifvs">Multiple IFVs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gunner.html#more-turrets-and-weapons">More Turrets and Weapons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gunner.html#defining-ifv-modes">Defining IFV Modes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gunner.html#voiceifvrepair"><span><span class="type">VoiceIFVRepair</span></span></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hardcodedunitproperties.html">Hard-coded Unit Properties</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hardcodedunitproperties.html#iscow"><span><span class="type">IsCow</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardcodedunitproperties.html#isdesolator"><span><span class="type">IsDesolator</span></span></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hijackers.html">Hijackers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hunterseeker.html">Hunter Seeker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hunterseeker.html#global-settings">Global Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hunterseeker.html#hunter-seeker-unit-settings">Hunter Seeker Unit Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hunterseeker.html#disallow-targeting">Disallow Targeting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="infantryelectrocuted.html"><span><span class="type">InfantryElectrocuted</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="initialpayload.html">Initial Payload (Troop Crawlers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="killingdrivers.html">Killing Drivers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="killingdrivers.html#warhead-settings">Warhead Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="killingdrivers.html#protected-drivers">Protected Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="killingdrivers.html#reclaim-vehicles">Reclaim Vehicles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeinfantryowner.html"><span><span class="type">MakeInfantryOwner</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual.html">Manual Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual.html#no-manual-target-selection">No Manual Target Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual.html#no-manual-passenger-unload">No Manual Passenger Unload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual.html#no-manual-enter-transport">No Manual Enter Transport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual.html#no-guard-area-on-self">No Guard Area on Self</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mousecursors.html">Mouse Cursors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mousecursors.html#defining-cursors">Defining Cursors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mousecursors.html#default-cursors">Default Cursors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mousecursors.html#migrating-from-previous-versions">Migrating from Previous Versions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="movies.html">Movies List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="newpoweredunitlogic.html">New Powered Unit Logic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="noammoweapon.html"><span><span class="type">NoAmmoWeapon</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="omnicrusher.html"><span><span class="type">OmniCrusher</span></span> Enhancements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operator.html">Operator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="particles.html">Particles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="particles.html#optimizations">Optimizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="particles.html#damage-range-for-gas-particles">Damage Range for Gas Particles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="particles.html#custom-palettes-for-shape-particles">Custom Palettes for Shape Particles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="passengers.html">Specific Passengers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passengers.html#ignoring-passenger-size">Ignoring Passenger Size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcxcameos.html">PCX Cameos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pips.html">Pips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">Prerequisites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#require-theater">Require Theater</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#negative-prerequisites">Negative Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#multiple-alternative-prerequisites-lists">Multiple Alternative Prerequisites Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#require-stolen-technology">Require Stolen Technology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#require-factory-built-by-country">Require Factory Built By Country</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#generic-prerequisite-groups">Generic Prerequisite Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html#alternate-prerequisites-with-non-buildings">Alternate Prerequisites with Non-Buildings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="promotion.html">Promotion settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="promotion.html#global-veteranflashtimer">Global <span><span class="type">VeteranFlashTimer</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="promotion.html#sounds-eva-and-flashing">Sounds, EVA and Flashing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="promotion.html#promote-all-passengers">Promote all Passengers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="radarjammers.html">Radar Jammers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reload.html"><span><span class="type">ReloadAmount</span></span> and <span><span class="type">EmptyReloadAmount</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="reverseengineerlogic.html">Reverse Engineer logic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="saboteur.html">Saboteurs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scorchflamer.html"><span><span class="type">Scorch</span></span> and <span><span class="type">Flamer</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripts.html">Script Actions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scripts.html#gather-at-enemy-53"><span><span class="type">Gather at Enemy</span></span> (53)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripts.html#gather-at-base-54"><span><span class="type">Gather at Base</span></span> (54)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripts.html#iron-curtain-55"><span><span class="type">Iron Curtain</span></span> (55)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="selfheal.html">Self Heal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sight.html">Sight</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spawners.html">Spawners</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="spawners.html#flying-aircraft-carriers">Flying Aircraft Carriers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="spawnsparticle.html">Particle Spawning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speakdelays.html">Speak Delays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="survivors.html">Survivors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="survivors.html#units-and-buildings">Units and Buildings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="survivors.html#unit-specific">Unit-specific</a></li>
+<li class="toctree-l2"><a class="reference internal" href="survivors.html#building-specific">Building-specific</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teamretaliate.html">Team Retaliate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="turretrot.html">Turret <span><span class="type">ROT</span></span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="typeconversion.html">Type Conversion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typeconversion.html#on-promotion">On Promotion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="typeconversion.html#via-issimpledeployer">Via <span><span class="type">IsSimpleDeployer</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="typeconversion.html#when-transitioning-between-land-and-water">When Transitioning Between Land and Water</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="typeselect.html">Type Selection Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unitlost.html">Unit Lost EVA Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="veteranabilities.html">Veteran and Elite Abilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sidescountries/index.html">Sides &amp; Countries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sidescountries/index.html#sides">Sides</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sidescountries/defaultside.html">Side Defaults</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/defaultside.html#crew-survivors-and-other-types">Crew, Survivors and Other Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/defaultside.html#ai-and-base-building">AI and Base-Building</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/defaultside.html#paradrop-defaults">Paradrop Defaults</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/defaultside.html#hunter-seeker-defaults">Hunter Seeker Defaults</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sidescountries/uiside.html">User Interface and Loading Theme</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/uiside.html#sidebar">Sidebar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/uiside.html#text-colors">Text Colors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/uiside.html#dialogs">Dialogs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/uiside.html#loading-theme">Loading Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/uiside.html#eva">EVA</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sidescountries/scorescreens.html">Score Screens and Themes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/scorescreens.html#campaign">Campaign</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/scorescreens.html#multiplayer">Multiplayer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/scorescreens.html#graphical-text-banner">Graphical Text Banner</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sidescountries/index.html#countries">Countries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sidescountries/defaultcountry.html">Country Defaults</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/defaultcountry.html#ai-and-base-building">AI and Base-Building</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/defaultcountry.html#paradrop-defaults">Paradrop Defaults</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/defaultcountry.html#others">Others</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sidescountries/uicountry.html">User Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/uicountry.html#display-and-selection-chance">Display and Selection Chance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/uicountry.html#flags-and-observer-graphics">Flags and Observer Graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/uicountry.html#loading-screen">Loading Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/uicountry.html#taunts">Taunts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sidescountries/startinmultiplayer.html">Start in Multiplayer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/startinmultiplayer.html#starting-units">Starting Units</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/startinmultiplayer.html#fixed-global-unit-cost">Fixed Global Unit Cost</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sidescountries/startinmultiplayer.html#pre-deployed-mcv">Pre-Deployed MCV</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="buildings/index.html">Buildings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="buildings/academy.html">Academies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/assaulter.html">Assaulter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/buildcount.html">Build More Buildings of a Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/buildingslam.html">Building Slam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/builduptime.html">Buildup and Sell Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/custombuildingfoundations.html">Custom Building Foundations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/enemywrench.html">Enemy Wrench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/factoriesandcloning.html">Factories and Cloning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="buildings/factoriesandcloning.html#different-factories-for-units-kennels">Different factories for units (Kennels)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/factoriesandcloning.html#cloning-vats-for-vehicletypes">&#8220;Cloning Vats&#8221; for <span class="type docutils literal">VehicleTypes</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/factoriesandcloning.html#cloning-options">Cloning options</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/fakes.html">Fakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/forceshield.html">Force Shield</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/gates.html">Gates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/lightningrods.html">Lightning Rods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/massselect.html">Mass-Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/passablestructures.html">Passable Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/prismforwarding.html">Prism Forwarding</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="buildings/prismforwarding.html#customizing-the-support-beam">Customizing The Support Beam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/prismforwarding.html#support-beam-flh">Support Beam FLH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/prismforwarding.html#prism-tower-limitations">Prism Tower Limitations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/prismforwarding.html#special-note-regarding-prism-forwarding">Special Note Regarding Prism Forwarding</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/producecash.html">Oil Derricks (<span><span class="type">ProduceCash</span></span>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="buildings/producecash.html#general-changes">General Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/producecash.html#display-cash-produced">Display Cash Produced</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/repair.html">Repair and Insufficient Funds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/repair.html#buildings-not-repairable-by-engineers">Buildings not repairable by Engineers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/secretlabs.html">Secret Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/solidbuildings.html">Solid Buildings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="buildings/solidbuildings.html#the-attackers-enabling-projectiles">The Attackers - Enabling Projectiles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/solidbuildings.html#the-defenders-solidity-of-buildings">The Defenders - Solidity of Buildings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/solidbuildings.html#global-settings">Global Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/spybehavior.html">Spy Behavior</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="buildings/spybehavior.html#radar">Radar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/spybehavior.html#power">Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/spybehavior.html#money">Money</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/spybehavior.html#super-weapons">Super Weapons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/spybehavior.html#stolen-technology">Stolen Technology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/spybehavior.html#veterancy">Veterancy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/spybehavior.html#intelligence">Intelligence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/spybehavior.html#reverse-engineering">Reverse Engineering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/spybehavior.html#sabotage">Sabotage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/techstructures.html">Tech Structures Return to Neutral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/techstructures.html#tech-structure-notifications">Tech Structure Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/togglepower.html">Toggle Power</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="buildings/togglepower.html#keyboard-command">Keyboard Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/togglepower.html#cursors">Cursors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/togglepower.html#power-off-overlay-animation">Power Off Overlay Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/togglepower.html#ai-support">AI Support</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/trivialstructuredamage.html">Trivial Structure Damage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/tunnels.html">Tunnel Networks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildings/urbancombattrenches.html">Urban Combat - Trenches</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="buildings/urbancombattrenches.html#pass-through">Pass Through</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/urbancombattrenches.html#squatters-rights">Squatters&#8217; Rights</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/urbancombattrenches.html#advanced-rubble">Advanced Rubble</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/urbancombattrenches.html#traversing-trenches">Traversing Trenches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="buildings/urbancombattrenches.html#specifying-the-occupants-of-a-building">Specifying the occupants of a building</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cloak/index.html">Cloak, Stealth and Sensor Arrays</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cloak/general.html">General Changes and Updates</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cloak/general.html#powered-units">Powered Units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloak/general.html#parasites">Parasites</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cloak/cloakheight.html">Cloaking and Units Above Ground</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloak/cloaksound.html">Cloak Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloak/cloakstages.html">Cloaking Stages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloak/cloakstates.html">Cloak Depending On State</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cloak/cloakstates.html#cloak-only-if-standing-still-cloakstop">Cloak Only If Standing Still (<span><span class="type">CloakStop</span></span>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloak/cloakstates.html#cloak-only-if-deployed">Cloak Only If Deployed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloak/cloakstates.html#cloak-only-if-powered">Cloak Only If Powered</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloak/cloakstates.html#disallow-cloaking">Disallow Cloaking</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cloak/sensorarray.html">Sensor Arrays</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cloak/sensorarray.html#changes">Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cloak/sensorarray.html#suppress-sensor-array-warnings">Suppress Sensor Array Warnings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="projectiles/index.html">Projectiles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="projectiles/animations.html">Animations and <span><span class="type">Rotates=yes</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="projectiles/ballisticscatter.html"><span><span class="type">BallisticScatter</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="projectiles/ranged.html"><span><span class="type">Ranged</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="projectiles/splits.html"><span><span class="type">Splits</span></span> and <span><span class="type">Airburst</span></span></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="projectiles/splits.html#splits"><span><span class="type">Splits</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="projectiles/splits.html#airburst"><span><span class="type">Airburst</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="projectiles/splits.html#common-settings">Common Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="projectiles/attachedsystem.html"><span><span class="type">AttachedSystem</span></span> Trailers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="weapons/index.html">Weapons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="weapons/weapontypes.html"><span><span class="type">[WeaponTypes]</span></span> Section</a></li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/anim.html"><span><span class="type">Anim</span></span> for Facings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/cursors.html">Cursors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/damage.html">Ordinary Damage for <span><span class="type">IsSonic</span></span> and <span><span class="type">UseFireParticles</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/ammo.html"><span><span class="type">Ammo</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/ivanbombs.html">Ivan Bombs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/radiation.html">Radiation Beams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/electricbolts.html">Electric Bolts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="weapons/electricbolts.html#bolt-coloring">Bolt Coloring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="weapons/electricbolts.html#spark-particle-system">Spark Particle System</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/waves.html">Waves</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="weapons/waves.html#wave-effects">Wave Effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="weapons/waves.html#wave-coloring">Wave Coloring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="weapons/waves.html#wave-direction">Wave Direction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="weapons/waves.html#wave-ambient-damage">Wave Ambient Damage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/laser.html"><span><span class="type">LaserThickness</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="weapons/projectilerange.html"><span><span class="type">ProjectileRange</span></span></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="warheads/index.html">Warheads</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="warheads/general.html">General Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="warheads/general.html#affectsenemies"><span><span class="type">AffectsEnemies</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/general.html#affectsowner"><span><span class="type">AffectsOwner</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/general.html#warhead-effects">Warhead Effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/general.html#non-damaging-warheads">Non-Damaging Warheads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/general.html#non-malicious-warheads">Non-Malicious Warheads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/general.html#prevent-scattering">Prevent scattering</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/cellspread.html"><span><span class="type">CellSpread</span></span> Enhancements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="warheads/cellspread.html#cellspread"><span><span class="type">CellSpread</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/cellspread.html#cellspread-hit-limit"><span><span class="type">CellSpread</span></span> Hit Limit</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/relativedamage.html">MAD Tank Style Relative Damage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/damageair.html">Damage Airborne Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/ironcurtain.html">Iron Curtain</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="warheads/ironcurtain.html#iron-curtain-effect">Iron Curtain Effect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/ironcurtain.html#iron-curtain-flash">Iron Curtain Flash</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/ioncannon.html">Ion Cannon</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="warheads/ioncannon.html#ion-cannon-blast">Ion Cannon Blast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/ioncannon.html#ripple-effect">Ripple Effect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/ioncannon.html#bridge-destroyer">Bridge Destroyer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/sonar.html">Sonar / Decloak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/flash.html">Flashing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/nukeflash.html">Nuke Flash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/disableweapons.html">Disable Weapons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/mechanical.html">Mechanical and Organic Warheads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/mindcontrol.html">Permanent Mind-Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/temporal.html"><span><span class="type">Temporal</span></span></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="warheads/temporal.html#customizable-warpaway">Customizable <span><span class="type">WarpAway</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/temporal.html#consider-health">Consider Health</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/preimpactanim.html"><span><span class="type">PreImpactAnim</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/infantry.html">Infantry-related Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="warheads/infantry.html#deployed-infantry-damage-multiplier">Deployed Infantry Damage multiplier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/infantry.html#infdeathanim"><span><span class="type">InfDeathAnim</span></span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/berserk.html">Berserk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="warheads/berserk.html#reloading-time-modifier">Reloading Time Modifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warheads/berserk.html#immunity-to-berserk">Immunity to Berserk</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/deathweapon.html">Suppress Death Weapons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warheads/unitlost.html">Suppress Unit Lost Message</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="superweapons/index.html">Super Weapons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/buildings.html">Building Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/buildings.html#multiple-super-weapons-on-a-building">Multiple Super Weapons on a Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/buildings.html#building-animations">Building Animations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/general.html">General properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/availability.html">Availability</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/availability.html#require-a-country">Require a Country</a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/availability.html#auxiliary-buildings-auxbuilding">Auxiliary Buildings (<span><span class="type">AuxBuilding</span></span>)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/hardcoded.html">Hardcoded Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/targeting.html">Targeting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/targeting.html#general-settings">General Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/targeting.html#manual-target-selection">Manual Target Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/targeting.html#automatic-target-selection">Automatic Target Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/targeting.html#mechanisms">Mechanisms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/targeting.html#defaults">Defaults</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/range.html">Range Limits</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/range.html#range-around-launch-site">Range around Launch Site</a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/range.html#designators">Designators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/range.html#inhibitors">Inhibitors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/cursors.html">Cursors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/chargedrain.html">Charge/Drain Super Weapons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/cost.html">Cost</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/animsound.html">Animation/Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/evaevents.html">EVA Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/messages.html">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/cameooverlay.html">Cameo Overlay Texts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/lighting.html">Lighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superweapons/types/index.html">Settings by Super Weapon Type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/lightningstorm.html"><span><span class="type">Type=LightningStorm</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/multimissile.html"><span><span class="type">Type=MultiMissile</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/psychicdominator.html"><span><span class="type">Type=PsychicDominator</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/chronosphere.html"><span><span class="type">Type=ChronoSphere</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/chronosphere.html#type-chronowarp"><span><span class="type">Type=ChronoWarp</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/protect.html"><span><span class="type">Type=IronCurtain</span></span> and <span><span class="type">Type=ForceShield</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/geneticconverter.html"><span><span class="type">Type=GeneticConverter</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/paradrop.html"><span><span class="type">Type=ParaDrop</span></span> and <span><span class="type">Type=AmerParaDrop</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/spyplane.html"><span><span class="type">Type=SpyPlane</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/psychicreveal.html"><span><span class="type">Type=PsychicReveal</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/sonarpulse.html"><span><span class="type">Type=SonarPulse</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/genericwarhead.html"><span><span class="type">Type=GenericWarhead</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/unitdelivery.html"><span><span class="type">Type=UnitDelivery</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/firestorm.html"><span><span class="type">Type=Firestorm</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/hunterseeker.html"><span><span class="type">Type=HunterSeeker</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/droppod.html"><span><span class="type">Type=DropPod</span></span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="superweapons/types/empulse.html"><span><span class="type">Type=EMPulse</span></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tiberium/index.html">Tiberium</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tiberium/storage.html">Storage and Silos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/storage.html#enabling-storage">Enabling Storage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/storage.html#eva-notice">EVA Notice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/storage.html#text-message">Text Message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/storage.html#pipscale-tiberium"><span><span class="type">PipScale=Tiberium</span></span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tiberium/spill.html">Tiberium Spill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tiberium/heal.html">Tiberium Heal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/heal.html#enabling-tiberium-heal">Enabling Tiberium Heal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/heal.html#who-will-heal">Who will heal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/heal.html#how-much-how-often">How much how often</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tiberium/heal.html#index-1">Tiberium Remains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tiberium/damage.html">Tiberium Damage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/damage.html#enabling-tiberium-damage">Enabling Tiberium Damage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/damage.html#who-gets-damaged">Who gets damaged</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/damage.html#damage-and-warhead">Damage and Warhead</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tiberium/damage.html#index-1">Visceroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tiberium/explosive.html">Tiberium Explosive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tiberium/chainreactions.html">Chain Reactions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/chainreactions.html#tiberium-explosion">Tiberium Explosion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/chainreactions.html#chain-reaction">Chain Reaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tiberium/chainreactions.html#customizable-settings">Customizable Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tiberium/chainreactions.html#minimum-damage-to-trigger-explodes-yes">Minimum Damage to Trigger <span><span class="type">Explodes=yes</span></span></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="misc/index.html">Miscellaneous Modding Enhancements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="misc/include.html"><span><span class="type">[#include]</span></span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/stringtableenhancements.html">String Table Enhancements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="misc/stringtableenhancements.html#more-string-tables">More String Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="misc/stringtableenhancements.html#nostr-prefix">NOSTR Prefix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="misc/stringtableenhancements.html#maximum-number-of-strings">Maximum Number of Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="misc/stringtableenhancements.html#language-neutral-string-tables">Language-Neutral String Tables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="misc/listlengths.html">List Lengths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/mixloadingorder.html">MIX Loading Order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/bagfiles.html">Additional Bag Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/looseaudiofiles.html">Loose Audio Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/mousesha.html">Mouse.sha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/avoidableinternalerrors.html">Avoidable Internal Errors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="misc/avoidableinternalerrors.html#snowmd-ini">Snowmd.ini</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="additionalarmortypesandverses.html" title="Additional ArmorTypes and Verses"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../restored/vehicle-thief.html" title="Vehicle Thief"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Ares 2.0p1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2019, The Ares Contributors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

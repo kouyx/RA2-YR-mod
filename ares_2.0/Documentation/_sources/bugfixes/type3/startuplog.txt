@@ -1,7 +1,0 @@
-
-Logging Startup
-
-
-During startup, many superfluous calls were made to the debug log file writer.
-
- 0.1

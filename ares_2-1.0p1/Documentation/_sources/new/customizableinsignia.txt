@@ -1,0 +1,59 @@
+
+  Veterancy; Insignia for veteran/elite units
+  Art; Insignia for veteran/elite units
+
+Veterancy Insignia
+
+
+Chevrons
+
+
+Units can now have custom insignia (chevrons) to represent their veterancy
+level.
+
+[TechnoType]Insignia.Rookie=filename, excluding the .shp extension
+
+[TechnoType]Insignia.Veteran=filename, excluding the .shp extension
+
+[TechnoType]Insignia.Elite=filename, excluding the .shp extension
+  For example, Insignia.Rookie=SAMPLE would display sample.shp as
+  the insignia while the object is rookie. Defaults to PIPS.
+
+These SHPs - like the original pips.shp - are expected to be in the
+theater palette. If you specify an insignia, the first frame of its SHP will be
+drawn. Veteran and Elite objects without the insignia specified will still
+display the 15th/16th frames of pips.shp as usual.
+
+[TechnoType]InsigniaFrame.Rookie=integer - frame
+
+[TechnoType]InsigniaFrame.Veteran=integer - frame
+
+[TechnoType]InsigniaFrame.Elite=integer - frame
+  The frame used from the insignia shape. Set to -1 to use the default
+  frame index.
+
+ 0.1
+ 2.0
+
+
+  Veterancy; Hide insignia of enemy units
+  TechnoTypes; Hide veterancy insignia of enemy units
+
+Hiding Enemy Insignia
+
+
+Because you usually cannot ask enemy troops what their rank is, and from a
+distance they look all the same anyhow, you can also disable displaying insignia
+on enemy units by using the following tags.
+
+[General]EnemyInsignia=boolean
+  Whether insignia will be shown for enemy players by default. Each unit type
+  can override this value. Defaults to yes.
+
+[TechnoType]Insignia.ShowEnemy=boolean
+  Whether insignia for a unit of this type will be shown for enemy players.
+  Defaults to [General]►EnemyInsignia.
+
+ Observers will always be able to see insignia of all players.
+
+ 0.5

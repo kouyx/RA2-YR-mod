@@ -1,0 +1,29 @@
+
+  Pips; User-defined pips
+  TechnoTypes; User-defined pips
+  Infantry; User-defined pip and occupy pip
+
+Pips
+
+
+In Yuri's Revenge, the values that were accepted for Pip and
+OccupyPip were hardcoded to a list of known names. While fixing the
+Pip Distortion Bug, Ares makes
+this more flexible.
+
+Any tag that defines a pip accepts an alternative notation now. If the tag value
+cannot be resolved using the list of known names (like personblue), the
+value is parsed as integer. The integers are used as frame index into the pips
+files (pips.shp and pips2.shp).
+
+If the value is neither a known name nor an integer, a parsing error is put into
+debug.log.
+
+[TechnoType]Pip=integer
+  Frame index in the pips file to use as pip image. Valid values range from
+  0 to the pip file's frame count - 1.
+
+   If the tag is read as integer and the value is out of bounds, no
+    error is logged in debug.log. 
+
+ 0.4

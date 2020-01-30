@@ -1,0 +1,12 @@
+ Crashes; Loose pips files in game's folder causes crash exit
+
+
+Crash with Loose SHP Files
+
+
+Because of a bug it was not possible to have the files pipbrd.shp,
+pips.shp, pips2.shp, and talkbubl.shp loose in the
+game's folder. If any of them were present, the game would crash when exiting.
+This is fixed.
+
+ 0.6

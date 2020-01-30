@@ -1,0 +1,35 @@
+ Tiberium; Full harvesters explode
+
+Tiberium Explosive
+
+
+Tiberium Explosive is the feature that harvester units detonate violently on
+destruction. It is not to be confused with the similarly named Tiberium
+Explosion.
+
+The damage to deliver depends on Power of the contained tiberium bails.
+This is like it was in Firestorm. Tiberian Sun also added the
+harvester unit's strength, which has not been recreated.
+
+Tiberian Sun used C4Warhead to deliver the damage, with a
+hardcoded spread of 1.5. Ares requires the warhead to define
+CellSpread itself.
+
+Only positive damage is delivered. In case TiberiumExplosiveWarhead is
+not set or the Harvester Truce feature is enabled, no damage is delivered.
+
+[CombatDamage]TiberiumExplosive=boolean
+  Whether tiberium inside of harvester units explodes using
+  TiberiumExplosiveWarhead when destroyed. Defaults to no.
+
+[CombatDamage]TiberiumExplosiveWarhead=warhead
+  The warhead to deliver the damage of explosive tiberium. Defaults to
+  none.
+
+[CombatDamage]TiberiumExplosiveAnim=animation
+  Optional animation displayed when Tiberium contained in a unit explodes. Can
+  be used independently of damage delivery; TiberiumExplosiveWarhead
+  needs not be set. Defaults to none.
+
+ 0.5
+ 2.0

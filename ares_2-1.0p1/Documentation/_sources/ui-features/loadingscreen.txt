@@ -1,0 +1,12 @@
+Loading Screen
+
+
+The initial loading screen displayed when first starting Yuri's Revenge
+now indicates that Ares is active and displays its version information.
+
+ 0.1
+
+Also, if the country loading screen strings are blank, Ares doesn't
+darken the areas where the texts were supposed to be drawn.
+
+ 0.2

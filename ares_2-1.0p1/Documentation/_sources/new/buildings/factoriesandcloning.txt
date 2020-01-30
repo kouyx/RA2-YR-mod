@@ -1,0 +1,69 @@
+Factories and Cloning
+
+
+
+  Factories; Build units from certain factories only
+  Kennels; Build units from certain factories only
+
+Different factories for units (Kennels)
+
+
+[InfantryOrVehicle]BuiltAt=list of BuildingTypes
+  Units will be kicked out of the first not-busy building the house owns that is
+  mentioned in this list. If no BuildingType is set, all factories that
+  can produce this unit will be checked. Defaults to none.
+
+[BuildingType]Factory.ExplicitOnly=boolean
+  Set this to yes to only allow this factory to produce units that
+  explicitly mention this BuildingType in their BuiltAt list.
+  Units with empty BuiltAt lists will not be built here. The effect is
+  the same as stating BuiltAt lists on every unit, omitting all factories
+  that have this tag set. Defaults to no.
+
+   To recreate the dog from Red Alert that is trained in
+    a kennel, set [KENN]►Factory=InfantryType,
+    [KENN]►Factory.ExplicitOnly=yes, [DOG]►BuiltAt=KENN and update
+    the [DOG]►Prerequisite to contain [KENN]►.
+
+
+
+  Clone Facilities; Clone infantry and tanks
+  Factories; Clone infantry and tanks in clone facilities
+
+"Cloning Vats" for VehicleTypes
+
+
+[BuildingType]CloningFacility=boolean
+  Defines whether this building will clone all VehicleTypes with the
+  same Naval setting as itself that are Cloneable=yes and
+  ClonedAt=none. This is the VehicleType version of the Cloning
+  Vats. Defaults to no.
+
+
+
+  Clone Facilities; Cloning options per type
+  Vehicles; Clone from Clone Facilities
+  Infantry; Clone from Clone Facilities
+
+Cloning options
+
+
+[InfantryOrVehicle]Cloneable=boolean
+  Whether or not this infantry or unit can be cloned by Cloning=yes,
+  CloningFacility=yes or their respective ClonedAt buildings.
+  Defaults to yes.
+
+[InfantryOrVehicle]ClonedAt=list of BuildingTypes
+  Each building of the types mentioned in the list owned by the same house will
+  kick out an extra clone of this object for free. If a building is blocked, the
+  player will get no refunds. Defaults to none.
+
+   Cloning will ignore buildings with Factory= set. Note that
+    Factory is not what causes the units to walk or drive out properly,
+    WeaponsFactory=yes, GDIBarracks=yes, NODBarracks=yes
+    and YuriBarracks=yes are.
+
+   If ClonedAt is specified, neither Cloning=yes nor
+    CloningFacility=yes will clone the object.
+
+ 0.2

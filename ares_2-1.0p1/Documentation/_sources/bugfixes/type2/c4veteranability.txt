@@ -1,0 +1,13 @@
+
+  Veterancy; C4 Veteran Ability restored
+
+
+C4 Veteran Ability
+
+
+The C4 veteran ability did not work correctly in Red Alert 2
+and Yuri's Revenge. Even though infantry could be ordered to use the C4
+gained through veterancy, it could not blow up buildings. This has been fixed
+and the ability now works as it did in Tiberian Sun.
+
+ 0.5

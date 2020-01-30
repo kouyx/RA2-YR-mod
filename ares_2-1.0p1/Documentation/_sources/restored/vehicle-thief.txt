@@ -1,0 +1,14 @@
+ Infantry; VehicleThief logic without workarounds
+
+
+Vehicle Thief
+
+
+With Ares you can create vehicle thieves like the Mutant Hijacker from
+Tiberian Sun without having to use Thief=yes,
+Infiltrate=yes or Agent=yes also. The logic was amended to allow
+for some customization the original game didn't support.
+
+See the ... section for details.
+
+ 0.2

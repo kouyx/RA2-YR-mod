@@ -1,0 +1,16 @@
+
+  Whiteboy; The sidebar now allows unlimited cameos instead of just 74
+  Limitations; Whiteboy bug with more than 74 sidebar cameos
+  Cameos; Unlimited cameos in the sidebar instead of just 74
+  Crashes; Whiteboy bug with more than 74 sidebar cameos
+
+
+The Whiteboy Bug
+
+
+There is no longer an upper limit of 74 on the number of buildings, units and
+superweapons that can be displayed per construction tab on the UI bar. The game
+will no longer freeze or even crash when this static limit is exceeded. This
+bug is known as Whiteboy bug .
+
+ 0.3

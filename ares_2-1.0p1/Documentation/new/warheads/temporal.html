@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Temporal &mdash; Ares 2.0p1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/customstyle.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0p1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Ares 2.0p1 documentation" href="../../index.html" />
+    <link rel="up" title="Warheads" href="index.html" />
+    <link rel="next" title="PreImpactAnim" href="preimpactanim.html" />
+    <link rel="prev" title="Permanent Mind-Control" href="mindcontrol.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="preimpactanim.html" title="PreImpactAnim"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mindcontrol.html" title="Permanent Mind-Control"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Ares 2.0p1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >New &amp; Enhanced In-Game Logic</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Warheads</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span><span class="type">Temporal</span></span></a><ul>
+<li><a class="reference internal" href="#customizable-warpaway">Customizable <span><span class="type">WarpAway</span></span></a></li>
+<li><a class="reference internal" href="#consider-health">Consider Health</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="mindcontrol.html"
+                        title="previous chapter">Permanent Mind-Control</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="preimpactanim.html"
+                        title="next chapter"><span><span class="type">PreImpactAnim</span></span></a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="temporal">
+<h1><span><span class="type">Temporal</span></span><a class="headerlink" href="#temporal" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="customizable-warpaway">
+<span id="index-0"></span><h2>Customizable <span><span class="type">WarpAway</span></span><a class="headerlink" href="#customizable-warpaway" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><span><code class="definition docutils literal"><span class="pre">[Warhead]►Temporal.WarpAway=</span></code><span class="type definition"> (animation)</span></span></dt>
+<dd>If set, specifies the animation to be played when this warhead erases an
+object. Defaults to <span><code class="docutils literal"><span class="pre">[General]►WarpAway</span></code></span>.</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.1.</span></p>
+</div>
+</div>
+<div class="section" id="consider-health">
+<span id="index-1"></span><h2>Consider Health<a class="headerlink" href="#consider-health" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><span><code class="definition docutils literal"><span class="pre">[Warhead]►Temporal.HealthFactor=</span></code><span class="type definition"> (float - multiplier)</span></span></dt>
+<dd><p class="first">How much the health of the victim is factored in into the remaining warp value
+of the target. Valid values range from <cite>0.0</cite> to <cite>1.0</cite> inclusive.
+<cite>0.0</cite> means health plays no role. <span><code class="docutils literal"><span class="pre">1.0</span></code></span> means the remaining warp
+is reduced proportionally to the target&#8217;s health, down to 0. Defaults to
+<cite>0.0</cite>.</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Another way to look at it is that the remaining warp value is
+linearly decreased from full for completely healthy targets down by this
+value for a target that has no health left.</p>
+</div>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.D.</span></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="preimpactanim.html" title="PreImpactAnim"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="mindcontrol.html" title="Permanent Mind-Control"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Ares 2.0p1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >New &amp; Enhanced In-Game Logic</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Warheads</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2019, The Ares Contributors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

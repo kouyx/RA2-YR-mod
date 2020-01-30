@@ -1,0 +1,32 @@
+ EVA; Create new EVA announcers
+
+EVA Types
+
+
+Ares supports defining new EVA voice types in addition to the three
+announcers for the original sides. You can add as many new types as you like.
+
+All new EVA types have to be named in the new [EVATypes] list in
+evamd.ini. This is a list like every other list, that is, the part left
+of the equal sign is ignored. The original voices called Allied,
+Russian and Yuri are added by default.
+
+  ::
+
+    [EVATypes]
+    0=GDI
+    1=Cabal
+
+Now, these names can be used as keys in the EVA sound sections to point to an
+EVA-specific filename. Filenames can have a length of up to eight characters. If
+you don't specify a filename for an EVA Type, no sound will play.
+
+  ::
+
+    [EVA_LowPower]
+    Cabal=ccab053
+    GDI=cgdi053
+
+Now you are ready to use this new EVA Type. See EVA.Tag for Sides.
+
+ 0.4

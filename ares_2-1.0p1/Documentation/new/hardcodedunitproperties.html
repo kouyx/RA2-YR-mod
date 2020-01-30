@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Hard-coded Unit Properties &mdash; Ares 2.0p1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/customstyle.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0p1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Ares 2.0p1 documentation" href="../index.html" />
+    <link rel="up" title="New &amp; Enhanced In-Game Logic" href="index.html" />
+    <link rel="next" title="Hijackers" href="hijackers.html" />
+    <link rel="prev" title="Gunner IFVs" href="gunner.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="hijackers.html" title="Hijackers"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="gunner.html" title="Gunner IFVs"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Ares 2.0p1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">New &amp; Enhanced In-Game Logic</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Hard-coded Unit Properties</a><ul>
+<li><a class="reference internal" href="#iscow"><span><span class="type">IsCow</span></span></a></li>
+<li><a class="reference internal" href="#isdesolator"><span><span class="type">IsDesolator</span></span></a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="gunner.html"
+                        title="previous chapter"><span><span class="type">Gunner</span></span> IFVs</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="hijackers.html"
+                        title="next chapter">Hijackers</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="hard-coded-unit-properties">
+<h1>Hard-coded Unit Properties<a class="headerlink" href="#hard-coded-unit-properties" title="Permalink to this headline">¶</a></h1>
+<p>The game is hard-coded to do certain things with certain unit IDs. Namely the
+<span><code class="docutils literal"><span class="pre">[COW]</span></code></span> and <span><code class="docutils literal"><span class="pre">[DESO]</span></code></span>. These units can now have said special properties
+switched off, and other units can be given these properties if you want.
+Hard-coded properties of Cows and Desolators can be toggled on/off for any
+infantry.</p>
+<div class="section" id="iscow">
+<span id="index-0"></span><h2><span><span class="type">IsCow</span></span><a class="headerlink" href="#iscow" title="Permalink to this headline">¶</a></h2>
+<p>The <span><code class="docutils literal"><span class="pre">[COW]</span></code></span> was hard-coded to play its idle animation more frequently than
+other infantry and was also hard-coded to move around randomly. You can now set
+<span><code class="docutils literal"><span class="pre">IsCow=yes</span></code></span> on other <span class="type docutils literal">InfantryTypes</span> or, indeed, <span><code class="docutils literal"><span class="pre">IsCow=no</span></code></span> on
+the <span><code class="docutils literal"><span class="pre">[COW]</span></code></span>.</p>
+<dl class="docutils">
+<dt><span><code class="definition docutils literal"><span class="pre">[InfantryType]►IsCow=</span></code><span class="type definition"> (boolean)</span></span></dt>
+<dd>Defaults to <cite>yes</cite> for <span><code class="docutils literal"><span class="pre">[COW]</span></code></span>, otherwise to <cite>no</cite>.</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.1.</span></p>
+</div>
+</div>
+<div class="section" id="isdesolator">
+<span id="index-1"></span><h2><span><span class="type">IsDesolator</span></span><a class="headerlink" href="#isdesolator" title="Permalink to this headline">¶</a></h2>
+<p>The <span><code class="docutils literal"><span class="pre">[DESO]</span></code></span> was hard-coded to have different deploy-weapon firing timing
+than other units. The change to the timing appears to be related to the unit&#8217;s
+art <span><code class="docutils literal"><span class="pre">Sequence</span></code></span> although the exact effect has not been investigated. You can
+now set <span><code class="docutils literal"><span class="pre">IsDesolator=yes</span></code></span> on other <span class="type docutils literal">InfantryTypes</span> or, indeed,
+<span><code class="docutils literal"><span class="pre">IsDesolator=no</span></code></span> on the <span><code class="docutils literal"><span class="pre">[DESO]</span></code></span>.</p>
+<dl class="docutils">
+<dt><span><code class="definition docutils literal"><span class="pre">[InfantryType]►IsDesolator=</span></code><span class="type definition"> (boolean)</span></span></dt>
+<dd>Defaults to <cite>yes</cite> for <span><code class="docutils literal"><span class="pre">[DESO]</span></code></span>, otherwise to <cite>no</cite>.</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.1.</span></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="hijackers.html" title="Hijackers"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="gunner.html" title="Gunner IFVs"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Ares 2.0p1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >New &amp; Enhanced In-Game Logic</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2019, The Ares Contributors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

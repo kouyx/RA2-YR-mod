@@ -1,0 +1,160 @@
+ Missiles; Add new and customize the original missile types
+
+Custom Missiles
+
+
+Ares allows you to create new missile types and customize the existing
+types (V3RocketType, DMislType, CMislType). Missiles are
+AircraftTypes which have special logic attached to behave like a
+projectile launched from another unit and carrying a warhead to its target.
+
+ 0.3
+ 0.A
+
+
+Making Aircraft a Missile
+
+
+Instead of defining the missile settings in the [General]► section,
+Ares allows you to put them directly on the AircraftType. Apart
+from that, the missiles work the same way the original launcher/missile pairs
+work. This allows you to create an arbitrary number of new missiles.
+
+[AircraftType]Missile.Custom=boolean
+  Specifies whether this AircraftType should exhibit missile behavior.
+  If set to yes it enables the missile tags listed below, which must
+  be set to meaningful values. Not recommended on V3RocketType,
+  DMislType and CMislType. Defaults to no.
+
+   If you intend to override the original missiles defined as
+    V3RocketType, DMislType and CMislType, you also have
+    to define the following tags. Ares will not default to the original
+    game tags for these types defined in the [General]► section.
+
+
+Custom Missile Settings
+
+
+The following tags are used only if [AircraftType]►Missile.Custom=yes is
+set.
+
+[AircraftType]Missile.PauseFrames=integer
+  Defines how many frames the missile pauses on the launching unit before
+  tilting. Defaults to 0.
+
+[AircraftType]Missile.TiltFrames=integer
+  Defines how many frames it takes for the missile to tilt to firing position.
+  Defaults to 0.
+
+[AircraftType]Missile.PitchInitial=float
+  Defines the starting pitch of the missile before tilting up. Valid range is
+  0.0 (horizontal) to 1.0 (vertical). Defaults to
+  0.0.
+
+[AircraftType]Missile.PitchFinal=float
+  Defines the ending pitch of the missile after tilting up and when firing.
+  Valid range is 0.0 (horizontal) to 1.0 (vertical).
+  Defaults to 0.0.
+
+[AircraftType]Missile.TurnRate=float
+  Defines the pitch maneuverability of the missile in air. See original
+  missiles for examples. Valid range is 0.0 to 1.0. Defaults
+  to 0.0.
+
+[AircraftType]Missile.RaiseRate=float
+  Defines how much the missile will raise each turn on the launching unit.
+  Defaults to 0.0.
+
+[AircraftType]Missile.Acceleration=float
+  Defines how much is added to the missile's velocity each frame during launch.
+  Defaults to 0.0.
+
+[AircraftType]Missile.Altitude=integer
+  Defines the cruising altitude in leptons at which height missile begins
+  leveling off. Defaults to 0.
+
+[AircraftType]Missile.BodyLength=integer
+  Defines how long the body of the missile is in leptons. This is used to draw
+  the trailer. Defaults to 0.
+
+[AircraftType]Missile.LazyCurve=boolean
+  Whether the missile's path is a ballistic curve like the original V3 rocket.
+  Otherwise the missile maintains the defined altitude. Defaults to
+  no.
+
+
+Warheads and Damage
+
+
+[AircraftType]Missile.Damage=integer
+  Defines how much damage the missile does when launched from a rookie or
+  veteran unit. Defaults to 0.
+
+[AircraftType]Missile.EliteDamage=integer
+  Defines how much damage the missile does when launched from an elite unit.
+  Defaults to 0.
+
+[AircraftType]Missile.Warhead=Warhead
+  Defines the warhead the missile uses to deliver damage when launching from
+  a rookie or veteran unit. Defaults to none.
+
+[AircraftType]Missile.EliteWarhead=Warhead
+  Defines the warhead the missile uses to deliver damage when launching from
+  an elite unit. Defaults to none.
+
+
+ Missiles; Weapon instead of damage and warhead
+
+Alternatively Using Weapons
+
+
+Instead of using the pair of damage and warhead settings to deliver damage, it
+is also possible to define a weapon that will fire when the missile explodes.
+The weapon is used to control projectile, warhead, damage and bright settings
+of a bullet that detonates immediately.
+
+Note that missiles will not fall back to Missile.Weapon for elite units
+in case Missile.EliteWeapon is not set. Missile.EliteDamage and
+Missile.EliteWarhead are used instead.
+
+ The weapons used for the tags below must be added to the
+  WeaponTypes list or they might not be parsed correctly. See the
+  debug.log if the missiles still use the damage and warhead for
+  dealing damage.
+
+[AircraftType]Missile.Weapon=Weapon
+  The weapon used to deliver damage. If not set, Missile.Damage and
+  Missile.Warhead are used to create the explosion. Defaults to
+  none.
+
+[AircraftType]Missile.EliteWeapon=Weapon
+  The weapon used to deliver damage. If not set, Missile.EliteDamage and
+  Missile.EliteWarhead are used to create the explosion. Defaults to
+  none.
+
+
+
+  Missiles; Trailer and take-off animations
+  Art; Trailer and take-off animations for missiles
+
+Trailer and Take-Off Animations
+
+
+Aside from the missile settings you can customize the takeoff and trailer
+animations. These settings can be used for any missile, whether they are custom
+or not. Ares also optimizes away the lookup of the animation types,
+thus it does not happen each time a new animation is to be created for each
+missile.
+
+[AircraftType]Missile.TakeOffAnim=Animation
+  Defines the optional animation played when the missile takes off. Defaults to
+  V3TAKOFF.
+
+[AircraftType]Missile.TrailerAnim=Animation
+  Defines the optional animation that is used to draw the trailer of this
+  missile. Defaults to V3TRAIL.
+
+[AircraftType]Missile.TrailerSeparation=integer
+  Defines the number of frames to the creation of another trailer animation.
+  Defaults to 3.
+

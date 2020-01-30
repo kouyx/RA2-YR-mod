@@ -1,0 +1,20 @@
+
+  Force Shield; Effect duration per building
+  Buildings; Force Shield effect duration
+
+Force Shield
+
+
+Like the Iron Curtain the Force Shield duration can be customized for each
+BuildingType.
+
+[BuildingType]ForceShield.Modifier=float - multiplier
+  The number of seconds of Force Shield duration is multiplied by this value.
+  Valid values are 0% (Force Shield disallowed) or higher. Defaults to
+  100%.
+
+   Buildings with a ForceShield.Modifier value of 0.0
+    or less are not eligible to fire a Force Shield super weapon on.
+
+ 0.6
+ 0.8
