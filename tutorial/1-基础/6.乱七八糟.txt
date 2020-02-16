@@ -1,619 +1,619 @@
 
 
-RefundPercent=50% �����������õı��� 
+RefundPercent=50% 建筑变卖所得的比例 
 
-SelfHealing=yes �����Զ���Ѫ 
+SelfHealing=yes 可以自动补血 
 
-OpportunityFire=yes �ƶ��й��� 
+OpportunityFire=yes 移动中攻击 
 
-BuildLimit=1 ����������� 
+BuildLimit=1 限制造的数量 
 
-��λ���� 
-VeteranUnits= һ������ 
-VeteranInfantry= һ��ʿ�� 
-VeteranAircraft= һ���ɻ� 
+单位升级 
+VeteranUnits= 一级车辆 
+VeteranInfantry= 一级士兵 
+VeteranAircraft= 一级飞机 
 
-v3���������ã� 
-V3RocketPauseFrames=0 ;��������ǰ�ļ�� 
-V3RocketTiltFrames=60 ;�����ڷ���ǰ�������õ�ʱ�� 
-V3RocketPitchInitial=0.21 ;����ʼ�����ĽǶ�;(0=ˮƽ,1=��ֱ) 
-V3RocketPitchFinal=0.5 ;�����ķ���Ƕ� 
-V3RocketTurnRate=0.05 ;�������Ĺ��������ȣ� 
-V3RocketRaiseRate=1 ;�������������ٶȣ� 
-V3RocketAcceleration=0.4 ;���������ٶȣ� 
-V3RocketAltitude=768 ;�������и߶� 
-V3RocketDamage=200 ;���������� 
-V3RocketEliteDamage=400 ;�����󵼵������� 
+v3导弹的设置： 
+V3RocketPauseFrames=0 ;导弹发射前的间隔 
+V3RocketTiltFrames=60 ;导弹在发射前起竖所用的时间 
+V3RocketPitchInitial=0.21 ;（开始起竖的角度;(0=水平,1=垂直) 
+V3RocketPitchFinal=0.5 ;导弹的发射角度 
+V3RocketTurnRate=0.05 ;（导弹的拐弯灵敏度） 
+V3RocketRaiseRate=1 ;（导弹上升的速度） 
+V3RocketAcceleration=0.4 ;（导弹加速度） 
+V3RocketAltitude=768 ;导弹飞行高度 
+V3RocketDamage=200 ;导弹的威力 
+V3RocketEliteDamage=400 ;三级后导弹的威力 
 V3RocketBodyLength=256 
-V3RocketLazyCurve=yes ;Ѳ��ģʽ V3=yes. ��η��=no. 
-V3RocketType=V3ROCKET ;�˵�λʹ�������ӻ���������
+V3RocketLazyCurve=yes ;巡航模式 V3=yes. 无畏舰=no. 
+V3RocketType=V3ROCKET ;此单位使用上述子机导弹数据
 
-[InfantryTypes] ������λע���б� 
-[VehicleTypes] ��������λע���б� 
-[AircraftTypes] ��������λע���б� 
-[Warheads] ������ͷע���б� 
-[BuildingTypes] ������λע���б� 
-[Animations] ����ע���б� 
-[SuperWeaponTypes]���������б� 
+[InfantryTypes] 步兵单位注册列表 
+[VehicleTypes] 机动车单位注册列表 
+[AircraftTypes] 飞行器单位注册列表 
+[Warheads] 武器弹头注册列表 
+[BuildingTypes] 建筑单位注册列表 
+[Animations] 动画注册列表 
+[SuperWeaponTypes]超级武器列表 
 
-AmerParaDropInf=E1 ;��������Ͷɡ�����ͣ�  
-AmerParaDropNum=8 ;��������Ͷɡ��������  
+AmerParaDropInf=E1 ;（美国空投伞兵类型）  
+AmerParaDropNum=8 ;（美国空投伞兵数量）  
 
-AllyParaDropInf=E1 ;���˾�ռ�����û�����Ͷ�������ͣ�  
-AllyParaDropNum=6 ; ���˾�ռ�����û�����Ͷ����������  
+AllyParaDropInf=E1 ;（盟军占有民用机场空投步兵类型）  
+AllyParaDropNum=6 ; （盟军占有民用机场空投步兵数量）  
 
-SovParaDropInf=E2 ;���վ�ռ�����û�����Ͷ�������ͣ�  
-SovParaDropNum=9 ; ���վ�ռ�����û�����Ͷ���������� 
+SovParaDropInf=E2 ;（苏军占有民用机场空投步兵类型）  
+SovParaDropNum=9 ; （苏军占有民用机场空投步兵数量） 
 
-YuriParaDropInf=INIT ������ռ�����û�����Ͷ�������ͣ� 
-YuriParaDropNum=6 ������ռ�����û�����Ͷ���������� 
+YuriParaDropInf=INIT （尤里占有民用机场空投步兵类型） 
+YuriParaDropNum=6 （尤里占有民用机场空投步兵数量） 
 
-AlliedCrew=E1 --�˾�������ը������Ĳб�  
-SovietCrew=E2 --�վ�������ը������Ĳб�  
-ThirdCrew=INIT --���ｨ����ը������Ĳб� 
+AlliedCrew=E1 --盟军建筑被炸后出来的残兵  
+SovietCrew=E2 --苏军建筑被炸后出来的残兵  
+ThirdCrew=INIT --尤里建筑被炸后出来的残兵 
 
-AlliedDisguise=E1 --�˾�ѵ���������ʱ������ 
-SovietDisguise=E2 --�վ�ѵ���������ʱ������ 
-ThirdDisguise=INIT --����ѵ���������ʱ������ 
+AlliedDisguise=E1 --盟军训练间碟出来时的样子 
+SovietDisguise=E2 --苏军训练间碟出来时的样子 
+ThirdDisguise=INIT --尤里训练间碟出来时的样子 
 
-CrateMinimum=4 ͬʱ
-���ּ������� 
-CrateRadius=5.0 �������Ч��Χ 
+CrateMinimum=4 同时
+出现几个宝箱 
+CrateRadius=5.0 宝箱的有效范围 
 
-IvanTimedDelay=400 �������ը�����ӳ�ʱ�� 
-CanDetonateTimeBomb=yes/no �������ը���Ƿ�����ֶ����� 
+IvanTimedDelay=400 疯狂伊文炸弹的延迟时间 
+CanDetonateTimeBomb=yes/no 疯狂伊文炸弹是否可以手动引暴 
 
-MinMoney=5000 ����ս��ʼʱ���ٿ���ʹ�õĽ�Ǯ 
-MaxMoney=10000 ����ս��ʼʱ������ʹ�õĽ�Ǯ 
-MinUnitCount=0 ����ս��ʼʱ���ٿ���ʹ�õı��� 
-MaxUnitCount=10 ����ս��ʼʱ������ʹ�õı��� 
-UnitCount=4 Ĭ�ϱ��� 
+MinMoney=5000 遭遇战开始时最少可以使用的金钱 
+MaxMoney=10000 遭遇战开始时最多可以使用的金钱 
+MinUnitCount=0 遭遇战开始时最少可以使用的兵数 
+MaxUnitCount=10 遭遇战开始时最多可以使用的兵数 
+UnitCount=4 默认兵数 
 
-GrowthRate= ��ʯ�����ٶ�  
-buildspeed= �����ٶ� 
+GrowthRate= 矿石生长速度  
+buildspeed= 建设速度 
 
-[��������] 
-[LightningStormSpecial] ;��ע������ 
-UIName=Name:Storm ;����Ϸ����ʾ���� 
-Name=���Լ����ϵ��������ľ��С� 
-IsPowered=true ;����֧�� 
-RechargeTime=10 ;������ʱʱ��  
-Type=LightningStorm ;���õĹ�������  
-Action=LightningStorm ;���õ����ָ�� 
-SidebarImage=BOLTICON ;��Ϸ�����õ�ͼ��  
-DisableableFromShell=yes ;�Ƿ񱻡�����������ѡ������ 
-ShowTimer=yes ;�Ƿ�����Ϸ����ʾ������ʱ�����û�����Ĭ��Ϊyes��  
- ============����������================== 
-[ע����]   
-UIName=Name:xx ����Ӧcsf��Ŀ����  
-Name= ���Լ����ϵ��������ľ��С�  
-Image= ����Ϸ����ʾͼ�Ρ� ��ART�ļ����� 
+[超级武器] 
+[LightningStormSpecial] ;【注册名】 
+UIName=Name:Storm ;【游戏中显示名】 
+Name=【自己好认的名，随便改就行】 
+IsPowered=true ;电力支持 
+RechargeTime=10 ;倒数计时时间  
+Type=LightningStorm ;启用的攻击动作  
+Action=LightningStorm ;所用的鼠标指针 
+SidebarImage=BOLTICON ;游戏中所用的图标  
+DisableableFromShell=yes ;是否被“超级武器”选项屏蔽 
+ShowTimer=yes ;是否在游戏中显示倒数计时（如果没有这句默认为yes）  
+ ============步兵，车辆================== 
+[注册名]   
+UIName=Name:xx 【对应csf条目名】  
+Name= 【自己好认的名，随便改就行】  
+Image= 【游戏中显示图形】 在ART文件里谝 
 
-Assaulter=yes ������λ�Ƿ������������פ�صĲ���������Ըý�������κ����ˣ�Agent=����=no 
-Infiltrate=yes ��yes��no���������ָ�������Ƿ���ԡ���͸�������Ҫ��Agent=yes���ʹ�� 
-Agent=yes ������λ�Ƿ�Ϊ�����λ 
+Assaulter=yes 步兵单位是否可以驱逐建筑中驻守的步兵而无须对该建筑造成任何损伤，Agent=必须=no 
+Infiltrate=yes 填yes或no。这个代码指定步兵是否可以“渗透”建筑物。要和Agent=yes配合使用 
+Agent=yes 步兵单位是否为间谍单位 
 
-ConsideredAircraft=yes ���Ƿɻ������ɱ��ͷ��г���ʹ��
-AirportBound=yes �˷ɻ������л������򹥻���׹��
+ConsideredAircraft=yes 不是飞机类的如飞兵和飞行车辆使用
+AirportBound=yes 此飞机必须有机场否则攻击后坠毁
 
-OpenTransportWeapon=1�������乤�����õ�2������0Ϊ��һ���� 
-TargetLaser=yes ���м�����׼�� 
+OpenTransportWeapon=1　在运输工具中用第2武器，0为第一武器 
+TargetLaser=yes 具有激光瞄准线 
 
-Ammo= ����Я���ĵ�ҩ����.Ĭ��Ϊ-1������ 
-Reload= ������װ��ʱ��(����е�ҩ�����趨) 
-EmptyReload= ����ҩ��Ϊ0�����¿�ʼװ������ʱ�� 
-������ֵ��Ϊ��һ������дʾ��������һ������
-Primary=M60 [��һ����]  
-Secondary=Para ���ڶ�����  
-ElitePrimary=M60E �������ĵ�һ������  
-EliteSecondary=ParaE �������ĵڶ������� 
-Spawns=DMISL ʹ�õ��ӵ�λ 
-SpawnsNumber=2 ʹ�õ��ӵ�λ������ 
-SpawnRegenRate=80 �ӵ�λ�����ٶ� 
-SpawnReloadRate=0 �ӵ�λװ�����ٶ� 
-Spawned=yes �����ӵ�λ�ָ���õ�λ���ӵ�λ 
+Ammo= 部队携带的弹药数量.默认为-1即无限 
+Reload= 部队重装弹时间(如果有弹药数量设定) 
+EmptyReload= 当弹药数为0后重新开始装弹所需时间 
+以下数值仅为单一代码填写示例，并非一个整体
+Primary=M60 [第一武器]  
+Secondary=Para 【第二武器  
+ElitePrimary=M60E 【升级的第一武器】  
+EliteSecondary=ParaE 【升级的第二武器】 
+Spawns=DMISL 使用的子单位 
+SpawnsNumber=2 使用的子单位的数量 
+SpawnRegenRate=80 子单位重生速度 
+SpawnReloadRate=0 子单位装弹的速度 
+Spawned=yes 用于子单位里，指定该单位是子单位 
 
-Occupier=yes ����ռ�ݽ�����������ǵġ� 
-OccupyWeapon=UCMP5 ռ��ƽ������ʹ�õ����� 
-EliteOccupyWeapon=UCMP5E 3��ʱռ��ƽ������ʹ�õ����� 
-OccupyPip=����������˿ڱ�־С�����ɫ  
-PersonBlueΪ��ɫ��PersonRedΪ��ɫ��PersonPurpleΪ��ɫ��PersonGreenΪ��ɫ  
+Occupier=yes 【能占据建筑物射击＝是的】 
+OccupyWeapon=UCMP5 占领平民建筑後使用的武器 
+EliteOccupyWeapon=UCMP5E 3级时占领平民建筑後使用的武器 
+OccupyPip=建筑下面的人口标志小格的颜色  
+PersonBlue为蓝色，PersonRed为红色，PersonPurple为紫色；PersonGreen为绿色  
 
-Prerequisite=GAPILE ������ǰ�ᣬȫ������ſ������� 
-PrerequisiteOverride=�ǹ�Prerequisite=������ǰ��  ����һ������
-Strength=125 ������ֵ��125��  
-Pip=white��green��yellow��red�� blue�������乤������ʾʲô��ɫ��  
+Prerequisite=GAPILE 【制造前提，全部满足才可生产】 
+PrerequisiteOverride=盖过Prerequisite=的制造前提  任意一个即可
+Strength=125 【生命值＝125】  
+Pip=white，green、yellow、red， blue【在运输工具中显示什么颜色】  
 
-RequiresStolenAlliedTech=yes �����͸�˾�ʵ���Һ���ܽ��졣 
-RequiresStolenSovietTech=yes �����͸�վ�ʵ���Һ���ܽ��졣 
+RequiresStolenAlliedTech=yes 间谍渗透盟军实验室后才能建造。 
+RequiresStolenSovietTech=yes 间谍渗透苏军实验室后才能建造。 
 
-Turret=yes ��������ת��������
-Turret=no ��������ת������ 
+Turret=yes 有炮塔，转炮塔攻击
+Turret=no 无炮塔，转身攻击 
 
-MoveToShroud=yes �վ�����̽· 
+MoveToShroud=yes 空军可以探路 
 
-DefaultToGuardArea=yes �Զ����뷶Χ����״̬ 
-GuardRange=6 �Զ����뷶Χ����״̬�ľ��� ���е��˿����ͻ���ǰ����
+DefaultToGuardArea=yes 自动进入范围防御状态 
+GuardRange=6 自动进入范围防御状态的距离 ，有敌人靠近就会上前攻击
 
-TechLevel=1 ���������Ƽ��ȼ���1��-1��11Ϊ��������  
-Sight=5 ����Ұ��Χ��5��  
-Speed=4 ���ƶ��ٶȣ�4��  
-Accelerates=false ;��������Ϊ"ture"����"false"�����������λ�ƶ�ʽ�Ƿ�����������Speed������ٶ� 
-AccelerationFactor=1 ;ս����λ�˶��м��ٵ�����
+TechLevel=1 【制造必须科技等级＝1】-1跟11为不能制造  
+Sight=5 【视野范围＝5】  
+Speed=4 【移动速度＝4】  
+Accelerates=false ;可以设置为"ture"或者"false"来决定这个单位移动式是否慢慢加速至Speed定义的速度 
+AccelerationFactor=1 ;战车单位运动中加速的数字
 
 Owner=British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry 
- =Ӣ�� =���� =�¹� =���� =���� =�ն� =�Ű� =������ =������ =�����������Ĺ��ҡ�  
-RequiredHouses= ֻ��˭���� 
-ForbiddenHouses= ˭�������� 
-AllowedToStartInMultiplayer=yes ������ս��ʼ��ӵ�� 
+ =英国 =法国 =德国 =美国 =韩国 =苏俄 =古巴 =利比亚 =伊拉克 =尤里【可以制造的国家】  
+RequiredHouses= 只能谁制造 
+ForbiddenHouses= 谁不能制造 
+AllowedToStartInMultiplayer=yes 允许对战起始就拥有 
 
-Sensors=yes ��̽�����ε�λ =��λ�� 
-SensorsSight=8 ̽�ⷶΧ=8�� 
-DetectDisguise=yes ��λӵ�з���������� 
-DetectDisguiseRange=��ֵ ���ּ���ľ��� 
+Sensors=yes 能探测隐形单位 =单位用 
+SensorsSight=8 探测范围=8格 
+DetectDisguise=yes 单位拥有反间碟的能力 
+DetectDisguiseRange=数值 发现间谍的距离 
 
-RadarInvisible=yes �ڵ����״��ϲ���ʾ
-Cloakable=yes �������� 
-CloakingSpeed=5 �����ٶ� 
-DisguiseWhenStill=yes ָ����λ�ڲ��ƶ�ʱ�������αװ 
-PermaDisguise=yes �������ƶ��в����ƻ��Լ���αװ 
+RadarInvisible=yes 在敌人雷达上不显示
+Cloakable=yes 自身隐形 
+CloakingSpeed=5 隐形速度 
+DisguiseWhenStill=yes 指定单位在不移动时会把自身伪装 
+PermaDisguise=yes 可以在移动中不会破坏自己的伪装 
 
-Cost=200 ������۸�200Ԫ��  
-Soylent=150 �������ļ۸�  
-Points=10 ������ʱ�Է��õ�����ս�÷֣�10�� 
+Cost=200 【制造价格＝200元】  
+Soylent=150 【卖掉的价格】  
+Points=10 【被毁时对方得到遭遇战得分＝10】 
 
-MoveSound=ָ��ս���Ͳ����ƶ��е����� 
-IsSelectableCombatant=yes ������nѡ�񵽡�  
-VoiceSelect=GISelect ��������ѡ��ʱ������  
-VoiceMove=GIMove ����ѡ�ƶ���������  
-VoiceAttack=GIAttackCommand ����ѡ������������  
-VoiceFeedback=GIFear �����µľ���������  
-VoiceSpecialAttack=GIMove �����⹥��������  
-DieSound=GIDie ������ʱ�Ľ����� 
-CrushSound=InfantrySquish ������������ 
-CreateUnitSound=��Sound.ini�ж�������������������ָ��������λ����ʱ��Ӫ���ŵ�������
+MoveSound=指定战车和步兵移动中的声音 
+IsSelectableCombatant=yes 【能用n选择到】  
+VoiceSelect=GISelect 【被单点选择时声音】  
+VoiceMove=GIMove 【点选移动答复声音】  
+VoiceAttack=GIAttackCommand 【点选攻击答复声音】  
+VoiceFeedback=GIFear 【害怕的惊叫声音】  
+VoiceSpecialAttack=GIMove 【特殊攻击叫声】  
+DieSound=GIDie 【牺牲时的叫声】 
+CrushSound=InfantrySquish 【被碾碎声音 
+CreateUnitSound=填Sound.ini中定义的声音名。这个代码指定步兵单位生成时兵营播放的声音。
 
-ȫ��ÿ�����͵�λ����ʱ���������Բ��Ų�ͬ��������CreateInfantrySound=��CreateUnitSound=��CreateAircraftSound=�ֱ��Ӧ��������������λ������������λ�����վ���λ 
-CreateSound=��Sound.ini�ж�������������������ָ���õ�λ������ʱ������ 
+全局每种类型单位出厂时工厂都可以播放不同的声音：CreateInfantrySound=，CreateUnitSound=，CreateAircraftSound=分别对应步兵、机动车单位（包括海军单位）、空军单位 
+CreateSound=填Sound.ini中定义的声音名。这个代码指定该单位被建造时的声音 
 
-MovementZone=�˶����� 
- =Infantry���������� 
- =InfantryDestroyer=ֻ������ 
- =Destroyer=�����˶�  
- =Fly=ֻ���ڿ��з��� 
- =Amphibious=���ܵ�λ  
- =AmphibiousDestroyer=ֻ����ˮ½�˶� 
- =Subterranean=���ڵ���Ǳ���˶� 
+MovementZone=运动限制 
+ =Infantry＝步兵行走 
+ =InfantryDestroyer=只能行走 
+ =Destroyer=车辆运动  
+ =Fly=只能在空中飞行 
+ =Amphibious=两栖单位  
+ =AmphibiousDestroyer=只能在水陆运动 
+ =Subterranean=能在地下潜地运动 
 
-SpeedType=�˶����� 
- =Amphibious ����,����,����,��λ 
- =Hover=ֱ��������е�λ 
- =Foot=������λ 
- =Wheel=������λ 
- =Winged=������ɻ���λ 
- =Float=���е�λ 
- =Underground=Ǳ�ص�λ 
+SpeedType=运动类型 
+ =Amphibious 两栖,步兵,车辆,单位 
+ =Hover=直升机类飞行单位 
+ =Foot=步兵单位 
+ =Wheel=车辆单位 
+ =Winged=机场类飞机单位 
+ =Float=海中单位 
+ =Underground=潜地单位 
 
-Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}�������˶�ģʽ��  
-Locomotor={4A582746-9839-11d1-B709-00A024DDAFD1} [�ɱ��\��ģʽ���ٶȷ�ʽĬ��ΪSpeedType=Winged��
-�������ã�
-1��������һ��β�棬��Art(md).ini��Trailer=����
-2�������λΪ���е�λ���ӻ���������������Landable=yes���������ý��䶯������Carryall=yes��IsDropship=yesҲ��������Ч���������ɲ�ͬ�������ơ�
-3�������ӷ籩����ʱ����λ��ӿ������±��٣�ra2��Ч
-4�����ǳ���������HunterSeeker=yes������Զ�Ѱ���ҵ�λ��������ra2��Ч
-5����Fighter=yesʱ�����������ڵо���λ�Ϸ��������ˣ�����TS���Orca Fighter��
-6����YR�У�����FlyBy=true������ָ�����ڷɹ�Ŀ���Ϸ�ʱ�������
+Locomotor={4A582744-9839-11d1-B709-00A024DDAFD1}【步兵运动模式】  
+Locomotor={4A582746-9839-11d1-B709-00A024DDAFD1} [飞兵運動模式】速度方式默认为SpeedType=Winged。
+附加设置：
+1、可以有一个尾焰，由Art(md).ini的Trailer=控制
+2、如果单位为飞行单位（从机场生产），且有Landable=yes，可以设置降落动画；用Carryall=yes，IsDropship=yes也会有类似效果，但是由不同参数控制。
+3、在离子风暴来临时，单位会从空中落下被毁，ra2无效
+4、若是车辆，且有HunterSeeker=yes，则会自动寻找找单位来攻击，ra2无效
+5、有Fighter=yes时，可以悬浮在敌军单位上方攻击敌人（类似TS里的Orca Fighter）
+6、在YR中，加上FlyBy=true，可以指定它在飞过目标上方时不会减速
 ==
-Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1} [�����˶�ģʽ]
+Locomotor={4A582741-9839-11d1-B709-00A024DDAFD1} [车辆运动模式]
 ==
-Locomotor={4A582742-9839-11d1-B709-00A024DDAFD1} �������ܵ�λ�ġ����������ڰ�����¸�����λ���ж��ڵر���������ˮ��
-���������䡰SpeedType=Amphibious��MovementZone=AmphibiousCrusher������ô��ˮ�е��ٶȽ������ڰ��ϣ�����λ�������Ӵ���ʧȥ������Ч��
+Locomotor={4A582742-9839-11d1-B709-00A024DDAFD1} 用于两栖单位的“悬浮”，在半空上下浮动，位置判定在地表，可以下水，
+如果又有语句“SpeedType=Amphibious和MovementZone=AmphibiousCrusher”，那么在水中的速度将大大快于岸上，但单位将与地面接触，失去了悬浮效果
 ==
 Locomotor={4A582743-9839-11d1-B709-00A024DDAFD1}
-����Ǳ���ƶ��������ô��෽ʽ�ƶ��ĵ�λ��Ǳ���ƶ��ٶ���[General]�������Subterranean Vehicle Characteristics�е�TunnelSpeed=���壻��ƽʱ���ƶ��ٶ��ɵ�λ������Speed=����������ٶȷ�ʽĬ��ΪSpeedType=Underground
+这是潜地移动，所有用此类方式移动的单位的潜地移动速度由[General]部分里的Subterranean Vehicle Characteristics中的TunnelSpeed=定义；而平时的移动速度由单位本身的Speed=项决定。它速度方式默认为SpeedType=Underground
 ==
 Locomotor={4A582745-9839-11d1-B709-00A024DDAFD1}
-�����¡��˶���ʽ������[General]�������Drop Pod Flight Characteristics���������������ԡ��ٶȷ�ʽĬ��ΪSpeedType=Winged�����ĸ�������Ϊ�������/����ʱ����һЩͼ������Ϊ����Ч����
+“落下”运动方式，由在[General]部分里的Drop Pod Flight Characteristics控制它的特有属性。速度方式默认为SpeedType=Winged。它的附加设置为，在落地/升空时调用一些图像来做为动画效果。
 ==
 Locomotor={4A582747-9839-11d1-B709-00A024DDAFD1}
-�����͡��������ű����ƶ���ʽ����Rules(md).ini��[General]�������и���Reinforcement/Chrono Stuff ������ר���趨������˶���ʽ���ƶ���������Ķ���Ч��ΪWarpOut= ����������һ����������Ч�Ĳ�����WarpIn= û���õ�����ͬʱ������˶���ʽ��Ψһһ��û��Ĭ�ϵ�SpeedType�ģ��п����Ǳ������ˡ���ɾ��ĳһ��������˶���ʽ����������Ҳ������������Ч������Ϸ���õ�ԭ����Ҫ��ӵ�������˶���ʽ�ĵ�λ��ʹ��ʱ��һЩ�������ɫ�Ĺ���¼�������ƽʱ����ɫ����Щ�������ǲ�û�б����϶����Ա�����Mouse.shp��Mouse.sha�
+“传送”，即军团兵的移动方式，在Rules(md).ini的[General]部分中有个叫Reinforcement/Chrono Stuff 的特殊专门设定。这个运动方式在移动是有特殊的动画效果为WarpOut= （尽管它的一个存在且有效的参数项WarpIn= 没有用到）。同时，这个运动方式是唯一一个没有默认的SpeedType的，有可能是被干扰了——删掉某一个物件的运动方式并不定义它也可以有这样的效果。游戏设置的原意是要让拥有这种运动方式的单位在使用时用一些特殊的蓝色的光标事件来代替平时的绿色的那些，但它们并没有被用上而且仍保留在Mouse.shp和Mouse.sha里。
 ==
 Locomotor={55D141B8-DB94-11d1-AC98-006008055BB5}
-����е������ʹ���ڻ�е��ĵ�λ�ġ����ߡ������ǡ���ʻ�����˶���ʽ�������ڻ���SHP��ͼ��λ��ʹ�����ܹ���ȷ�������������Ĭ��SpeedType=Foot��ע�⣺ʹ������˶���ʽ�ĵ�λ������һ����̨����ҪVXL��HVA����
-�������ã�
-1��ʹ�ô��˶���ʽ�ĵ�λ��������һ��ʹ�õ�����Ӧ
+“机械”，被使用于机械类的单位的“行走”而不是“驾驶”型运动方式。被用于基于SHP型图象单位，使它们能够正确的面向各个方向。默认SpeedType=Foot。注意：使用这个运动方式的单位可以有一个炮台（需要VXL和HVA）。
+附加设置：
+1、使用此运动方式的单位可以像建筑一样使用电力供应
 ==
 Locomotor={92612C46-F71F-11d1-AC9F-006008055BB5}
-����Ծ���С��˶���ʽ��Rules(md).ini��[JumpjetControls]�����ۺ������Ķ��塣Ĭ��SpeedType=Winged�����صģ���������Щ��λ�����м���һЩ���Ƹõ�λ��ʹ�ô��˶���ʽʱ�����ã������ۺ������Ķ��壨���Ըõ�λ���ԣ������ɶԲ�ͬ��λ����ר�û�������RA2���������Ǻܱ�Ҫ����Ϊ��Щʹ�ô��˶���ʽ�ĵ�λ�Ǵӹ����ｨ�������
+“跳跃飞行”运动方式在Rules(md).ini的[JumpjetControls]中有综合特征的定义。默认SpeedType=Winged。独特的，可以在这些单位代码中加入一些控制该单位在使用此运动方式时的设置，覆盖综合特征的定义（仅对该单位而言），即可对不同单位进行专用化。这在RA2的引擎中是很必要的因为有些使用此运动方式的单位是从工厂里建造出来。
 ==
 Locomotor={2BEA74E1-7CCA-11d3-BE14-00104B62A16C}
-�����ˡ��˶���ʽ��ʹ���ڸ��ബֻ����λ����vxlͼ��Ĭ��SpeedType=Float�����и��Ӵ���ʹ�õ�λ���ݻٲ��Ǳ�ը�����³����ڴ����м���Weight=*��*Ϊ����3��������
+“航运”运动方式被使用于各类船只。单位基于vxl图象。默认SpeedType=Float，并有附加代码使得单位被摧毁不是爆炸而是下沉（在代码中加入Weight=*，*为大于3的整数）
 ===
 Locomotor={B7B49766-E576-11d3-9BD9-00104B972FE8}
-���������˶���ʽ���ڵ�λ�����ĵ�����ʹ�ø��˶���ʽ�ĵ����������vxlͼ��Ĭ��SpeedType=Winged����Rules(md).ini��[General]�е�V3 Rocket Control and Dreadnaught Rocket Control�����ۺ��������塣
-�������ã�
-1������FlyBack=true��ʹ��λ�����������Ĺ�����������ߺ�Ŀ��֮�����̾��룩��
+“弹道”运动方式用于单位发出的导弹。使用该运动方式的导弹必须基于vxl图象。默认SpeedType=Winged。在Rules(md).ini的[General]中的V3 Rocket Control and Dreadnaught Rocket Control处有综合特征定义。
+附加设置：
+1、增加FlyBack=true可使单位被锁定在它的轨道（即发射者和目标之间的最短距离）上
  ==========
-ThreatPosed=10 �����{�ȼ���10��
-ImmuneToVeins=yes ������̩��������ra2��Ч�� 
-ImmuneToPsionics=yes �����߾����������ǡ�
-ImmuneToRadiation=yes ݗ�䌦���oЧ
-ImmuneToPoison=yes ���߲��Ѷ���
-Parasiteable=no ���������޷�������
-Bombable= ��λ�ܲ��ܱ�������İ���ըҩ
+ThreatPosed=10 【威脅等級＝10】
+ImmuneToVeins=yes 【无视泰矿藤蔓，ra2无效】 
+ImmuneToPsionics=yes 【免疫精神武器＝是】
+ImmuneToRadiation=yes 輻射對他無效
+ImmuneToPoison=yes 免疫病狙毒气
+Parasiteable=no 寄生武器无法攻击它
+Bombable= 单位能不能被疯狂伊文绑上炸药
 
-NotHuman=yes ������������
-Natural=yes Ұ�������
-Category=Civilian  ƽ���λ��ai��
-DeathWeapon=����ʱ��ԭ���ͷŵ�����
-ToProtect �˲����Ƿ����������ӱ���.ֻ�Ե��������Ч
-Crashable=��yes��no���������ָ���˿��е�λ���ݻٺ��Ƿ�׹�䵽����
+NotHuman=yes 死亡动画锁定
+Natural=yes 野外生物專用
+Category=Civilian  平民單位，ai用
+DeathWeapon=死亡时候原地释放的武器
+ToProtect 此部队是否有其他部队保护.只对电脑玩家有效
+Crashable=填yes或no。这个代码指定此空中单位被摧毁后，是否坠落到地面
 
 
-DeploysInto=DROD ����D��չ�_��׃��һ�����B���������܇׃�ɻ��� 
-Deployer=yes ������չ�_���ǵġ�
-IsSimpleDeployer=yes ��ʾ����D����������Ȼ߀�����Լ������Ʊ��������һ����λ����ʵ��ֻ�����۷�����ֱչ����
-DeployingAnim=MMBDEPL �����^�̵ĄӮ�����Ҫ�Ӯ��t������׃�����������B؞
-UnloadingClass=MMBTNK ����������λ��ͼ������������ԭ���������ƶ����ø�����������Լ���ڲ�������
-Deployer=yes ��ʾ����D����ʹ�ø��乥�����@�N������������������������ܰlɢ������??��ጷ��͸��䣬ͨ������ʎ������y�����ȡ������B�mጷŶ��
-UndeployDelay=150 ጷ�һ������Ҫ���@����r�g����ጷŵ�2�Σ�
-                  ��ֵͨ���͸����ROF��ȣ���Ӳֱ������ҪSHP֧�ֲ���Ҫ����Sequence
-DeployTime=��ʱ�䡣�������ָ���õ�λչ�����õ�ʱ��
-DeploySound=GIDeploy ��չ�_ɳ������ 
-UndeploySound=GIUndeploy ���ջ�չ�_����
-PreventAutoDeploy= ��yes��no���������ָ���õ�λ�Ƿ��ܹ��Զ�չ��
+DeploysInto=DROD 按“D”展開後變成一個建築，比如基地車變成基地 
+Deployer=yes 【可以展開＝是的】
+IsSimpleDeployer=yes 表示按“D”部署後仍然還是它自己，看似变成了另外一个单位，其实这只是障眼法，武直展开。
+DeployingAnim=MMBDEPL 部署過程的動畫，不要動畫則是立刻變，看起來不連貫
+UnloadingClass=MMBTNK 部署后换这个单位的图像，其它都保持原来，不能移动，用副武器攻击。约等于步兵部署
+Deployer=yes 表示按“D”後使用副武攻擊，這種副武由於是以它爲中心向四周發散，所以??爲釋放型副武，通常有震蕩波、混亂氣流等。可以連續釋放多次
+UndeployDelay=150 釋放一次後需要等這麽多時間才能釋放第2次，
+                  數值通常和副武的ROF相等，其硬直动作需要SHP支持并需要设置Sequence
+DeployTime=填时间。这个代码指定该单位展开所用的时间
+DeploySound=GIDeploy 【展開沙包聲音】 
+UndeploySound=GIUndeploy 【收回展開聲音】
+PreventAutoDeploy= 填yes或no。这个代码指定该单位是否能够自动展开
 
-VeteranAbilities=STRONGER,FIREPOWER,ROF,SIGHT,FASTER  ��һ��ʱ�õ��ļ���[ע0]
-EliteAbilities=SELF_HEAL,STRONGER,FIREPOWER,ROF       ������ʱ�õ��ļ���[ע0]
+VeteranAbilities=STRONGER,FIREPOWER,ROF,SIGHT,FASTER  升一级时得到的技能[注0]
+EliteAbilities=SELF_HEAL,STRONGER,FIREPOWER,ROF       升三级时得到的技能[注0]
 
-Crusher=yes  ������λ���ã������뉺ʿ��
-OmniCrusher=yes ���YҪ�������c�������뉺�κ��������Ć�λ������������
-                ��Ҫ���Z�䡰MovementZone=CrusherAll���B��
-Crushable=yes/no �������ܷ��뉺 ��
-OmniCrushResistant=yes ��ֹ�����YҪ����������܇�뉺 
+Crusher=yes  车辆單位專用，可以碾壓士兵
+OmniCrusher=yes 戰鬥要塞的特點，可以碾壓任何有生命的單位，包括圍牆。
+                需要和語句“MovementZone=CrusherAll”連用
+Crushable=yes/no 【步兵能否被碾壓 】
+OmniCrushResistant=yes 禁止被戰鬥要塞或其他戰車碾壓 
  
 
-IFVMode=2 ���M�벽����܇������׃ģʽ
-UseOwnName=true  װ��๦�ܳ�����Ȼʹ���Լ������Q��
+IFVMode=2 【進入步兵戰車炮塔改變模式
+UseOwnName=true  装入多功能车后仍然使用自己的名稱，
  
-Engineer=yes ���������@���Z��Ć�λ�����˹��̱�
-Fearless=yes ��������
-CrateGoodie=yes  �[���������
+Engineer=yes 凡是有了這個語句的單位都成了工程兵
+Fearless=yes 不会匍匐
+CrateGoodie=yes  隱藏於箱箱中
 
-Size=1 ���\���w�e��1(���ǽ����乤��ʱ��ռ�Ŀռ䡿
-�\ݔ��λ
-PipScale=Passengers �·���С���ʾ�������g
-Passengers=10 �������g��С����Ҫ�Ա��d�ߵ��w�e�������\�d����
-SizeLimit=6 �b�d�ڏ����w�e���6�Ė|�����o���M��
-EnterTransportSound=EnterTransport �b�d��
-LeaveTransportSound=ExitTransport ጷ���
-OpenTopped=yes ���d�߿������Y�������_�𣬑��YҪ�������c
+Size=1 【運兵體積＝1(就是进运输工具时所占的空间】
+運輸單位
+PipScale=Passengers 下方用小格表示容量空間
+Passengers=10 容量空間大小，需要以被載者的體積來定可運載數量
+SizeLimit=6 裝載口徑，體積大於6的東西都無法進入
+EnterTransportSound=EnterTransport 裝載聲音
+LeaveTransportSound=ExitTransport 釋放聲音
+OpenTopped=yes 被載者可以在裏面向外開火，戰鬥要塞的特點
 
-Storage=20 ���ؿ������
+Storage=20 矿车载矿的数量
 
-Bunkerable=no ���ɷ���̹�˱������]�д��Z��rĬ�J���Է��롣��������λ��Ϊ��Ҫת�����𣬷Ž�ȥҲû��
-TooBigToFitUnderBridge=true  ����ͣ��춘���
-Trainable=no �����@������ԓ��λ�oՓ�������˶���������
+Bunkerable=no 不可放入坦克堡壘，沒有此語句時默認可以放入。无炮塔单位因为需要转身开火，放进去也没用
+TooBigToFitUnderBridge=true  不能停留於橋下
+Trainable=no 用了這個以後該單位無論殺多少人都不會升級
 
-����ʽ�w��
-JumpjetSpeed=32 ƽ�w�ٶ�
-JumpjetClimb=7 �����ٶȣ�����ɽ�}���Ƿ��r�E���w�и߶ȕr�������ٶ�
-JumpjetCrash=15��������������ٶȣ����ɴ��15����t�͕��ڵ����ϴ��D��һֱ�������ҟo����������Ҳ�o������ָ����ж��J�������ѽ�����
-JumpJetAccel=10 ���Ӽ��ٶȣ�̫���Ԓ���������ٵĸ��X
-JumpJetTurnRate=2 ���D������ٶȣ���ֵԽС�D���돽��ԽС���D��Խ��
-JumpjetHeight=1000 ƽ�w�r�x����ĸ߶ȣ�1000����m�������ڵ�6�ӵ���8��֮�g
-JumpjetNoWobbles=yes ��ֹ���ӣ��w�C�ڿ���ͣ�����ӣ�������������
-BalloonHover=yes  �������
-Landable=yes      �������
-HoverAttack=yes �ɱ�����������
-Fighter=yes ����w�C̎�����������^��ϕr��Ȼ�����_�𣬷�t����
+噴氣式飛行
+JumpjetSpeed=32 平飛速度
+JumpjetClimb=7 爬升速度，遇到山脈、樓房時擡升飛行高度時的上升速度
+JumpjetCrash=15被擊落後的下落速度，不可大於15，否則就會在地面上打轉，一直不死，且無法被攻擊，也無法接受指令，因爲判定認爲它爲已經死亡
+JumpJetAccel=10 啓動加速度，太大的話看不出加速的感覺
+JumpJetTurnRate=2 掉轉方向的速度，數值越小轉彎半徑就越小，轉彎越快
+JumpjetHeight=1000 平飛時離地面的高度，1000最爲合適，大致在第6層到第8層之間
+JumpjetNoWobbles=yes 禁止浮動，飛機在空中停留不動，不會上下震動
+BalloonHover=yes  永不落地
+Landable=yes      可以落地
+HoverAttack=yes 飞兵的悬浮攻击
+Fighter=yes 如果飛機處於它攻擊對象的頭頂上時仍然可以開火，否則不行
 
-CanPassiveAquire=no �Ƿ��ܹ��Զ�����
-CanRetaliate=no  �Ƿ��ܵ��������Զ�����
-StupidHunt=yes   ��ʹ��ǿ�н���ȥ���������ܹ����Ķ�������Ҳ�����ж�
-Passive=yes  �����Ե�λ
+CanPassiveAquire=no 是否能够自动攻击
+CanRetaliate=no  是否受到攻击后自动反击
+StupidHunt=yes   即使你强行叫它去攻击它不能攻击的东西，它也不会行动
+Passive=yes  侵略性单位
 
 AttackCursorOnFriendlies=
-��yes��no���������ָ���õ�λ�Ƿ���Զ��Լ�һ����λչ��������һ������ҽ�Ʊ���������ġ�ά�޳��ȵ�λ��
+填yes或no。这个代码指定该单位是否可以对自己一方单位展开攻击，一般用于医疗兵、疯狂伊文、维修车等单位。
 AttackFriendlies=
-��yes��no���������ָ����λ�Ƿ����������Լ�һ����λ����Ҳ���Թ������˵�λ��
+填yes或no。这个代码指定单位是否主动攻击自己一方单位，但也可以攻击敌人单位。
 
-IsChargeTurret=�������������������������Ҫ��TurretCountһ����
+IsChargeTurret=充电炮塔，如光棱的炮塔动画，要和TurretCount一起用
 
 
-Organic=�ᱻ��Ļ�ɵ����������������\
+Organic=会被铁幕干掉，车辆，海豚乌賊
 NavalTargeting= 
-0 �ܹ�����ˮ�µ�λ����������Ϊ����
-1 �ܹ�����ˮ�µ�λ����������Ϊ����
-2 ֻ�ܹ���ˮ�µ�λ����������Ϊ����
-3 ʹ�ø��乥�����ϵ�λ
-4 ʹ�����乥�����ϵ�λ�����乥��ˮ�µ�λ
-5 ʹ�����乥�����к�����λ
-6 ���ܹ������ϵ�λ���繷���ֲ������ˣ� 
-7: �������������ϵ�Ŀ�꣬���������ϵ�Ŀ�� 
+0 能够攻击水下单位，攻击武器为主武
+1 能够攻击水下单位，攻击武器为副武
+2 只能攻击水下单位，攻击武器为主武
+3 使用副武攻击海上单位
+4 使用主武攻击海上单位，副武攻击水下单位
+5 使用主武攻击所有海军单位
+6 不能攻击海上单位（如狗，恐怖机器人） 
+7: 主武器攻击海上的目标，副武器打岸上的目标 
 
 LandTargeting= 
-0: ���Թ���½�ϵ�Ŀ�� 
-1: ���ܹ���½�ϵ�Ŀ�� 
-2: �ø���������½�ϵ�Ŀ��
-[NAPOWR] ��ע������ 
-UIName=Name:NAPOWR ��Ϸ����ʾ���� 
-Name=Soviet Tesla Reactor ���Լ����ϵ��������ľ��С� 
-AIBuildThis=no ���Բ��� 
+0: 可以攻击陆上的目标 
+1: 不能攻击陆上的目标 
+2: 用副武器攻击陆上的目标
+[NAPOWR] 【注册名】 
+UIName=Name:NAPOWR 游戏中显示名】 
+Name=Soviet Tesla Reactor 【自己好认的名，随便改就行】 
+AIBuildThis=no 电脑不造 
 
-BuildCat=Tech �Ƽ��࣬û���������õĽ�����ֻ�ṩ����ǰ�ᣬ����սʵ���� 
-BuildCat=Power ��Դ�࣬ר������ṩ�������е�ʱ��Ų��Ŷ���
-BuildCat=Resource��Դ�࣬ר�Ÿ���ɼ���ʯ����Ҫ�͡�DockUnload=yes��Refinery=yes�����á�ǰ4������ڽ����� 
-BuildCat=Combat �����࣬�����ڷ����� 
+BuildCat=Tech 科技类，没有生产作用的建筑，只提供建造前提，如作战实验室 
+BuildCat=Power 能源类，专门用於提供电力，有电时候才播放动画
+BuildCat=Resource资源类，专门负责采集矿石，需要和“DockUnload=yes及Refinery=yes”连用。前4类出现在建筑栏 
+BuildCat=Combat 防御类，出现在防御栏 
 
-Factory=BuildingType �����࣬ר�Ž��콨�� 
-Factory=InfantryType ��Ӫ�࣬ѵ������������ѡ�񼯺ϵ� 
-Factory=UnitType�����࣬����ս���ͷ��г���������ѡ�񼯺ϵ㣬��Ҫ�롰WeaponsFactory=yes�����á� 
+Factory=BuildingType 基地类，专门建造建筑 
+Factory=InfantryType 兵营类，训练步兵，可以选择集合点 
+Factory=UnitType工厂类，生产战车和飞行车辆，可以选择集合点，需要与“WeaponsFactory=yes”连用。 
 
-����С�WaterBound=yes�����Ǻ�������������ս�� 
-Factory=AircraftType �����࣬��������ʽ������ 
+如果有“WaterBound=yes”则是海军工厂，生产战舰 
+Factory=AircraftType 机场类，生产飞行式攻击机 
 
-UnitRepair=yes ά�޳���ά�������ս��������ѡ������� 
+UnitRepair=yes 维修厂，维修破损的战车，可以选择出厂点 
 
-ClickRepairable=yes/no �����Ƿ�����á�ά��С���֡�������ά�� 
+ClickRepairable=yes/no 建筑是否可以用“维修小扳手”工具来维修 
 
-PlaceAnywhere=�����������κγ��ؽ��졣 
+PlaceAnywhere=建筑可以在任何场地建造。 
 
-Repairable=no �������ܱ�����ʦ�޸� 
+Repairable=no 建筑不能被工程师修复 
 
-Capturable=true =�ɱ�ռ�� # false =���ɱ�ռ�� 
+Capturable=true =可被占领 # false =不可被占领 
 
-Radar=yes ;�״﹦�� 
-SpySat=yes ;������ǹ��� 
+Radar=yes ;雷达功能 
+SpySat=yes ;间谍卫星功能 
 
-SensorArray=yes ��̽�����ε�λ =������ 
-SensorsSight=8 ̽�ⷶΧ=8�� 
+SensorArray=yes 能探测隐形单位 =建筑用 
+SensorsSight=8 探测范围=8格 
 
-Strength=1125 ����ֵ 
+Strength=1125 生命值 
  
-Sight=4 ��Ұ��Χ 
-Adjacent=2 ���Թ��ӵĸ��� 
-BaseNormal=no ����������Ϊ���ӻ��� 
+Sight=4 视野范围 
+Adjacent=2 可以过接的格数 
+BaseNormal=no 建筑不能作为连接基础 
 
 Owner=British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry 
- =Ӣ�� =���� =�¹� =���� =���� =�ն� =�Ű� =������ =������ =�����������Ĺ��ҡ� 
-AIBasePlanningSide=��0-1����ֵ�� 
- �������ָ������������������Ҫ�Ǹ�AI�жϵģ�AI����������ֵ������һЩ��Ϊ���罨��Χǽ�� 
- ��ֵΪ0ʱ��ʾΪ�˾���1ʱΪ�վ��� 
+ =英国 =法国 =德国 =美国 =韩国 =苏俄 =古巴 =利比亚 =伊拉克 =尤里【可以制造的国家】 
+AIBasePlanningSide=填0-1的数值。 
+ 这个代码指定建筑的所属方，主要是给AI判断的，AI会根据这个数值来作出一些行为诸如建立围墙。 
+ 数值为0时表示为盟军，1时为苏军。 
 
-Cost=600 ����۸� 
-Power=150 ��������- Ϊ�õ��� 
-Powered=yes �ý�����Ҫ����֧�ֲ���ʹ�� 
+Cost=600 制造价格 
+Power=150 发电量，- 为用电量 
+Powered=yes 该建筑需要电力支持才能使用 
 
-Crewed=yes ���˵�λ�������ݻٺ��в����������ӳ� 
-Explosion=��������������ָ������VXL��λ�ͽ�����ըʱ���ŵĶ����� 
-MaxDebris=20 ����ֵ���������ָ����������ĵ�λ���ݻٺ󵯳�����Ƭ�������ֵ�� 
-MinDebris=10 ����ֵ���������ָ����������ĵ�λ���ݻٺ󵯳�����Ƭ������Сֵ�� 
-DebrisAnims=��������������ָ����VXL��λ��������λ���ݻ�ʱǿ�Ʋ��ŵı�ը���� 
+Crewed=yes 当此单位或建筑被摧毁后有步兵从里面逃出 
+Explosion=填动画名。这个代码指定的是VXL单位和建筑爆炸时播放的动画。 
+MaxDebris=20 填数值。这个代码指定除步兵外的单位被摧毁后弹出的碎片数的最大值。 
+MinDebris=10 填数值。这个代码指定除步兵外的单位被摧毁后弹出的碎片数的最小值。 
+DebrisAnims=填动画名。这个代码指定该VXL单位、建筑单位被摧毁时强制播放的爆炸动画 
 ThreatPosed=0 ; This value MUST be 0 for all building addons 
-DamageParticleSystems=������ϵͳ���ơ��������ָ��VXL��λ��Ѫʱ���ŵ�����ϵͳ 
-DamageSmokeOffset=��X��Y��Z����ֵ���������ָ��VXL��λ��������λ�ٽ��ٻ�ʱð�̵�λ�á�Ĭ��Ϊ0��0��0 
-TogglePower=no �жϵ�����ra2��Ч
+DamageParticleSystems=填粒子系统名称。这个代码指定VXL单位黄血时播放的粒子系统 
+DamageSmokeOffset=填X，Y，Z的数值。这个代码指定VXL单位、建筑单位临近毁坏时冒烟的位置。默认为0，0，0 
+TogglePower=no 切断电力，ra2无效
 
-Spyable=yes ������Խ��룬��춲�ͬ��Ľ������Բ���һЩ��ͬ��Ч�� 
+Spyable=yes 间谍可以进入，对於不同类的建筑可以产生一些不同的效果 
 
-DieSound= ��Sound.ini�ж�������������������ָ���õ�λ���ݻ�ʱ�������� 
+DieSound= 填Sound.ini中定义的声音名。这个代码指定该单位被摧毁时的声音。 
 
-Drainable=yes �ɵ�������ȡ������������ֹͣ���������ʽ����� 
+Drainable=yes 飞碟可以吸取它的能量，或停止工作，或资金被吸收 
 
 PoweredSpecial=yes 
-LeaveRubble=yes �������ٺ��������������ƽ������ 
+LeaveRubble=yes 建筑被毁后垃圾会残留（像平民建筑） 
 
-Bib=yes һЩ�����⹦�ܵĽ�����Ҫ���ƽ̨�������������ͣ�ɻ������Bib��Ҫͼ�κ�ART��֧�� 
+Bib=yes 一些有特殊功能的建筑需要这个平台，比如机场用来停飞机，这个Bib需要图形和ART的支持 
 
-Overpowerable=true ���ֽ������Ա��С����ܹ��ܡ��ĵ�λ���ܴӶ���ɹ��ܹ��࣬ʵ�� 
- ��������ǿ������ǰ�����乥�������غ��ʹ�ø��乥��������ű���Ȧ 
-ProtectWithWall=yes �������õģ����Ի�����������Χǽ���� 
-FreeUnit=FLMIN ͨ�����ڿ󳧣������Ժ����һ��������͵ĵ�λ�� 
- Ҫ������������Է�����������չ������ô�Ϳ�������һ�����ѵ�λ�� 
- ��ôBT������ר���ڲ���ս���������ѵ�λ���ǵ��׶��ǹ��⣬��ô�����̫BT�� ����Ȼ���ֹ�ʱ�ķ�������ֹͣʹ�á�
-UndeploysInto=FLMCV�������Ա������ƶ������Ͽ���Ϊս����λ��ͨ����춻��صĽ����ͻ��� 
+Overpowerable=true 这种建筑可以被有“充能功能”的单位充能从而造成供能过多，实现 
+ 攻击力加强，过载前用主武攻击，过载后的使用副武攻击，比如磁暴线圈 
+ProtectWithWall=yes 给电脑用的，电脑会给这个建筑以围墙保护 
+FreeUnit=FLMIN 通常用于矿厂，建立以后出现一个免费赠送的单位。 
+ 要是这个建筑可以反复收起来再展开，那么就可以生成一大堆免费单位， 
+ 这么BT的招数专用于布雷战车，如果免费单位不是地雷而是光棱，那么就真的太BT了 。当然这种过时的方法早已停止使用。
+UndeploysInto=FLMCV建筑可以被命令移动而被拖开成为战车单位，通常用於基地的建立和回收 
 
-Upgrades=2 ������彨��������Ϊ�������������滹���Լ���2������ 
-PowersUpBuilding=UAPOWR ��춸������֣���������彨��UAPOWR�����ȷ��糧���� 
- ��ֻ�������彨�����棬���ܷ��ڿյػ������ط� 
-PowersUpToLevel=-1 ��춸������֣���ʾ�ܹ����Լ��صĴ�����ͨ����Ҫ���޼��ء� 
-Passengers=5 �������뽨�������� 
+Upgrades=2 用於主体建筑，以它为基础，往它上面还可以加载2个部分 
+PowersUpBuilding=UAPOWR 用於附属部分，加载於主体建筑UAPOWR（地热发电厂）， 
+ 即只能在主体建筑上面，不能放在空地或其他地方 
+PowersUpToLevel=-1 用於附属部分，表示总共可以加载的次数，通常需要无限加载。 
+Passengers=5 步兵进入建筑的数量 
 
-Armory=yes ����ѵ��������3���Ĳ������Խ��룬������ֱ������3��������ѡ�񼯺ϵ㣬 
- �������ѵ�������ϡ�Factory=InfantryType������ô�Ϳ���ѡ�񼯺ϵ㣬����ѵ�����ͳ���2�ű�Ӫ�� 
-Ammo=9999 ѵ����������д��������
+Armory=yes 步兵训练场，非3级的步兵可以进入，出来后直接升成3级，不能选择集合点， 
+ 但如果把训练场加上“Factory=InfantryType”，那么就可以选择集合点，但是训练场就成了2号兵营了 
+Ammo=9999 训练数量，不写就是无限
 
-OrePurifier=yes ����������˾���ʯ��������Ч�� 
-PurifierBonus=�����ʽ�ٷֱ�  
+OrePurifier=yes 这个建筑有盟军矿石精炼器的效果 
+PurifierBonus=额外资金百分比  
 
-CanC4=no ��������C4ը��ը�� 
+CanC4=no 建筑不被C4炸弹炸掉 
 
-CloakGenerator=��yes��no���������ָ���ý����Ƿ���Խ�������Χ���ѷ���λȫ�����Ρ� 
-CloakRadiusInCells=�����֡��������ָ������������Χ�ѷ���λ�����ذ뾶��Ҫ��CloakGenerator=yes���ʹ�á� 
-CloakStop=��yes��no����������ָ���õ�λ�Ƿ������ν����Ĳ���Ӱ�졣��yesʱ���õ�λ�������� 
+CloakGenerator=填yes或no。这个代码指定该建筑是否可以将自身周围的已方单位全部隐形。 
+CloakRadiusInCells=填数字。这个代码指定建筑隐藏周围已方单位的隐藏半径，要和CloakGenerator=yes配合使用。 
+CloakStop=填yes或no。这个代码的指定该单位是否受隐形建筑的波及影响。填yes时，该单位不能隐形 
 
-GapGenerator=��yes��no���������ָ�������Ƿ�Ϊ����Ļ���������� 
-GapRadiusInCells=����ֵ���������ָ������Ļ�����������������ĺ�Ļ�뾶�� 
- Ҫ��GapGenerator=yes���ʹ�� 
+GapGenerator=填yes或no。这个代码指定建筑是否为“黑幕产生器”。 
+GapRadiusInCells=填数值。这个代码指定“黑幕产生器”建筑产生的黑幕半径。 
+ 要和GapGenerator=yes配合使用 
 
 HasRadialIndicator=true 
-��yes��no���������ָ�������Ƿ�ӵ�й�����ΧԲ�������ǹ�ﱤ������Բ������ 
-Բ���İ뾶��CloakRadiusInCells=��GapRadiusInCells=��SuperGapRadiusInCells=ָ��������Ҳ�����趨��PsychicDetectionRadius=���վ��ġ������Ӧװ�á�����Բ��Ч���� 
+填yes或no。这个代码指定建筑是否拥有攻击范围圆弧（如机枪碉堡的那种圆弧）。 
+圆弧的半径由CloakRadiusInCells=或GapRadiusInCells=或SuperGapRadiusInCells=指定。或者也可以设定成PsychicDetectionRadius=（苏军的“心灵感应装置”那种圆弧效果） 
 
 PsychicDetectionRadius= 
-����ֵ���������ָ��̽����˶����İ뾶��Χ�����͵��������վ��ġ������Ӧװ�á��� 
+填数值。这个代码指定探测敌人动作的半径范围。典型的运用是苏军的“心灵感应装置”。 
 
-SuperWeapon=������������������ָ���ý���������������ĳ��������� 
-SuperWeapon2=������������������ָ���ý���������������ĵڶ������������� 
+SuperWeapon=填超级武器名。这个代码指定该建筑产生后所激活的超级武器。 
+SuperWeapon2=填超级武器名。这个代码指定该建筑产生后所激活的第二个超级武器。 
 
-UnitsGainSelfHeal=1 ;��е�̵�Ч�� 
-InfantryGainSelfHeal=1 ;ҽԺЧ��  
+UnitsGainSelfHeal=1 ;机械商店效果 
+InfantryGainSelfHeal=1 ;医院效果  
  
   
-[120mmx] ���������� 
+[120mmx] 武器的名称 
 Damage=100  
- �����Ĺ�����������һЩ���������������ʾ����һЩ����������������Ļ���ʱ�䡢������̽·�����������ƿɱ���˵������ȡ� 
- 1�������������ã����Թ�������������˺���0��2�������ܹ����������������Թ������������˺����Ǽ�Ѫ������ά�޳� 
-AmbientDamage=200 �����Ĵ�͵��������ֻ�е���������Ϊ����������ϵͳ��ʱ�ſ����д�͵ЧӦ 
-ROF=60 �����ķ���Ƶ�ʣ�60��ʾ60֡һ��
-Range=5.75 ����������� 
-MinimumRange=1 ����������� 
-Projectile=Cannon ������������[ע1] 
-Speed=40 ��������ٶȣ�����Խ��ͷɵ�Խ�죬������ٶ�ֻ�Ե����൯����Ч 
-Warhead=ApocAP ������ʹ�õĵ�ͷ[ע2] 
-Report=ApocalypseAttackGround ��������ʱ������ 
-Anim=APMUZZLE ����ʱ���ڿڶ��� 
-DecloakToFire=no ��ʹ����������ĵ�λ��������״̬����������״̬ʱ���������ǲ������ε� 
-Burst=2 һ�ڷ���2���ڵ�
-Bright=yes ��ͷ����Ŀ������ʱ������һ�����⣬Damage��ֵԽ����ô���������Խ�� 
-RadLevel=100 ������������С��100
-RevealOnFire=no ���ֵ�λ�ڿ����ʱ�򲻻���ʾ���Է�����ͨ���������ε�λ����Ӱ��λ�;ѻ���λ 
-Lobber=yes ֻ������ʵ��ĵ��壬�����·�߽��ڿ���ʱ�����ϸ��ף�Ȼ������� 
-AreaFire=yes ����Ŀ�걻ǿ��ָ��Ϊ��λ���ڵ�Ԫ��
-FireOnce= �������Ƿ��´�һ�ι���ָ��ֻʹ��һ��Ȼ��ֹͣ.����:����ľ������  
-TurboBoost=yes �������������١�NOΪ���٣�Ĭ��Ϊno 
-OmniFire=yes ȫ�򿪻�
-CellRangefinding= ���е�λ�Ե�Ԫ�������ʵ�ʾ���������
-Charges= �Ƿ��г��Ч�� 
-IonSensitive= �����������ӷ籩/����籩����ʱ�޷�ʹ�� ����Ч
-NeverUse= ��Զ��ʹ�ø�����.���ڶ���ʹĳЩ������λ���Դ��ھ���״̬�ļ����� 
-SabotageCursor= �Ƿ�ʹ��C4ըҩ�����ָ�����ԭ�еĹ������ָ��.����:̷�ǹ�������ʱʹ�õ�����.ע��:ֻ�е�����ʹ�ø�����ʱ�Ż����Ч�� 
-Spawner= �������Ƿ���ʹ�Ӳ���(����:��ĸ�Ľ��ػ�)�������õļ����� 
-Suicide= ����ʹ�ø�����ʱ�Ƿ�ͬʱ�ݻ��Լ�(���ܸ������Ƿ����Լ������˺�) 
-TerrainFire= �������Ƿ������������ʯ�ϻ�ù���ָ��  
+ 武器的攻击力，对于一些特殊的武器它还表示其他一些量，比如混乱气流的混乱时间、侦察机的探路面积、心灵控制可变敌人的总数等。 
+ 1代表有特殊作用，可以攻击，但不造成伤害，0和2代表不能攻击，负数代表可以攻击，但不是伤害而是加血，比如维修车 
+AmbientDamage=200 武器的穿偷攻击力，只有当武器类型为声波和粒子系统类时才可以有穿偷效应 
+ROF=60 武器的发射频率，60表示60帧一次
+Range=5.75 武器射程上限 
+MinimumRange=1 武器射程下限 
+Projectile=Cannon 武器发射类型[注1] 
+Speed=40 弹体飞行速度，数字越大就飞得越快，但这个速度只对导弹类弹体有效 
+Warhead=ApocAP 武器所使用的弹头[注2] 
+Report=ApocalypseAttackGround 武器发射时的声音 
+Anim=APMUZZLE 开炮时的炮口动画 
+DecloakToFire=no 当使用这个武器的单位处于隐形状态或被隐形屏蔽状态时，他开火是不会显形的 
+Burst=2 一炮发射2个炮弹
+Bright=yes 弹头击中目标或地面时将爆出一团闪光，Damage的值越大那么闪光面积就越大 
+RadLevel=100 辐射量，不得小于100
+RevealOnFire=no 这种单位在开火的时候不会显示给对方看，通常用于隐形单位、幻影单位和狙击单位 
+Lobber=yes 只用于有实体的弹体，其飞行路线将在开炮时先望上高抛，然后再落地 
+AreaFire=yes 开火目标被强制指定为单位所在单元格。
+FireOnce= 该武器是否下达一次攻击指令只使用一次然后停止.例如:尤里的精神控制  
+TurboBoost=yes 导弹武器不跟踪。NO为跟踪，默认为no 
+OmniFire=yes 全向开火
+CellRangefinding= 飞行单位以单元格而不是实际距离计算射程
+Charges= 是否有充电效果 
+IonSensitive= 该武器在离子风暴/闪电风暴到来时无法使用 ，无效
+NeverUse= 永远不使用该武器.用于定义使某些附属单位可以处于警戒状态的假武器 
+SabotageCursor= 是否使用C4炸药的鼠标指针代替原有的攻击鼠标指针.例如:谭亚攻击军舰时使用的武器.注意:只有当步兵使用该武器时才会产生效果 
+Spawner= 该武器是否是使子部队(例如:航母的舰载机)产生作用的假武器 
+Suicide= 部队使用该武器时是否同时摧毁自己(不管该武器是否会对自己产生伤害) 
+TerrainFire= 该武器是否可以在树和岩石上获得攻击指针  
 
-��Ϸƽ̨�����˵Ļ�ͼ��Ч
-IsLaser=true ��������������Projectile=Invisible����� 
-IsMagBeam=yes �ŵ粨����������Projectile=Invisible����� 
-IsSonic=Yes ��������������Projectile=Invisible�����
+游戏平台定死了的绘图特效
+IsLaser=true 激光类武器，其Projectile=Invisible类最好 
+IsMagBeam=yes 磁电波类武器，其Projectile=Invisible类最好 
+IsSonic=Yes 声波类武器，其Projectile=Invisible类最好
 
-�������� 
-LaserInnerColor = 255,0,255 = ���ü�������������Ĺ�������ɫ��InnerColor��������ʱ����ɫ  
-LaserOuterColor = 255,0,255 = OuterColor�����𽥰�������ʧʱ����ɫ 
-LaserOuterSpread= 255,0,255 = OuterSpread��������Χɢ��ʱ����ɫ 
-LaserDuration = 30 ����������ʱ�䣬����Խ�󣬼����Խ�ò���ʧ 
-IsHouseColor=false �����������3��Colorֵ����ô������һ��Ҫfalse�� 
- ���û������3��ֵ����ô�ͱ���Ϊtrue��������ɫ����Ӧ����ҵ�����ɫ 
-��ɱ���� 
-LimboLaunch=yes ʹ�����������ĵ�λ�������ʧ���ж���Ϊ���Ѿ��������˿ڿռ���ȴ����Ϊ�����ڡ���������������䵯�����������ı���ͼ�Σ���������������ȥײ���з���λ�������Ա��ɻ���ʹ����ɱ�����ĵ�λ��ò�Ҫ���������˿�����������ײ���˾Ͳ��������� ���纽ĸ�ӻ���
+光束设置 
+LaserInnerColor = 255,0,255 = 设置激光和雷射炮中心光束的颜色，InnerColor代表发射时的颜色  
+LaserOuterColor = 255,0,255 = OuterColor代表逐渐暗淡到消失时的颜色 
+LaserOuterSpread= 255,0,255 = OuterSpread代表向外围散开时的颜色 
+LaserDuration = 30 光束闪动的时间，数字越大，激光就越久才消失 
+IsHouseColor=false 如果有了以上3个Color值，那么这个语句一定要false。 
+ 如果没有以上3个值，那么就必须为true，光束颜色自适应成玩家的所属色 
+自杀武器 
+LimboLaunch=yes 使用这种武器的单位开火后将消失，判定认为它已经死亡，人口空间里却还认为它存在。这种武器最好在射弹里设置上它的本体图形，这样看起来是它去撞击敌方单位，就象自爆飞机。使用自杀武器的单位最好不要限制它的人口数量，否则撞完了就不能再造了 比如航母子机。
 
 
-=========[ע1]============= 
-=========��������========== 
-[Cannon] ���� 
-Image=120MM ������ͼ�Σ���Ҫ��Ӧ��SHP��VXLͼ�� 
-Arcing=true �����߷��й켣 
-SubjectToCliffs=yes �Ƿ�ᱻɽ���赲 
-SubjectToElevation=yes �ڸߴ�����ʱ�Ƿ���Ի�ö������� 
-SubjectToWalls=yes �Ƿ�Χǽ�赵 
-Shadow=yes �����еĵ�ͷ���ڵ���ͶӰ��ͨ�����ڸ���������ͼ�αȽϴ�ĵ�ͷ����ʵҲ���Բ��� 
-Arm=1ra2��Ч 
-ROT=10 ��������ʱ����Ĺ⻬�̶ȣ���ֵ��2��10��ʾԲ��ת�䣬10������ͻȻ���ۣ�0��1Ϊֱ�߷��в���ת�� 
-Proximity=yes ���Ŀ��ɳ���������޵�2������ʱ���������Զ�����������һֱȥ׷ 
-Ranged=yes �Եз��ɻ��������룬���������������޵�2��ʱ����ʾ��Proximity�����������Ƿ����׷���� 
- ���������һ��Ҫ���ã����ҽ����ٶ���100���ϵĵ�����Ч�� 
- �������ٶȲ���100����ض�һֱ׷��ȥ����������������Զ׷���Ϸɻ�����������Խ��鵼���ٶ���ö�Ҫ����100 
-Floater=��������ΪYes��No����ͶcarryallЯ���ĵ�λ 
-FlakScatter=��������Yes��No��ָ��������Ŀ����Χ��ը���ͷ����ڵ�Ч��һ����������Щ��΢�Ĳ�׼ȷ�� 
-Scalable=��������Yes��No�������ڷ��й����п������������ʵǸߵĽ���� 
-Rotates=art���룬��������Yes��No�������˶����ǵ��������壬�������Ϊһ������64֡��SHP������ÿ��֡��������Ƕ�һ�����еķ��򣬵����SHP�ӱ�����ʼ����˳ʱ�뷽������ֱ�������� 
-Level=yes �ڵ�ʼ�մ���ͬһ�߶� 
-Acceleration=3 ���������ٶȼӱ���Ĭ��ֵ��3�� 
-Airburst=yes �Ƿ��ɷ�ԽĿ���Ϸ�����ֱ�ӹ���Ŀ�� 
-Inaccurate= ���������Ƿ� ����ȷ
-Inviso = ���������Ƿ�˲����� 
-Vertical= �Ƿ�ֱ���� 
-AA=yes ���ԶԿ� 
-AG=yes ���ԶԵأ�Ĭ�Ͽ��ԶԵ� 
-AN=yes ���ԶԽ� 
-AS=yes ���Է�Ǳ 
-ASW=yes ���Է�Ǳ2 
+=========[注1]============= 
+=========发射类型========== 
+[Cannon] 名称 
+Image=120MM 武器的图形，需要对应的SHP或VXL图象 
+Arcing=true 抛物线飞行轨迹 
+SubjectToCliffs=yes 是否会被山丘阻挡 
+SubjectToElevation=yes 在高处发射时是否可以获得额外的射程 
+SubjectToWalls=yes 是否被围墙阻档 
+Shadow=yes 飞行中的弹头将在地面投影，通常用于高射武器和图形比较大的弹头，其实也可以不用 
+Arm=1ra2无效 
+ROT=10 导弹飞行时拐弯的光滑程度，数值在2到10表示圆滑转弯，10以上是突然弯折，0到1为直线飞行不能转弯 
+Proximity=yes 如果目标飞出了射程上限的2倍距离时，导弹将自动爆掉而不会一直去追 
+Ranged=yes 对敌方飞机分析距离，如果超过了射程上限的2倍时将提示给Proximity让他来决定是否继续追击。 
+ 这两个语句一定要连用，而且仅对速度在100以上的导弹有效。 
+ 若导弹速度不到100，则必定一直追下去，常常看见导弹永远追不上飞机的情况，所以建议导弹速度最好都要大于100 
+Floater=可以设置为Yes或No，空投carryall携带的单位 
+FlakScatter=可以设置Yes或No，指定弹体在目标周围爆炸，和防空炮的效果一样，仅仅有些轻微的不准确。 
+Scalable=可以设置Yes或No，弹体在飞行过程中可以上上下下攀登高的建筑物。 
+Rotates=art代码，可以设置Yes或No，决定此动画是导弹抛射体，弹体必须为一个包含64帧的SHP，由于每个帧发射的面是对一个特有的方向，弹体的SHP从北方开始，按顺时针方向排列直到东北方 
+Level=yes 炮弹始终处于同一高度 
+Acceleration=3 给导弹的速度加倍，默认值是3倍 
+Airburst=yes 是否由飞越目标上方代替直接攻击目标 
+Inaccurate= 该抛射体是否 不精确
+Inviso = 该抛射体是否瞬间击中 
+Vertical= 是否垂直飞行 
+AA=yes 可以对空 
+AG=yes 可以对地，默认可以对地 
+AN=yes 可以对舰 
+AS=yes 可以反潜 
+ASW=yes 可以反潜2 
 
-============[ע2]========== 
-===========��ͷ����======== 
-CellSpread=2 ��Χ��������Ч�����Ĭ�����Ϊ0.3 ���10
-PercentAtMax=1 ����Ӱ�췶Χ��������˺��ĸ���ռ�İٷֱ�
-Wall=yes ������ǽ 
-Wood=yes ���Ի��� 
-WallAbsoluteDestroyer= �Ƿ�һ�γ��״ݻ�һ��ǽ 
-Sparky=yes ����ȼ�գ�дyes����ie  
-Conventional=yes ����ˮ�������ǲ��ŵ�ͷ����
-Rocker=yes =�ɱ������˳��VXL��λ�������Ӧ������Damageֵ̫�󣬻���Ƶ�ʹ��춼���ܽ���λ�Ʒ� 
-AnimList=VTEXPLOD ��ͷ����Ŀ��󱬳��ĵ�Ľ���� 
-ProneDamage=50% �Ը�����״̬�еĲ����Ĺ��������ʡ� 
-IvanBomb= �Ƿ�Ϊ�������ը������ 
-MakesDisguise= �Ƿ�Ϊαװ���� 
-MindControl= �Ƿ�Ϊ����������� 
-Sonic= �Ƿ�Ϊ��������. (�����߳�������)
-Parasite= �Ƿ�Ϊ�������� 
-Radiation= �Ƿ��Ƿ��������� ���������ж�
-Temporal= �Ƿ�Ϊʱ������. 
-Tiberium= �Ƿ���Դݻٿ�ʯ 
-InfDeath=2 =����ʿ��ʱ��ʿ����Ӧ������������ 
- 0=��������, 1=ת������, 2=��ը, 3=����, 4=����, 5=����, 6=������ɵĴ��Ա�ը, 7=�˷��� 
+============[注2]========== 
+===========弹头代码======== 
+CellSpread=2 范围攻击的有效面积，默认面积为0.3 最大10
+PercentAtMax=1 整个影响范围中受最大伤害的格子占的百分比
+Wall=yes 可以破墙 
+Wood=yes 可以毁树 
+WallAbsoluteDestroyer= 是否一次彻底摧毁一块墙 
+Sparky=yes 引起燃烧，写yes可能ie  
+Conventional=yes 溅起水花而不是播放弹头动画
+Rocker=yes =可爆出气浪冲击VXL单位，如果对应的武器Damage值太大，或发炮频率过快都可能将单位掀翻 
+AnimList=VTEXPLOD 弹头击中目标后爆出的弹慕动画 
+ProneDamage=50% 对付匍匐状态中的步兵的攻击力比率。 
+IvanBomb= 是否为疯狂伊万炸弹武器 
+MakesDisguise= 是否为伪装武器 
+MindControl= 是否为精神控制武器 
+Sonic= 是否为音波武器. (可以踢出寄生物)
+Parasite= 是否为寄生武器 
+Radiation= 是否是放射性武器 用于免疫判断
+Temporal= 是否为时空武器. 
+Tiberium= 是否可以摧毁矿石 
+InfDeath=2 =打死士兵时，士兵相应的死亡动作。 
+ 0=立即死亡, 1=转动倒下, 2=爆炸, 3=弹飞, 4=烧死, 5=电死, 6=尤里造成的大脑爆炸, 7=核辐射 
 Verses=80%,60%,40%,40%,30%,30%,60%,50%,50%,100%,100%  
- ��11��װ�����͵Ĺ������ʣ� 
- �����������ǣ��޿��ס�Ӣ�ۿ��ס����Ϳ��ס�����װ�ס�����װ�ס�����װ�ס�ľ�ʲ��ϡ��������ϡ��־����������ϡ�֩��,�ӻ������� 
+ 对11种装甲类型的攻击比率， 
+ 从左到右依次是：无盔甲、英雄盔甲、重型盔甲、轻型装甲、中型装甲、重型装甲、木质材料、钢铁材料、钢精混凝土材料、蜘蛛,子机导弹。 
 
 
 
-============[ע0]============== 
-==========��λ������ļ���========= 
-FASTER����������λ�ٶ����� 
-STRONGER����������λ����ֵ���� 
-FIREPOWER����������λ�������˺�ֵ���� 
-SELF_HEAL----��λ�����ҽ���� 
-ROF----��λ�����ټ�С 
-SIGHT----��λ����Ұ���� 
-CLOAK----��λѧ������ 
-RADAR_INVISIBLE----��λ���״��ϲ��ɼ� 
-SCATTER�������������˿���ʱ����λ���Զ���ɢ 
-TIBERIUM_PROOF����������λ��÷�Tiberium����������RA2��YR��û������ 
-VEIN_PROOF����������λ��öԿ����ߵ���������RA2��YR��û������ 
-EXPLODES����������λ��ըʱ���𸽴��� 
-SENSORS����������λ����̽�����εĹ��� 
-FEARLESS����������λ����󲻻������ڵ��� 
-TIBERIUM_HEAL����������λ�ڿ��Ͽ�����ҽ 
-C4����������λ����ڽ����ϰ���C4�Ĺ��� 
-GUARD_AREA����������λ�������һ������Ĺ��� 
-CRUSHER����������λ��ÿ���ѹ������̹�ˣ���ս��Ҫ��������  
+============[注0]============== 
+==========单位升级后的技能========= 
+FASTER————单位速度增加 
+STRONGER————单位生命值增加 
+FIREPOWER————单位武器的伤害值增加 
+SELF_HEAL----单位获得自医能力 
+ROF----单位的射速减小 
+SIGHT----单位的视野增大 
+CLOAK----单位学会隐形 
+RADAR_INVISIBLE----单位在雷达上不可见 
+SCATTER————当敌人开火时，单位会自动分散 
+TIBERIUM_PROOF————单位获得防Tiberium的能力，在RA2和YR中没有意义 
+VEIN_PROOF————单位获得对矿免疫的能力，在RA2和YR中没有意义 
+EXPLODES————单位爆炸时引起附带损害 
+SENSORS————单位具有探测隐形的功能 
+FEARLESS————单位被打后不会匍匐在地上 
+TIBERIUM_HEAL————单位在矿上可以自医 
+C4————单位获得在建筑上安放C4的功能 
+GUARD_AREA————单位获得守卫一个区域的功能 
+CRUSHER————单位获得可碾压步兵和坦克（象战斗要塞那样）  
  
   
-URepairRate=.016 ; [��λ��] ά������ 
-IRepairRate=.001 ; [������] ҽ������ 
+URepairRate=.016 ; [单位用] 维修速率 
+IRepairRate=.001 ; [步兵用] 医护速率 
 SelfHealInfantryFrames=50 
 SelfHealInfantryAmount=20 
-SelfHealUnitFrames=75 ��е�����õĲ��� 
-SelfHealUnitAmount=5 ; �û���������ҽԺ��ά�޼��֡���ͻظ���Ŀ 
+SelfHealUnitFrames=75 机械车间用的参数 
+SelfHealUnitAmount=5 ; 用机器工厂和医院的维修间隔帧数和回复数目 
  
-  ���ӵ����ã� 
+  箱子的设置： 
 [Powerups] 
-Armor=10,ARMOR,yes,1.5 ;1,2,3, װ�����ӵ�1.5�� 
-Firepower=10,FIREPOWR,yes,2.0 ; 1,2,3, �������ӵ�2.0�� 
-HealBase=10,HEALALL,yes ; 1,2,3 <---������ֵ 
-Money=20,MONEY,yes,2000 ; 1,2,3, Ǯ�� 
-Reveal=10,REVEAL,yes ; 1,2,3 <---ȫͼ 
-Speed=10,SPEED,yes,1.2 ; 1,2,3, �ٶ����ӵ�1.2�� 
-Veteran=20,VETERAN,yes,1 ; 1,2,3, �����ļ��� 
-Unit=20,<none>,no ; 1,2,3 <---��ó��� 
+Armor=10,ARMOR,yes,1.5 ;1,2,3, 装甲增加到1.5倍 
+Firepower=10,FIREPOWR,yes,2.0 ; 1,2,3, 火力增加到2.0倍 
+HealBase=10,HEALALL,yes ; 1,2,3 <---加生命值 
+Money=20,MONEY,yes,2000 ; 1,2,3, 钱数 
+Reveal=10,REVEAL,yes ; 1,2,3 <---全图 
+Speed=10,SPEED,yes,1.2 ; 1,2,3, 速度增加到1.2倍 
+Veteran=20,VETERAN,yes,1 ; 1,2,3, 升级的级数 
+Unit=20,<none>,no ; 1,2,3 <---获得车辆 
 
-Invulnerability=0,ARMOR,yes,1.0 ; 1,2,3, �ӳ�ʱ�� <---��ǹ���룬������Ļ����RA1�� 
-�������Ķ�����һ����ʵ������ 
+Invulnerability=0,ARMOR,yes,1.0 ; 1,2,3, 延迟时间 <---刀枪不入，类似铁幕，是RA1遗 
+留下来的东西，一般无实际作用 
 IonStorm=0,<none>,yes ; 1,2,3 
-<---�������ӷ籩����TS���������Ķ�����һ����ʵ������ 
-Gas=0,<none>,yes,100 ; 1,2,3,̩�����������Ƶ�ɱ���� <---����Ҳûʲô�� 
-Tiberium=0,<none>,no ; 1,2,3 һƬ�󣨺ö������� 
-Pod=0,<none>,no ; 1,2,3 <---���Drop 
-Podһ�Σ�TS���԰�Ķ�������FS�ﲻ֪�Ƿ����ã�RA2��Ч 
-Cloak=0,CLOAK,yes ; 1,2,3 <---���� 
-Darkness=0,SHROUDX,yes ; 1,2,3 <---�ر�ȫͼ 
-Explosion=0,<none>,yes,500 ; 1,2,3,��ըɱ���� <---��ը���� 
-ICBM=0,CHEMISLE,yes ; 1,2,3 <---�˵�һ�� 
-Napalm=0,<none>,no,600 ; 1,2,3,����ɱ���� <---RA1���еĶ����������ƺ������� 
-Squad=0,<none>,no ; 1,2,3 <---RA1���������ģ���RA2����Ч 
+<---引起离子风暴，是TS遗留下来的东西，一般无实际作用 
+Gas=0,<none>,yes,100 ; 1,2,3,泰伯利亚气体云的杀伤力 <---好像也没什么用 
+Tiberium=0,<none>,no ; 1,2,3 一片矿（好东西～） 
+Pod=0,<none>,no ; 1,2,3 <---获得Drop 
+Pod一次，TS测试版的东西，在FS里不知是否有用，RA2无效 
+Cloak=0,CLOAK,yes ; 1,2,3 <---隐形 
+Darkness=0,SHROUDX,yes ; 1,2,3 <---关闭全图 
+Explosion=0,<none>,yes,500 ; 1,2,3,爆炸杀伤力 <---大爆炸～～ 
+ICBM=0,CHEMISLE,yes ; 1,2,3 <---核弹一次 
+Napalm=0,<none>,no,600 ; 1,2,3,火焰杀伤力 <---RA1就有的东西，现在似乎仍有用 
+Squad=0,<none>,no ; 1,2,3 <---RA1遗留下来的，在RA2中无效 
 
-�� 
+矿： 
 ; This is Ore 
 [Riparius] 
 value=25 
@@ -625,7 +625,7 @@ value=50
 value=25 
 ; This might be ore, I'm not certain - DB 
 [Aboreus] 
-value=25 ��ֵ
+value=25 价值
 
  
   
@@ -635,116 +635,116 @@ value=25 ��ֵ
 
 [General]
 ;-RTO
-TeamDelays=200,250,350����ÿ����֡���ᴴ���µ�С�ӣ�����еȼ�
-AIHateDelays=15,30,45;��С�ӳ٣�AI������Ѱ�Ҷ���
+TeamDelays=200,250,350电脑每隔这帧数会创造新的小队，冷酷中等简单
+AIHateDelays=15,30,45;减小延迟，AI会更快的寻找对手
 AIHateDelays=80,40,20
 AIAlternateProductionCreditCutoff=1000
 
 ; Bret's hack section
-;�ҵ�����
+;找到……
 WallBuildSpeedCoefficient=3.0
 WorstLowPowerBuildRateCoefficient=.1
-ǽ�Ľ����ٶȣ�����Ϊ��ʱ�������ٶ�
+墙的建造速度，电力为红时候生产速度
 BestLowPowerBuildRateCoefficient=.2
-����Ϊ�ƵĽ����ٶ�
+电力为黄的建造速度
 ==================================================================
 
 AIHateDelays= 
-�����ѡ��һ�������ӳٵ�ʱ���Է������㣬������ڷ���ʱ���ٲ������鲿�ӣ������ֲ�ͬ�Ѷȵ�ֵ��򵥣��еȣ��ײУ� 
+计算机选择一个敌人延迟的时间以幅数计算，计算机在防守时最少产生几组部队（有三种不同难度的值填，简单，中等，凶残） 
 
 
 AIAlternateProductionCreditCutoff= 
-�������Ǯ������ʱ��ʼС�ĵķ���Ǯ��ʹ�� 
+当计算机钱不够的时候开始小心的分配钱的使用 
 
 AIUseTurbineUpgradeProbability= 
-����������糧�����½��糧�ĸ���,�԰ٷ����㡣�쾯����Ȼ�����ȴû�ã�Ӧ�ñ��� 0.00 ������Ϊ�쾯��û����̩������֮�յ�����糧�����㻹�ǿ��԰����򿪡� 
+计算机升级电厂而不新建电厂的概率,以百分率算。红警二虽然有这个却没用，应该保持 0.00 这是因为红警二没有像泰伯利亚之日的那类电厂。但你还是可以把它打开。 
 
 NodAIBuildsWalls= 
-����������վ���ʱ���Ƿ���ǽ�����ѱ�����Ч�ġ�ProtectWithWall=�����棬�����㻹�ǿ���ʹ�� 
-ע�������Ǻ쾯һ���߼�����һ����һ��ǽ��������ǽ����������������Ϸ�ٶȻ�ߵĺ����������á�ProtectWithWall=���� 
+当计算机是苏军的时候是否修墙，　已被更有效的　ProtectWithWall=　代替，但是你还是可以使用 
+注：　这是红警一的逻辑，既一次修一块墙，不能连墙，如果你用这个话游戏速度会边的很慢，所以用　ProtectWithWall=　吧 
 
 AIBuildsWalls= 
-����������˾���ʱ���Ƿ���ǽ�����ѱ�����Ч�ġ�ProtectWithWall=�����棬�����㻹�ǿ���ʹ�� 
-ע�������Ǻ쾯һ���߼�����һ����һ��ǽ��������ǽ����������������Ϸ�ٶȻ�ߵĺ����������á�ProtectWithWall=���� 
+当计算机是盟军的时候是否修墙，　已被更有效的　ProtectWithWall=　代替，但是你还是可以使用 
+注：　这是红警一的逻辑，既一次修一块墙，不能连墙，如果你用这个话游戏速度会边的很慢，所以用　ProtectWithWall=　吧 
 
 MultiplayerAICM= 
-������ڡ�multiplayer����ʱ����Ǯ��ϵ���������ֲ�ͬ�Ѷȵ�ֵ��򵥣��еȣ��ײУ� 
+计算机在　multiplayer　的时候造钱的系数（有三种不同难度的值填，简单，中等，凶残） 
 
 AIVirtualPurifiers= 
-������ڡ�multiplayer��ʱ�ɿ��Ƿ���о���Ч���������ʯ������һ�����������ֲ�ͬ�Ѷȵ�ֵ��򵥣��еȣ��ײУ� 
+计算机在　multiplayer　时采矿是否带有精炼效果（就像矿石精炼器一样）（有三种不同难度的值填，简单，中等，凶残） 
 
 MinimumAIDefensiveTeams= 
-������ڷ���ʱ���ٲ������鲿�ӡ��������ֲ�ͬ�Ѷȵ�ֵ��򵥣��еȣ��ײУ� 
+计算机在防守时最少产生几组部队　（有三种不同难度的值填，简单，中等，凶残） 
 
 MaximumAIDefensiveTeams= 
-������ڷ���ʱ���������鲿�ӡ��������ֲ�ͬ�Ѷȵ�ֵ��򵥣��еȣ��ײУ� 
+计算机在防守时最多产生几组部队　（有三种不同难度的值填，简单，中等，凶残） 
 
 TotalAITeamCap= 
-��������κ�ʱ�򶼱��ֵģ���ͬ���ಿ�ӵ������������ֲ�ͬ�Ѷȵ�ֵ��򵥣��еȣ��ײУ� 
-����Ǽ�����ͨ��λ��Ŀ���ϵ�  [Ĭ�ϳ���������]
+计算机在任何时候都保持的，不同种类部队的总数（有三种不同难度的值填，简单，中等，凶残） 
+这个是加在普通单位数目以上的  [默认出部队批数]
 
 
-��������˹����� 
+红二的新人工智能 
 
 AISafeDistance= 
-�˹����ܲ��Ӿۼ�ʱ��з��������ĵľ��룬�Ը��㡣 
+人工智能部队聚集时离敌方基地中心的距离，以格算。 
 
 AIMinorSuperReadyPercent= 
-����Ļ��ʱ�ճ��ʱ�������������Ǽ����˹�����ײ���ϡ�����������ü��������ʱ����ĳЩָ���Ĳ���������Ļ��ʹ�ó�ʱ�ա� 
+当铁幕或超时空充好时计算机将会把它们加在人工智能撞针上。　这个就是让计算机进攻时给它某些指定的部队罩上铁幕或使用超时空。 
 
 HarvesterTooFarDistance= 
-����װ�󳵳�������������������Ŀ�Ϊ���ĵİ뾶�����Ը��㣩�Ƿ��������Ŀ󳧻������Զ��ƻ���������ڣ�С�ĸ����ֵ����ֵ��һ����С����ֵ����ʽΪ �ȴ�ʱ�䣯���ؿ󳧵�ʱ�䡣�����ò�Ҫ�ġ� 
+当武装矿车超过这个距离后（以它倒矿的矿厂为中心的半径，不以格算）是否进入最进的矿厂或让它自动移回这个距离内，小心改这个值，数值是一个很小的数值，公式为 等待时间／开回矿厂的时间。大家最好不要改。 
 
 ChronoHarvTooFarDistance= 
-����ʱ�տ󳵳�������������������Ŀ�Ϊ���ĵİ뾶�����Ը��㣩�Ƿ��������Ŀ󳧻������Զ��ƻ���������ڣ�С�ĸ����ֵ����ֵ��һ����С����ֵ����ʽΪ �ȴ�ʱ�䣯���ؿ󳧵�ʱ�䡣�����ò�Ҫ�ġ� 
+当超时空矿车超过这个距离后（以它倒矿的矿厂为中心的半径，不以格算）是否进入最进的矿厂或让它自动移回这个距离内，小心改这个值，数值是一个很小的数值，公式为 等待时间／开回矿厂的时间。大家最好不要改。 
 
 AlliedBaseDefenseCounts= 
-�����˹����ܻ������޵��˾��ķ�������������Ŀ�������˾������С�IsBaseDefense=yes����һ��Ľ�������ò�Ҫ���ڷǷ�����������Ϊ�˹�������ʱ����������׼���˲�������������Ҫ�ĵĻ��������ʽ 
-((�������صļ�ֵ - 2000) / 1500 x GDI ���ط���ϵ��) + 3 x (���Ѷ� - 1) 
+这是人工智能会连续修的盟军的防御建筑的总数目，用于盟军所有有　IsBaseDefense=yes　这一项的建筑，最好不要用在非防御建筑上因为人工智能有时会用它来瞄准敌人并产生警报。　要改的话用这个公式 
+((整个基地的价值 - 2000) / 1500 x GDI 基地防御系数) + 3 x (困难度 - 1) 
 
 SovietBaseDefenseCounts= 
-�����˹����ܻ������޵��վ��ķ�������������Ŀ�������˾������С�IsBaseDefense=yes����һ��Ľ�������ò�Ҫ���ڷǷ�����������Ϊ�˹�������ʱ����������׼���˲�������������Ҫ�ĵĻ��������ʽ 
-((�������صļ�ֵ - 2000) / 1500 x NOD ���ط���ϵ��) + 3 x (���Ѷ� - 1) 
+这是人工智能会连续修的苏军的防御建筑的总数目，用于盟军所有有　IsBaseDefense=yes　这一项的建筑，最好不要用在非防御建筑上因为人工智能有时会用它来瞄准敌人并产生警报。　要改的话用这个公式 
+((整个基地的价值 - 2000) / 1500 x NOD 基地防御系数) + 3 x (困难度 - 1) 
 
 AIPickWallDefensePercent= 
-���˹������޷�����ʱ��ѡ����ǽ��������������������İٷ��� 
-(������еĴ��С�ProtectWithWall=yes��ѡ��Ľ�����û��ǽΧס�Ļ�) �������ֲ�ͬ�Ѷȵ�ֵ��򵥣��еȣ��ײУ� 
+当人工智能修防御的时候，选择修墙而不修武器类防御建筑的百分率 
+(如果所有的带有　ProtectWithWall=yes　选项的建筑还没被墙围住的话) （有三种不同难度的值填，简单，中等，凶残） 
 
 AIRestrictReplaceTime= 
-�˹������޸����˵Ľ������ؽ��������Ľ���ǰ�ȴ���ʱ��(���������㣬ֻ����ǽ���糧������ϣ� 
+人工智能修复损伤的建筑后，重建被报销的建筑前等待的时间(按幅数计算，只用在墙，电厂或防御上） 
 
 ThreatPerOccupant= 
-ÿ���˹����ܶ���һ���˽��뱻����ռ��Ľ��������������ThreatPosed= ���������� 
+每当人工智能多派一个人进入被它们占领的建筑后这个建筑　ThreatPosed= 　的增加量 
 
 ApproachTargetResetMultiplier= 
-����һ��Ŀ��ʱ�ķ������¼������Ŀ��Զ����̣����� AI �ű��Ķ�������һ��Ŀ����� Range= ��̺����Ŀ���ֽ���Զ�룬�˹����ܾͻ����¼���Ŀ��ķ�λ����������Ա���λͳ��ѧ�ġ�CanApproachTarget=�����ǡ� 
+进入一个目标时的方向将重新计算如果目标远于射程，这是 AI 脚本的动作，当一个目标进入 Range= 射程后如果目标又渐渐远离，人工智能就会重新计算目标的方位。　这个可以被单位统计学的　CanApproachTarget=　覆盖。 
 
 CampaignMoneyDeltaEasy= 
-ս�ۼ��Ѷȳ���ʱ����Ǯ�����ڰ���������ҵ����еĴ��� PlayerControl=yes����һ����˹����ܡ� 
+战役简单难度出来时带的钱，用于包括人类玩家的所有的带有 PlayerControl=yes　这一项的人工智能。 
 
 CampaignMoneyDeltaHard= 
-ս�������Ѷȳ���ʱ����Ǯ�����ڰ���������ҵ����еĴ���PlayerControl=yes����һ����˹����ܡ� 
+战役困难难度出来时带的钱，用于包括人类玩家的所有的带有PlayerControl=yes　这一项的人工智能。 
 
 GuardAreaTargetingDelay= 
-�����ṩ�����ģ���ĳ����λ�����ھ���״̬ʱ���Ե���Ŀ�����������ɵĿ��ƣ��÷����㡣 
+用来提供连续的，当某个单位被放在警戒状态时，对敌人目标锁定的速律的控制，用幅计算。 
 
 NormalTargetingDelay= 
-�����ṩ�����ģ���ĳ����λ���ھ���״̬���˹����ܽű�ʱ�����˶�Ŀ�����������ɵĿ��ƣ��÷����㡣 
+用来提供连续的，当某个单位不在警戒状态或人工智能脚本时，敌人对目标锁定的速律的控制，用幅计算。 
 
 AINavalYardAdjacency= 
-�˹����ܵĴ������Է�������������ض�Զ�ľ����ϣ��ø���� 
+人工智能的船厂可以放在离距离主基地多远的距离上，用格计算 
 
 DisabledDisguiseDetectionPercent= 
-һ����λ�����һ��αװ�˵ĵ�λ�İٷ��ʣ���αװ�ĵ�λ���������кܶ൥λ�����ֵ���Զ����ߡ��������ֲ�ͬ�Ѷȵ�ֵ��򵥣��еȣ��ײУ� 
+一个单位侦测另一个伪装了的单位的百分率（当伪装的单位开火后）如果有很多单位，这个值会自动升高。（有三种不同难度的值填，简单，中等，凶残） 
 
 AIAutoDeployFrameDelay= 
-�˹�����չ�������ھ���״̬�еģ��ɱ�չ���ĵ�λǰ���ȴ���ʱ��(���������㣬�� GI ����� GI �����Ҵܡ�) 
+人工智能展开正在在警戒状态中的，可被展开的单位前所等待的时间(按幅数计算，如 GI ，免的 GI 到处乱窜。) 
 
 MaximumBuildingPlacementFailures= 
-��ʱ���˹����ܵĻ���û�ж���Ŀռ������¸���Ľ�����������ǿ����˹������ڷ���һ���Ų��µĽ���ǰ���ԵĴ�����ÿ�γ��Ե�ʱ��Ϊ������PlacementDelay= �������� 
+有时候人工智能的基地没有多余的空间来放下更多的建筑，这个就是控制人工智能在放弃一个放不下的建筑前尝试的次数。每次尝试的时间为建筑的PlacementDelay= 项来定的 
 
 PurifierBonus= 
-����ʯ��������ɵ�ÿ���ļ�ֵ�İٷ��ʣ����еĴ��С�OrePurifier=yes����Ľ�������������ֵ
+被矿石精练器提成的每车的价值的百分率，所有的带有　OrePurifier=yes　项的建筑均会加入这个值
 
 
 

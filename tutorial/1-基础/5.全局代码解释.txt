@@ -1,116 +1,116 @@
-RefineryRatio=.08 ;½¨Ôì¿ó³§µÄ¼¸ÂÊ
-RefineryLimit=2 ; ×î¶à½¨Ôì¶àÉÙ¸ö¿ó³§
-BarracksRatio=.16 ; ½¨Ôì±øÓªµÄ¼¸ÂÊ
-BarracksLimit=3 ; ×î¶à½¨Ôì¶àÉÙ¸ö±øÓª
-WarRatio=.24 ; ½¨Ôì¹¤³§µÄ¼¸ÂÊ
-WarLimit=3 ; ×î¶à½¨Ôì¶àÉÙ¸ö¹¤³§
-DefenseRatio=.04 ; ½¨Ôì·ÀÓù½¨ÖşµÄ¼¸ÂÊ
-DefenseLimit=20 ; ×î¶à½¨Ôì¶àÉÙ¸ö·ÀÓù½¨Öş
-AARatio=.04 ; ½¨Ôì·À¿Õ½¨ÖşµÄ¼¸ÂÊ£¬Èç°®¹úÕß¡¢·À¿ÕÅÚºÍ¸ÇÌØ»úÅÚ
-AALimit=15 ; ×î¶à½¨Ôì¶àÉÙ¸ö·À¿Õ½¨Öş
-TeslaRatio=.06 ; ½¨Ôì¸ß¼¶¶ÔµØ·ÀÓù½¨ÖşµÄ¼¸ÂÊ£¬Èç´Å±©ÏßÈ¦¡¢¹âÀâËşºÍĞÄÁéËş
-TeslaLimit=15 ; ×î¶à½¨Ôì¶àÉÙ¸ö¸ß¼¶¶ÔµØ·ÀÓù½¨Öş
-HelipadRatio=.1 ; ½¨Ôì»ú³¡µÄ¼¸ÂÊ
-HelipadLimit=2 ; ×î¶à½¨Ôì¶àÉÙ¸ö»ú³¡
-HarvestersPerRefinery=2,2,1;Ã¿¸ö¿ó³§Åä±¸¼¸¸ö¿ó³µ
+RefineryRatio=.08 ;å»ºé€ çŸ¿å‚çš„å‡ ç‡
+RefineryLimit=2 ; æœ€å¤šå»ºé€ å¤šå°‘ä¸ªçŸ¿å‚
+BarracksRatio=.16 ; å»ºé€ å…µè¥çš„å‡ ç‡
+BarracksLimit=3 ; æœ€å¤šå»ºé€ å¤šå°‘ä¸ªå…µè¥
+WarRatio=.24 ; å»ºé€ å·¥å‚çš„å‡ ç‡
+WarLimit=3 ; æœ€å¤šå»ºé€ å¤šå°‘ä¸ªå·¥å‚
+DefenseRatio=.04 ; å»ºé€ é˜²å¾¡å»ºç­‘çš„å‡ ç‡
+DefenseLimit=20 ; æœ€å¤šå»ºé€ å¤šå°‘ä¸ªé˜²å¾¡å»ºç­‘
+AARatio=.04 ; å»ºé€ é˜²ç©ºå»ºç­‘çš„å‡ ç‡ï¼Œå¦‚çˆ±å›½è€…ã€é˜²ç©ºç‚®å’Œç›–ç‰¹æœºç‚®
+AALimit=15 ; æœ€å¤šå»ºé€ å¤šå°‘ä¸ªé˜²ç©ºå»ºç­‘
+TeslaRatio=.06 ; å»ºé€ é«˜çº§å¯¹åœ°é˜²å¾¡å»ºç­‘çš„å‡ ç‡ï¼Œå¦‚ç£æš´çº¿åœˆã€å…‰æ£±å¡”å’Œå¿ƒçµå¡”
+TeslaLimit=15 ; æœ€å¤šå»ºé€ å¤šå°‘ä¸ªé«˜çº§å¯¹åœ°é˜²å¾¡å»ºç­‘
+HelipadRatio=.1 ; å»ºé€ æœºåœºçš„å‡ ç‡
+HelipadLimit=2 ; æœ€å¤šå»ºé€ å¤šå°‘ä¸ªæœºåœº
+HarvestersPerRefinery=2,2,1;æ¯ä¸ªçŸ¿å‚é…å¤‡å‡ ä¸ªçŸ¿è½¦
 
 
-È«¾ÖĞŞ¸Ä
-          ;veteran factors µÈ¼¶ÒòËØ 
-            VeteranRatio=3.0 Éı¼¶Ò»´ÎËù±ØĞëÆÆ»µµÄ¼ÛÖµÎª×ÔÉí¼ÛÖµµÄ3±¶ 
-            VeteranCombat=1.1 Ò»ĞÇ±øÖÖ¹¥»÷Á¦ÎªÔ­À´µÄ1.1±¶ 
-            VeteranSpeed=1.2 ËüµÄËÙ¶ÈÎªÔ­1.2±¶ 
-            VeteranSight=0.0 ËûµÄÊÓÒ°(½¨Òé²»ÒªĞŞ¸Ä) 
-            VeteranArmor=1.5 ËüµÄÉúÃüÎªÔ­1.5±¶ 
-            VeteranROF=0.6 ËûµÄÉäËÙ£¨ÀıÈçÔ­À´1ÃëÒ»´Î ÏÖÔÚ0.6ÃëÒ»´Î£© 
-            VeteranCap=2 ×î´ó¿ÉÉı2¼¶(½¨Òé²»ÒªĞŞ¸Ä) 
-            InitialVeteran=no Ã»ÓÃ
+å…¨å±€ä¿®æ”¹
+          ;veteran factors ç­‰çº§å› ç´  
+            VeteranRatio=3.0 å‡çº§ä¸€æ¬¡æ‰€å¿…é¡»ç ´åçš„ä»·å€¼ä¸ºè‡ªèº«ä»·å€¼çš„3å€ 
+            VeteranCombat=1.1 ä¸€æ˜Ÿå…µç§æ”»å‡»åŠ›ä¸ºåŸæ¥çš„1.1å€ 
+            VeteranSpeed=1.2 å®ƒçš„é€Ÿåº¦ä¸ºåŸ1.2å€ 
+            VeteranSight=0.0 ä»–çš„è§†é‡(å»ºè®®ä¸è¦ä¿®æ”¹) 
+            VeteranArmor=1.5 å®ƒçš„ç”Ÿå‘½ä¸ºåŸ1.5å€ 
+            VeteranROF=0.6 ä»–çš„å°„é€Ÿï¼ˆä¾‹å¦‚åŸæ¥1ç§’ä¸€æ¬¡ ç°åœ¨0.6ç§’ä¸€æ¬¡ï¼‰ 
+            VeteranCap=2 æœ€å¤§å¯å‡2çº§(å»ºè®®ä¸è¦ä¿®æ”¹) 
+            InitialVeteran=no æ²¡ç”¨
 
-            ; repair and refit ³öÊÛÓëĞŞÀí 
-            RefundPercent=50% ³öÊÛ¼Û¸ñÎª½¨ÔìµÄ50% 
-            ReloadRate=.3 º½¿ÕÆ÷ÖØ×°µ¯Ê±¼ä:0.3·ÖÖÓ 
-            RepairPercent=15% °ÑÒ»¸ö¶«Î÷ÓÉ0ĞŞµ½ÂúÑªºÄ·ÑµÄÇ®Îª½¨ÔìÇ®µÄ15% 
-            RepairRate=.016 Ã¿2´Î°âÊÖÉÁ¶¯µÄÊ±¼ä¼ä¸ôÎª0.016·ÖÖÓ(½¨Öş) 
-            RepairStep=8 Ã¿´Î°âÊÖÉÁ¶¯Ê±»Ö¸´8µãÑª(½¨Öş) 
-            URepairRate=.016 Ã¿2´ÎÎ¬ĞŞµÄÊ±¼ä¼ä¸ôÎª0.016·ÖÖÓ(Î¬ĞŞ³§) 
-            IRepairRate=.001 Ã¿2´Î»Ö¸´µÄÊ±¼ä¼ä¸ôÎª0.001·ÖÖÓ(Ò½Ôº) 
-            IRepairStep=20 Ã¿´Î»Ö¸´µÄÑªÎª20µã(Ò½Ôº) 
-            TiberiumHeal=.010 ÔÚÌ©²®ÀûÑÇÖ®Ê¯ÖĞÃ¿2´Î»Ö¸´µÄ¼ä¸ôÎª0.01·ÖÖÓ(ÎŞĞ§) 
-            SelfHealInfantryFrames=50 ²½±øÃ¿2´Î×ÔÎÒ»Ö¸´µÄÊ±¼ä¼ä¸ôÎª50èå 
-            SelfHealInfantryAmount=20 ²½±øÃ¿´Î×ÔÎÒ»Ö¸´ÄÜ»Ö¸´20ÉúÃü 
-            SelfHealUnitFrames=75 ×ÔÁÆµ¥Î»Ã¿2´Î×ÔÎÒ»Ö¸´µÄÊ±¼ä¼ä¸ôÎª75èå 
-            SelfHealUnitAmount=5 ×ÔÁÆµ¥Î»Ã¿´Î×ÔÎÒ»Ö¸´ÄÜ»Ö¸´5ÉúÃü 
+            ; repair and refit å‡ºå”®ä¸ä¿®ç† 
+            RefundPercent=50% å‡ºå”®ä»·æ ¼ä¸ºå»ºé€ çš„50% 
+            ReloadRate=.3 èˆªç©ºå™¨é‡è£…å¼¹æ—¶é—´:0.3åˆ†é’Ÿ 
+            RepairPercent=15% æŠŠä¸€ä¸ªä¸œè¥¿ç”±0ä¿®åˆ°æ»¡è¡€è€—è´¹çš„é’±ä¸ºå»ºé€ é’±çš„15% 
+            RepairRate=.016 æ¯2æ¬¡æ‰³æ‰‹é—ªåŠ¨çš„æ—¶é—´é—´éš”ä¸º0.016åˆ†é’Ÿ(å»ºç­‘) 
+            RepairStep=8 æ¯æ¬¡æ‰³æ‰‹é—ªåŠ¨æ—¶æ¢å¤8ç‚¹è¡€(å»ºç­‘) 
+            URepairRate=.016 æ¯2æ¬¡ç»´ä¿®çš„æ—¶é—´é—´éš”ä¸º0.016åˆ†é’Ÿ(ç»´ä¿®å‚) 
+            IRepairRate=.001 æ¯2æ¬¡æ¢å¤çš„æ—¶é—´é—´éš”ä¸º0.001åˆ†é’Ÿ(åŒ»é™¢) 
+            IRepairStep=20 æ¯æ¬¡æ¢å¤çš„è¡€ä¸º20ç‚¹(åŒ»é™¢) 
+            TiberiumHeal=.010 åœ¨æ³°ä¼¯åˆ©äºšä¹‹çŸ³ä¸­æ¯2æ¬¡æ¢å¤çš„é—´éš”ä¸º0.01åˆ†é’Ÿ(æ— æ•ˆ) 
+            SelfHealInfantryFrames=50 æ­¥å…µæ¯2æ¬¡è‡ªæˆ‘æ¢å¤çš„æ—¶é—´é—´éš”ä¸º50æ¡¢ 
+            SelfHealInfantryAmount=20 æ­¥å…µæ¯æ¬¡è‡ªæˆ‘æ¢å¤èƒ½æ¢å¤20ç”Ÿå‘½ 
+            SelfHealUnitFrames=75 è‡ªç–—å•ä½æ¯2æ¬¡è‡ªæˆ‘æ¢å¤çš„æ—¶é—´é—´éš”ä¸º75æ¡¢ 
+            SelfHealUnitAmount=5 è‡ªç–—å•ä½æ¯æ¬¡è‡ªæˆ‘æ¢å¤èƒ½æ¢å¤5ç”Ÿå‘½ 
 
-            ; income and production ÊÕÈëÓë²úÁ¿ 
-            ;BailCount=28 ÎŞĞ§
-            BuildSpeed=.7 ÖÆ×÷½¨ÖşÊ±Ã¿ÓÃ1000ÔªÒª»¨·ÑµÄÊ±¼äÎª0.7·ÖÖÓ 
-            BuildupTime=.06 Ò»¸ö½¨ÖşÖÆ×÷Íê³É Õ¹¿ªÊ±Òª»¨·Ñ0.06·ÖÖÓ 
-            GrowthRate=5 Ì©²®ÀûÑÇ¿óÊ¯Ã¿5·ÖÖÓÉú³¤Ò»´Î(ÎŞĞ§) 
-            TiberiumGrows=yes Ì©²®ÀûÑÇ¿óÊ¯¿ÉÒÔÉú³¤(ÎŞĞ§) 
-            TiberiumSpreads=yes Ì©²®ÀûÑÇ¿óÊ¯¿ÉÒÔÑÓÉìµ½±¾À´Ã»ÓĞµÄµØ·½(ÎŞĞ§) 
-            SeparateAircraft=yes µÚÒ»¼Ü·É»ú¹ºÂòÇ°ĞèÒªÒ»¸ö»ú³¡ 
-            SurvivorRate=0.4 Ò»¸ö½¨Öş³öÊÛµôÔ­±¾ÖÆÔìµÄÇ®*0.4»»ËãÎª²Ğ±ø³öÏÖ 
-            AlliedSurvivorDivisor=500 ÃË¾üÖÆÔìµÄ½¨Öş³öÊÛµô Ô­±¾»¨µÄÇ®/500Îª±øÊı 
-            SovietSurvivorDivisor=250 ËÕ¾üÖÆÔìµÄ½¨Öş³öÊÛµô Ô­±¾»¨µÄÇ®/250Îª±øÊı 
-            ThirdSurvivorDivisor=750 ÓÈÀïÖÆÔìµÄ½¨Öş³öÊÛµô Ô­±¾»¨µÄÇ®/750Îª±øÊı 
-            PlacementDelay=.05 Õ¹¿ªÊ±¼äÎª0.05·ÖÖÓ 
-            WeedCapacity=56  weedĞèÒª±»Ò»¸ö·¿×ÓÊÕ»ñÓÃÀ´ÖÆÔì»¯Ñ§·Éµ¯µÄÊıÁ¿ 
+            ; income and production æ”¶å…¥ä¸äº§é‡ 
+            ;BailCount=28 æ— æ•ˆ
+            BuildSpeed=.7 åˆ¶ä½œå»ºç­‘æ—¶æ¯ç”¨1000å…ƒè¦èŠ±è´¹çš„æ—¶é—´ä¸º0.7åˆ†é’Ÿ 
+            BuildupTime=.06 ä¸€ä¸ªå»ºç­‘åˆ¶ä½œå®Œæˆ å±•å¼€æ—¶è¦èŠ±è´¹0.06åˆ†é’Ÿ 
+            GrowthRate=5 æ³°ä¼¯åˆ©äºšçŸ¿çŸ³æ¯5åˆ†é’Ÿç”Ÿé•¿ä¸€æ¬¡(æ— æ•ˆ) 
+            TiberiumGrows=yes æ³°ä¼¯åˆ©äºšçŸ¿çŸ³å¯ä»¥ç”Ÿé•¿(æ— æ•ˆ) 
+            TiberiumSpreads=yes æ³°ä¼¯åˆ©äºšçŸ¿çŸ³å¯ä»¥å»¶ä¼¸åˆ°æœ¬æ¥æ²¡æœ‰çš„åœ°æ–¹(æ— æ•ˆ) 
+            SeparateAircraft=yes ç¬¬ä¸€æ¶é£æœºè´­ä¹°å‰éœ€è¦ä¸€ä¸ªæœºåœº 
+            SurvivorRate=0.4 ä¸€ä¸ªå»ºç­‘å‡ºå”®æ‰åŸæœ¬åˆ¶é€ çš„é’±*0.4æ¢ç®—ä¸ºæ®‹å…µå‡ºç° 
+            AlliedSurvivorDivisor=500 ç›Ÿå†›åˆ¶é€ çš„å»ºç­‘å‡ºå”®æ‰ åŸæœ¬èŠ±çš„é’±/500ä¸ºå…µæ•° 
+            SovietSurvivorDivisor=250 è‹å†›åˆ¶é€ çš„å»ºç­‘å‡ºå”®æ‰ åŸæœ¬èŠ±çš„é’±/250ä¸ºå…µæ•° 
+            ThirdSurvivorDivisor=750 å°¤é‡Œåˆ¶é€ çš„å»ºç­‘å‡ºå”®æ‰ åŸæœ¬èŠ±çš„é’±/750ä¸ºå…µæ•° 
+            PlacementDelay=.05 å±•å¼€æ—¶é—´ä¸º0.05åˆ†é’Ÿ 
+            WeedCapacity=56  weedéœ€è¦è¢«ä¸€ä¸ªæˆ¿å­æ”¶è·ç”¨æ¥åˆ¶é€ åŒ–å­¦é£å¼¹çš„æ•°é‡ 
 
-            ; computer and movement controls µçÄÔÓë»î¶¯¿ØÖÆ 
-            CurleyShuffle=yes Ö±Éı»úÊÇ·ñ¿ÉÒÔÔÚ·¢Éä2·¢ÅÚµ¯¼äÒÆ¶¯Î»ÖÃ 
-            BaseBias=2 µĞÈË¾àÎÒ·½»ùµØ¹ı½üÊ±±ÜÃâÅÚ»ğÎó»÷ÎÒ·½µ¥Î»²ÎÊı 
-            BaseDefenseDelay=.25 Ã¿0.25·ÖÖÓÉú²úÒ»´Î·ÀÓù½¨Öş
-            CloseEnough=2.25 ¼ÙÈç¾àÀëÄ¿µÄµØĞ¡ÓÚ2.25µ¥Î»³¤¾ÍÈÏ¶¨Îª¿¿½ü 
-            DamageDelay=1ÎŞĞ§
-            GameSpeedBias=1.6 µ¥ÈËÓÎÏ·ÖĞÎïÌåËÙ¶È1.6±¶ÓÚÔ­À´ËÙ¶È 
-            Stray=2.0 ¶ÓÎé³ÉÔ±¼äµÄ¾àÀëµÍÓÚ2Ê±¾Í»áÖØĞÂÅÅ²¼ 
+            ; computer and movement controls ç”µè„‘ä¸æ´»åŠ¨æ§åˆ¶ 
+            CurleyShuffle=yes ç›´å‡æœºæ˜¯å¦å¯ä»¥åœ¨å‘å°„2å‘ç‚®å¼¹é—´ç§»åŠ¨ä½ç½® 
+            BaseBias=2 æ•Œäººè·æˆ‘æ–¹åŸºåœ°è¿‡è¿‘æ—¶é¿å…ç‚®ç«è¯¯å‡»æˆ‘æ–¹å•ä½å‚æ•° 
+            BaseDefenseDelay=.25 æ¯0.25åˆ†é’Ÿç”Ÿäº§ä¸€æ¬¡é˜²å¾¡å»ºç­‘
+            CloseEnough=2.25 å‡å¦‚è·ç¦»ç›®çš„åœ°å°äº2.25å•ä½é•¿å°±è®¤å®šä¸ºé è¿‘ 
+            DamageDelay=1æ— æ•ˆ
+            GameSpeedBias=1.6 å•äººæ¸¸æˆä¸­ç‰©ä½“é€Ÿåº¦1.6å€äºåŸæ¥é€Ÿåº¦ 
+            Stray=2.0 é˜Ÿä¼æˆå‘˜é—´çš„è·ç¦»ä½äº2æ—¶å°±ä¼šé‡æ–°æ’å¸ƒ 
             RelaxedStray=3.0 gs Gather commands will use this number instead, 
             allowing for bigger teams in AIT 
-            ²»ÑÏ¸ñµÄÓÎÀë;ÎªÁË¹Ë¼°µ½AITÖĞµÄ½Ï´óµÄÍÅ¶Ó£¬GetherÖ¸Áî±»¸ÃÊıÌæ´ú 
-            CloakDelay=.02 ½øÈëÒşĞÎÖ®Ç°µÄÏÔĞÎÊ±¼ä 
-            SuspendDelay=2 ÖĞÖ¹µÄAI¶ÓÎé½«»á±£³ÖÖĞÖ¹µÄÊ±¼äÎª2·ÖÖÓ 
-            SuspendPriority=1 µ±»ù±¾·ÀÓùÕ¹¿ªÊ±µÍÓÅÏÈÈ¨(<1)ÈÎÎñ½«±»ÖĞÖ¹ 
-            FlightLevel=1500 ·É»úÄ¬ÈÏ·ÉĞĞµÄ¸ß¶È £¬¿ÉÒÔµ¥¶ÀÖ¸¶¨
-            ParachuteMaxFallRate=-3 ½µÂäÉ¡×î´óÏÂ½µËÙ¶È 
-            NoParachuteMaxFallRate=-100 ÎŞ½µÂäÉ¡×î´óÏÂ½µËÙ¶È 
-            GuardModeStray=2.0 ±£»¤ÆäËûµ¥Î»µÄ¾¯½ä¾àÀë 
+            ä¸ä¸¥æ ¼çš„æ¸¸ç¦»;ä¸ºäº†é¡¾åŠåˆ°AITä¸­çš„è¾ƒå¤§çš„å›¢é˜Ÿï¼ŒGetheræŒ‡ä»¤è¢«è¯¥æ•°æ›¿ä»£ 
+            CloakDelay=.02 è¿›å…¥éšå½¢ä¹‹å‰çš„æ˜¾å½¢æ—¶é—´ 
+            SuspendDelay=2 ä¸­æ­¢çš„AIé˜Ÿä¼å°†ä¼šä¿æŒä¸­æ­¢çš„æ—¶é—´ä¸º2åˆ†é’Ÿ 
+            SuspendPriority=1 å½“åŸºæœ¬é˜²å¾¡å±•å¼€æ—¶ä½ä¼˜å…ˆæƒ(<1)ä»»åŠ¡å°†è¢«ä¸­æ­¢ 
+            FlightLevel=1500 é£æœºé»˜è®¤é£è¡Œçš„é«˜åº¦ ï¼Œå¯ä»¥å•ç‹¬æŒ‡å®š
+            ParachuteMaxFallRate=-3 é™è½ä¼æœ€å¤§ä¸‹é™é€Ÿåº¦ 
+            NoParachuteMaxFallRate=-100 æ— é™è½ä¼æœ€å¤§ä¸‹é™é€Ÿåº¦ 
+            GuardModeStray=2.0 ä¿æŠ¤å…¶ä»–å•ä½çš„è­¦æˆ’è·ç¦» 
 
 
-            MissileSpeedVar=.25 µ¼µ¯¼ÓËÙ°Ù·Ö±È 
-            MissileROTVar=.25 µ¼µ¯×ªÍäËÙÂÊ 
-            MissileSafetyAltitude=750 µ¼µ¯°²È«¸ß¶È 
+            MissileSpeedVar=.25 å¯¼å¼¹åŠ é€Ÿç™¾åˆ†æ¯” 
+            MissileROTVar=.25 å¯¼å¼¹è½¬å¼¯é€Ÿç‡ 
+            MissileSafetyAltitude=750 å¯¼å¼¹å®‰å…¨é«˜åº¦ 
 
             ;-RTO 
-            TeamDelays=2000,2500,3500 ´´Ôì²¿¶Ó¼ä¸ôÊ±¼äÎª?Ö¡(À§ÄÑ,ÖĞµÈ,¼òµ¥) 
+            TeamDelays=2000,2500,3500 åˆ›é€ éƒ¨é˜Ÿé—´éš”æ—¶é—´ä¸º?å¸§(å›°éš¾,ä¸­ç­‰,ç®€å•) 
 
 
-            AIHateDelays=30,50,70  AIÑ¡ÔñµĞÈËµÄÊ±¼ä(À§ÄÑ,ÖĞµÈ,¼òµ¥) 
-            AIAlternateProductionCreditCutoff=1000 AIÔÚÓµÓĞ¶àÉÙÇ®Ê±¿ªÊ¼Ôì±ø 
-            NodAIBuildsWalls=no µ±µçÄÔ×÷ÎªNODÊ±ºòÊÇ·ñÖÆÔìÇ½±Ú(ÎŞĞ§) 
-            AIBuildsWalls=no µçÄÔÊÇ·ñ½¨ÔìÇ½±Ú(ÎŞĞ§) 
+            AIHateDelays=30,50,70  AIé€‰æ‹©æ•Œäººçš„æ—¶é—´(å›°éš¾,ä¸­ç­‰,ç®€å•) 
+            AIAlternateProductionCreditCutoff=1000 AIåœ¨æ‹¥æœ‰å¤šå°‘é’±æ—¶å¼€å§‹é€ å…µ 
+            NodAIBuildsWalls=no å½“ç”µè„‘ä½œä¸ºNODæ—¶å€™æ˜¯å¦åˆ¶é€ å¢™å£(æ— æ•ˆ) 
+            AIBuildsWalls=no ç”µè„‘æ˜¯å¦å»ºé€ å¢™å£(æ— æ•ˆ) 
 
               
 
             ; -RTO* 
-            MultiplayerAICM=400,0,0 µ¥»úÓÎÏ·ÖĞAI²úÉúÇ®ÊıÁ¿µÄÏµÊı(À§ÄÑ,ÖĞµÈ,¼òµ¥),Ó¦¸ÃÊÇÃ¿·ÖÖÓ 
-            AIVirtualPurifiers=4,2,0 ´ÓÀ§ÄÑµ½¼òµ¥µçÄÔµÈÓÚÓµÓĞÕâÃ´¶à¸ö¿óÊ¯¾«Á¶Æ÷(²»°üÀ¨Õ½ÒÛ) 
-            AISlaveMinerNumber=4,3,2 Å«Á¥¿ó³µÊı 
-            HarvestersPerRefinery=2,2,1Ã¿¿ó×î¶à¿ó³µÊı 
-            AIExtraRefineries=2,1,0¶îÍâ¿ó³µÊı 
-            HealScanRadius=10 Ò½ÁÆ±øÖÖÄÜ×Ô¶¯Ò½ÁÆµÄ·¶Î§ 
-            FillEarliestTeamProbability=100,100,100 ÖÆÔì×îÔç±à¶ÓµÄ¸ÅÂÊÎª100% 
+            MultiplayerAICM=400,0,0 å•æœºæ¸¸æˆä¸­AIäº§ç”Ÿé’±æ•°é‡çš„ç³»æ•°(å›°éš¾,ä¸­ç­‰,ç®€å•),åº”è¯¥æ˜¯æ¯åˆ†é’Ÿ 
+            AIVirtualPurifiers=4,2,0 ä»å›°éš¾åˆ°ç®€å•ç”µè„‘ç­‰äºæ‹¥æœ‰è¿™ä¹ˆå¤šä¸ªçŸ¿çŸ³ç²¾ç‚¼å™¨(ä¸åŒ…æ‹¬æˆ˜å½¹) 
+            AISlaveMinerNumber=4,3,2 å¥´éš¶çŸ¿è½¦æ•° 
+            HarvestersPerRefinery=2,2,1æ¯çŸ¿æœ€å¤šçŸ¿è½¦æ•° 
+            AIExtraRefineries=2,1,0é¢å¤–çŸ¿è½¦æ•° 
+            HealScanRadius=10 åŒ»ç–—å…µç§èƒ½è‡ªåŠ¨åŒ»ç–—çš„èŒƒå›´ 
+            FillEarliestTeamProbability=100,100,100 åˆ¶é€ æœ€æ—©ç¼–é˜Ÿçš„æ¦‚ç‡ä¸º100% 
             ;-RTO 
-            MinimumAIDefensiveTeams=1,1,1 ×îÉÙµçÄÔ·ÀÓù±à¶Ó1¶Ó 
-            MaximumAIDefensiveTeams=2,2,2 ×î´óµçÄÔ·ÀÓù±à¶Ó2¶Ó 
-            TotalAITeamCap=30,30,30 µçÄÔĞ¡¶Ó×ÜºÍ30¶Ó 
-            UseMinDefenseRule=yes Ê¹ÓÃ×îµÍĞ¡¶Ó¹æÔò 
-            DissolveUnfilledTeamDelay=5000 µçÄÔÖÆÔìµÄµÚÒ»¶ÓÃ»ÔìÂúÇ°ÌáÏÂ½âÉ¢Ğ¡¶ÓµÄÑÓÊ±
+            MinimumAIDefensiveTeams=1,1,1 æœ€å°‘ç”µè„‘é˜²å¾¡ç¼–é˜Ÿ1é˜Ÿ 
+            MaximumAIDefensiveTeams=2,2,2 æœ€å¤§ç”µè„‘é˜²å¾¡ç¼–é˜Ÿ2é˜Ÿ 
+            TotalAITeamCap=30,30,30 ç”µè„‘å°é˜Ÿæ€»å’Œ30é˜Ÿ 
+            UseMinDefenseRule=yes ä½¿ç”¨æœ€ä½å°é˜Ÿè§„åˆ™ 
+            DissolveUnfilledTeamDelay=5000 ç”µè„‘åˆ¶é€ çš„ç¬¬ä¸€é˜Ÿæ²¡é€ æ»¡å‰æä¸‹è§£æ•£å°é˜Ÿçš„å»¶æ—¶
             LargeVisceroid=VISC_LRG  
             SmallVisceroid=VISC_SML  
 
               
 
-            Á£×ÓÅÚ¹æÔòÇø£¬Ô¼µÈÓÚºÓµ°¹æÔò 
+            ç²’å­ç‚®è§„åˆ™åŒºï¼Œçº¦ç­‰äºæ²³è›‹è§„åˆ™ 
             AIIonCannonConYardvalue=100,100,100  
             AIIonCannonWarFactoryvalue=100,100,100 
             AIIonCannonPowervalue=60,100,100 
@@ -125,628 +125,628 @@ HarvestersPerRefinery=2,2,1;Ã¿¸ö¿ó³§Åä±¸¼¸¸ö¿ó³µ
             ;AIIonCannonHelipadvalue=20,20,20 
             ;AIIonCannonTemplevalue=40,40,40 
 
-            Àë×Ó·ç±©¹æÔò 
-            LightningDeferment=250 Àë×Ó·ç±©´Ó¾¯¸æµ½½µÁÙµÄ¼ä¸ôèåÊı 
-            LightningDamage=250 ÉÁµç´ò»÷µÄÉËº¦ 
-            LightningStormDuration=180 Àë×Ó·ç±©µÄ³ÖĞøÊ±¼ä 
-            LightningWarhead=IonWH Àë×Ó·ç±©ÓÃµÄµ¯Í· 
-            LightningHitDelay=10 Ã¿¶àÉÙÊ±¼ä½øĞĞÒ»´Î´ò»÷ 
-            LightningScatterDelay=5 Ã¿2¸öÉÁµç´ò»÷Ö®¼äµÄÔİÍ£èåÊı 
-            LightningCellSpread=10 Àë×Ó·ç±©µÄ·¶Î§´óĞ¡ 
-            LightningSeparation=3 Ã¿Á½¸öÔÆ/ÉÁµç¼äµÄ¾àÀëÎª3 
-            IonStorms=no Á£×Ó·ç±©(ÎŞĞ§)
+            ç¦»å­é£æš´è§„åˆ™ 
+            LightningDeferment=250 ç¦»å­é£æš´ä»è­¦å‘Šåˆ°é™ä¸´çš„é—´éš”æ¡¢æ•° 
+            LightningDamage=250 é—ªç”µæ‰“å‡»çš„ä¼¤å®³ 
+            LightningStormDuration=180 ç¦»å­é£æš´çš„æŒç»­æ—¶é—´ 
+            LightningWarhead=IonWH ç¦»å­é£æš´ç”¨çš„å¼¹å¤´ 
+            LightningHitDelay=10 æ¯å¤šå°‘æ—¶é—´è¿›è¡Œä¸€æ¬¡æ‰“å‡» 
+            LightningScatterDelay=5 æ¯2ä¸ªé—ªç”µæ‰“å‡»ä¹‹é—´çš„æš‚åœæ¡¢æ•° 
+            LightningCellSpread=10 ç¦»å­é£æš´çš„èŒƒå›´å¤§å° 
+            LightningSeparation=3 æ¯ä¸¤ä¸ªäº‘/é—ªç”µé—´çš„è·ç¦»ä¸º3 
+            IonStorms=no ç²’å­é£æš´(æ— æ•ˆ)
               
 
-            ;*** ForceShield Control ***Á¦³¡»¤¶Ü¿ØÖÆ 
-            ForceShieldRadius=4 Á¦³¡»¤¶ÜµÄÓĞĞ§·¶Î§ 
-            ForceShieldDuration=500 Á¦³¡»¤¶ÜµÄ×÷ÓÃÊ±¼ä 
-            ForceShieldBlackoutDuration=1000 Ê¹ÓÃÁ¦³¡»¤¶ÜºóµÄÍ£µçÊ±¼ä  
+            ;*** ForceShield Control ***åŠ›åœºæŠ¤ç›¾æ§åˆ¶ 
+            ForceShieldRadius=4 åŠ›åœºæŠ¤ç›¾çš„æœ‰æ•ˆèŒƒå›´ 
+            ForceShieldDuration=500 åŠ›åœºæŠ¤ç›¾çš„ä½œç”¨æ—¶é—´ 
+            ForceShieldBlackoutDuration=1000 ä½¿ç”¨åŠ›åœºæŠ¤ç›¾åçš„åœç”µæ—¶é—´  
 
 
             ; Prism Cannon control  SJM 
-            PrismType=**** ¸ÃÎäÆ÷µÄµ¥Î»Ãû³Æ 
-            PrismSupportModifier=150% Ã¿Ôö¼ÓÒ»¸ö·´Éä¹âËş¾ÍÔö¼Ó150%µÄÍşÁ¦ 
-            PrismSupportMax=8 ×î¶àÄÜÍ¬Ê±·´Éä8¸ö 
-            PrismSupportDelay=45 ·´Éä¹âÑÓ³Ù45èå 
-            PrismSupportDuration=15 ·¢Éä³öµÄ¹âµÄÏûÊ§Ê±¼ä15èå(Ïñ²ĞÁô) 
-            PrismSupportHeight=420 ¸Ã¹â´«µ½¹âËş¸ß420µÄµØ·½ 
+            PrismType=**** è¯¥æ­¦å™¨çš„å•ä½åç§° 
+            PrismSupportModifier=150% æ¯å¢åŠ ä¸€ä¸ªåå°„å…‰å¡”å°±å¢åŠ 150%çš„å¨åŠ› 
+            PrismSupportMax=8 æœ€å¤šèƒ½åŒæ—¶åå°„8ä¸ª 
+            PrismSupportDelay=45 åå°„å…‰å»¶è¿Ÿ45æ¡¢ 
+            PrismSupportDuration=15 å‘å°„å‡ºçš„å…‰çš„æ¶ˆå¤±æ—¶é—´15æ¡¢(åƒæ®‹ç•™) 
+            PrismSupportHeight=420 è¯¥å…‰ä¼ åˆ°å…‰å¡”é«˜420çš„åœ°æ–¹ 
 
-            V3RocketPauseFrames=0 ·¢ÉäÇ°ÑÓ³Ù0èå 
-            V3RocketTiltFrames=60 ´ÓV3µ¼µ¯¿ªÊ¼ÉÏÒÆµ½ÕæÕıµã»ğÎª60èå 
-            V3RocketPitchInitial=0.21 µ¼µ¯³õÊ¼ÇãĞ±Îª0.21 *90¶È 
-            V3RocketPitchFinal=0.5 µ¼µ¯µã»ğÇãĞ±Îª0.5 *90¶È 
-            V3RocketTurnRate=0.05 µ¼µ¯¹ÕÍäËÙÂÊ 
-            V3RocketRaiseRate=1 Ã¿´Îµ¼µ¯Éı¸ß¶àÉÙ Ö»¶ÔÑ²º½µ¼µ¯ÓĞĞ§ 
-            V3RocketAcceleration=0.4 ·¢Éä¼ÓËÙ¶È0.4 
-            V3RocketAltitude=768 ´ïµ½ÕâÃ´¸ßºóË®Æ½ÒÆ¶¯/ 
-            V3RocketDamage=200 ÉËº¦200 
-            V3RocketEliteDamage=400 ¾«Ó¢ÉËº¦400 
-            V3RocketBodyLength=256 µ¼µ¯³¤256 
-            V3RocketLazyCurve=yes ÊÇ·ñÊÇÇúÏßµ¯µÀ 
+            V3RocketPauseFrames=0 å‘å°„å‰å»¶è¿Ÿ0æ¡¢ 
+            V3RocketTiltFrames=60 ä»V3å¯¼å¼¹å¼€å§‹ä¸Šç§»åˆ°çœŸæ­£ç‚¹ç«ä¸º60æ¡¢ 
+            V3RocketPitchInitial=0.21 å¯¼å¼¹åˆå§‹å€¾æ–œä¸º0.21 *90åº¦ 
+            V3RocketPitchFinal=0.5 å¯¼å¼¹ç‚¹ç«å€¾æ–œä¸º0.5 *90åº¦ 
+            V3RocketTurnRate=0.05 å¯¼å¼¹æ‹å¼¯é€Ÿç‡ 
+            V3RocketRaiseRate=1 æ¯æ¬¡å¯¼å¼¹å‡é«˜å¤šå°‘ åªå¯¹å·¡èˆªå¯¼å¼¹æœ‰æ•ˆ 
+            V3RocketAcceleration=0.4 å‘å°„åŠ é€Ÿåº¦0.4 
+            V3RocketAltitude=768 è¾¾åˆ°è¿™ä¹ˆé«˜åæ°´å¹³ç§»åŠ¨/ 
+            V3RocketDamage=200 ä¼¤å®³200 
+            V3RocketEliteDamage=400 ç²¾è‹±ä¼¤å®³400 
+            V3RocketBodyLength=256 å¯¼å¼¹é•¿256 
+            V3RocketLazyCurve=yes æ˜¯å¦æ˜¯æ›²çº¿å¼¹é“ 
 
-            ; Paratroop Drop control É¡±ø¿ØÖÆ 
-            ParadropRadius=1024 ½µÂä°ë¾¶1024ÏóËØ 
-            FogOfWar=no ÊÇ·ñÊ¹Õ½ÕùÃÔÎíÏûÉ¢ 
-            Visceroids=no ÊÇ·ñ·É»úËæ»ú´ÓµØÍ¼±ßÔµ·É³ö 
+            ; Paratroop Drop control ä¼å…µæ§åˆ¶ 
+            ParadropRadius=1024 é™è½åŠå¾„1024è±¡ç´  
+            FogOfWar=no æ˜¯å¦ä½¿æˆ˜äº‰è¿·é›¾æ¶ˆæ•£ 
+            Visceroids=no æ˜¯å¦é£æœºéšæœºä»åœ°å›¾è¾¹ç¼˜é£å‡º 
 
 
-            Meteorites=no Ëæ»ú±»Á÷ĞÇÔÒ 
-            CrewEscape=50% ³Ë³µÈËÔ±ÓĞ50%»ú»á´Ó±»»Ù³µÖĞÌÓÉú 
-            CameraRange=9 ¼äµı·É»úÌ½¿ªµØÍ¼¿í¶È9 
-            FineDiffControl=no ÓĞ5¸öÄÑ¶È¼¶±ğÊµ¼ÊÉÏÏÔÊ¾3¸ö 
-            Pilot=E1 ·É»úÉÏÌøÉ¡µÄ±øÖÖÊÇE1(·É»ú±»»ÙÈç¹ûÓĞ±ø) 
-            AlliedCrew=E1 ÃË¾ü±»»Ù½¨ÖşÖĞ³öÀ´µÄÊÇE1 
-            SovietCrew=E2 ËÕ·½±»»Ù½¨ÖşÖĞ³öÀ´µÄÊÇE2 
-            ThirdCrew=INIT ÓÈÀï±»»Ù½¨ÖşÖĞ³öÀ´µÄÊÇINIT 
-            Technician=CTECH ÖĞÁ¢½¨Öş±»»Ù³öÀ´µÄÊÇCTECH 
-            Engineer=ENGINEER ÌØÊâ½¨Öş±»»Ù³öÀ´µÄÊÇENGINEER 
-            PParatrooper=E1 ²½±ø²¿¶Ó½«ºÍÉ¡±øE1Ò»Ñù 
+            Meteorites=no éšæœºè¢«æµæ˜Ÿç ¸ 
+            CrewEscape=50% ä¹˜è½¦äººå‘˜æœ‰50%æœºä¼šä»è¢«æ¯è½¦ä¸­é€ƒç”Ÿ 
+            CameraRange=9 é—´è°é£æœºæ¢å¼€åœ°å›¾å®½åº¦9 
+            FineDiffControl=no æœ‰5ä¸ªéš¾åº¦çº§åˆ«å®é™…ä¸Šæ˜¾ç¤º3ä¸ª 
+            Pilot=E1 é£æœºä¸Šè·³ä¼çš„å…µç§æ˜¯E1(é£æœºè¢«æ¯å¦‚æœæœ‰å…µ) 
+            AlliedCrew=E1 ç›Ÿå†›è¢«æ¯å»ºç­‘ä¸­å‡ºæ¥çš„æ˜¯E1 
+            SovietCrew=E2 è‹æ–¹è¢«æ¯å»ºç­‘ä¸­å‡ºæ¥çš„æ˜¯E2 
+            ThirdCrew=INIT å°¤é‡Œè¢«æ¯å»ºç­‘ä¸­å‡ºæ¥çš„æ˜¯INIT 
+            Technician=CTECH ä¸­ç«‹å»ºç­‘è¢«æ¯å‡ºæ¥çš„æ˜¯CTECH 
+            Engineer=ENGINEER ç‰¹æ®Šå»ºç­‘è¢«æ¯å‡ºæ¥çš„æ˜¯ENGINEER 
+            PParatrooper=E1 æ­¥å…µéƒ¨é˜Ÿå°†å’Œä¼å…µE1ä¸€æ · 
 
             ;GEF 
-            ;************ Secret Lab Section ************ Õ¼ÁìÃØÃÜ¿Æ¼¼ÊµÑéÊÒºó¿ÉÉú²úµÄ±øÖÖ(¿ÉÄÜ) 
+            ;************ Secret Lab Section ************ å é¢†ç§˜å¯†ç§‘æŠ€å®éªŒå®¤åå¯ç”Ÿäº§çš„å…µç§(å¯èƒ½) 
             SecretInfantry=SNIPE,TERROR,DESO,YURI 
             SecretUnits=TNKD,TTNK,DTRUCK 
             SecretBuildings=GTGCAN 
-            ÌØÊâ±øÖÖµÇ¼Ç 
+            ç‰¹æ®Šå…µç§ç™»è®° 
 
-            ;*** Spy stuff *** ¼äµı Ä¬ÈÏ³ö³§Ê±ºòµÄÑù×Ó
-            AlliedDisguise=E1 ¶ÔÃË¾ü¼Ù×°ÎªE1 
-            SovietDisguise=E2 ¶ÔËÕ·½¼Ù×°ÎªE2 
-            ThirdDisguise=INIT ¶ÔÓÈÀï¼Ù×°ÎªINIT 
+            ;*** Spy stuff *** é—´è° é»˜è®¤å‡ºå‚æ—¶å€™çš„æ ·å­
+            AlliedDisguise=E1 å¯¹ç›Ÿå†›å‡è£…ä¸ºE1 
+            SovietDisguise=E2 å¯¹è‹æ–¹å‡è£…ä¸ºE2 
+            ThirdDisguise=INIT å¯¹å°¤é‡Œå‡è£…ä¸ºINIT 
              
-            SpyPowerBlackout=1000 ½øÈëµç³¡ÈÃÆäÍ£µç1000/900Ö¡
-            SpyMoneyStealPercent=.5 ½øÈë¿óÉ½¿ÉÍµÆäÏÖ½ğµÄ0.5±¶(¶Ô·½Ò²¼õÉÙÕâÃ´¶à) 
-            AttackCursorOnDisguise=yes ¶Ô¿É½øĞĞ¼Ù×°µÄÈË/Îï¹â±ê¿ÉÒÔ±äÎª¹¥»÷ÑùÊ½ 
+            SpyPowerBlackout=1000 è¿›å…¥ç”µåœºè®©å…¶åœç”µ1000/900å¸§
+            SpyMoneyStealPercent=.5 è¿›å…¥çŸ¿å±±å¯å·å…¶ç°é‡‘çš„0.5å€(å¯¹æ–¹ä¹Ÿå‡å°‘è¿™ä¹ˆå¤š) 
+            AttackCursorOnDisguise=yes å¯¹å¯è¿›è¡Œå‡è£…çš„äºº/ç‰©å…‰æ ‡å¯ä»¥å˜ä¸ºæ”»å‡»æ ·å¼ 
             ; SJM: Default disguise for the Mirage Tank (object type) 
-            DefaultMirageDisguises=TREE01,TREE02,TREE03,TREE04 »ÃÓ°Ì¹¿Ë¿ÉÒÔ±ä»ÃµÄÎïÌå 
-            InfantryBlinkDisguiseTime=20¼äµı20Ö¡ÉÁË¸Ò»´Î
+            DefaultMirageDisguises=TREE01,TREE02,TREE03,TREE04 å¹»å½±å¦å…‹å¯ä»¥å˜å¹»çš„ç‰©ä½“ 
+            InfantryBlinkDisguiseTime=20é—´è°20å¸§é—ªçƒä¸€æ¬¡
 
-            MaximumCheerRate=300 »¶ºô×î³¤Ê±¼ä 
+            MaximumCheerRate=300 æ¬¢å‘¼æœ€é•¿æ—¶é—´ 
 
-            ;*** New AI type snippets *** ĞÂAI¿ØÖÆ 
-            AISafeDistance=20 AIÈÏÎª°²È«µÄµĞ¾ü¼¯½á¾àÀë20,ÔÚ´Ë¾àÀëÍâ½«²»»áÖ÷¶¯³ö»÷ 
+            ;*** New AI type snippets *** æ–°AIæ§åˆ¶ 
+            AISafeDistance=20 AIè®¤ä¸ºå®‰å…¨çš„æ•Œå†›é›†ç»“è·ç¦»20,åœ¨æ­¤è·ç¦»å¤–å°†ä¸ä¼šä¸»åŠ¨å‡ºå‡» 
 
-            AIMinorSuperReadyPercent=.7 µĞ¾üÊ¹ÓÃ´Î¼¶³¬ÎäµÄ¼¸ÂÊ 
+            AIMinorSuperReadyPercent=.7 æ•Œå†›ä½¿ç”¨æ¬¡çº§è¶…æ­¦çš„å‡ ç‡ 
 
-            HarvesterTooFarDistance=5 µĞ¾ü½«ÔÚÀëÄ¿µÄµØ5µ¥Î»³¤µÄµØ·½·¢¶¯ÌúÄ» 
-            ChronoHarvTooFarDistance=50 µĞ¾ü½«ÔÚÀëÄ¿µÄµØ³¬¹ı50µ¥Î»³¤µÄµØ·½·¢¶¯³¬Ê±¿Õ 
+            HarvesterTooFarDistance=5 æ•Œå†›å°†åœ¨ç¦»ç›®çš„åœ°5å•ä½é•¿çš„åœ°æ–¹å‘åŠ¨é“å¹• 
+            ChronoHarvTooFarDistance=50 æ•Œå†›å°†åœ¨ç¦»ç›®çš„åœ°è¶…è¿‡50å•ä½é•¿çš„åœ°æ–¹å‘åŠ¨è¶…æ—¶ç©º 
             AlliedBaseDefenseCounts=25,20,6  
             SovietBaseDefenseCounts=25,22,6  
             ThirdBaseDefenseCounts=25,22,6  
-            ÒÔÉÏ3¾ä´ú±íµĞ¾ü»ù´¡·ÀÓùÊı ¼ÆËã¹«Ê½ÈçÏÂ((»ù´¡»¨·Ñ-2000)*»ù´¡·ÀÓùÏµÊı/1500)+(µÈ¼¶-1)*3 
-            AIPickWallDefensePercent=50,25,10  AI½¨Ç½¼¸ÂÊ% 
-            AIRestrictReplaceTime=400 AIÔÚÇ½/·ÀÓù½¨Öş/µçÁ¦ÉèÊ©±»»÷»Ùºó400èåºóÖØ½¨ 
-            ThreatPerOccupant=10 Ã¿ÔÚ¿É×¤¾ü½¨ÖşÖĞ¼ÓÈëÒ»¸ö±øÔö¼ÓÍşĞ²¶È10 
-            ApproachTargetResetMultiplier=1.5 ÓëÄ¿±ê¾àÀë³¬¹ı1.5±¶Éä³ÌÔòÍ£Ö¹×·»÷ 
-            CampaignMoneyDeltaEasy=0 Ñ¡À§ÄÑ¼¶ÄÑ¶È³öÀ´Ê±µçÄÔ´øµÄÇ®¶àµÄ±¶Êı 
-            CampaignMoneyDeltaHard=0 Ñ¡À§ÄÑ¼¶ÄÑ¶È³öÀ´Ê±µçÄÔ´øµÄÇ®¶àµÄ±¶Êı  
-            GuardAreaTargetingDelay=36 ¶Ô¾¯½ä·¶Î§ÄÚÄ¿±ê½øĞĞ¹¥»÷µÄÑÓ³ÙÎª36 
-            NormalTargetingDelay=27 ÆÕÍ¨¼¶µçÄÔ¶ÔÄ¿±ê½øĞĞ¹¥»÷µÄÑÓ³ÙÎª27 
-            AINavalYardAdjacency=20 µçÄÔº£¾ü»ùµØºÍ×Ü²¿¼äµÄ¾àÀë²»³¬¹ı20 
-            DisabledDisguiseDetectionPercent=15,5,2 µçÄÔ·¢ÏÖ»ÃÓ°µÄ¼¸ÂÊ 
-            AIAutoDeployFrameDelay=15,25,100 µçÄÔ×Ô¶¯Õ¹¿ª´ó±øµÄÑÓ³Ù 
-            MaximumBuildingPlacementFailures=3 µçÄÔ°Ú·Å3´Î½¨ÖşÊ§°ÜÔò¹ıÒ»¶ÎÊ±¼ä(Õâ¸öÔÚÁíÒ»ÌõÓï¾äÖĞÓĞ¹æ¶¨)ÔÙ°Ú·Å 
-            Ê§°ÜÔ­Òò¿ÉÄÜÊÇÈËÔ±Óµ¼· 
+            ä»¥ä¸Š3å¥ä»£è¡¨æ•Œå†›åŸºç¡€é˜²å¾¡æ•° è®¡ç®—å…¬å¼å¦‚ä¸‹((åŸºç¡€èŠ±è´¹-2000)*åŸºç¡€é˜²å¾¡ç³»æ•°/1500)+(ç­‰çº§-1)*3 
+            AIPickWallDefensePercent=50,25,10  AIå»ºå¢™å‡ ç‡% 
+            AIRestrictReplaceTime=400 AIåœ¨å¢™/é˜²å¾¡å»ºç­‘/ç”µåŠ›è®¾æ–½è¢«å‡»æ¯å400æ¡¢åé‡å»º 
+            ThreatPerOccupant=10 æ¯åœ¨å¯é©»å†›å»ºç­‘ä¸­åŠ å…¥ä¸€ä¸ªå…µå¢åŠ å¨èƒåº¦10 
+            ApproachTargetResetMultiplier=1.5 ä¸ç›®æ ‡è·ç¦»è¶…è¿‡1.5å€å°„ç¨‹åˆ™åœæ­¢è¿½å‡» 
+            CampaignMoneyDeltaEasy=0 é€‰å›°éš¾çº§éš¾åº¦å‡ºæ¥æ—¶ç”µè„‘å¸¦çš„é’±å¤šçš„å€æ•° 
+            CampaignMoneyDeltaHard=0 é€‰å›°éš¾çº§éš¾åº¦å‡ºæ¥æ—¶ç”µè„‘å¸¦çš„é’±å¤šçš„å€æ•°  
+            GuardAreaTargetingDelay=36 å¯¹è­¦æˆ’èŒƒå›´å†…ç›®æ ‡è¿›è¡Œæ”»å‡»çš„å»¶è¿Ÿä¸º36 
+            NormalTargetingDelay=27 æ™®é€šçº§ç”µè„‘å¯¹ç›®æ ‡è¿›è¡Œæ”»å‡»çš„å»¶è¿Ÿä¸º27 
+            AINavalYardAdjacency=20 ç”µè„‘æµ·å†›åŸºåœ°å’Œæ€»éƒ¨é—´çš„è·ç¦»ä¸è¶…è¿‡20 
+            DisabledDisguiseDetectionPercent=15,5,2 ç”µè„‘å‘ç°å¹»å½±çš„å‡ ç‡ 
+            AIAutoDeployFrameDelay=15,25,100 ç”µè„‘è‡ªåŠ¨å±•å¼€å¤§å…µçš„å»¶è¿Ÿ 
+            MaximumBuildingPlacementFailures=3 ç”µè„‘æ‘†æ”¾3æ¬¡å»ºç­‘å¤±è´¥åˆ™è¿‡ä¸€æ®µæ—¶é—´(è¿™ä¸ªåœ¨å¦ä¸€æ¡è¯­å¥ä¸­æœ‰è§„å®š)å†æ‘†æ”¾ 
+            å¤±è´¥åŸå› å¯èƒ½æ˜¯äººå‘˜æ‹¥æŒ¤ 
 
             TiberiumShortScan=6 
             TiberiumLongScan=48  
-            ´Ë2¾ä¾ùÎª¿ó³µÕÒ¿óÉèÖÃ
-            SlaveMinerShortScan=8 Å«Á¥¿ó³µ¿´ÕâÃ´Ô¶À´¾ö¶¨ÊÇ·ñÒªÀë¿ó½üÒ»µã 
-            SlaveMinerSlaveScan=14Å«¿óÉèÖÃ
+            æ­¤2å¥å‡ä¸ºçŸ¿è½¦æ‰¾çŸ¿è®¾ç½®
+            SlaveMinerShortScan=8 å¥´éš¶çŸ¿è½¦çœ‹è¿™ä¹ˆè¿œæ¥å†³å®šæ˜¯å¦è¦ç¦»çŸ¿è¿‘ä¸€ç‚¹ 
+            SlaveMinerSlaveScan=14å¥´çŸ¿è®¾ç½®
 
-            SlaveMinerLongScan=48;Å«Á¥¿ó³µ¿´ÕâÃ´Ô¶µ±ËüÑ°ÕÒ¿óµØµÄÊ±ºò 
-            SlaveMinerScanCorrection=3;Ò»¸öÕ¹¿ªµÄÅ«Á¥¿ó³µÀë¿ó³¬¹ı3ÔòĞèÒªÀë¿ó¸ü½ü 
-            SlaveMinerKickFrameDelay=150;µ±Ã»¿ó¿É²ÉÊ±150èåºó×Ô¶¯Ñ°ÕÒ¸üºÃµÄµØ·½ 
-
-
-            AISuperDefenseProbability=90,50,10 ³¬Îä½¨Ôì¼¸ÂÊ 
-            AISuperDefenseFrames=50 ³¬Îä¾¯±¨Ê±¼ä 
-            AISuperDefenseDistance=12 ÎäÆ÷ÀëµçÄÔ¾àÀëµÍÓÚ12Ôò¹¥´ò 
-
-            AIÔÚ¸÷ÖÖÇé¿öÏÂ¶Ô²¿¶ÓµÄÊ¹ÓÃ 
-            AICaptureNormal=75,5,5,15 µ±Õı³£Çé¿öÊ± 
-            AICaptureWounded=15,40,40,5 µ±µ¥Î»ÊÜÉËÊ± 
-            AICaptureLowPower=15,5,75,5 µ±µçÁ¦²»×ãÊ± 
-            AICaptureLowMoney=15,75,5,5 µ±½ğÇ®¶ÌÈ±Ê± 
-            ËÄ¸öÊıÖµ·Ö±ğ´ú±í:¼ÓÈëAIµÄ¾ü¶Ó,³öÊÛ¸Ãµ¥Î»,½«Æä·ÅÈë·´Ó¦¶Ñ,·Å×Å²»¶¯ 
-            AICaptureLowMoneyMark=2000 µÍÓÚ2000Ç®¾ÍÊÇ½ğÇ®¶ÌÈ± 
-            AICaptureWoundedMark=.25 ³¬¹ı0.25ÉúÃüËğÊ§¾ÍÊÇÊÜÉËµÄ 
-            PurifierBonus=.25 ¿óÊ¯¾«Á·Æ÷¶Ô»ñµÃ½ğÇ®µÄ¸½¼ÓÎª»ñµÃÊıµÄ0.25±¶ 
+            SlaveMinerLongScan=48;å¥´éš¶çŸ¿è½¦çœ‹è¿™ä¹ˆè¿œå½“å®ƒå¯»æ‰¾çŸ¿åœ°çš„æ—¶å€™ 
+            SlaveMinerScanCorrection=3;ä¸€ä¸ªå±•å¼€çš„å¥´éš¶çŸ¿è½¦ç¦»çŸ¿è¶…è¿‡3åˆ™éœ€è¦ç¦»çŸ¿æ›´è¿‘ 
+            SlaveMinerKickFrameDelay=150;å½“æ²¡çŸ¿å¯é‡‡æ—¶150æ¡¢åè‡ªåŠ¨å¯»æ‰¾æ›´å¥½çš„åœ°æ–¹ 
 
 
-            RA2ÖĞ²¿·ÖÌØÊâÎäÆ÷µÄĞŞ¸Ä ÔÚ´Ë½øĞĞ 
-            DropPodWeapon=Vulcan2  droppodµÄÎäÆ÷ÊÇVulcan2 
-            DropPodHeight=2000  droppod³öÏÖµÄ¸ß¶ÈÊÇ2000 
-            DropPodSpeed=75  droppodÏÂ½µµÄËÙ¶ÈÊÇ75 
-            DropPodAngle=0.79 ÏÂ½µ½Ç¶ÈÊÇ0.79,0.4ÎªÆ½ 1.18Îª×İ 
-            HoverHeight=120 Ğü¸¡µ¥Î»µÄ¸ß¶È120leptn 
-            HoverDampen=40%  Ğü¸¡Õğµ´·ù¶È 
-            HoverBob=.04 Õğµ´¼ä¸ôÊ±¼ä0.04·ÖÖÓ 
-            HoverBoost=150% ´Ë×´Ì¬ÏÂµÄËÙ¶ÈÎª150%Ô­ËÙ 
-            HoverAcceleration=.02  0.02·ÖÖÓºó¼Óµ½ÂúËÙ 
-            HoverBrake=.03  0.03·ÖÖÓºóÍêÈ«Í£Ö¹ 
-            BalloonHoverHeight=1000 ¸ß¶È1000 
+            AISuperDefenseProbability=90,50,10 è¶…æ­¦å»ºé€ å‡ ç‡ 
+            AISuperDefenseFrames=50 è¶…æ­¦è­¦æŠ¥æ—¶é—´ 
+            AISuperDefenseDistance=12 æ­¦å™¨ç¦»ç”µè„‘è·ç¦»ä½äº12åˆ™æ”»æ‰“ 
+
+            AIåœ¨å„ç§æƒ…å†µä¸‹å¯¹éƒ¨é˜Ÿçš„ä½¿ç”¨ 
+            AICaptureNormal=75,5,5,15 å½“æ­£å¸¸æƒ…å†µæ—¶ 
+            AICaptureWounded=15,40,40,5 å½“å•ä½å—ä¼¤æ—¶ 
+            AICaptureLowPower=15,5,75,5 å½“ç”µåŠ›ä¸è¶³æ—¶ 
+            AICaptureLowMoney=15,75,5,5 å½“é‡‘é’±çŸ­ç¼ºæ—¶ 
+            å››ä¸ªæ•°å€¼åˆ†åˆ«ä»£è¡¨:åŠ å…¥AIçš„å†›é˜Ÿ,å‡ºå”®è¯¥å•ä½,å°†å…¶æ”¾å…¥ååº”å †,æ”¾ç€ä¸åŠ¨ 
+            AICaptureLowMoneyMark=2000 ä½äº2000é’±å°±æ˜¯é‡‘é’±çŸ­ç¼º 
+            AICaptureWoundedMark=.25 è¶…è¿‡0.25ç”Ÿå‘½æŸå¤±å°±æ˜¯å—ä¼¤çš„ 
+            PurifierBonus=.25 çŸ¿çŸ³ç²¾ç»ƒå™¨å¯¹è·å¾—é‡‘é’±çš„é™„åŠ ä¸ºè·å¾—æ•°çš„0.25å€ 
+
+
+            RA2ä¸­éƒ¨åˆ†ç‰¹æ®Šæ­¦å™¨çš„ä¿®æ”¹ åœ¨æ­¤è¿›è¡Œ 
+            DropPodWeapon=Vulcan2  droppodçš„æ­¦å™¨æ˜¯Vulcan2 
+            DropPodHeight=2000  droppodå‡ºç°çš„é«˜åº¦æ˜¯2000 
+            DropPodSpeed=75  droppodä¸‹é™çš„é€Ÿåº¦æ˜¯75 
+            DropPodAngle=0.79 ä¸‹é™è§’åº¦æ˜¯0.79,0.4ä¸ºå¹³ 1.18ä¸ºçºµ 
+            HoverHeight=120 æ‚¬æµ®å•ä½çš„é«˜åº¦120leptn 
+            HoverDampen=40%  æ‚¬æµ®éœ‡è¡å¹…åº¦ 
+            HoverBob=.04 éœ‡è¡é—´éš”æ—¶é—´0.04åˆ†é’Ÿ 
+            HoverBoost=150% æ­¤çŠ¶æ€ä¸‹çš„é€Ÿåº¦ä¸º150%åŸé€Ÿ 
+            HoverAcceleration=.02  0.02åˆ†é’ŸååŠ åˆ°æ»¡é€Ÿ 
+            HoverBrake=.03  0.03åˆ†é’Ÿåå®Œå…¨åœæ­¢ 
+            BalloonHoverHeight=1000 é«˜åº¦1000 
             BalloonHoverDampen=20%  dampening effect on hover vehicle bounciness 
 
-            BalloonHoverBob=1.2 ·´µ¯¼ä¸ôÊ±¼ä1.2·ÖÖÓ 
-            BalloonHoverBoost=150% ´Ë×´Ì¬ÏÂµÄËÙ¶ÈÎª150%Ô­ËÙ 
-            BalloonHoverAcceleration=.04  0.04·ÖÖÓºó¼Óµ½ÂúËÙ 
-            BalloonHoverBrake=.03  0.03·ÖÖÓºóÍêÈ«Í£Ö¹ 
+            BalloonHoverBob=1.2 åå¼¹é—´éš”æ—¶é—´1.2åˆ†é’Ÿ 
+            BalloonHoverBoost=150% æ­¤çŠ¶æ€ä¸‹çš„é€Ÿåº¦ä¸º150%åŸé€Ÿ 
+            BalloonHoverAcceleration=.04  0.04åˆ†é’ŸååŠ åˆ°æ»¡é€Ÿ 
+            BalloonHoverBrake=.03  0.03åˆ†é’Ÿåå®Œå…¨åœæ­¢ 
 
             ; subterrainean vehicle characteristics 
             TunnelSpeed=1 
 
             ; production & power effects 
-            MultipleFactory=0.8 Ã¿¸ö¹¤³§ÖÆÔì¼ÓËÙ Ô­0.8±¶Ê±¼ä 
-            MinLowPowerProductionSpeed=.5 µÍµçÁ¿Ê±ÖÆÔìËÙ¶ÈÎªÔ­0.5±¶ 
-            MaxLowPowerProductionSpeed=.8 ÖĞµçÁ¿(»ÆÉ«)ÖÆÔìËÙ¶ÈÎªÔ­0.8±¶ 
-            LowPowerPenaltyModifier=1 µçÁ¦³Í·£±¶Êı 
+            MultipleFactory=0.8 æ¯ä¸ªå·¥å‚åˆ¶é€ åŠ é€Ÿ åŸ0.8å€æ—¶é—´ 
+            MinLowPowerProductionSpeed=.5 ä½ç”µé‡æ—¶åˆ¶é€ é€Ÿåº¦ä¸ºåŸ0.5å€ 
+            MaxLowPowerProductionSpeed=.8 ä¸­ç”µé‡(é»„è‰²)åˆ¶é€ é€Ÿåº¦ä¸ºåŸ0.8å€ 
+            LowPowerPenaltyModifier=1 ç”µåŠ›æƒ©ç½šå€æ•° 
             GDIGateOne=GADUMY 
             GDIGateTwo=GADUMY  
             WallTower=GADUMY  
-            Shipyard=GAYARD,NAYARD,YAYARD ¶¨Òå´¬³§ 
+            Shipyard=GAYARD,NAYARD,YAYARD å®šä¹‰èˆ¹å‚ 
             NodGateOne=GADUMY  
             NodGateTwo=GADUMY  
-            NodRegularPower=NAPOWR ËÕ¾ü»ù´¡µçÁ¦ÉèÊ© 
-            NodAdvancedPower=NANRCT ËÕ¾üÍØÕ¹µçÁ¦ÉèÊ© 
-            GDIPowerPlant=GAPOWR ÃË¾ü»ù´¡µçÁ¦ÉèÊ© 
-            ThirdPowerPlant=YAPOWR ÓÈÀï»ù´¡µçÁ¦ÉèÊ© 
-            *****ÕâÀïµÄGATEÎÒÅª²»Ã÷°×ÊÇÊ²Ã´ÒâË¼ ÀïÃæµÄGADUMYÊÇÒ»¸öÆæ¹ÖµÄ³¬Îä 
-            RepairBay=GADEPT,NADEPT,CAOUTP ¶¨ÒåĞŞÀí³§ 
-            BaseUnit=AMCV,SMCV,PCV ¶¨Òå»ùµØ³µ 
-            HarvesterUnit=HARV,CMIN ¶¨Òå¿ó³µ 
-            PadAircraft=ORCA,BEAG ¶¨ÒåĞèÒªÔÚ»ú³¡½µÂäµÄ·É»ú 
+            NodRegularPower=NAPOWR è‹å†›åŸºç¡€ç”µåŠ›è®¾æ–½ 
+            NodAdvancedPower=NANRCT è‹å†›æ‹“å±•ç”µåŠ›è®¾æ–½ 
+            GDIPowerPlant=GAPOWR ç›Ÿå†›åŸºç¡€ç”µåŠ›è®¾æ–½ 
+            ThirdPowerPlant=YAPOWR å°¤é‡ŒåŸºç¡€ç”µåŠ›è®¾æ–½ 
+            *****è¿™é‡Œçš„GATEæˆ‘å¼„ä¸æ˜ç™½æ˜¯ä»€ä¹ˆæ„æ€ é‡Œé¢çš„GADUMYæ˜¯ä¸€ä¸ªå¥‡æ€ªçš„è¶…æ­¦ 
+            RepairBay=GADEPT,NADEPT,CAOUTP å®šä¹‰ä¿®ç†å‚ 
+            BaseUnit=AMCV,SMCV,PCV å®šä¹‰åŸºåœ°è½¦ 
+            HarvesterUnit=HARV,CMIN å®šä¹‰çŸ¿è½¦ 
+            PadAircraft=ORCA,BEAG å®šä¹‰éœ€è¦åœ¨æœºåœºé™è½çš„é£æœº 
             ; Bret's hack section 
-            TreeStrength=200 Ê÷Ä¾µÄÉúÃü 
-            WindDirection=1 ·çÏò 0-7 0ÎªÕı±± 
-            TrackedUphill=1.0 ¹æ¶¨SpeedType=TrackµÄÎïÌåÉÏÉ½ËÙ¶È 
-            TrackedDownhill=1.2 ¹æ¶¨SpeedType=TrackµÄÎïÌåÏÂÉ½ËÙ¶È 
-            WheeledUphill=1.0 ¹æ¶¨SpeedType=WheelµÄÎïÌåÉÏÉ½ËÙ¶È 
-            WheeledDownhill=1.2 ¹æ¶¨SpeedType=WheelµÄÎïÌåÏÂÉ½ËÙ¶È 
-            LeptonsPerSightIncrease=2000 ¸ß¶È2000+µÄÎïÌå»ñµÃ¶îÍâÊÓÒ° 
-            LeptonsPerFireIncrease=2000 ¸ß¶È2000+µÄÎïÌå»ñµÃ¶îÍâÕÕÁÁ 
-            AttackingAircraftSightRange=2 »ú³¡Æğ·ÉµÄ·É»úµÄÊÓÒ° 
-            BlendedFog=yes ra2ÎŞĞ§´úÂë
-            CliffBackImpassability=2 ÔÚĞüÑÂÏÂ¶àÉÙ¸ñÄÚ²»ÄÜÔì½¨Öş 
-            IceCrackingWeight=50.0 Õâ¸öÖØÁ¿µÄÎïÌå½«Ñ¹Ëé±ù²ã 
+            TreeStrength=200 æ ‘æœ¨çš„ç”Ÿå‘½ 
+            WindDirection=1 é£å‘ 0-7 0ä¸ºæ­£åŒ— 
+            TrackedUphill=1.0 è§„å®šSpeedType=Trackçš„ç‰©ä½“ä¸Šå±±é€Ÿåº¦ 
+            TrackedDownhill=1.2 è§„å®šSpeedType=Trackçš„ç‰©ä½“ä¸‹å±±é€Ÿåº¦ 
+            WheeledUphill=1.0 è§„å®šSpeedType=Wheelçš„ç‰©ä½“ä¸Šå±±é€Ÿåº¦ 
+            WheeledDownhill=1.2 è§„å®šSpeedType=Wheelçš„ç‰©ä½“ä¸‹å±±é€Ÿåº¦ 
+            LeptonsPerSightIncrease=2000 é«˜åº¦2000+çš„ç‰©ä½“è·å¾—é¢å¤–è§†é‡ 
+            LeptonsPerFireIncrease=2000 é«˜åº¦2000+çš„ç‰©ä½“è·å¾—é¢å¤–ç…§äº® 
+            AttackingAircraftSightRange=2 æœºåœºèµ·é£çš„é£æœºçš„è§†é‡ 
+            BlendedFog=yes ra2æ— æ•ˆä»£ç 
+            CliffBackImpassability=2 åœ¨æ‚¬å´–ä¸‹å¤šå°‘æ ¼å†…ä¸èƒ½é€ å»ºç­‘ 
+            IceCrackingWeight=50.0 è¿™ä¸ªé‡é‡çš„ç‰©ä½“å°†å‹ç¢å†°å±‚ 
 
 
-            ShipSinkingWeight=3.0 º£ÃæÉÏµÄ´¬Ö»¸ßÓÚÕâ¸öÖØÁ¿µÄ±»»Ù½«ÏÂ³Á¶ø·Ç±¬Õ¨ 
-            CloakingStages=9 Ç±Í§ÔÚº£ÃæÏÂ9¸ß¶ÈµÄµØ·½ÔË¶¯ 
-            TiberiumTransmogrify=40 ÎŞĞ§ 
-            TreeFlammability=0.0 Ê÷Ä¾×Å»ğ¼¸ÂÊ(ÎŞĞ§) 
-            CraterLevel=1 µ¯¿ÓÉî¶È ¿ØÖÆµ¯¿Ó´óĞ¡ È¡Öµ0-4 
-            BridgeVoxelMax=3 ÇÅ±»´İ»Ùºó×î´óËéÆ¬ÊıÄ¿ 
-            WallBuildSpeedCoefficient=3.0 Ç½µÄ½¨ÔìËÙ¶ÈÎªÆÕÍ¨ÎïÌåÖÆÔìËÙ¶ÈµÄ¶àÉÙ±¶ 
-            AllowShroudedSubteranneanMoves=true ÊÇ(YES)·ñ(NO)¿ÉÒÔ¿´¼ûµØÏÂÎïÌåµÄÉúÃüÌõ 
-            AircraftFogReveal=6 À×´ï/»ú³¡¿ÉÊÓ·¶Î§(=SIGHT) 
-            MaximumQueuedObjects=29 ÖÆÔìÀ¸¿ÉÒÔÔ¤¶¨µ½29 
-            MaxWaypointPathLength=15 ×î´óÂ·¾¶µã15¸ö 
+            ShipSinkingWeight=3.0 æµ·é¢ä¸Šçš„èˆ¹åªé«˜äºè¿™ä¸ªé‡é‡çš„è¢«æ¯å°†ä¸‹æ²‰è€Œéçˆ†ç‚¸ 
+            CloakingStages=9 æ½œè‰‡åœ¨æµ·é¢ä¸‹9é«˜åº¦çš„åœ°æ–¹è¿åŠ¨ 
+            TiberiumTransmogrify=40 æ— æ•ˆ 
+            TreeFlammability=0.0 æ ‘æœ¨ç€ç«å‡ ç‡(æ— æ•ˆ) 
+            CraterLevel=1 å¼¹å‘æ·±åº¦ æ§åˆ¶å¼¹å‘å¤§å° å–å€¼0-4 
+            BridgeVoxelMax=3 æ¡¥è¢«æ‘§æ¯åæœ€å¤§ç¢ç‰‡æ•°ç›® 
+            WallBuildSpeedCoefficient=3.0 å¢™çš„å»ºé€ é€Ÿåº¦ä¸ºæ™®é€šç‰©ä½“åˆ¶é€ é€Ÿåº¦çš„å¤šå°‘å€ 
+            AllowShroudedSubteranneanMoves=true æ˜¯(YES)å¦(NO)å¯ä»¥çœ‹è§åœ°ä¸‹ç‰©ä½“çš„ç”Ÿå‘½æ¡ 
+            AircraftFogReveal=6 é›·è¾¾/æœºåœºå¯è§†èŒƒå›´(=SIGHT) 
+            MaximumQueuedObjects=29 åˆ¶é€ æ å¯ä»¥é¢„å®šåˆ°29 
+            MaxWaypointPathLength=15 æœ€å¤§è·¯å¾„ç‚¹15ä¸ª 
 
-            ; firestorm defense controls »ğ·ç±©Óï¾ä,ÎŞĞ§ 
-            ChargeToDrainRatio=.333 »ğ·ç±©Óï¾ä,ÎŞĞ§ 
-            DamageToFirestormDamageCoefficient=.1 »ğ·ç±©Óï¾ä,ÎŞĞ§ 
+            ; firestorm defense controls ç«é£æš´è¯­å¥,æ— æ•ˆ 
+            ChargeToDrainRatio=.333 ç«é£æš´è¯­å¥,æ— æ•ˆ 
+            DamageToFirestormDamageCoefficient=.1 ç«é£æš´è¯­å¥,æ— æ•ˆ 
 
-            ; veinhole monster parameters Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            ; VeinholeMonsterStrength=1000 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            VeinholeGrowthRate=300 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            VeinholeShrinkRate=100 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            MaxVeinholeGrowth=2000 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            VeinDamage=0 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            VeinholeTypeClass=VEINTREE Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
+            ; veinhole monster parameters æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            ; VeinholeMonsterStrength=1000 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            VeinholeGrowthRate=300 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            VeinholeShrinkRate=100 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            MaxVeinholeGrowth=2000 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            VeinDamage=0 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            VeinholeTypeClass=VEINTREE æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
 
             ;-RTO 
             ; AI trigger weighting parameters 
-            AITriggerSuccessWeightDelta=20 Èç¹ûÕâ¸ö´¥·¢³É¹¦µÄ»° ÔÙ´Î´¥·¢¼¸ÂÊ+20% 
-            AITriggerFailureWeightDelta=-50 Èç¹ûÕâ¸ö´¥·¢Ê§°ÜµÄ»° ÔÙ´Î´¥·¢¼¸ÂÊ-50% 
-            AITriggerTrackRecordCoefficient=1 ËÆºõÊÇ¿¼ÂÇÒÔÇ°µÄ¶àÉÙ¸ö´¥·¢ Èç¹ûÌ«¶àµÄ»°»ú×Ó»áºÜÂı 
+            AITriggerSuccessWeightDelta=20 å¦‚æœè¿™ä¸ªè§¦å‘æˆåŠŸçš„è¯ å†æ¬¡è§¦å‘å‡ ç‡+20% 
+            AITriggerFailureWeightDelta=-50 å¦‚æœè¿™ä¸ªè§¦å‘å¤±è´¥çš„è¯ å†æ¬¡è§¦å‘å‡ ç‡-50% 
+            AITriggerTrackRecordCoefficient=1 ä¼¼ä¹æ˜¯è€ƒè™‘ä»¥å‰çš„å¤šå°‘ä¸ªè§¦å‘ å¦‚æœå¤ªå¤šçš„è¯æœºå­ä¼šå¾ˆæ…¢ 
 
             ; Some spotlight controls 
-            SpotlightSpeed=.015 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            SpotlightMovementRadius=2000 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            SpotlightLocationRadius=1000 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            SpotlightAcceleration=.0025 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
-            SpotlightAngle=.5 Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
+            SpotlightSpeed=.015 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            SpotlightMovementRadius=2000 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            SpotlightLocationRadius=1000 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            SpotlightAcceleration=.0025 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
+            SpotlightAngle=.5 æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
 
-            ; Controls for radar events À×´ïÊÂ¼ş¿ØÖÆÆ÷ 
-            ; The events, in order, are: ÊÂ¼şÖÖÀà 
-            ; (1) Generic Combat Event, Õ½¶·ÊÂ¼ş 
-            ; (2) Generic Noncombat Event ·ÇÕ½¶·ÊÂ¼ş  
-            ; (3) Dropzone Event ¿Õ½µ
-            ; (4) Base Under Attack Event ±»¹¥»÷ÊÂ¼ş 
-            ; (5) Harvester Under Attack Event ¿ó³µ±»¹¥»÷ÊÂ¼ş 
-            ; (6) Enemy Object Sensed Event ·¢ÏÖµĞÈËÊÂ¼ş 
-            ´ËÍâ»¹ÓĞÈçÏÂÊÂ¼ş 
-            (7) Unit Produced Event µ¥Î»Éú²úÊÂ¼ş  
-            (8) Unit Lost Event µ¥Î»±»ÏûÃğÊÂ¼ş 
-            (9) Unit Repaired Event µ¥Î»±»ĞŞ¸´ÊÂ¼ş 
-            (10) Building Infiltrated Event ½¨Öş±»ÉøÍ¸ÊÂ¼ş 
-            (11) Building Captured Event ½¨Öş±»Õ¼ÁìÊÂ¼ş 
-            (12) Beacon Placed Event ĞÅ±ê·Å³ö£¬ÓÃÓÚÁª»ú 
-            (13) Super Weapon Detected Event ·¢ÏÖ³¬ÎäÊÂ¼ş 
-            (14) Super Weapon Activated Event ¼¤»î³¬ÎäÊÂ¼ş 
-            (15) Bridge Repaired Event ÇÅ±»ĞŞºÃÊÂ¼ş 
-            (16) Garrisoned Abandoned Event ÒªÈû±»ÆÈ·ÅÆú(ºìÑª)ÊÂ¼ş 
-            (17) Ally Base Attacked Event ÃË¹ú±»¹¥»÷ÊÂ¼ş 
-            RadarEventSuppressionDistances=8, 8, 8, 8, 8, 6 À×´ï¹ıÕâÃ´³¤Ê±¼äÔÙ»ã±¨ 
-            RadarEventVisibilityDurations=200,200,200,200,200,200 À×´ïÊÂ¼ş¿É¼û±£³ÖÊ±¼ä 
-            RadarEventDurations=400,400,400,400,400,400 À×´ïÊÂ¼şµÄ±£ÁôÊ±¼ä 
-            FlashFrameTime=7 ÉÁË¸Ò»´ÎµÄÊ±¼ä 
-            RadarCombatFlashTime=49 ×ÜÉÁË¸Ê±¼ä(ÎªÉÁË¸Ê±¼äÆæÊı±¶) 
-            RadarEventMinRadius=8 ÓÉ±»²¶×½µÄÄ¿±êµ½À×´ïÉÏËù²úÉú²¶×½Ä¿±êÖ®¼äµÄ¾àÀë 
+            ; Controls for radar events é›·è¾¾äº‹ä»¶æ§åˆ¶å™¨ 
+            ; The events, in order, are: äº‹ä»¶ç§ç±» 
+            ; (1) Generic Combat Event, æˆ˜æ–—äº‹ä»¶ 
+            ; (2) Generic Noncombat Event éæˆ˜æ–—äº‹ä»¶  
+            ; (3) Dropzone Event ç©ºé™
+            ; (4) Base Under Attack Event è¢«æ”»å‡»äº‹ä»¶ 
+            ; (5) Harvester Under Attack Event çŸ¿è½¦è¢«æ”»å‡»äº‹ä»¶ 
+            ; (6) Enemy Object Sensed Event å‘ç°æ•Œäººäº‹ä»¶ 
+            æ­¤å¤–è¿˜æœ‰å¦‚ä¸‹äº‹ä»¶ 
+            (7) Unit Produced Event å•ä½ç”Ÿäº§äº‹ä»¶  
+            (8) Unit Lost Event å•ä½è¢«æ¶ˆç­äº‹ä»¶ 
+            (9) Unit Repaired Event å•ä½è¢«ä¿®å¤äº‹ä»¶ 
+            (10) Building Infiltrated Event å»ºç­‘è¢«æ¸—é€äº‹ä»¶ 
+            (11) Building Captured Event å»ºç­‘è¢«å é¢†äº‹ä»¶ 
+            (12) Beacon Placed Event ä¿¡æ ‡æ”¾å‡ºï¼Œç”¨äºè”æœº 
+            (13) Super Weapon Detected Event å‘ç°è¶…æ­¦äº‹ä»¶ 
+            (14) Super Weapon Activated Event æ¿€æ´»è¶…æ­¦äº‹ä»¶ 
+            (15) Bridge Repaired Event æ¡¥è¢«ä¿®å¥½äº‹ä»¶ 
+            (16) Garrisoned Abandoned Event è¦å¡è¢«è¿«æ”¾å¼ƒ(çº¢è¡€)äº‹ä»¶ 
+            (17) Ally Base Attacked Event ç›Ÿå›½è¢«æ”»å‡»äº‹ä»¶ 
+            RadarEventSuppressionDistances=8, 8, 8, 8, 8, 6 é›·è¾¾è¿‡è¿™ä¹ˆé•¿æ—¶é—´å†æ±‡æŠ¥ 
+            RadarEventVisibilityDurations=200,200,200,200,200,200 é›·è¾¾äº‹ä»¶å¯è§ä¿æŒæ—¶é—´ 
+            RadarEventDurations=400,400,400,400,400,400 é›·è¾¾äº‹ä»¶çš„ä¿ç•™æ—¶é—´ 
+            FlashFrameTime=7 é—ªçƒä¸€æ¬¡çš„æ—¶é—´ 
+            RadarCombatFlashTime=49 æ€»é—ªçƒæ—¶é—´(ä¸ºé—ªçƒæ—¶é—´å¥‡æ•°å€) 
+            RadarEventMinRadius=8 ç”±è¢«æ•æ‰çš„ç›®æ ‡åˆ°é›·è¾¾ä¸Šæ‰€äº§ç”Ÿæ•æ‰ç›®æ ‡ä¹‹é—´çš„è·ç¦» 
 
 
-            RadarEventSpeed=1.2 À×´ïËù²¶×½µÄÄ¿±êÔÚÀ×´ï²Ù×÷ÕßÆÁÄ»ÉÏµÄÔËĞĞËÙ¶È 
-            RadarEventRotationSpeed=.05 À×´ïËù²¶×½µÄÄ¿±êÔÚÀ×´ï²Ù×÷ÕßÆÁÄ»ÉÏµÄĞı×ªËÙ¶È 
-            RadarEventColorSpeed=.1 À×´ïËù²¶×½µÄÄ¿±êÑÕÉ«¸Ä‰äµÄËÙÂÊ 
-            RevealTriggerRadius=9 ÕıÈçÔÚµØÍ¼²áÖĞËù³£¼ûÄÇÑù£¬ÄÇĞ©»á±©Â¶ÖÜÎ§·¢Éä×°ÖÃµÄÄ¿±êÔ´Éä³Ì×î¶àÒ²²»»á³¬¹ı10 
+            RadarEventSpeed=1.2 é›·è¾¾æ‰€æ•æ‰çš„ç›®æ ‡åœ¨é›·è¾¾æ“ä½œè€…å±å¹•ä¸Šçš„è¿è¡Œé€Ÿåº¦ 
+            RadarEventRotationSpeed=.05 é›·è¾¾æ‰€æ•æ‰çš„ç›®æ ‡åœ¨é›·è¾¾æ“ä½œè€…å±å¹•ä¸Šçš„æ—‹è½¬é€Ÿåº¦ 
+            RadarEventColorSpeed=.1 é›·è¾¾æ‰€æ•æ‰çš„ç›®æ ‡é¢œè‰²æ”¹å¤‰çš„é€Ÿç‡ 
+            RevealTriggerRadius=9 æ­£å¦‚åœ¨åœ°å›¾å†Œä¸­æ‰€å¸¸è§é‚£æ ·ï¼Œé‚£äº›ä¼šæš´éœ²å‘¨å›´å‘å°„è£…ç½®çš„ç›®æ ‡æºå°„ç¨‹æœ€å¤šä¹Ÿä¸ä¼šè¶…è¿‡10 
 
             ; id holders for particle systems and voxel debris 
-            ExplosiveVoxelDebris=GASTANK,PIECE ±¬Õ¨µÄVXLÃû³Æ 
-            TireVoxelDebris=TIRE ±¬³öµÄVXLÂÖÌ¥Ãû³Æ 
-            ScrapVoxelDebris=PIECE ±¬³öµÄVXLËéÆ¬Ãû³Æ 
-            OKBuildingSmokeSystem=SmokeStackSys ½¨ÖşµÄÑÌÎíÁ£×ÓÃû³Æ 
-            DamagedBuildingSmokeSystem=SmallSmokeSys±»ÉËº¦µÄ½¨ÖşÑÌÎíÁ£×ÓÃû³Æ 
-            DamagedUnitSmokeSystem=VSSmokeSys ±»ÉËº¦µÄ³µÁ¾ÑÌÎíÁ£×ÓÃû³Æ 
-            DebrisSmokeSystem=VSSmokeSys ½¨Öşµ¹ËúµÄVXLÑÌÎíÃû³Æ 
+            ExplosiveVoxelDebris=GASTANK,PIECE çˆ†ç‚¸çš„VXLåç§° 
+            TireVoxelDebris=TIRE çˆ†å‡ºçš„VXLè½®èƒåç§° 
+            ScrapVoxelDebris=PIECE çˆ†å‡ºçš„VXLç¢ç‰‡åç§° 
+            OKBuildingSmokeSystem=SmokeStackSys å»ºç­‘çš„çƒŸé›¾ç²’å­åç§° 
+            DamagedBuildingSmokeSystem=SmallSmokeSysè¢«ä¼¤å®³çš„å»ºç­‘çƒŸé›¾ç²’å­åç§° 
+            DamagedUnitSmokeSystem=VSSmokeSys è¢«ä¼¤å®³çš„è½¦è¾†çƒŸé›¾ç²’å­åç§° 
+            DebrisSmokeSystem=VSSmokeSys å»ºç­‘å€’å¡Œçš„VXLçƒŸé›¾åç§° 
 
-            ; Building prerequisite categories are specified here. Í¨Åä·û×¢²á±í 
-            PrerequisitePower=GAPOWR,NAPOWR,NANRCT,YAPOWR ×¢²áµç³¡ 
-            PrerequisiteFactory=GAWEAP,NAWEAP,YAWEAP ×¢²áÕ½³µ¹¤³§ 
-            PrerequisiteBarracks=NAHAND,GAPILE,YABRCK ×¢²á±øÓª 
-            PrerequisiteRadar=GAAIRC,NARADR,AMRADR,NAPSIS ×¢²áÀ×´ï 
-            PrerequisiteTech=GATECH,NATECH,YATECH ×¢²á¸ß¿Æ 
-            PrerequisiteProc=GAREFN,NAREFN,YAREFN ×¢²á¿óÉ½ 
-            PrerequisiteProcAlternate=SMIN²»µÃĞŞ¸Ä
+            ; Building prerequisite categories are specified here. é€šé…ç¬¦æ³¨å†Œè¡¨ 
+            PrerequisitePower=GAPOWR,NAPOWR,NANRCT,YAPOWR æ³¨å†Œç”µåœº 
+            PrerequisiteFactory=GAWEAP,NAWEAP,YAWEAP æ³¨å†Œæˆ˜è½¦å·¥å‚ 
+            PrerequisiteBarracks=NAHAND,GAPILE,YABRCK æ³¨å†Œå…µè¥ 
+            PrerequisiteRadar=GAAIRC,NARADR,AMRADR,NAPSIS æ³¨å†Œé›·è¾¾ 
+            PrerequisiteTech=GATECH,NATECH,YATECH æ³¨å†Œé«˜ç§‘ 
+            PrerequisiteProc=GAREFN,NAREFN,YAREFN æ³¨å†ŒçŸ¿å±± 
+            PrerequisiteProcAlternate=SMINä¸å¾—ä¿®æ”¹
 
             ; hunter seeker controls  
-            HunterSeekerDetonateProximity=150 ÎŞĞ§Óï¾ä 
-            HunterSeekerDescendProximity=700 ÎŞĞ§Óï¾ä 
-            HunterSeekerAscentSpeed=40 ÎŞĞ§Óï¾ä 
-            HunterSeekerDescentSpeed=50 ÎŞĞ§Óï¾ä 
-            HunterSeekerEmergeSpeed=6 ÎŞĞ§Óï¾ä 
+            HunterSeekerDetonateProximity=150 æ— æ•ˆè¯­å¥ 
+            HunterSeekerDescendProximity=700 æ— æ•ˆè¯­å¥ 
+            HunterSeekerAscentSpeed=40 æ— æ•ˆè¯­å¥ 
+            HunterSeekerDescentSpeed=50 æ— æ•ˆè¯­å¥ 
+            HunterSeekerEmergeSpeed=6 æ— æ•ˆè¯­å¥ 
 
             ;*** Animation labels *** 
-            DamageFireTypes=FIRE01,FIRE02,FIRE03 ±»ÉËº¦µÄ½¨Öş×Å»ğµÄ»ğÑæÑùÊ½ 
-            OreTwinkle=TWNK1 ¿óÊ¯µÄÉÁ¹â 
-            BarrelExplode=EXPLOLRG ¿óÎï±¬Õ¨
-            BarrelDebris=GASTANK,PIECE ±¬Õ¨ËéÆ¬ 
-            BarrelParticle=SmallGreySSys ±¬Õ¨ÑÌÎí 
-            NukeTakeOff=NUKETO ºËµ¯·¢ÉäÍ¼ĞÎ 
-            Wake=WAKE1 µ¥Î»½øÈë/Àë¿ªË®ÖĞµÄÍ¼Ïó 
-            DropPod=DROPPOD,DROPPOD2 µ¥Î»ÂäµØÍ¼Ïó 
-            DeadBodies=DEATH_A,DEATH_B,DEATH_C,DEATH_D,DEATH_E,DEATH_F ²½±øËéÆ¬¶¯»­ 
+            DamageFireTypes=FIRE01,FIRE02,FIRE03 è¢«ä¼¤å®³çš„å»ºç­‘ç€ç«çš„ç«ç„°æ ·å¼ 
+            OreTwinkle=TWNK1 çŸ¿çŸ³çš„é—ªå…‰ 
+            BarrelExplode=EXPLOLRG çŸ¿ç‰©çˆ†ç‚¸
+            BarrelDebris=GASTANK,PIECE çˆ†ç‚¸ç¢ç‰‡ 
+            BarrelParticle=SmallGreySSys çˆ†ç‚¸çƒŸé›¾ 
+            NukeTakeOff=NUKETO æ ¸å¼¹å‘å°„å›¾å½¢ 
+            Wake=WAKE1 å•ä½è¿›å…¥/ç¦»å¼€æ°´ä¸­çš„å›¾è±¡ 
+            DropPod=DROPPOD,DROPPOD2 å•ä½è½åœ°å›¾è±¡ 
+            DeadBodies=DEATH_A,DEATH_B,DEATH_C,DEATH_D,DEATH_E,DEATH_F æ­¥å…µç¢ç‰‡åŠ¨ç”» 
             MetallicDebris 
             =DBRIS1LG,DBRIS2LG,DBRIS3LG,DBRIS4LG,DBRIS5LG,DBRIS6LG,DBRIS7LG,DBRIS8LG, 
             DBRIS9LG,DBRS10LG,DBRIS1SM,DBRIS2SM,DBRIS3SM,DBRIS4SM,DBRIS5SM,DBRIS6SM,DBRIS7SM, 
-            DBRIS8SM,DBRIS9SM,DBRS10SM ½ğÊôËéÆ¬Ãû 
-            BridgeExplosions=TWLT026,TWLT036,TWLT050,TWLT070 ÇÅÁºÆÆ»µ¶¯»­ 
-            IonBlast=RING1 Àë×Ó·ç±©µ¯Í·¶¯»­ 
-            IonBeam=IONBEAM Àë×Ó·ç±© 
-            WeatherConClouds=WCCLOUD1,WCCLOUD2,WCCLOUD3 ÉÁµç·ç±©ÔÆµÄ¶¯»­ 
-            WeatherConBolts=WCLBOLT1,WCLBOLT2,WCLBOLT3 ÉÁµç·ç±©ÉÁµçµÄ¶¯»­ 
-            WeatherConBoltExplosion=EXPLOLB ÉÁµç·ç±©µ¯Í·µÄ¶¯»­ 
+            DBRIS8SM,DBRIS9SM,DBRS10SM é‡‘å±ç¢ç‰‡å 
+            BridgeExplosions=TWLT026,TWLT036,TWLT050,TWLT070 æ¡¥æ¢ç ´ååŠ¨ç”» 
+            IonBlast=RING1 ç¦»å­é£æš´å¼¹å¤´åŠ¨ç”» 
+            IonBeam=IONBEAM ç¦»å­é£æš´ 
+            WeatherConClouds=WCCLOUD1,WCCLOUD2,WCCLOUD3 é—ªç”µé£æš´äº‘çš„åŠ¨ç”» 
+            WeatherConBolts=WCLBOLT1,WCLBOLT2,WCLBOLT3 é—ªç”µé£æš´é—ªç”µçš„åŠ¨ç”» 
+            WeatherConBoltExplosion=EXPLOLB é—ªç”µé£æš´å¼¹å¤´çš„åŠ¨ç”» 
 
             ;Psychic Dominator control 
-            DominatorWarhead=DominatorWH ĞÄÁé¿ØÖÆÆ÷µ¯Í· 
-            DominatorDamage=1000 ĞÄÁé¿ØÖÆÆ÷¹¥»÷Á¦ 
-            DominatorCaptureRange=1 ĞÄÁé¿ØÖÆÆ÷¶Ôµ¥Î»¿ØÖÆµÄ·¶Î§ 
-            DominatorFirstAnim=PDFXCLD ĞÄÁé¿ØÖÆÆ÷¶¯»­1 
-            DominatorSecondAnim=PDFXLOC ĞÄÁé¿ØÖÆÆ÷¶¯»­2 
-            DominatorFireAtPercentage=20 µ½×ÜèåÊıµÄ20%µÄÊ±ºò²ÅÓĞÉËº¦ 
-            ChronoPlacement=CHRONOAR ×ª»»Ç°µÄµØµãÓÃÕâ¸ö¶¯»­ 
-            ChronoBeam=CHRONOBM ×ª»»Ê±µÄ¶¯»­,ÏÖÔÚÒÑ¾­²»ÓÃÕâ¾äÁË  
-            ChronoBlast=CHRONOFD µ¥Î»±»×ª»»µÄ¶¯»­ 
-            ChronoBlastDest=CHRONOTG; ×ª»»ºóµÄµØµãÓÃÕâ¸ö¶¯»­ 
-            WarpIn=WARPIN;WAKE2 ÄÜ¿Õ¼ä×ª»»µÄÎïÌåÒÆ¶¯ÓÃÕâ¸ö¶¯»­ 
+            DominatorWarhead=DominatorWH å¿ƒçµæ§åˆ¶å™¨å¼¹å¤´ 
+            DominatorDamage=1000 å¿ƒçµæ§åˆ¶å™¨æ”»å‡»åŠ› 
+            DominatorCaptureRange=1 å¿ƒçµæ§åˆ¶å™¨å¯¹å•ä½æ§åˆ¶çš„èŒƒå›´ 
+            DominatorFirstAnim=PDFXCLD å¿ƒçµæ§åˆ¶å™¨åŠ¨ç”»1 
+            DominatorSecondAnim=PDFXLOC å¿ƒçµæ§åˆ¶å™¨åŠ¨ç”»2 
+            DominatorFireAtPercentage=20 åˆ°æ€»æ¡¢æ•°çš„20%çš„æ—¶å€™æ‰æœ‰ä¼¤å®³ 
+            ChronoPlacement=CHRONOAR è½¬æ¢å‰çš„åœ°ç‚¹ç”¨è¿™ä¸ªåŠ¨ç”» 
+            ChronoBeam=CHRONOBM è½¬æ¢æ—¶çš„åŠ¨ç”»,ç°åœ¨å·²ç»ä¸ç”¨è¿™å¥äº†  
+            ChronoBlast=CHRONOFD å•ä½è¢«è½¬æ¢çš„åŠ¨ç”» 
+            ChronoBlastDest=CHRONOTG; è½¬æ¢åçš„åœ°ç‚¹ç”¨è¿™ä¸ªåŠ¨ç”» 
+            WarpIn=WARPIN;WAKE2 èƒ½ç©ºé—´è½¬æ¢çš„ç‰©ä½“ç§»åŠ¨ç”¨è¿™ä¸ªåŠ¨ç”» 
             WarpOut=WARPOUT;WAKE2  Locomotor= teleports 
             WarpAway=WARPAWAY;RING1  Temporal=yes 
-            IronCurtainInvokeAnim=IRONBLST ÌúÄ»Ğ§¹û¶¯»­ 
-    ForceShieldInvokeAnim=FORCSHLD Á¦³¡»¤¶ÜĞ§¹û¶¯»­ 
-            WeaponNullifyAnim=IRONFX ÌúÄ»¼ÓÉíºó±»¹¥»÷¶¯»­ 
-            ChronoSparkle1=CHRONOSK ±»Ê±¿Õ×ªÒÆµôµÄ¶¯»­ 
-            InfantryExplode=S_BANG34 µ¥Î»±¬Õ¨¶¯»­ 
-            FlamingInfantry=FLAMEGUY ²½±ø×Å»ğËÀ¶¯»­ 
-            InfantryHeadPop=YURIDIE ÓÈÀïÔì³ÉµÄ´óÄÔ±¬Õ¨ËÀ¶¯»­ 
-            InfantryNuked=NUKEDIE ²½±ø±»·øÉäËÀ¶¯»­ 
-            InfantryVirus=VIRUSD ²½±ø±»²¡¶¾ÇÖÏ®µ¼ÖÂ±¬Õ¨µÄ¶¯»­ 
-            InfantryBrute=BRUTDIE ±»¿ñÊŞÈËÔÒËÀ¶¯»­ 
-            InfantryMutate=GENDEATH »ùÒò±äÒìÎª¿ñÊŞÈËµÄ¶¯»­ 
-            Behind=BEHIND ±»ÕÚ×¡Ê±ÏÔÊ¾µÄ¶¯»­ 
-            MoveFlash=RING ¹â±êÑ¡ÔñÎïÌåÃüÁîËûÒÆ¶¯µÄ¹â±ê¶¯»­ 
-            Parachute=PARACH ½µÂäÉ¡Í¼Ïó¶¯»­ 
-            BombParachute=PARABOMB ¿ÕÖĞÂäÏÂµÄÕ¨µ¯µÄ½µÂäÉ¡¶¯»­(RA2µÄ²ĞÓà,ÎŞĞ§) 
-            DropZoneAnim=BEACON É¡±ø½µÂäµÄ¹â±ê¶¯»­ 
+            IronCurtainInvokeAnim=IRONBLST é“å¹•æ•ˆæœåŠ¨ç”» 
+    ForceShieldInvokeAnim=FORCSHLD åŠ›åœºæŠ¤ç›¾æ•ˆæœåŠ¨ç”» 
+            WeaponNullifyAnim=IRONFX é“å¹•åŠ èº«åè¢«æ”»å‡»åŠ¨ç”» 
+            ChronoSparkle1=CHRONOSK è¢«æ—¶ç©ºè½¬ç§»æ‰çš„åŠ¨ç”» 
+            InfantryExplode=S_BANG34 å•ä½çˆ†ç‚¸åŠ¨ç”» 
+            FlamingInfantry=FLAMEGUY æ­¥å…µç€ç«æ­»åŠ¨ç”» 
+            InfantryHeadPop=YURIDIE å°¤é‡Œé€ æˆçš„å¤§è„‘çˆ†ç‚¸æ­»åŠ¨ç”» 
+            InfantryNuked=NUKEDIE æ­¥å…µè¢«è¾å°„æ­»åŠ¨ç”» 
+            InfantryVirus=VIRUSD æ­¥å…µè¢«ç—…æ¯’ä¾µè¢­å¯¼è‡´çˆ†ç‚¸çš„åŠ¨ç”» 
+            InfantryBrute=BRUTDIE è¢«ç‹‚å…½äººç ¸æ­»åŠ¨ç”» 
+            InfantryMutate=GENDEATH åŸºå› å˜å¼‚ä¸ºç‹‚å…½äººçš„åŠ¨ç”» 
+            Behind=BEHIND è¢«é®ä½æ—¶æ˜¾ç¤ºçš„åŠ¨ç”» 
+            MoveFlash=RING å…‰æ ‡é€‰æ‹©ç‰©ä½“å‘½ä»¤ä»–ç§»åŠ¨çš„å…‰æ ‡åŠ¨ç”» 
+            Parachute=PARACH é™è½ä¼å›¾è±¡åŠ¨ç”» 
+            BombParachute=PARABOMB ç©ºä¸­è½ä¸‹çš„ç‚¸å¼¹çš„é™è½ä¼åŠ¨ç”»(RA2çš„æ®‹ä½™,æ— æ•ˆ) 
+            DropZoneAnim=BEACON ä¼å…µé™è½çš„å…‰æ ‡åŠ¨ç”» 
             EMPulseSparkles=EMP_FX01  
 
             ; ******* Jumpjet Flight rules ******* 
-            ; Jumpjet movement controls JUMPJETµÄĞĞ¶¯·½Ê½ 
+            ; Jumpjet movement controls JUMPJETçš„è¡ŒåŠ¨æ–¹å¼ 
             [JumpjetControls]  
-            TurnRate=4 ×ªÍä°ë¾¶4 
-            Speed=14 ËÙ¶È14 
-            Climb=5 ÅÀÉıËÙ¶È5 
-            CruiseHeight=500 Ñ²º½¸ß¶È500(×îÉÙÒª±ÈÇÅ¸ß) 
-            Acceleration=2 ¼ÓËÙ¶È2 
-            WobblesPerSecond=.15 Ã¿Ãë°Ú¶¯0.15´Î 
-            WobbleDeviation=40 °Ú¶¯·ù¶È40 
+            TurnRate=4 è½¬å¼¯åŠå¾„4 
+            Speed=14 é€Ÿåº¦14 
+            Climb=5 çˆ¬å‡é€Ÿåº¦5 
+            CruiseHeight=500 å·¡èˆªé«˜åº¦500(æœ€å°‘è¦æ¯”æ¡¥é«˜) 
+            Acceleration=2 åŠ é€Ÿåº¦2 
+            WobblesPerSecond=.15 æ¯ç§’æ‘†åŠ¨0.15æ¬¡ 
+            WobbleDeviation=40 æ‘†åŠ¨å¹…åº¦40 
 
-            ; ******* Special Weapon rules ******* ³¬Îä¿ØÖÆ 
+            ; ******* Special Weapon rules ******* è¶…æ­¦æ§åˆ¶ 
             ; Special weapon rules are specified here. 
             [SpecialWeapons] 
-            NukeWarhead=Nuke ºËµ¯µÄµ¯Í· 
-            NukeDown=NukeDown ºËµ¯ÏÂÀ´µÄÍ¼Ïó 
-            NukeProjectile=NukeUp ºËµ¯·¢ÉäµÄÍ¼Ïó 
-            EMPulseWarhead=EMPuls Ì©²®ÀûÑÇÖ®ÈÕÓï¾ä,ÎŞĞ§ 
-            EMPulseProjectile=PulsPr Ì©²®ÀûÑÇÖ®ÈÕÓï¾ä,ÎŞĞ§ 
-            MutateWarhead=Mutate »ùÒòÍ»±äµÄµ¯Í· 
-            MutateExplosionWarhead=MutateExplosion »ùÒòÍ»±ä(±¬Õ¨)µÄµ¯Í· 
+            NukeWarhead=Nuke æ ¸å¼¹çš„å¼¹å¤´ 
+            NukeDown=NukeDown æ ¸å¼¹ä¸‹æ¥çš„å›¾è±¡ 
+            NukeProjectile=NukeUp æ ¸å¼¹å‘å°„çš„å›¾è±¡ 
+            EMPulseWarhead=EMPuls æ³°ä¼¯åˆ©äºšä¹‹æ—¥è¯­å¥,æ— æ•ˆ 
+            EMPulseProjectile=PulsPr æ³°ä¼¯åˆ©äºšä¹‹æ—¥è¯­å¥,æ— æ•ˆ 
+            MutateWarhead=Mutate åŸºå› çªå˜çš„å¼¹å¤´ 
+            MutateExplosionWarhead=MutateExplosion åŸºå› çªå˜(çˆ†ç‚¸)çš„å¼¹å¤´ 
 
             ; ******* Audio / Visual rules ******* 
             ; General controls that deal with audio or visual appearance of 
             ; the game or the units therein are specified here. 
             [AudioVisual] 
-            DetailMinFrameRateNormal=15 ÓÎÏ·Ö¡Êı²»µÍÓÚ15
-            DetailMinFrameRateMovie=20 µçÓ°Ö¡Êı²»µÍÓÚ20
-            DetailBufferZoneWidth=5 »º³å5Ö¡
+            DetailMinFrameRateNormal=15 æ¸¸æˆå¸§æ•°ä¸ä½äº15
+            DetailMinFrameRateMovie=20 ç”µå½±å¸§æ•°ä¸ä½äº20
+            DetailBufferZoneWidth=5 ç¼“å†²5å¸§
 
-            LineTrailColorOverride=0,0,0 Ğ¡µ¼µ¯µÄÏßĞÔÎ²ÑÌÑÕÉ« 
-            ChronoBeamColor=128,200,255 ³¬Ê±¿Õ¹âÏßµÄÑÕÉ« 
-            MagnaBeamColor=255,200,255 ´ÅµçÌ¹¿Ë×Óµ¯µÄÑÕÉ« 
-            OreTwinkleChance=30 ¿óÊ¯ÉÁ¹âµÄ¼¸ÂÊ 
-            CreateInfantrySound= ÖÆÔìĞÂ²½±øÊ±µÄÉùÒô 
-            CreateUnitSound= ÖÆÔìĞÂµ¥Î»Ê±µÄÉùÒô 
-            CreateAircraftSound= ÖÆÔìĞÂº½¿ÕÆ÷(Í£ÓÚ»ú³¡)Ê±µÄÉùÒô 
-            SpySatActivationSound= SpyUplinkOn Á¬½ÓÉÏ¼äµıÎÀĞÇÊ±µÄÉùÒô 
-            SpySatDeactivationSound= SpyUplinkOff ¼äµıÎÀĞÇ±»ÇĞ¶ÏÁ¬½ÓÊ±µÄÉùÒô 
-            UpgradeVeteranSound=UpgradeVeteran Éı¼¶Îª1ĞÇÊ±µÄÉùÒô 
-            UpgradeEliteSound=UpgradeElite Éı¼¶Îª3ĞÇÊ±µÄÉùÒô 
-            BaseUnderAttackSound=BaseUnderAttackSiren ½¨Öş±»¹¥»÷µÄÉùÒô 
-            BuildingGarrisonedSound=BuildingGarrisoned ½¨ÖşÖĞ×¤¾üÊ±µÄÉùÒô 
-            BuildingRepairedSound=BuildingRepaired ½¨Öş±»ĞŞ¸´Ê±µÄÉùÒô 
-            CheerSound=Cheer »¶ºôµÄÉùÒô 
-            PlaceBeaconSound=BeaconPlaced ĞÄÁéĞÅ±ê½¨Á¢Ê±µÄÉùÒô 
+            LineTrailColorOverride=0,0,0 å°å¯¼å¼¹çš„çº¿æ€§å°¾çƒŸé¢œè‰² 
+            ChronoBeamColor=128,200,255 è¶…æ—¶ç©ºå…‰çº¿çš„é¢œè‰² 
+            MagnaBeamColor=255,200,255 ç£ç”µå¦å…‹å­å¼¹çš„é¢œè‰² 
+            OreTwinkleChance=30 çŸ¿çŸ³é—ªå…‰çš„å‡ ç‡ 
+            CreateInfantrySound= åˆ¶é€ æ–°æ­¥å…µæ—¶çš„å£°éŸ³ 
+            CreateUnitSound= åˆ¶é€ æ–°å•ä½æ—¶çš„å£°éŸ³ 
+            CreateAircraftSound= åˆ¶é€ æ–°èˆªç©ºå™¨(åœäºæœºåœº)æ—¶çš„å£°éŸ³ 
+            SpySatActivationSound= SpyUplinkOn è¿æ¥ä¸Šé—´è°å«æ˜Ÿæ—¶çš„å£°éŸ³ 
+            SpySatDeactivationSound= SpyUplinkOff é—´è°å«æ˜Ÿè¢«åˆ‡æ–­è¿æ¥æ—¶çš„å£°éŸ³ 
+            UpgradeVeteranSound=UpgradeVeteran å‡çº§ä¸º1æ˜Ÿæ—¶çš„å£°éŸ³ 
+            UpgradeEliteSound=UpgradeElite å‡çº§ä¸º3æ˜Ÿæ—¶çš„å£°éŸ³ 
+            BaseUnderAttackSound=BaseUnderAttackSiren å»ºç­‘è¢«æ”»å‡»çš„å£°éŸ³ 
+            BuildingGarrisonedSound=BuildingGarrisoned å»ºç­‘ä¸­é©»å†›æ—¶çš„å£°éŸ³ 
+            BuildingRepairedSound=BuildingRepaired å»ºç­‘è¢«ä¿®å¤æ—¶çš„å£°éŸ³ 
+            CheerSound=Cheer æ¬¢å‘¼çš„å£°éŸ³ 
+            PlaceBeaconSound=BeaconPlaced å¿ƒçµä¿¡æ ‡å»ºç«‹æ—¶çš„å£°éŸ³ 
 
             ;GEF Used to make the damage from the brute rock the target more 
             than it normally would. 
-            DirectRockingCoefficient=1.5  DirectRockerµ¯Í·µÄÎäÆ÷ ³å»÷Á¦ÊÇrockerµÄ1.5±¶
-            FallBackCoefficient=0.1 ±»DirectRockerµ¯Í·µÄÎäÆ÷¹¥»÷ µ¥Î»»ØÂäÊÇ0.1±¶
+            DirectRockingCoefficient=1.5  DirectRockerå¼¹å¤´çš„æ­¦å™¨ å†²å‡»åŠ›æ˜¯rockerçš„1.5å€
+            FallBackCoefficient=0.1 è¢«DirectRockerå¼¹å¤´çš„æ­¦å™¨æ”»å‡» å•ä½å›è½æ˜¯0.1å€
 
 
             ;Look at the ColorAdd section for references 
-            LaserTargetColor=4 ÕÙ»½Ã×¸ñ·É»úµÄÊ±¸ø½¨ÖşÈ¾ÉÏµÄÑÕÉ« *±àÕß×¢£ºÔø¾­ĞŞ¸Ä 
-            IronCurtainColor=0 ÌúÄ»µÄÑÕÉ« 
-            BerserkColor=4 »ìÂÒÑÌÎíµÄÑÕÉ«(¾ÍÊÇYURIµÄÉñ¾­Í»»÷³µµÄ¹¥»÷·½Ê½)  
-            ForceShieldColor=6 Á¦³¡»¤¶ÜµÄÑÕÉ« 
+            LaserTargetColor=4 å¬å”¤ç±³æ ¼é£æœºçš„æ—¶ç»™å»ºç­‘æŸ“ä¸Šçš„é¢œè‰² *ç¼–è€…æ³¨ï¼šæ›¾ç»ä¿®æ”¹ 
+            IronCurtainColor=0 é“å¹•çš„é¢œè‰² 
+            BerserkColor=4 æ··ä¹±çƒŸé›¾çš„é¢œè‰²(å°±æ˜¯YURIçš„ç¥ç»çªå‡»è½¦çš„æ”»å‡»æ–¹å¼)  
+            ForceShieldColor=6 åŠ›åœºæŠ¤ç›¾çš„é¢œè‰² 
 
-            StartPlanningModeSound=PlanningModeStart ½øÈëÂ·¾¶µãÄ£Ê½Ê±µÄÉùÒô 
-            EndPlanningModeSound=PlanningModeEnd ÍË³öÂ·¾¶µãÄ£Ê½Ê±µÄÉùÒô 
-            AddPlanningModeCommandSound=PlanningModeAdd Ôö¼ÓÂ·¾¶µãÊ±µÄÉùÒô 
+            StartPlanningModeSound=PlanningModeStart è¿›å…¥è·¯å¾„ç‚¹æ¨¡å¼æ—¶çš„å£°éŸ³ 
+            EndPlanningModeSound=PlanningModeEnd é€€å‡ºè·¯å¾„ç‚¹æ¨¡å¼æ—¶çš„å£°éŸ³ 
+            AddPlanningModeCommandSound=PlanningModeAdd å¢åŠ è·¯å¾„ç‚¹æ—¶çš„å£°éŸ³ 
 
-            ******************************* ±¦ÏäÀïÃæ»ñÈ¡¶«Î÷²¥·ÅµÄÉùÒô 
-            CratePromoteSound=CratePromoted ¾­ÑéÌáÉı 
-            CrateMoneySound=CrateMoney ½ğÇ® 
-            CrateRevealSound=CrateReveal È«²¿µØÍ¼ 
-            CrateFireSound=CrateFirePower ¼ÓÇ¿»ğÁ¦ 
-            CrateArmourSound=CrateArmor ¼ÓÇ¿»¤¼× 
-            CrateSpeedSound=CrateSpeed ¼ÓÇ¿ËÙ¶È 
-            CrateUnitSound=CrateFreeUnit Ãâ·Ñµ¥Î» 
+            ******************************* å®ç®±é‡Œé¢è·å–ä¸œè¥¿æ’­æ”¾çš„å£°éŸ³ 
+            CratePromoteSound=CratePromoted ç»éªŒæå‡ 
+            CrateMoneySound=CrateMoney é‡‘é’± 
+            CrateRevealSound=CrateReveal å…¨éƒ¨åœ°å›¾ 
+            CrateFireSound=CrateFirePower åŠ å¼ºç«åŠ› 
+            CrateArmourSound=CrateArmor åŠ å¼ºæŠ¤ç”² 
+            CrateSpeedSound=CrateSpeed åŠ å¼ºé€Ÿåº¦ 
+            CrateUnitSound=CrateFreeUnit å…è´¹å•ä½ 
 
-            SinkingSound=GenLargeWaterDie Õ½³µÂäË®ÉùÒô 
-            ImpactWaterSound=ExplosionWaterLarge ÅÚµ¯´òµ½Ë®ÀïµÄÉùÒô 
-            ImpactLandSound= ´òµ½µØÉÏµÄÉùÒô 
-            BombTickingSound=CrazyIvanBombTick ¶¨Ê±Õ¨µ¯µ¹¼ÆÊ±ÉùÒô 
-            ChronoInSound=ChronoMinerTeleport ³¬Ê±¿Õ×ª»»¿ªÊ¼ÉùÒô 
-            ChronoOutSound=ChronoMinerTeleport ³¬Ê±¿Õ×ª»»½áÊøÉùÒô 
-            BombAttachSound=CrazyIvanAttack ¶¨Ê±Õ¨µ¯¸½×ÅÉÏÈ¥µÄÉùÒô 
-            YuriMindControlSound=YuriMindControl ĞÄÁé¿ØÖÆµÄÉùÒô 
+            SinkingSound=GenLargeWaterDie æˆ˜è½¦è½æ°´å£°éŸ³ 
+            ImpactWaterSound=ExplosionWaterLarge ç‚®å¼¹æ‰“åˆ°æ°´é‡Œçš„å£°éŸ³ 
+            ImpactLandSound= æ‰“åˆ°åœ°ä¸Šçš„å£°éŸ³ 
+            BombTickingSound=CrazyIvanBombTick å®šæ—¶ç‚¸å¼¹å€’è®¡æ—¶å£°éŸ³ 
+            ChronoInSound=ChronoMinerTeleport è¶…æ—¶ç©ºè½¬æ¢å¼€å§‹å£°éŸ³ 
+            ChronoOutSound=ChronoMinerTeleport è¶…æ—¶ç©ºè½¬æ¢ç»“æŸå£°éŸ³ 
+            BombAttachSound=CrazyIvanAttack å®šæ—¶ç‚¸å¼¹é™„ç€ä¸Šå»çš„å£°éŸ³ 
+            YuriMindControlSound=YuriMindControl å¿ƒçµæ§åˆ¶çš„å£°éŸ³ 
 
             ;gs Obsolete UnloadingHarvester=HORV  harvester image to use when 
             unloading tiberium 
             ;GEF PoseDir, despite the comments, is actually ranged from 0 to 
             255. I fixed DeployDir, and it actually works as described. 
-            PoseDir=2 »ú³¡³¯Ïò(1,±±,2¶«±±~~~µ½7) 
-            DeployDir=2 µ¥Î»Õ¹¿ª³¯Ïò(Í¬ÉÏ) 
-            WaypointAnimationSpeed=10 Â·¾¶µã¶¯»­ËÙ¶È 
-            DigSound=NukeSiren ×êµØÉù
+            PoseDir=2 æœºåœºæœå‘(1,åŒ—,2ä¸œåŒ—~~~åˆ°7) 
+            DeployDir=2 å•ä½å±•å¼€æœå‘(åŒä¸Š) 
+            WaypointAnimationSpeed=10 è·¯å¾„ç‚¹åŠ¨ç”»é€Ÿåº¦ 
+            DigSound=NukeSiren é’»åœ°å£°
 
-            GateUp=Dummy Õ¢ÃÅ´ò¿ªµÄÉùÒô 
-            GateDown=Dummy Õ¢ÃÅ¹Ø±ÕµÄÉùÒô 
-            ShroudGrow=no ºÚ°µÊÇ·ñÀ©Õ¹(Ì½¿ªµÄµØ·½Öğ½¥±äÎªÎ´Ì½¿ª×´Ì¬) 
-            ScrollMultiplier=.07 Êó±êËÙ¶È 
-            ShakeScreen=400 ´óÓÚ´ËÉúÃüµÄµ¥Î»±»´İ»ÙÊ±ÆÁÄ»Õğµ´ 
-            CloakSound=NavalUnitEmerge Ç±Í§ÉÏ¸¡µÄÉùÒô 
-            SellSound=SellBuilding ³öÊÛ½¨ÖşµÄÉùÒô 
-            GameClosed=GameClosed ÏµÍ³Òô 
-            IncomingMessage=MessageText ÏµÍ³Òô 
-            MessageCharTyped=TextBleep ÏµÍ³Òô 
-            SystemError=GenericBeep ÏµÍ³´íÎóÉùÒô 
-            OptionsChanged=OptionsChanged Ñ¡Ïî¸Ä±äÉùÒô 
-            GameForming=NewGame ÏµÍ³Òô 
-            PlayerJoined=PlayerJoined ÏµÍ³Òô 
-            Construction=Dummy Ôì¶«Î÷µÄÉùÒô 
-            CreditTicks=CreditUp,CreditDown °âÊÖµÄÉùÒô 
-            BuildingDieSound=BuildingGenericDie ½¨Öşµ¹ËúµÄÉùÒô 
-            BuildingSlam=PlaceBuilding ½¨ÖşÕ¹¿ªÊ±µÄÉùÒô 
-            RadarOn=RadarOn ´ò¿ªÀ×´ïµÄÉùÒô 
-            RadarOff=RadarOff À×´ï¹Ø±ÕµÄÉùÒô 
-            MovieOn=MovieOn µçÓ°´ò¿ªµÄÉùÒô 
-            MovieOff=MovieOff µçÓ°¹Ø±ÕµÄÉùÒô 
-            ScoldSound=MenuScold ÆÕÍ¨´íÎóÉùÒô 
-            TeslaCharge=TeslaCoilPowerUp ´Å±©ÏßÈ¦·ÅµçÇ°µÄÉùÒô 
-            TeslaZap= ´Å±©ÏßÈ¦·ÅµçÊ±µÄÉùÒô 
-            BuildingDamageSound=BuildingDamaged ½¨Öş»ÆÑªµÄÉùÒô 
-            ChuteSound=ParachuteDrop ½µÂäÉ¡ÊÕÆğµÄÉùÒô 
-            GenericClick=MenuClick ÏµÍ³Òô 
-            GenericBeep=GenericBeep ÏµÍ³Òô 
-            BuildingDrop=PlaceBuilding Õ½³µ/±øÕ¹¿ªÎª½¨ÖşÊ±µÄÉùÒô 
-            StopSound=CommandBar ÈÃµ¥Î»Í£ÏÂÀ´µÄÉùÒô 
-            GuardSound=CommandBar ÈÃµ¥Î»·ÀÓùµÄÉùÒô 
-            ScatterSound=CommandBar ÈÃµ¥Î»É¢¿ªµÄÉùÒô 
-            DeploySound= Ë«»÷Ê±µÄÉùÒô 
-            StormSound=WeatherIntro ÉÁµç·ç±©À´ÁÙÊ±µÄÉùÒô 
-            LightningSounds=WeatherStrike ÉÁµç·ç±©·ÅµçµÄÉùÒô 
+            GateUp=Dummy é—¸é—¨æ‰“å¼€çš„å£°éŸ³ 
+            GateDown=Dummy é—¸é—¨å…³é—­çš„å£°éŸ³ 
+            ShroudGrow=no é»‘æš—æ˜¯å¦æ‰©å±•(æ¢å¼€çš„åœ°æ–¹é€æ¸å˜ä¸ºæœªæ¢å¼€çŠ¶æ€) 
+            ScrollMultiplier=.07 é¼ æ ‡é€Ÿåº¦ 
+            ShakeScreen=400 å¤§äºæ­¤ç”Ÿå‘½çš„å•ä½è¢«æ‘§æ¯æ—¶å±å¹•éœ‡è¡ 
+            CloakSound=NavalUnitEmerge æ½œè‰‡ä¸Šæµ®çš„å£°éŸ³ 
+            SellSound=SellBuilding å‡ºå”®å»ºç­‘çš„å£°éŸ³ 
+            GameClosed=GameClosed ç³»ç»ŸéŸ³ 
+            IncomingMessage=MessageText ç³»ç»ŸéŸ³ 
+            MessageCharTyped=TextBleep ç³»ç»ŸéŸ³ 
+            SystemError=GenericBeep ç³»ç»Ÿé”™è¯¯å£°éŸ³ 
+            OptionsChanged=OptionsChanged é€‰é¡¹æ”¹å˜å£°éŸ³ 
+            GameForming=NewGame ç³»ç»ŸéŸ³ 
+            PlayerJoined=PlayerJoined ç³»ç»ŸéŸ³ 
+            Construction=Dummy é€ ä¸œè¥¿çš„å£°éŸ³ 
+            CreditTicks=CreditUp,CreditDown æ‰³æ‰‹çš„å£°éŸ³ 
+            BuildingDieSound=BuildingGenericDie å»ºç­‘å€’å¡Œçš„å£°éŸ³ 
+            BuildingSlam=PlaceBuilding å»ºç­‘å±•å¼€æ—¶çš„å£°éŸ³ 
+            RadarOn=RadarOn æ‰“å¼€é›·è¾¾çš„å£°éŸ³ 
+            RadarOff=RadarOff é›·è¾¾å…³é—­çš„å£°éŸ³ 
+            MovieOn=MovieOn ç”µå½±æ‰“å¼€çš„å£°éŸ³ 
+            MovieOff=MovieOff ç”µå½±å…³é—­çš„å£°éŸ³ 
+            ScoldSound=MenuScold æ™®é€šé”™è¯¯å£°éŸ³ 
+            TeslaCharge=TeslaCoilPowerUp ç£æš´çº¿åœˆæ”¾ç”µå‰çš„å£°éŸ³ 
+            TeslaZap= ç£æš´çº¿åœˆæ”¾ç”µæ—¶çš„å£°éŸ³ 
+            BuildingDamageSound=BuildingDamaged å»ºç­‘é»„è¡€çš„å£°éŸ³ 
+            ChuteSound=ParachuteDrop é™è½ä¼æ”¶èµ·çš„å£°éŸ³ 
+            GenericClick=MenuClick ç³»ç»ŸéŸ³ 
+            GenericBeep=GenericBeep ç³»ç»ŸéŸ³ 
+            BuildingDrop=PlaceBuilding æˆ˜è½¦/å…µå±•å¼€ä¸ºå»ºç­‘æ—¶çš„å£°éŸ³ 
+            StopSound=CommandBar è®©å•ä½åœä¸‹æ¥çš„å£°éŸ³ 
+            GuardSound=CommandBar è®©å•ä½é˜²å¾¡çš„å£°éŸ³ 
+            ScatterSound=CommandBar è®©å•ä½æ•£å¼€çš„å£°éŸ³ 
+            DeploySound= åŒå‡»æ—¶çš„å£°éŸ³ 
+            StormSound=WeatherIntro é—ªç”µé£æš´æ¥ä¸´æ—¶çš„å£°éŸ³ 
+            LightningSounds=WeatherStrike é—ªç”µé£æš´æ”¾ç”µçš„å£°éŸ³ 
 
-            ShellButtonSlideSound= ÏµÍ³Òô 
+            ShellButtonSlideSound= ç³»ç»ŸéŸ³ 
 
             ; New Sound hooks for Mission disk - TR 
-            VoiceIFVRepair= IFVMove  IFV×°ÔØµÄÉùÒô 
-            SlavesFreeSound= SlaveWorkerLiberated Å«Á¥±»½â·ÅµÄÉùÒô 
-            SlaveMinerDeploySound= SlaveMinerDeploy Å«Á¥¿ó³µÕ¹¿ªµÄÉùÒô 
-            SlaveMinerUndeploySound= SlaveMinerDeploy Å«Á¥¿ó³µÊÕÆğµÄÉùÒô 
-            BunkerWallsUpSound= TankBunkerUp Ì¹¿Ë½øÈëÌ¹¿Ëµï±¤Àà½¨ÖşµÄÉùÒô 
-            BunkerWallsDownSound= TankBunkerDown Ì¹¿ËÀë¿ªÌ¹¿Ëµï±¤Àà½¨ÖşµÄÉùÒô 
-            RepairBridgeSound= BridgeRepaired ÇÅ±»ĞŞ¸´µÄÉùÒô 
-            PsychicDominatorActivateSound=PsychicDominatorActivate ĞÄÁé¿ØÖÆÆ÷µÄÉùÒô 
-            GeneticMutatorActivateSound=GeneticMutatorActivate »ùÒòÍ»±äÆ÷µÄÉùÒô 
-            PsychicRevealActivateSound=PsychicRevealActivate ĞÄÁéĞÅ±êµÄÉùÒô 
-            MasterMindOverloadDeathSound= MasterMindOverloadVoice ¾«Éñ¿ØÖÆ³µ¹ıÔØ¹ÒµôµÄÉùÒô 
-            MindClearedSound= MindCleared ¾«Éñ¿ØÖÆ³µ¿ØÖÆµÄµ¥Î»ÍÑÀë¿ØÖÆµÄÉùÒô 
-            EnterGrinderSound= GrinderGrinding ²¿¶Ó»ØÊÕ³§»ØÊÕµÄÉùÒô 
-            LeaveGrinderSound= ÍÑÀë»ØÊÕµÄÉùÒô 
-            EnterBioReactorSound= BioReactorEnter ¸´ÖÆÖĞĞÄ»ØÊÕµÄÉùÒô 
-            LeaveBioReactorSound= BioReactorEnter ÍÑÀë»ØÊÕµÄÉùÒô 
-            ActivateSound= µ¥Î»¿ª¶¯µÄÉùÒô 
-            DeactivateSound= µ¥Î»Í£Ö¹µÄÉùÒô 
-            AirstrikeAbortSound=MIGMissionAborted º½¿Õµ¥Î»(Ğè»ú³¡)Æğ·ÉµÄÉùÒô  
-            AirstrikeAttackVoice=MIGMove º½¿Õµ¥Î»(Ğè»ú³¡)¹¥»÷µÄÉùÒô  
-            SpyPlaneCamera=SpyPlaneSnapshot ¼äµı·É»úÅÄÕÕµÄÉùÒô 
-            SpyPlaneCameraFrames=16 ¼äµı·É»úÅÄÕÕÉùÒôÏì16ÏÂ 
-            DiskLaserChargeUp= FloatingDiscChargeUp ·ÉµúÎüÈ¡µÄÉùÒô 
+            VoiceIFVRepair= IFVMove  IFVè£…è½½çš„å£°éŸ³ 
+            SlavesFreeSound= SlaveWorkerLiberated å¥´éš¶è¢«è§£æ”¾çš„å£°éŸ³ 
+            SlaveMinerDeploySound= SlaveMinerDeploy å¥´éš¶çŸ¿è½¦å±•å¼€çš„å£°éŸ³ 
+            SlaveMinerUndeploySound= SlaveMinerDeploy å¥´éš¶çŸ¿è½¦æ”¶èµ·çš„å£°éŸ³ 
+            BunkerWallsUpSound= TankBunkerUp å¦å…‹è¿›å…¥å¦å…‹ç¢‰å ¡ç±»å»ºç­‘çš„å£°éŸ³ 
+            BunkerWallsDownSound= TankBunkerDown å¦å…‹ç¦»å¼€å¦å…‹ç¢‰å ¡ç±»å»ºç­‘çš„å£°éŸ³ 
+            RepairBridgeSound= BridgeRepaired æ¡¥è¢«ä¿®å¤çš„å£°éŸ³ 
+            PsychicDominatorActivateSound=PsychicDominatorActivate å¿ƒçµæ§åˆ¶å™¨çš„å£°éŸ³ 
+            GeneticMutatorActivateSound=GeneticMutatorActivate åŸºå› çªå˜å™¨çš„å£°éŸ³ 
+            PsychicRevealActivateSound=PsychicRevealActivate å¿ƒçµä¿¡æ ‡çš„å£°éŸ³ 
+            MasterMindOverloadDeathSound= MasterMindOverloadVoice ç²¾ç¥æ§åˆ¶è½¦è¿‡è½½æŒ‚æ‰çš„å£°éŸ³ 
+            MindClearedSound= MindCleared ç²¾ç¥æ§åˆ¶è½¦æ§åˆ¶çš„å•ä½è„±ç¦»æ§åˆ¶çš„å£°éŸ³ 
+            EnterGrinderSound= GrinderGrinding éƒ¨é˜Ÿå›æ”¶å‚å›æ”¶çš„å£°éŸ³ 
+            LeaveGrinderSound= è„±ç¦»å›æ”¶çš„å£°éŸ³ 
+            EnterBioReactorSound= BioReactorEnter å¤åˆ¶ä¸­å¿ƒå›æ”¶çš„å£°éŸ³ 
+            LeaveBioReactorSound= BioReactorEnter è„±ç¦»å›æ”¶çš„å£°éŸ³ 
+            ActivateSound= å•ä½å¼€åŠ¨çš„å£°éŸ³ 
+            DeactivateSound= å•ä½åœæ­¢çš„å£°éŸ³ 
+            AirstrikeAbortSound=MIGMissionAborted èˆªç©ºå•ä½(éœ€æœºåœº)èµ·é£çš„å£°éŸ³  
+            AirstrikeAttackVoice=MIGMove èˆªç©ºå•ä½(éœ€æœºåœº)æ”»å‡»çš„å£°éŸ³  
+            SpyPlaneCamera=SpyPlaneSnapshot é—´è°é£æœºæ‹ç…§çš„å£°éŸ³ 
+            SpyPlaneCameraFrames=16 é—´è°é£æœºæ‹ç…§å£°éŸ³å“16ä¸‹ 
+            DiskLaserChargeUp= FloatingDiscChargeUp é£ç¢Ÿå¸å–çš„å£°éŸ³ 
             LetsDoTheTimeWarpOutAgain = ChronoScreenSound 
-            ËÆºõÊÇÕûÆÁ³¬Ê±¿Õ×ªÒÆ¿ªÊ¼µÄÉùÒô(YURIµÚÒ»¹Ø¾ÍÓĞ) 
+            ä¼¼ä¹æ˜¯æ•´å±è¶…æ—¶ç©ºè½¬ç§»å¼€å§‹çš„å£°éŸ³(YURIç¬¬ä¸€å…³å°±æœ‰) 
             LetsDoTheTimeWarpInAgain = ChronoScreenSoundAgain 
-            ËÆºõÊÇÕûÆÁ³¬Ê±¿Õ×ªÒÆ½áÊøµÄÉùÒô(YURIµÚÒ»¹Ø¾ÍÓĞ) 
+            ä¼¼ä¹æ˜¯æ•´å±è¶…æ—¶ç©ºè½¬ç§»ç»“æŸçš„å£°éŸ³(YURIç¬¬ä¸€å…³å°±æœ‰) 
             Smoke=xxxx  
             ;GEF FirestormActiveAnim=GAFSDF_A 
             ;GEF FirestormIdleAnim=FSIDLE 
             ;GEF FirestormGroundAnim=FSGRND 
             ;GEF FirestormAirAnim=FSAIR 
 
-            EliteFlashTimer=150  3ĞÇÉÁµÄÊ±¼ä 
-            AllyReveal=yes ÊÇ·ñ×Ô¶¯ÔÚ×Ô¶¯µØÍ¼ÉÏÏÔÊ¾ÃËÓÑÎ»ÖÃ 
-            ConditionRed=25% Ê£ÓàÑªµÍÓÚ25%Ê±ÑªÌõºìÉ«  
-            ConditionYellow=50% Ê£ÓàÑªµÍÓÚ50%Ê±ÑªÌõ»ÆÉ« 
-            DropZoneRadius=4 ½ÒÂ¶ÌØ¶¨ÇøÓòDROPZONEÖÜ±ßµÄ·¶Î§ 
-            EnemyHealth=yes ÊÇ·ñÏÔÊ¾Ñ¡¶¨µĞÈËÑªÌõ 
-            Gravity=6 (Ó°Ïìµ¼µ¯Å×ÎïÏßµÄ)ÖØÁ¦Îª6 
-            IdleActionFrequency=.15 ²½±øÆäËû¶¯×÷(ÀıÈç²ÁÇ¹,×øÏÂ)Ã¿0.15·ÖÖÓÒ»´Î 
-            MessageDelay=.6 ĞÅÏ¢ÏÔÊ¾0.6·ÖÖÓ 
-            MovieTime=.06 ´ÓÎŞµ½ÓĞ(µçÓ°)Ñ©»¨µãÊ±¼äÎª0.06·ÖÖÓ 
-            NamedCivilians=no ÊÇ·ñÏÔÊ¾Æ½Ãñ½¨ÖşÕæÊµÃû³Æ 
-            SavourDelay=.1 ¹Ø¿¨½áÊø/Ê¤Àû µ½ ÏÔÊ¾Ê¤ÀûµÄÊ±¼ä0.1·ÖÖÓ 
+            EliteFlashTimer=150  3æ˜Ÿé—ªçš„æ—¶é—´ 
+            AllyReveal=yes æ˜¯å¦è‡ªåŠ¨åœ¨è‡ªåŠ¨åœ°å›¾ä¸Šæ˜¾ç¤ºç›Ÿå‹ä½ç½® 
+            ConditionRed=25% å‰©ä½™è¡€ä½äº25%æ—¶è¡€æ¡çº¢è‰²  
+            ConditionYellow=50% å‰©ä½™è¡€ä½äº50%æ—¶è¡€æ¡é»„è‰² 
+            DropZoneRadius=4 æ­éœ²ç‰¹å®šåŒºåŸŸDROPZONEå‘¨è¾¹çš„èŒƒå›´ 
+            EnemyHealth=yes æ˜¯å¦æ˜¾ç¤ºé€‰å®šæ•Œäººè¡€æ¡ 
+            Gravity=6 (å½±å“å¯¼å¼¹æŠ›ç‰©çº¿çš„)é‡åŠ›ä¸º6 
+            IdleActionFrequency=.15 æ­¥å…µå…¶ä»–åŠ¨ä½œ(ä¾‹å¦‚æ“¦æª,åä¸‹)æ¯0.15åˆ†é’Ÿä¸€æ¬¡ 
+            MessageDelay=.6 ä¿¡æ¯æ˜¾ç¤º0.6åˆ†é’Ÿ 
+            MovieTime=.06 ä»æ— åˆ°æœ‰(ç”µå½±)é›ªèŠ±ç‚¹æ—¶é—´ä¸º0.06åˆ†é’Ÿ 
+            NamedCivilians=no æ˜¯å¦æ˜¾ç¤ºå¹³æ°‘å»ºç­‘çœŸå®åç§° 
+            SavourDelay=.1 å…³å¡ç»“æŸ/èƒœåˆ© åˆ° æ˜¾ç¤ºèƒœåˆ©çš„æ—¶é—´0.1åˆ†é’Ÿ 
             ShroudRate=4  
-            FogRate=.01 ºÚÇøÀ©Õ¹µÄÊ±¼ä 
-            IceGrowthRate=1.5 ÎŞĞ§ 
-            IceSolidifyFrameTime=1000 ÎŞĞ§ 
-            IceCrackSounds= ÎŞĞ§ 
-            AmbientChangeRate=.2 Í¸Ã÷¹âÏßĞ§¹û»æÖÆÂÊ
-            AmbientChangeStep=.2 Í¸Ã÷¹âÏß»æÖÆ¼ä¸ô
-            SpeakDelay=2 Ã¿2·ÖÖÓÖØ¸´Ò»´ÎÈÎÎñÌáÊ¾ 
-            TimerWarning=2 ÈÎÎñÊ±¼äµÍÓÚ2·ÖÖÓ Ôòµ¹¼ÆÊ±±äºì×Ö 
-            ExtraUnitLight=.2 Õ½³µ¶îÍâ·¢¹â0.2 
-            ExtraInfantryLight=.2 ²½±ø¶îÍâ·¢¹â0.2 
-            ExtraAircraftLight=.2 º½¿ÕÆ÷¶îÍâ·¢¹â0.2 
-            LocalRadarColor=0,255,0 Äã×Ô¼º¼ÒÔÚÀ×´ïÖĞµÄÑÕÉ« 
+            FogRate=.01 é»‘åŒºæ‰©å±•çš„æ—¶é—´ 
+            IceGrowthRate=1.5 æ— æ•ˆ 
+            IceSolidifyFrameTime=1000 æ— æ•ˆ 
+            IceCrackSounds= æ— æ•ˆ 
+            AmbientChangeRate=.2 é€æ˜å…‰çº¿æ•ˆæœç»˜åˆ¶ç‡
+            AmbientChangeStep=.2 é€æ˜å…‰çº¿ç»˜åˆ¶é—´éš”
+            SpeakDelay=2 æ¯2åˆ†é’Ÿé‡å¤ä¸€æ¬¡ä»»åŠ¡æç¤º 
+            TimerWarning=2 ä»»åŠ¡æ—¶é—´ä½äº2åˆ†é’Ÿ åˆ™å€’è®¡æ—¶å˜çº¢å­— 
+            ExtraUnitLight=.2 æˆ˜è½¦é¢å¤–å‘å…‰0.2 
+            ExtraInfantryLight=.2 æ­¥å…µé¢å¤–å‘å…‰0.2 
+            ExtraAircraftLight=.2 èˆªç©ºå™¨é¢å¤–å‘å…‰0.2 
+            LocalRadarColor=0,255,0 ä½ è‡ªå·±å®¶åœ¨é›·è¾¾ä¸­çš„é¢œè‰² 
             ; ******* Crate rules ******* 
             ; General crate rules and controls are specified here. 
             [CrateRules] 
-            CrateMaximum=255 Ïä×ÓÊıÖµ²»³¬¹ı255 
-            CrateMinimum=1 Ïä×ÓÊıÖµ²»µÍÓÚ1 
-            CrateRadius=3.0 Ïä×ÓÀïµÄÊôĞÔÌáÉı¿ÉÒÔ¸ø3µ¥Î»³¤ÄÚµÄÈË 
-            CrateRegen=3 Ã¿3·ÖÖÓËæ»ú²úÉúÏä×Ó 
-            SilverCrate=HealBase µ¥ÈËÓÎÏ·ÖĞ¿ÉÒÔ²úÉúµÄÏä×ÓÀàĞÍ 
-            SoloCrateMoney=5000 µ¥ÈËÓÎÏ·ÖĞÇ®ÏäµÄÇ®Êı 
-            UnitCrateType=none ²úÉúµ¥Î»µÄÏä×Ó¿ÉÒÔ²úÉúÈÎºÎÃ»ÓĞCreatGoddie=noµÄµ¥Î» 
-            WoodCrate=Money Ä¾ÏäÖĞµÄ¶«Î÷ 
-            WaterCrate=Money Ë®ÏäÖĞµÄ¶«Î÷ 
-            HealCrateSound=HealCrate»ñÈ¡ÉúÃü(+Ñª)Ïä×ÓµÄÉùÒô 
-            WoodCrateImg=CRATE Ä¾ÏäµÄĞÎÌ¬ 
-            CrateImg=CRATE Ïä×ÓµÄĞÎÌ¬ 
-            WaterCrateImg=WCRATE Ë®ÖĞÏä×ÓµÄĞÎÌ¬ 
-            FreeMCV=yes ÄÜËæ»ú²úÉú»ùµØ³µ 
-            [Powerups] ¿ØÖÆÏä×ÓÄÚÈİµÄÏà¹Ø²ÎÊı ·Ö±ğ¿ØÖÆ È¨ÖØ,¶¯»­,²»Ã÷,ÊıÖµ
-            Armor=10,ARMOR,yes,1.5              ;ÑªÁ¿ÌáÉı armor of nearby objects increased (armor multiplier);gs Think of max strength being multiplied by this (in reality, damage is divided by this since you can't change the max in Type)
-            Firepower=10,FIREPOWR,yes,2.0       ;¹¥»÷Á¦¼ÓÇ¿ firepower of nearby objects increased (firepower multiplier)
-            HealBase=10,HEALALL,yes             ;Î¬ĞŞËùÓĞµ¥Î» all buildings to full strength
-            Money=20,MONEY,yes,2000             ;½ğÇ® a chunk o' cash (maximum cash)
-            Reveal=10,REVEAL,yes                ;¿ªÈ«Í¼ reveal entire radar map
-            Speed=10,SPEED,yes,1.2              ;¼ÓËÙ speed of nearby objects increased (speed multiplier)
-            Veteran=20,VETERAN,yes,1            ;Éı¼¶ veteran upgrade (levels to upgrade)
-            Unit=20,<none>,no                   ;ËÍµ¥Î»£¨¶¯»­ÎŞĞ§£© vehicle
+            CrateMaximum=255 ç®±å­æ•°å€¼ä¸è¶…è¿‡255 
+            CrateMinimum=1 ç®±å­æ•°å€¼ä¸ä½äº1 
+            CrateRadius=3.0 ç®±å­é‡Œçš„å±æ€§æå‡å¯ä»¥ç»™3å•ä½é•¿å†…çš„äºº 
+            CrateRegen=3 æ¯3åˆ†é’Ÿéšæœºäº§ç”Ÿç®±å­ 
+            SilverCrate=HealBase å•äººæ¸¸æˆä¸­å¯ä»¥äº§ç”Ÿçš„ç®±å­ç±»å‹ 
+            SoloCrateMoney=5000 å•äººæ¸¸æˆä¸­é’±ç®±çš„é’±æ•° 
+            UnitCrateType=none äº§ç”Ÿå•ä½çš„ç®±å­å¯ä»¥äº§ç”Ÿä»»ä½•æ²¡æœ‰CreatGoddie=noçš„å•ä½ 
+            WoodCrate=Money æœ¨ç®±ä¸­çš„ä¸œè¥¿ 
+            WaterCrate=Money æ°´ç®±ä¸­çš„ä¸œè¥¿ 
+            HealCrateSound=HealCrateè·å–ç”Ÿå‘½(+è¡€)ç®±å­çš„å£°éŸ³ 
+            WoodCrateImg=CRATE æœ¨ç®±çš„å½¢æ€ 
+            CrateImg=CRATE ç®±å­çš„å½¢æ€ 
+            WaterCrateImg=WCRATE æ°´ä¸­ç®±å­çš„å½¢æ€ 
+            FreeMCV=yes èƒ½éšæœºäº§ç”ŸåŸºåœ°è½¦ 
+            [Powerups] æ§åˆ¶ç®±å­å†…å®¹çš„ç›¸å…³å‚æ•° åˆ†åˆ«æ§åˆ¶ æƒé‡,åŠ¨ç”»,ä¸æ˜,æ•°å€¼
+            Armor=10,ARMOR,yes,1.5              ;è¡€é‡æå‡ armor of nearby objects increased (armor multiplier);gs Think of max strength being multiplied by this (in reality, damage is divided by this since you can't change the max in Type)
+            Firepower=10,FIREPOWR,yes,2.0       ;æ”»å‡»åŠ›åŠ å¼º firepower of nearby objects increased (firepower multiplier)
+            HealBase=10,HEALALL,yes             ;ç»´ä¿®æ‰€æœ‰å•ä½ all buildings to full strength
+            Money=20,MONEY,yes,2000             ;é‡‘é’± a chunk o' cash (maximum cash)
+            Reveal=10,REVEAL,yes                ;å¼€å…¨å›¾ reveal entire radar map
+            Speed=10,SPEED,yes,1.2              ;åŠ é€Ÿ speed of nearby objects increased (speed multiplier)
+            Veteran=20,VETERAN,yes,1            ;å‡çº§ veteran upgrade (levels to upgrade)
+            Unit=20,<none>,no                   ;é€å•ä½ï¼ˆåŠ¨ç”»æ— æ•ˆï¼‰ vehicle
 
-            Invulnerability=0,ARMOR,yes,1.0     ;ÎŞµĞ£¨Ã²ËÆÎŞĞ§ ¶¯»­ÓĞĞ§£© invulnerability (duration in minutes)
-            IonStorm=0,<none>,yes               ;Àë×Ó·ç±©£¨Ã²ËÆÎŞĞ§£© initiate ion storm
-            Gas=0,<none>,yes,100                ;Ì©¿óÆøÌå£¨²úÉú´óÁ¿gasÁ£×Ó£© tiberium gas (damage for each gas cloud)
-            Tiberium=0,<none>,no                ;²úÉúÒ»Æ¬¿ó tiberium patch
-            Pod=0,<none>,no                     ;£¨²»Ã÷ÎŞĞ§£© drop pod special
-            Cloak=0,CLOAK,yes                   ;ÒşÉí enable cloaking on nearby objects
-            Darkness=0,SHROUDX,yes              ;¸²¸ÇµØÍ¼ cloak entire radar map
-            Explosion=0,<none>,yes,500          ;±¬Õ¨ high explosive baddie (damage per explosion)
-            ICBM=0,CHEMISLE,yes                 ;»ñµÃºËµ¯£¨ºËµ¯³¬Îä£© nuke missile one time shot
-            Napalm=0,<none>,no,600              ;±¬Õ¨£¨²½±øÈ¼ÉÕËÀÍö£© fire explosion baddie (damage)
-            Squad=0,<none>,no                   ;Ëæ»ú²½±ø£¨Êµ¼ÊÉÏ»¹ÊÇËÍÇ®£© squad of random infantry
+            Invulnerability=0,ARMOR,yes,1.0     ;æ— æ•Œï¼ˆè²Œä¼¼æ— æ•ˆ åŠ¨ç”»æœ‰æ•ˆï¼‰ invulnerability (duration in minutes)
+            IonStorm=0,<none>,yes               ;ç¦»å­é£æš´ï¼ˆè²Œä¼¼æ— æ•ˆï¼‰ initiate ion storm
+            Gas=0,<none>,yes,100                ;æ³°çŸ¿æ°”ä½“ï¼ˆäº§ç”Ÿå¤§é‡gasç²’å­ï¼‰ tiberium gas (damage for each gas cloud)
+            Tiberium=0,<none>,no                ;äº§ç”Ÿä¸€ç‰‡çŸ¿ tiberium patch
+            Pod=0,<none>,no                     ;ï¼ˆä¸æ˜æ— æ•ˆï¼‰ drop pod special
+            Cloak=0,CLOAK,yes                   ;éšèº« enable cloaking on nearby objects
+            Darkness=0,SHROUDX,yes              ;è¦†ç›–åœ°å›¾ cloak entire radar map
+            Explosion=0,<none>,yes,500          ;çˆ†ç‚¸ high explosive baddie (damage per explosion)
+            ICBM=0,CHEMISLE,yes                 ;è·å¾—æ ¸å¼¹ï¼ˆæ ¸å¼¹è¶…æ­¦ï¼‰ nuke missile one time shot
+            Napalm=0,<none>,no,600              ;çˆ†ç‚¸ï¼ˆæ­¥å…µç‡ƒçƒ§æ­»äº¡ï¼‰ fire explosion baddie (damage)
+            Squad=0,<none>,no                   ;éšæœºæ­¥å…µï¼ˆå®é™…ä¸Šè¿˜æ˜¯é€é’±ï¼‰ squad of random infantry
 
             ; ******* Combat and damage rules ******* 
             ; General rules that control combat, damage, or related items are 
             listed here. 
             [CombatDamage] 
-            AmmoCrateDamage=200 Ë²¼äÉËº¦³¬¹ı200ÔòĞÎ³Éµ¯¿Ó 
-            IonCannonDamage=751 Àë×ÓÅÚÉËº¦¡£RA2ÎŞĞ§ 
-            HarvesterImmune=no ¿ó³µÊÇ·ñ¶ÔÆÕÍ¨ÉËº¦ÃâÒß 
-            DestroyableBridges=yes ÇÅÊÇ·ñÄÜ±»ÆÆ»µ 
-            TiberiumExplosive=no Ì©²®ÀûÑÇÖ®ÈÕÓï¾ä£¬ÎŞĞ§ 
-            Scorches=BURN01,BURN02,BURN03,BURN04 ÎÛÈ¾ÀàĞÍ(Ğ¡µ¯¿Ó) 
-            Scorches1=BURN05,BURN06,BURN07 ÎÛÈ¾ÀàĞÍ 
-            Scorches2=BURN08,BURN09,BURN10 ÎÛÈ¾ÀàĞÍ 
-            Scorches3=BURN11,BURN12,BURN13 ÎÛÈ¾ÀàĞÍ 
-            Scorches4=BURN14,BURN15,BURN16 ÎÛÈ¾ÀàĞÍ 
-            TiberiumExplosionDamage = 0 Ì©²®ÀûÑÇÖ®ÈÕÓï¾ä,ÎŞĞ§ 
-            TiberiumStrength = -1 Ì©²®ÀûÑÇÖ®ÈÕÓï¾ä,ÎŞĞ§ 
-            Craters=CR1,CR2,CR3,CR4,CR5,CR6 µ¯¿ÓÀàĞÍ 
-            AtomDamage=1000 ºËµ¯ÉËº¦1000 
-            BallisticScatter=1.0 Îó²î¹¥»÷×î´ó¾àÀëÄ¿±ê1³¤¶È(ÀıÈçËÕ·À¿ÕÅÚ) 
-            BridgeStrength=1500 ÇÅµÄÉúÃüÎª1500 
-            C4Delay=.03 ·ÅÖÃC4ºó¶àÉÙÊ±¼äC4±¬Õ¨ 
-            C4Warhead=Super  C4µÄµ¯Í· 
-            V3Warhead=V3WH  V3»ğ¼ıµÄµ¯Í· 
-            DMislWarhead=DMISLWH ÎŞÎ·»ğ¼ıµÄµ¯Í· 
-            V3EliteWarhead=V3EWH ÈıĞÇV3»ğ¼ıµÄµ¯Í· 
-            DMislEliteWarhead=DMISLEWH ÈıĞÇÎŞÎ·»ğ¼ıµÄµ¯Í· 
-            CMislWarhead=CMISLWH À×Ãùµ¼µ¯µÄµ¯Í· 
-            CMislEliteWarhead=CMISLEWH ÈıĞÇÀ×Ãùµ¼µ¯µÄµ¯Í· 
-            CrushWarhead=Crush ÄëÑ¹»ú¶¯³µµÄĞéÄâÎäÆ÷µÄµ¯Í· 
+            AmmoCrateDamage=200 ç¬é—´ä¼¤å®³è¶…è¿‡200åˆ™å½¢æˆå¼¹å‘ 
+            IonCannonDamage=751 ç¦»å­ç‚®ä¼¤å®³ã€‚RA2æ— æ•ˆ 
+            HarvesterImmune=no çŸ¿è½¦æ˜¯å¦å¯¹æ™®é€šä¼¤å®³å…ç–« 
+            DestroyableBridges=yes æ¡¥æ˜¯å¦èƒ½è¢«ç ´å 
+            TiberiumExplosive=no æ³°ä¼¯åˆ©äºšä¹‹æ—¥è¯­å¥ï¼Œæ— æ•ˆ 
+            Scorches=BURN01,BURN02,BURN03,BURN04 æ±¡æŸ“ç±»å‹(å°å¼¹å‘) 
+            Scorches1=BURN05,BURN06,BURN07 æ±¡æŸ“ç±»å‹ 
+            Scorches2=BURN08,BURN09,BURN10 æ±¡æŸ“ç±»å‹ 
+            Scorches3=BURN11,BURN12,BURN13 æ±¡æŸ“ç±»å‹ 
+            Scorches4=BURN14,BURN15,BURN16 æ±¡æŸ“ç±»å‹ 
+            TiberiumExplosionDamage = 0 æ³°ä¼¯åˆ©äºšä¹‹æ—¥è¯­å¥,æ— æ•ˆ 
+            TiberiumStrength = -1 æ³°ä¼¯åˆ©äºšä¹‹æ—¥è¯­å¥,æ— æ•ˆ 
+            Craters=CR1,CR2,CR3,CR4,CR5,CR6 å¼¹å‘ç±»å‹ 
+            AtomDamage=1000 æ ¸å¼¹ä¼¤å®³1000 
+            BallisticScatter=1.0 è¯¯å·®æ”»å‡»æœ€å¤§è·ç¦»ç›®æ ‡1é•¿åº¦(ä¾‹å¦‚è‹é˜²ç©ºç‚®) 
+            BridgeStrength=1500 æ¡¥çš„ç”Ÿå‘½ä¸º1500 
+            C4Delay=.03 æ”¾ç½®C4åå¤šå°‘æ—¶é—´C4çˆ†ç‚¸ 
+            C4Warhead=Super  C4çš„å¼¹å¤´ 
+            V3Warhead=V3WH  V3ç«ç®­çš„å¼¹å¤´ 
+            DMislWarhead=DMISLWH æ— ç•ç«ç®­çš„å¼¹å¤´ 
+            V3EliteWarhead=V3EWH ä¸‰æ˜ŸV3ç«ç®­çš„å¼¹å¤´ 
+            DMislEliteWarhead=DMISLEWH ä¸‰æ˜Ÿæ— ç•ç«ç®­çš„å¼¹å¤´ 
+            CMislWarhead=CMISLWH é›·é¸£å¯¼å¼¹çš„å¼¹å¤´ 
+            CMislEliteWarhead=CMISLEWH ä¸‰æ˜Ÿé›·é¸£å¯¼å¼¹çš„å¼¹å¤´ 
+            CrushWarhead=Crush ç¢¾å‹æœºåŠ¨è½¦çš„è™šæ‹Ÿæ­¦å™¨çš„å¼¹å¤´ 
 
             ;***Crazy Ivan stuff*** 
-            IvanWarhead=IvanWH ·è¿ñÒÁÍòÕ¨µ¯µ¯Í· 
-            IvanDamage=450 ·è¿ñÒÁÍòÕ¨µ¯ÉËº¦ 
-            IvanTimedDelay=450 ·è¿ñÒÁÍòÕ¨µ¯ÑÓ³ÙÊ±¼ä 
-            CanDetonateTimeBomb=no ÊÇ·ñÄÜÊÖ¶¯Òı±¬Õ¨µ¯ 
-            CanDetonateDeathBomb=no ÊÇ·ñÄÜÊÖ¶¯Òı±¬×°ÓÚ×Ô¼º²¿¶ÓÉÏµÄÕ¨µ¯ 
-            IvanIconFlickerRate=8 Õ¨µ¯Ìø¶¯ÂÊ 
+            IvanWarhead=IvanWH ç–¯ç‹‚ä¼Šä¸‡ç‚¸å¼¹å¼¹å¤´ 
+            IvanDamage=450 ç–¯ç‹‚ä¼Šä¸‡ç‚¸å¼¹ä¼¤å®³ 
+            IvanTimedDelay=450 ç–¯ç‹‚ä¼Šä¸‡ç‚¸å¼¹å»¶è¿Ÿæ—¶é—´ 
+            CanDetonateTimeBomb=no æ˜¯å¦èƒ½æ‰‹åŠ¨å¼•çˆ†ç‚¸å¼¹ 
+            CanDetonateDeathBomb=no æ˜¯å¦èƒ½æ‰‹åŠ¨å¼•çˆ†è£…äºè‡ªå·±éƒ¨é˜Ÿä¸Šçš„ç‚¸å¼¹ 
+            IvanIconFlickerRate=8 ç‚¸å¼¹è·³åŠ¨ç‡ 
 
             ;***Urban Combat (UC) ver 2.0*** 
-            OccupyDamageMultiplier=1.2 Õ¼Áì½¨ÖşÎïºóÏòÍâ¹¥»÷,ÍşÁ¦¼ÓÇ¿ÎªÔ­À´µÄ1.2±¶ 
-            OccupyROFMultiplier=1.2 Õ¼Áì½¨ÖşÎïºóÏòÍâ¹¥»÷,ÉäËÙ¼ÓÇ¿ÎªÔ­À´µÄ1.2±¶ 
-            OccupyWeaponRange=5 Õ¼Áì½¨ÖşÎïºóÏòÍâ¹¥»÷,Éä³Ì5 
+            OccupyDamageMultiplier=1.2 å é¢†å»ºç­‘ç‰©åå‘å¤–æ”»å‡»,å¨åŠ›åŠ å¼ºä¸ºåŸæ¥çš„1.2å€ 
+            OccupyROFMultiplier=1.2 å é¢†å»ºç­‘ç‰©åå‘å¤–æ”»å‡»,å°„é€ŸåŠ å¼ºä¸ºåŸæ¥çš„1.2å€ 
+            OccupyWeaponRange=5 å é¢†å»ºç­‘ç‰©åå‘å¤–æ”»å‡»,å°„ç¨‹5 
 
             ;***Tank Bunker*** 
-            BunkerDamageMultiplier=1.3 Ì¹¿Ëµï±¤ÖĞÌ¹¿ËÉËº¦¼ÓÇ¿ÎªÔ­À´µÄ1.3±¶ 
-            BunkerROFMultiplier=1.3 Ì¹¿Ëµï±¤ÖĞÌ¹¿ËÉäËÙ¼ÓÇ¿ÎªÔ­À´µÄ1.3±¶ 
-            BunkerWeaponRangeBonus=2 Ì¹¿Ëµï±¤ÖĞÌ¹¿ËÉä³Ì±ÈÔ­À´µÄ¶à2 
+            BunkerDamageMultiplier=1.3 å¦å…‹ç¢‰å ¡ä¸­å¦å…‹ä¼¤å®³åŠ å¼ºä¸ºåŸæ¥çš„1.3å€ 
+            BunkerROFMultiplier=1.3 å¦å…‹ç¢‰å ¡ä¸­å¦å…‹å°„é€ŸåŠ å¼ºä¸ºåŸæ¥çš„1.3å€ 
+            BunkerWeaponRangeBonus=2 å¦å…‹ç¢‰å ¡ä¸­å¦å…‹å°„ç¨‹æ¯”åŸæ¥çš„å¤š2 
 
             ;***MasterMind Overload*** 
-            OverloadCount=3,6,10,50 ³¬¹ıÕâ¸öÊıÁ¿Ê±¹ıÔØµÄ"µÈ¼¶" 
-            OverloadDamage=0,50,100,500 ¶ÔÓ¦"µÈ¼¶"ÊÜµ½µÄÉËº¦ 
-            OverloadFrames=30,60,60,60 Ã¿¶àÉÙÊ±¼äÊÜµ½ÉÏÊöµÄÉËº¦ 
-            ControlledAnimationType=MINDANIM ±»¿ØÖÆµÄÎïÌåµÄ¸½¼ÓÍ¼Ïó 
-            PermaControlledAnimationType=MINDANIMR ±»ÓÀ¾Ã¿ØÖÆµÄÎïÌåµÄ¸½¼ÓÍ¼Ïó 
-            MindControlAttackLineFrames=20 ¾«Éñ¿ØÖÆÏßµÄÉÁ¶¯¶àÉÙÊ±¼äÒ»´Î 
+            OverloadCount=3,6,10,50 è¶…è¿‡è¿™ä¸ªæ•°é‡æ—¶è¿‡è½½çš„"ç­‰çº§" 
+            OverloadDamage=0,50,100,500 å¯¹åº”"ç­‰çº§"å—åˆ°çš„ä¼¤å®³ 
+            OverloadFrames=30,60,60,60 æ¯å¤šå°‘æ—¶é—´å—åˆ°ä¸Šè¿°çš„ä¼¤å®³ 
+            ControlledAnimationType=MINDANIM è¢«æ§åˆ¶çš„ç‰©ä½“çš„é™„åŠ å›¾è±¡ 
+            PermaControlledAnimationType=MINDANIMR è¢«æ°¸ä¹…æ§åˆ¶çš„ç‰©ä½“çš„é™„åŠ å›¾è±¡ 
+            MindControlAttackLineFrames=20 ç²¾ç¥æ§åˆ¶çº¿çš„é—ªåŠ¨å¤šå°‘æ—¶é—´ä¸€æ¬¡ 
 
 
             ;***Floating Disk Draining*** 
-            DrainMoneyFrameDelay=30  UFOÎüÈ¡Ç®¶àÉÙÊ±¼äÒ»´Î 
-            DrainMoneyAmount=30 Ò»´ÎÎüÈ¡¶àÉÙÇ® 
-            DrainAnimationType=DISKRAY ÎüÈ¡µÄÍ¼Ïó 
+            DrainMoneyFrameDelay=30  UFOå¸å–é’±å¤šå°‘æ—¶é—´ä¸€æ¬¡ 
+            DrainMoneyAmount=30 ä¸€æ¬¡å¸å–å¤šå°‘é’± 
+            DrainAnimationType=DISKRAY å¸å–çš„å›¾è±¡ 
 
             ;***Magnetron*** 
             ;GEF if CurrentStrengthDamage then the damage a dropped unit does 
@@ -754,230 +754,230 @@ HarvestersPerRefinery=2,2,1;Ã¿¸ö¿ó³§Åä±¸¼¸¸ö¿ó³µ
 
             ;FallingDamageMultiplier determines what this base damage will be 
             multiplied by in order to figure out the final damage 
-            FallingDamageMultiplier=1.0 µôÂäÉËº¦³ËÒÔ1±¶ 
-            CurrentStrengthDamage=yes ¿ÛÑª°´ÕÕµ±Ç°Ñª°Ù·Ö±È NO´ú±í°´ÕÕ×î´óÖµµÄ°Ù·Ö±È 
+            FallingDamageMultiplier=1.0 æ‰è½ä¼¤å®³ä¹˜ä»¥1å€ 
+            CurrentStrengthDamage=yes æ‰£è¡€æŒ‰ç…§å½“å‰è¡€ç™¾åˆ†æ¯” NOä»£è¡¨æŒ‰ç…§æœ€å¤§å€¼çš„ç™¾åˆ†æ¯” 
 
-            ;***Battle Fortress*** £¨Õ½¶·ÒªÈû£©
-            OpenToppedRangeBonus=2 ²¿¶ÓÔÚ¿É¶ÔÍâÉä»÷µÄÔËÊä¹¤¾ßÖĞÉä³ÌÔö¼Ó2 
-            OpenToppedDamageMultiplier=1.2 ²¿¶ÓÔÚ¿É¶ÔÍâÉä»÷µÄÔËÊä¹¤¾ßÖĞÉËº¦¼ÓÇ¿µ½Ô­À´µÄ1.2±¶ 
-            OpenToppedWarpDistance=7;³¬Ê±¿Õ¾üÍÅÕâÃ´Ô¶ºóÍ£Ö¹¹¥»÷
+            ;***Battle Fortress*** ï¼ˆæˆ˜æ–—è¦å¡ï¼‰
+            OpenToppedRangeBonus=2 éƒ¨é˜Ÿåœ¨å¯å¯¹å¤–å°„å‡»çš„è¿è¾“å·¥å…·ä¸­å°„ç¨‹å¢åŠ 2 
+            OpenToppedDamageMultiplier=1.2 éƒ¨é˜Ÿåœ¨å¯å¯¹å¤–å°„å‡»çš„è¿è¾“å·¥å…·ä¸­ä¼¤å®³åŠ å¼ºåˆ°åŸæ¥çš„1.2å€ 
+            OpenToppedWarpDistance=7;è¶…æ—¶ç©ºå†›å›¢è¿™ä¹ˆè¿œååœæ­¢æ”»å‡»
 
               
 
 
-            DeathWeapon=DefaultDeathWeapon ¸ÃÓï¾äÇë²»Òª¸ü¸Ä 
-            IronCurtainDuration=750 ÌúÄ»³ÖĞøÊ±¼ä750Ö¡ 
-            FirestormWarhead=FirestormWH »ğ·ç±©Óï¾ä,ÎŞĞ§ 
-            IonCannonWarhead=IonCannonWH Àë×ÓÅÚµ¯Í· 
-            VeinholeWarhead=VeinholeWH Ì©²®ÀûÑÇÓï¾ä,ÎŞĞ§ 
+            DeathWeapon=DefaultDeathWeapon è¯¥è¯­å¥è¯·ä¸è¦æ›´æ”¹ 
+            IronCurtainDuration=750 é“å¹•æŒç»­æ—¶é—´750å¸§ 
+            FirestormWarhead=FirestormWH ç«é£æš´è¯­å¥,æ— æ•ˆ 
+            IonCannonWarhead=IonCannonWH ç¦»å­ç‚®å¼¹å¤´ 
+            VeinholeWarhead=VeinholeWH æ³°ä¼¯åˆ©äºšè¯­å¥,æ— æ•ˆ 
             PsychicRevealRadius=15 GEF radius in cells that the PsychicReveal 
             Super should clear 
 
             ;particle system defaults 
-            DefaultFirestormExplosionSystem=FirestormSparkSys »ğ·ç±©Óï¾ä,ÎŞĞ§ 
-            DefaultLargeGreySmokeSystem=BigGreySmokeSys ´ó»ÒÉ«ÑÌÎíÁ£×ÓÏµÍ³ 
-            DefaultSmallGreySmokeSystem=SmallGreySSys Ğ¡»ÒÉ«ÑÌÎíÁ£×ÓÏµÍ³ 
-            DefaultSparkSystem=SparkSys »ğ»¨Á£×ÓÏµÍ³ 
-            DefaultLargeRedSmokeSystem=BigGreySmokeSys ´óÑÌÎíÁ£×ÓÏµÍ³ 
-            DefaultSmallRedSmokeSystem=SmallGreySSys Ğ¡ÑÌÎíÁ£×ÓÏµÍ³ 
-            DefaultDebrisSmokeSystem=SmallGreySSys ËéÆ¬Á£×ÓÏµÍ³ 
-            DefaultFireStreamSystem=FireStreamSys Åç»ğÁ£×ÓÏµÍ³ 
-            DefaultTestParticleSystem=TestSmokeSys ²âÊÔÁ£×ÓÏµÍ³µÄÁ£×ÓÏµÍ³£¬²ĞÁôÎï 
-            DefaultRepairParticleSystem=WeldingSys Ò»µ¥Î»ĞŞ¸´ÁíÒ»µ¥Î»µÄÁ£×ÓÏµÍ³ 
+            DefaultFirestormExplosionSystem=FirestormSparkSys ç«é£æš´è¯­å¥,æ— æ•ˆ 
+            DefaultLargeGreySmokeSystem=BigGreySmokeSys å¤§ç°è‰²çƒŸé›¾ç²’å­ç³»ç»Ÿ 
+            DefaultSmallGreySmokeSystem=SmallGreySSys å°ç°è‰²çƒŸé›¾ç²’å­ç³»ç»Ÿ 
+            DefaultSparkSystem=SparkSys ç«èŠ±ç²’å­ç³»ç»Ÿ 
+            DefaultLargeRedSmokeSystem=BigGreySmokeSys å¤§çƒŸé›¾ç²’å­ç³»ç»Ÿ 
+            DefaultSmallRedSmokeSystem=SmallGreySSys å°çƒŸé›¾ç²’å­ç³»ç»Ÿ 
+            DefaultDebrisSmokeSystem=SmallGreySSys ç¢ç‰‡ç²’å­ç³»ç»Ÿ 
+            DefaultFireStreamSystem=FireStreamSys å–·ç«ç²’å­ç³»ç»Ÿ 
+            DefaultTestParticleSystem=TestSmokeSys æµ‹è¯•ç²’å­ç³»ç»Ÿçš„ç²’å­ç³»ç»Ÿï¼Œæ®‹ç•™ç‰© 
+            DefaultRepairParticleSystem=WeldingSys ä¸€å•ä½ä¿®å¤å¦ä¸€å•ä½çš„ç²’å­ç³»ç»Ÿ 
 
-            Crush=1.8 µ±ÓĞÄëÑ¹¿ÉÄÜÇÒ¾àÀëµÍÓÚ1.8Ê±¿ªÊ¼ÄëÑ¹(Ö»¶ÔµçÄÔÓĞĞ§) 
-            ExpSpread=.7 Ó¦¸ÃÊÇ¿É±¬µ¥Î»±¬Õ¨ºóÍşÁ¦¶ÔÓÚÉËº¦µÄ°Ù·Ö±È 
-            FireSupress=1 ÔÚ´Ë¾àÀëÄÚÓĞÎÒ·½µ¥Î»Ê±±ÜÃâ¿ª»ğ 
+            Crush=1.8 å½“æœ‰ç¢¾å‹å¯èƒ½ä¸”è·ç¦»ä½äº1.8æ—¶å¼€å§‹ç¢¾å‹(åªå¯¹ç”µè„‘æœ‰æ•ˆ) 
+            ExpSpread=.7 åº”è¯¥æ˜¯å¯çˆ†å•ä½çˆ†ç‚¸åå¨åŠ›å¯¹äºä¼¤å®³çš„ç™¾åˆ†æ¯” 
+            FireSupress=1 åœ¨æ­¤è·ç¦»å†…æœ‰æˆ‘æ–¹å•ä½æ—¶é¿å…å¼€ç« 
 
-            FlameDamage=Fire »ğÑæµÄÁ£×ÓÎäÆ÷ ¸ÃÉËº¦¿ÉÒÔÀ©É¢µ½ÆäËûÈËÉíÉÏ 
-            FlameDamage2=Fire2 »ğÑæµÄÁ£×ÓÎäÆ÷ ¸ÃÉËº¦²»¿ÉÒÔÀ©É¢µ½ÆäËûÈËÉíÉÏ 
-            HomingScatter=2.0 ²»×¼È·µÄµ¼ÏòÍ¶ÉäÌå×î´óÎó²î·¶Î§(¸ñ) 
-            MaxDamage=10000 ×î´óÉËº¦²»³¬¹ı10000 
-            MinDamage=1 ×îĞ¡ÉËº¦²»µÍÓÚ1 
-            PlayerAutoCrush=no ÈËÀà²Ù×İµ¥Î»ÊÇ·ñ×Ô¶¯³¢ÊÔÄëÑ¹µĞÈËµ¥Î» 
-            PlayerReturnFire=no ÈËÀà²Ù×İµ¥Î»ÊÇ·ñÇÖÂÔĞÔ»¹»÷µĞÈËµ¥Î» 
-            PlayerScatter=no ÈËÀà²Ù×İµ¥Î»ÊÜÉËº¦Ê±ÊÇ·ñ×Ô¶¯ÊèÀëËùÔÚµØ 
-            SplashList=H2O_EXP3,H2O_EXP2,H2O_EXP1 Ë®ÖĞ±¬Õ¨µÄË®»¨ 
-            TreeTargeting=no Êó±êÔÚÊ÷ÉÏÊ±ÊÇ·ñ×Ô¶¯³öÏÖ×¼ĞÇ 
-            TurboBoost=1.5 µ¼µ¯¶Ô¿ÕÖĞÎïÌåÎªÔ­ËÙ¶ÈµÄ1.5±¶ 
-            Incoming=10 µ±Í¶ÉäÎïÉäÏòÄ¿±êµÄËÙ¶ÈĞ¡ÓÚ»òµÈÓÚ´ËÖµ,Ä¿±ê´¦µ¥Î»½«ÊÔÍ¼ÌÓÀëÄ¿±êÇø 
-            CollapseChance=100 ÎŞĞ§Óï¾ä 
-            BerzerkAllowed=no ÎŞĞ§Óï¾ä 
+            FlameDamage=Fire ç«ç„°çš„ç²’å­æ­¦å™¨ è¯¥ä¼¤å®³å¯ä»¥æ‰©æ•£åˆ°å…¶ä»–äººèº«ä¸Š 
+            FlameDamage2=Fire2 ç«ç„°çš„ç²’å­æ­¦å™¨ è¯¥ä¼¤å®³ä¸å¯ä»¥æ‰©æ•£åˆ°å…¶ä»–äººèº«ä¸Š 
+            HomingScatter=2.0 ä¸å‡†ç¡®çš„å¯¼å‘æŠ•å°„ä½“æœ€å¤§è¯¯å·®èŒƒå›´(æ ¼) 
+            MaxDamage=10000 æœ€å¤§ä¼¤å®³ä¸è¶…è¿‡10000 
+            MinDamage=1 æœ€å°ä¼¤å®³ä¸ä½äº1 
+            PlayerAutoCrush=no äººç±»æ“çºµå•ä½æ˜¯å¦è‡ªåŠ¨å°è¯•ç¢¾å‹æ•Œäººå•ä½ 
+            PlayerReturnFire=no äººç±»æ“çºµå•ä½æ˜¯å¦ä¾µç•¥æ€§è¿˜å‡»æ•Œäººå•ä½ 
+            PlayerScatter=no äººç±»æ“çºµå•ä½å—ä¼¤å®³æ—¶æ˜¯å¦è‡ªåŠ¨ç–ç¦»æ‰€åœ¨åœ° 
+            SplashList=H2O_EXP3,H2O_EXP2,H2O_EXP1 æ°´ä¸­çˆ†ç‚¸çš„æ°´èŠ± 
+            TreeTargeting=no é¼ æ ‡åœ¨æ ‘ä¸Šæ—¶æ˜¯å¦è‡ªåŠ¨å‡ºç°å‡†æ˜Ÿ 
+            TurboBoost=1.5 å¯¼å¼¹å¯¹ç©ºä¸­ç‰©ä½“ä¸ºåŸé€Ÿåº¦çš„1.5å€ 
+            Incoming=10 å½“æŠ•å°„ç‰©å°„å‘ç›®æ ‡çš„é€Ÿåº¦å°äºæˆ–ç­‰äºæ­¤å€¼,ç›®æ ‡å¤„å•ä½å°†è¯•å›¾é€ƒç¦»ç›®æ ‡åŒº 
+            CollapseChance=100 æ— æ•ˆè¯­å¥ 
+            BerzerkAllowed=no æ— æ•ˆè¯­å¥ 
 
 
             // PCG; Provides knobs to tweak for radiation used by desolater and 
             friends. 
             [Radiation] 
-            RadDurationMultiple=1 ·øÉäÏµÊı(RedLevel*RadDurationMultipleÎª·øÉä³ÖĞøµÄèåÊı) 
-            RadApplicationDelay=16 Ã¿16èåÔì³ÉÒ»´ÎÉËº¦ 
-            RadLevelMax=500  RedLevel×î´ó²»³¬¹ı500 £¬Ô­°æ×îĞ¡²»µÃµÍÓÚ100
-            RadLevelDelay=90 ·øÉäË¥¼õ³Ì¶È 
-            RadLightDelay=90 ·øÉäµÄ¹âË¥¼õ³Ì¶È? 
-            RadLevelFactor=0.2 Ã¿¸öRedLevelÔì³É0.2ÉËº¦ 
-            RadLightFactor=0.1 ¹âÇ¿ÏµÊı 
-            RadTintFactor=1.0 ·øÉäÉ«²ÊÏµÊı
+            RadDurationMultiple=1 è¾å°„ç³»æ•°(RedLevel*RadDurationMultipleä¸ºè¾å°„æŒç»­çš„æ¡¢æ•°) 
+            RadApplicationDelay=16 æ¯16æ¡¢é€ æˆä¸€æ¬¡ä¼¤å®³ 
+            RadLevelMax=500  RedLevelæœ€å¤§ä¸è¶…è¿‡500 ï¼ŒåŸç‰ˆæœ€å°ä¸å¾—ä½äº100
+            RadLevelDelay=90 è¾å°„è¡°å‡ç¨‹åº¦ 
+            RadLightDelay=90 è¾å°„çš„å…‰è¡°å‡ç¨‹åº¦? 
+            RadLevelFactor=0.2 æ¯ä¸ªRedLevelé€ æˆ0.2ä¼¤å®³ 
+            RadLightFactor=0.1 å…‰å¼ºç³»æ•° 
+            RadTintFactor=1.0 è¾å°„è‰²å½©ç³»æ•°
 
-            RadColor=0,255,0 ·øÉäµÄÑÕÉ« 
-            RadSiteWarhead=RadSite ·øÉäµÄµ¯Í· 
+            RadColor=0,255,0 è¾å°„çš„é¢œè‰² 
+            RadSiteWarhead=RadSite è¾å°„çš„å¼¹å¤´ 
 
 
             // PCG; Enables customization of the effects elevation has on 
             firing. 
             [ElevationModel] 
-            ElevationIncrement=4 4ÒÔÉÏ¸ß¶ÈµÄĞüÑÂÔö¼ÓÉä³Ì
-            ElevationIncrementBonus=2 Ôö¼Ó2Éä³Ì 
-            ElevationBonusCap=2 ×î´óÔö¼Ó2
+            ElevationIncrement=4 4ä»¥ä¸Šé«˜åº¦çš„æ‚¬å´–å¢åŠ å°„ç¨‹
+            ElevationIncrementBonus=2 å¢åŠ 2å°„ç¨‹ 
+            ElevationBonusCap=2 æœ€å¤§å¢åŠ 2
 
             // PCG; Enables customization of the effects walls have on shots. 
             [WallModel] 
-            AlliedWallTransparency=no ¶ÔÍ¬ÃË¹úÀ´Ëµ Ç½ÊÇ²»ÊÇ¿ÉÒÔ´©¹ı(¾ÍÊÇ´©Ç½´òµĞÈË,¶øµĞÈË±ØĞë´òÇ½) 
-            WallPenetratorThreshold=50% ÔÚ´òÇ½ÄÚÈËµÄÊ±ºò ÓĞ50%ÊÇ´òÇ½ÁË(ÆäËûµÄÏûÊ§ÁË) 
+            AlliedWallTransparency=no å¯¹åŒç›Ÿå›½æ¥è¯´ å¢™æ˜¯ä¸æ˜¯å¯ä»¥ç©¿è¿‡(å°±æ˜¯ç©¿å¢™æ‰“æ•Œäºº,è€Œæ•Œäººå¿…é¡»æ‰“å¢™) 
+            WallPenetratorThreshold=50% åœ¨æ‰“å¢™å†…äººçš„æ—¶å€™ æœ‰50%æ˜¯æ‰“å¢™äº†(å…¶ä»–çš„æ¶ˆå¤±äº†) 
 
               
 
-            ; *** House (players) List *** ¹ú¼ÒÁĞ±í 
+            ; *** House (players) List *** å›½å®¶åˆ—è¡¨ 
             [Countries] 
-            0=Americans Ğ´ÉÏ¹ú¼ÒÃû¾ÍËãÊÂ  
-            ; ******* Side Type List ******* ÕóÓªÁĞ±í 
-            GDI=British,French,Germans,Americans,Alliance  GDIÕóÓª¹ú¼Ò×¢²á 
-            Nod=Russians,Africans,Confederation,Arabs  NODÕóÓª¹ú¼Ò×¢²á 
-            ThirdSide=YuriCountry  YURIÕóÓª¹ú¼Ò×¢²á 
-            ; ******* Infantry Type List ******* ²½±øÁĞ±í 
+            0=Americans å†™ä¸Šå›½å®¶åå°±ç®—äº‹  
+            ; ******* Side Type List ******* é˜µè¥åˆ—è¡¨ 
+            GDI=British,French,Germans,Americans,Alliance  GDIé˜µè¥å›½å®¶æ³¨å†Œ 
+            Nod=Russians,Africans,Confederation,Arabs  NODé˜µè¥å›½å®¶æ³¨å†Œ 
+            ThirdSide=YuriCountry  YURIé˜µè¥å›½å®¶æ³¨å†Œ 
+            ; ******* Infantry Type List ******* æ­¥å…µåˆ—è¡¨ 
             [InfantryTypes] 
-            1=E1 ²½±ø×¢²á 
-            ; ******* Vehicle Type List ******* »ú¶¯³µÁĞ±í 
+            1=E1 æ­¥å…µæ³¨å†Œ 
+            ; ******* Vehicle Type List ******* æœºåŠ¨è½¦åˆ—è¡¨ 
             [VehicleTypes]  
-            1=AMCV;Allied MCV »ú¶¯³µ×¢²á 
-            ; ******* Aircraft Type List ******* º½¿ÕÆ÷(Ğè»ú³¡)ÁĞ±í 
+            1=AMCV;Allied MCV æœºåŠ¨è½¦æ³¨å†Œ 
+            ; ******* Aircraft Type List ******* èˆªç©ºå™¨(éœ€æœºåœº)åˆ—è¡¨ 
             [AircraftTypes] 
-            1=APACHE º½¿ÕÆ÷(Ğè»ú³¡)×¢²á 
-            ; ******* Building Type List ******* ½¨Öş×¢²á 
+            1=APACHE èˆªç©ºå™¨(éœ€æœºåœº)æ³¨å†Œ 
+            ; ******* Building Type List ******* å»ºç­‘æ³¨å†Œ 
             [BuildingTypes]  
-            1=GAPOWR ½¨Öş×¢²á 
-            ; *** Smudge Object List *** Õ½Õù²ĞÁôÎÛÈ¾(Ğ¡µ¯¿Ó)ÁĞ±í 
+            1=GAPOWR å»ºç­‘æ³¨å†Œ 
+            ; *** Smudge Object List *** æˆ˜äº‰æ®‹ç•™æ±¡æŸ“(å°å¼¹å‘)åˆ—è¡¨ 
             [SmudgeTypes] 
-            1=CR1 Õ½Õù²ĞÁôÎÛÈ¾(Ğ¡µ¯¿Ó)×¢²á 
-            ; *** Overlay Object List *** µØĞÎÍ¼Æ¬ÁĞ±í 
+            1=CR1 æˆ˜äº‰æ®‹ç•™æ±¡æŸ“(å°å¼¹å‘)æ³¨å†Œ 
+            ; *** Overlay Object List *** åœ°å½¢å›¾ç‰‡åˆ—è¡¨ 
             [OverlayTypes] 
-            1=GASAND µØĞÎÍ¼Æ¬×¢²á 
-            ; *** Animation List *** ¶¯»­ÁĞ±í 
+            1=GASAND åœ°å½¢å›¾ç‰‡æ³¨å†Œ 
+            ; *** Animation List *** åŠ¨ç”»åˆ—è¡¨ 
             [Animations] 
-            1=TWLT100 ¶¯»­×¢²á 
-            [VoxelAnims]  VXLÁĞ±í 
-            1=PIECE  VXL×¢²á 
-            ; *** Particle List *** Á£×ÓÎäÆ÷ÁĞ±í 
+            1=TWLT100 åŠ¨ç”»æ³¨å†Œ 
+            [VoxelAnims]  VXLåˆ—è¡¨ 
+            1=PIECE  VXLæ³¨å†Œ 
+            ; *** Particle List *** ç²’å­æ­¦å™¨åˆ—è¡¨ 
             [Particles] 
-            1=GasCloud1 Á£×ÓÎäÆ÷×¢²á 
-            ; *** Particle System List ** Á£×ÓÏµÍ³ÁĞ±í 
+            1=GasCloud1 ç²’å­æ­¦å™¨æ³¨å†Œ 
+            ; *** Particle System List ** ç²’å­ç³»ç»Ÿåˆ—è¡¨ 
             [ParticleSystems] 
-            1=GasCloudSys Á£×ÓÏµÍ³×¢²á 
-            ; *** Super Weapon List ** ³¬ÎäÁĞ±í 
+            1=GasCloudSys ç²’å­ç³»ç»Ÿæ³¨å†Œ 
+            ; *** Super Weapon List ** è¶…æ­¦åˆ—è¡¨ 
             [SuperWeaponTypes] 
-            1=NukeSpecial ³¬Îä×¢²á 
-            ; *** Warhead List ** µ¯Í·ÁĞ±í 
+            1=NukeSpecial è¶…æ­¦æ³¨å†Œ 
+            ; *** Warhead List ** å¼¹å¤´åˆ—è¡¨ 
             [Warheads] 
-            1=EMPuls µ¯Í·×¢²á 
+            1=EMPuls å¼¹å¤´æ³¨å†Œ 
 
               
 
               
 
-            ; ******* Multiplayer Dialog Settings ******* µ¥ÈËÓÎÏ·ÉèÖÃ 
+            ; ******* Multiplayer Dialog Settings ******* å•äººæ¸¸æˆè®¾ç½® 
             [MultiplayerDialogSettings] 
-            MinMoney=5000 ¿ÉÑ¡Ç®Êı×îĞ¡Öµ 
-            Money=10000 ¿ÉÑ¡Ç®ÊıÄ¬ÈÏÖµ 
-            MaxMoney=10000 ¿ÉÑ¡Ç®Êı×î´óÖµ 
-            MoneyIncrement=100 Ç®×îĞ¡µ¥Î»100 
-            MinUnitCount=0 ×îĞ¡¿É´ø±øÊı 
-            UnitCount=10 Ä¬ÈÏ¿É´ø±øÊı 
-            MaxUnitCount=10 ×î´ó¿É´ø±øÊı 
-            TechLevel=10 ¿Æ¼¼µÈ¼¶(µ±ÎïÌåËùĞèµÈ¼¶±ÈËü´óÊ±ÔòÎŞ·¨½¨Ôì) 
-            GameSpeed=1 ÓÎÏ·ËÙ¶È 
-            AIDifficulty=0  AIÄÑ¶ÈÉèÖÃ 0 ¼òµ¥ 2À§ÄÑ 
-            AIPlayers=0  AIÍæ¼ÒÉèÖÃ 
-            BridgeDestruction=yes ÇÅ¿ÉÆÆ»µ·ñ 
-            ShadowGrow=no ÊÇ·ñÒõÓ°ÇøÀ©ÕÅ 
-            Shroud=yes ÊÇ·ñĞèÒª×Ô¼ºÌ½²âµØÍ¼(NOµÄ»°µØÍ¼È«¿ª) 
-            Bases=yes ¿ªÊ¼Ê±ÊÇ·ñÓĞ»ùµØ³µ 
-            TiberiumGrows=yes ¿óÊ¯ÊÇ·ñ×Ô¶¯Ôö³¤ 
-            Crates=yes ±¦ÏäÊÇ·ñ³öÏÖ 
-            CaptureTheFlag=no ÊÇ·ñÎªÇÀÆìÄ£Ê½ 
-            HarvesterTruce=no ¿ó³µÊÇ·ñÎŞµĞ 
-            MultiEngineer=no RA1Ò»Ñù¶à¹¤³ÌÊ¦
-            AlliesAllowed=no ÊÇ·ñ¿ÉÒÔ½áÃË 
-            ShortGame=yes ÊÇ·ñÎª¿ìËÙÓÎÏ· 
-            FogOfWar=no Ì©²®ÀûÑÇÖ®ÈÕÓï¾ä,ÎŞĞ§ 
-            MCVRedeploys=yes ÊÇ·ñ»ùµØ¿ÉÒÔÊÕÆğ 
-            AllyChangeAllowed=yes ÊÇ·ñ¿ÉÒÔÖĞÍ¾½âÃË 
+            MinMoney=5000 å¯é€‰é’±æ•°æœ€å°å€¼ 
+            Money=10000 å¯é€‰é’±æ•°é»˜è®¤å€¼ 
+            MaxMoney=10000 å¯é€‰é’±æ•°æœ€å¤§å€¼ 
+            MoneyIncrement=100 é’±æœ€å°å•ä½100 
+            MinUnitCount=0 æœ€å°å¯å¸¦å…µæ•° 
+            UnitCount=10 é»˜è®¤å¯å¸¦å…µæ•° 
+            MaxUnitCount=10 æœ€å¤§å¯å¸¦å…µæ•° 
+            TechLevel=10 ç§‘æŠ€ç­‰çº§(å½“ç‰©ä½“æ‰€éœ€ç­‰çº§æ¯”å®ƒå¤§æ—¶åˆ™æ— æ³•å»ºé€ ) 
+            GameSpeed=1 æ¸¸æˆé€Ÿåº¦ 
+            AIDifficulty=0  AIéš¾åº¦è®¾ç½® 0 ç®€å• 2å›°éš¾ 
+            AIPlayers=0  AIç©å®¶è®¾ç½® 
+            BridgeDestruction=yes æ¡¥å¯ç ´åå¦ 
+            ShadowGrow=no æ˜¯å¦é˜´å½±åŒºæ‰©å¼  
+            Shroud=yes æ˜¯å¦éœ€è¦è‡ªå·±æ¢æµ‹åœ°å›¾(NOçš„è¯åœ°å›¾å…¨å¼€) 
+            Bases=yes å¼€å§‹æ—¶æ˜¯å¦æœ‰åŸºåœ°è½¦ 
+            TiberiumGrows=yes çŸ¿çŸ³æ˜¯å¦è‡ªåŠ¨å¢é•¿ 
+            Crates=yes å®ç®±æ˜¯å¦å‡ºç° 
+            CaptureTheFlag=no æ˜¯å¦ä¸ºæŠ¢æ——æ¨¡å¼ 
+            HarvesterTruce=no çŸ¿è½¦æ˜¯å¦æ— æ•Œ 
+            MultiEngineer=no RA1ä¸€æ ·å¤šå·¥ç¨‹å¸ˆ
+            AlliesAllowed=no æ˜¯å¦å¯ä»¥ç»“ç›Ÿ 
+            ShortGame=yes æ˜¯å¦ä¸ºå¿«é€Ÿæ¸¸æˆ 
+            FogOfWar=no æ³°ä¼¯åˆ©äºšä¹‹æ—¥è¯­å¥,æ— æ•ˆ 
+            MCVRedeploys=yes æ˜¯å¦åŸºåœ°å¯ä»¥æ”¶èµ· 
+            AllyChangeAllowed=yes æ˜¯å¦å¯ä»¥ä¸­é€”è§£ç›Ÿ 
 
             ; ******* Object Heap Maximums ******* 
 
             ; These are the absolute maximum number of these object types 
             ; allowed in the game (at any one time). 
             [Maximums] 
-            Players=8 ×î´ó8ÈËÓÎÏ· 
+            Players=8 æœ€å¤§8äººæ¸¸æˆ 
 
-            ; ******* AI Controls *******  AI¿ØÖÆ 
+            ; ******* AI Controls *******  AIæ§åˆ¶ 
 
-            [AI] ½¨Öş×¢²áÊÇĞÂÕóÓª±ØĞëµÄ
-            BuildConst=GACNST,NACNST,YACNST »ùµØ×¢²á 
-            BuildPower=NAPOWR,GAPOWR,YAPOWR µç³¡×¢²á 
+            [AI] å»ºç­‘æ³¨å†Œæ˜¯æ–°é˜µè¥å¿…é¡»çš„
+            BuildConst=GACNST,NACNST,YACNST åŸºåœ°æ³¨å†Œ 
+            BuildPower=NAPOWR,GAPOWR,YAPOWR ç”µåœºæ³¨å†Œ 
 
-            BuildRefinery=NAREFN,GAREFN,YAREFN ¿óÉ½×¢²á 
-            BuildBarracks=NAHAND,GAPILE,YABRCK ±øÓª×¢²á 
-            BuildTech=NATECH,GATECH,YATECH ¸ß¿Æ×¢²á 
-            BuildWeapons=GAWEAP,NAWEAP,YAWEAP Õ½³µ¹¤³§×¢²á 
-            BuildRadar=GAAIRC,NARADR,AMRADR,NAPSIS À×´ï×¢²á 
-            ConcreteWalls=GAWALL,NAWALL,GAFWLL Ç½×¢²á 
-            NSGates=GADUMY ÄÏ±±ÏòÃÅ×¢²á
-            EWGates=GADUMY ¶«Î÷ÏòÃÅ×¢²á
-            BuildNavalYard=NAYARD,GAYARD,YAYARD ´¬³§×¢²á 
-            BuildDummy=GAPILL,NALASR,YAGGUN »ù±¾·ÀÓù×¢²á 
+            BuildRefinery=NAREFN,GAREFN,YAREFN çŸ¿å±±æ³¨å†Œ 
+            BuildBarracks=NAHAND,GAPILE,YABRCK å…µè¥æ³¨å†Œ 
+            BuildTech=NATECH,GATECH,YATECH é«˜ç§‘æ³¨å†Œ 
+            BuildWeapons=GAWEAP,NAWEAP,YAWEAP æˆ˜è½¦å·¥å‚æ³¨å†Œ 
+            BuildRadar=GAAIRC,NARADR,AMRADR,NAPSIS é›·è¾¾æ³¨å†Œ 
+            ConcreteWalls=GAWALL,NAWALL,GAFWLL å¢™æ³¨å†Œ 
+            NSGates=GADUMY å—åŒ—å‘é—¨æ³¨å†Œ
+            EWGates=GADUMY ä¸œè¥¿å‘é—¨æ³¨å†Œ
+            BuildNavalYard=NAYARD,GAYARD,YAYARD èˆ¹å‚æ³¨å†Œ 
+            BuildDummy=GAPILL,NALASR,YAGGUN åŸºæœ¬é˜²å¾¡æ³¨å†Œ 
             NeutralTechBuildings=CAAIRP,CATHOSP,CAOILD,CAOUTP,CAMACH,CAPOWR 
-            ÖĞÁ¢¿Æ¼¼½¨Öş×¢²á 
-            AlliedBaseDefenses=GAPILL,ATESLA,NASAM ÃË¾ü·ÀÓù½¨Öş×¢²á 
-            SovietBaseDefenses=NALASR,NABNKR,TESLA,NAFLAK ËÕ¾ü·ÀÓù½¨Öş×¢²á 
-            ThirdBaseDefenses=YAGGUN,YAPSYT,NATBNK ÓÈÀï·ÀÓù½¨Öş×¢²á 
-            AIForcePredictionFudge=5,25,80 ´Ó¼òµ¥µ½À§ÄÑ µçÄÔ·ÀÓùÊı¶ÔÓÚÈËÄÔ¹¥»÷ÊıµÄ±ÈÖµ(¾ßÌåÊı¼û¼ÛÖµÇø) 
-            GDIWallDefense=6 Ç½×î³¤¿ÉÒÔÑÓÉìµ½6³¤(Ò»¸öÇ½¾ÍÒ»¸öµã,ÁíÒ»¸öÇ½¿ÉÒÔÔÚ6¸ñÍâ,ÖĞ¼ä×Ô¶¯Á¬½Ó) 
-            GDIWallDefenseCoefficient=3 Ì©²®ÀûÑÇÖ®ÈÕÓï¾ä,ÎŞĞ§ 
-            NodBaseDefenseCoefficient=1.2 Ì©²®ÀûÑÇÖ®ÈÕÓï¾ä,ÎŞĞ§ 
-            GDIBaseDefenseCoefficient=1.5 Ì©²®ÀûÑÇÖ®ÈÕÓï¾ä,ÎŞĞ§ 
-            MaximumBaseDefensevalue=60 ×î´ó·ÀÓùÖµ60 
-            ComputerBaseDefenseResponse=3 µçÄÔ·ÀÓù·´Ó¦ËÙ¶È 
+            ä¸­ç«‹ç§‘æŠ€å»ºç­‘æ³¨å†Œ 
+            AlliedBaseDefenses=GAPILL,ATESLA,NASAM ç›Ÿå†›é˜²å¾¡å»ºç­‘æ³¨å†Œ 
+            SovietBaseDefenses=NALASR,NABNKR,TESLA,NAFLAK è‹å†›é˜²å¾¡å»ºç­‘æ³¨å†Œ 
+            ThirdBaseDefenses=YAGGUN,YAPSYT,NATBNK å°¤é‡Œé˜²å¾¡å»ºç­‘æ³¨å†Œ 
+            AIForcePredictionFudge=5,25,80 ä»ç®€å•åˆ°å›°éš¾ ç”µè„‘é˜²å¾¡æ•°å¯¹äºäººè„‘æ”»å‡»æ•°çš„æ¯”å€¼(å…·ä½“æ•°è§ä»·å€¼åŒº) 
+            GDIWallDefense=6 å¢™æœ€é•¿å¯ä»¥å»¶ä¼¸åˆ°6é•¿(ä¸€ä¸ªå¢™å°±ä¸€ä¸ªç‚¹,å¦ä¸€ä¸ªå¢™å¯ä»¥åœ¨6æ ¼å¤–,ä¸­é—´è‡ªåŠ¨è¿æ¥) 
+            GDIWallDefenseCoefficient=3 æ³°ä¼¯åˆ©äºšä¹‹æ—¥è¯­å¥,æ— æ•ˆ 
+            NodBaseDefenseCoefficient=1.2 æ³°ä¼¯åˆ©äºšä¹‹æ—¥è¯­å¥,æ— æ•ˆ 
+            GDIBaseDefenseCoefficient=1.5 æ³°ä¼¯åˆ©äºšä¹‹æ—¥è¯­å¥,æ— æ•ˆ 
+            MaximumBaseDefensevalue=60 æœ€å¤§é˜²å¾¡å€¼60 
+            ComputerBaseDefenseResponse=3 ç”µè„‘é˜²å¾¡ååº”é€Ÿåº¦ 
 
-            AttackInterval=0.5 Æ½¾ùµçÄÔ½ø¹¥¼ä¸ô(·ÖÖÓ) 
-            AttackDelay=0.5 µÚÒ»²¨½ø¹¥ÔÚ¿ª¾Ö0.5·ÖÖÓÊ± 
-            PatrolScan=.016 µçÄÔÑ²²éÊ±É¨Ãè¼ä¸ô0.016·ÖÖÓ 
-            CreditReserve=100 µçÄÔÏÖ½ğµÍÓÚ100Ê±½« ²»»áĞŞÀí 
-            PathDelay=.01 µÀÂ·±»¶ÂÈûÊ±µçÄÔÃ¿0.01·ÖÖÓÊÔÒ»´Î 
-            BlockagePathDelay=60 60èåºó»¹Ã»Í¨ÔòÈÆµÀ 
-            AutocreateTime=1 Æ½¾ù1·ÖÖÓÖÆÔìÒ»¸öµ¥Î» 
-            InfantryReserve=50000 Ç®¶àÓÚ50000Ê¼ÖÕÖÆÔì²½±ø 
-            InfantryBaseMult=1 ¼ÙÈçÖÆÔì½¨Öş×ÜÊıÁ¿³ËÒÔ1±È²½±øÁ¿¶àÔòÖÆÔì²½±ø 
-            PowerSurplus=50 µçÁ¦¸»ÓàµÍÓÚ50ÔòÖÆÔìµç³¡ 
-            BaseSizeAdd=3 ÖÆÔìµÄ»ù´¡·ÀÓùÊıÁ¿²»ÄÜ±È×î¶àµÄÈËÀà¶ÔÊÖ¶à3 
-            RefineryRatio=.16 ¿óÉ½ÖÆÔì¼¸ÂÊ 
-            RefineryLimit=4 ×î¶àÖÆÔì¶àÉÙ¸ö¿óÉ½ 
-            BarracksRatio=.16 ±øÓªÖÆÔì¼¸ÂÊ 
-            BarracksLimit=2 ×î¶àÖÆÔì¶àÉÙ¸ö±øÓª 
-            WarRatio=.1 Õ½³µ¹¤³§ÖÆÔì¼¸ÂÊ 
-            WarLimit=2 ×î¶àÖÆÔì¶àÉÙ¸öÕ½³µ¹¤³§ 
-            DefenseRatio=.4 ·ÀÓùÖÆÔì¼¸ÂÊ 
-            DefenseLimit=40 ×î¶àÖÆÔì¶àÉÙ¸ö·ÀÓù 
-            AARatio=.14 ¶Ô¿Õ·ÀÓùÖÆÔì¼¸ÂÊ 
-            AALimit=10 ×î¶àÖÆÔì¶àÉÙ¸ö¶Ô¿Õ·ÀÓù 
-            TeslaRatio=.16 ¶ÔµØ·ÀÓùÖÆÔì¼¸ÂÊ 
-            TeslaLimit=10 ×î¶àÖÆÔì¶àÉÙ¸ö¶ÔµØ·ÀÓù 
-            HelipadRatio=.1 »ú³¡ÖÆÔì¼¸ÂÊ 
-            HelipadLimit=2 ×î¶àÖÆÔì¶àÉÙ¸ö»ú³¡ 
+            AttackInterval=0.5 å¹³å‡ç”µè„‘è¿›æ”»é—´éš”(åˆ†é’Ÿ) 
+            AttackDelay=0.5 ç¬¬ä¸€æ³¢è¿›æ”»åœ¨å¼€å±€0.5åˆ†é’Ÿæ—¶ 
+            PatrolScan=.016 ç”µè„‘å·¡æŸ¥æ—¶æ‰«æé—´éš”0.016åˆ†é’Ÿ 
+            CreditReserve=100 ç”µè„‘ç°é‡‘ä½äº100æ—¶å°† ä¸ä¼šä¿®ç† 
+            PathDelay=.01 é“è·¯è¢«å µå¡æ—¶ç”µè„‘æ¯0.01åˆ†é’Ÿè¯•ä¸€æ¬¡ 
+            BlockagePathDelay=60 60æ¡¢åè¿˜æ²¡é€šåˆ™ç»•é“ 
+            AutocreateTime=1 å¹³å‡1åˆ†é’Ÿåˆ¶é€ ä¸€ä¸ªå•ä½ 
+            InfantryReserve=50000 é’±å¤šäº50000å§‹ç»ˆåˆ¶é€ æ­¥å…µ 
+            InfantryBaseMult=1 å‡å¦‚åˆ¶é€ å»ºç­‘æ€»æ•°é‡ä¹˜ä»¥1æ¯”æ­¥å…µé‡å¤šåˆ™åˆ¶é€ æ­¥å…µ 
+            PowerSurplus=50 ç”µåŠ›å¯Œä½™ä½äº50åˆ™åˆ¶é€ ç”µåœº 
+            BaseSizeAdd=3 åˆ¶é€ çš„åŸºç¡€é˜²å¾¡æ•°é‡ä¸èƒ½æ¯”æœ€å¤šçš„äººç±»å¯¹æ‰‹å¤š3 
+            RefineryRatio=.16 çŸ¿å±±åˆ¶é€ å‡ ç‡ 
+            RefineryLimit=4 æœ€å¤šåˆ¶é€ å¤šå°‘ä¸ªçŸ¿å±± 
+            BarracksRatio=.16 å…µè¥åˆ¶é€ å‡ ç‡ 
+            BarracksLimit=2 æœ€å¤šåˆ¶é€ å¤šå°‘ä¸ªå…µè¥ 
+            WarRatio=.1 æˆ˜è½¦å·¥å‚åˆ¶é€ å‡ ç‡ 
+            WarLimit=2 æœ€å¤šåˆ¶é€ å¤šå°‘ä¸ªæˆ˜è½¦å·¥å‚ 
+            DefenseRatio=.4 é˜²å¾¡åˆ¶é€ å‡ ç‡ 
+            DefenseLimit=40 æœ€å¤šåˆ¶é€ å¤šå°‘ä¸ªé˜²å¾¡ 
+            AARatio=.14 å¯¹ç©ºé˜²å¾¡åˆ¶é€ å‡ ç‡ 
+            AALimit=10 æœ€å¤šåˆ¶é€ å¤šå°‘ä¸ªå¯¹ç©ºé˜²å¾¡ 
+            TeslaRatio=.16 å¯¹åœ°é˜²å¾¡åˆ¶é€ å‡ ç‡ 
+            TeslaLimit=10 æœ€å¤šåˆ¶é€ å¤šå°‘ä¸ªå¯¹åœ°é˜²å¾¡ 
+            HelipadRatio=.1 æœºåœºåˆ¶é€ å‡ ç‡ 
+            HelipadLimit=2 æœ€å¤šåˆ¶é€ å¤šå°‘ä¸ªæœºåœº 
             AirstripRatio=.12  ratio of base that should be composed of 
             airstrips 
             AirstripLimit=0  maximum number of airstrips to build 
-            CompEasyBonus=no µ±³¬¹ıÒ»¸öÈËÀàÍæ¼ÒÔÚ´ËÓÎÏ·ÖĞÔòµçÄÔ±äÎª¼òµ¥Ä£Ê½ 
-            Paranoid=yes µçÄÔÊÇ·ñÔÚĞÎÊÆ²»ºÃÊ±½áÃË 
-            PowerEmergency=75% ¼ÙÈçµçÁ¦¹©Ó¦µÍÓÚĞèÇóµÄ75%Ôò³öÊÛ½¨ÖşÒÔ±£³ÖµçÁ¦ 
-            AIBaseSpacing=1 µçÄÔ½¨Öş¼ä¸ô´óÓÚ1 
+            CompEasyBonus=no å½“è¶…è¿‡ä¸€ä¸ªäººç±»ç©å®¶åœ¨æ­¤æ¸¸æˆä¸­åˆ™ç”µè„‘å˜ä¸ºç®€å•æ¨¡å¼ 
+            Paranoid=yes ç”µè„‘æ˜¯å¦åœ¨å½¢åŠ¿ä¸å¥½æ—¶ç»“ç›Ÿ 
+            PowerEmergency=75% å‡å¦‚ç”µåŠ›ä¾›åº”ä½äºéœ€æ±‚çš„75%åˆ™å‡ºå”®å»ºç­‘ä»¥ä¿æŒç”µåŠ› 
+            AIBaseSpacing=1 ç”µè„‘å»ºç­‘é—´éš”å¤§äº1 
 
               
 
@@ -1005,74 +1005,74 @@ HarvestersPerRefinery=2,2,1;Ã¿¸ö¿ó³§Åä±¸¼¸¸ö¿ó³µ
             computer IQ is set to 
             ; the maximum. 
             [IQ] 
-            MaxIQLevels=5 ×î´óIQµÈ¼¶5 
-            SuperWeapons=4 ÄÜÉú²ú³¬ÎäµÄIQµÈ¼¶4 
-            Production=5 ×Ô¶¯Éú²ú²úÆ·IQµÈ¼¶5 
-            GuardArea=2 ·¶Î§·ÀÓùIQµÈ¼¶2 
-            RepairSell=1 0Îª×Ô¶¯Î¬ĞŞ£¬°üÀ¨Íæ¼Ò
-            AutoCrush=2 ×Ô¶¯ÄëÑ¹IQµÈ¼¶2£¬¸Ä³É0¾ÍÊÇÈ«×Ô¶¯ 
-            Scatter=2 ×Ô¶¯¿¹ÄëÑ¹IQµÈ¼¶2 0ÊÇÈ«×Ô¶¯
-            ContentScan=3 Ñ¡ÔñµĞÈËIQµÈ¼¶3 
-            Aircraft=3 ×Ô¶¯»Øµ½»ú³¡ IQµÈ¼¶3 
-            Harvester=2 ¿ó³µIQµÈ¼¶2 
-            SellBack=2 ³öÊÛ½¨ÖşIQµÈ¼¶2 
+            MaxIQLevels=5 æœ€å¤§IQç­‰çº§5 
+            SuperWeapons=4 èƒ½ç”Ÿäº§è¶…æ­¦çš„IQç­‰çº§4 
+            Production=5 è‡ªåŠ¨ç”Ÿäº§äº§å“IQç­‰çº§5 
+            GuardArea=2 èŒƒå›´é˜²å¾¡IQç­‰çº§2 
+            RepairSell=1 0ä¸ºè‡ªåŠ¨ç»´ä¿®ï¼ŒåŒ…æ‹¬ç©å®¶
+            AutoCrush=2 è‡ªåŠ¨ç¢¾å‹IQç­‰çº§2ï¼Œæ”¹æˆ0å°±æ˜¯å…¨è‡ªåŠ¨ 
+            Scatter=2 è‡ªåŠ¨æŠ—ç¢¾å‹IQç­‰çº§2 0æ˜¯å…¨è‡ªåŠ¨
+            ContentScan=3 é€‰æ‹©æ•ŒäººIQç­‰çº§3 
+            Aircraft=3 è‡ªåŠ¨å›åˆ°æœºåœº IQç­‰çº§3 
+            Harvester=2 çŸ¿è½¦IQç­‰çº§2 
+            SellBack=2 å‡ºå”®å»ºç­‘IQç­‰çº§2 
 
 
             ; ******* Country Statistics ******* 
 
-            ;IncomeMult=3 ¿ó³µ²ÉÇ®Êı°Ù·Ö±È,Èç¹ûÉèÎª3ÔòÃ¿³µ¿óµÄÇ®ÊıÊÇÕı³£µÄÈı±¶  
-            Defenses£º·ÀÓù£¬¹ú·À  
+            ;IncomeMult=3 çŸ¿è½¦é‡‡é’±æ•°ç™¾åˆ†æ¯”,å¦‚æœè®¾ä¸º3åˆ™æ¯è½¦çŸ¿çš„é’±æ•°æ˜¯æ­£å¸¸çš„ä¸‰å€  
+            Defensesï¼šé˜²å¾¡ï¼Œå›½é˜²  
             ; Multiplay = This house used as placeholder for multiplay house 
             (def=no)?  
-            ¸Ã¼Ò×å£¨ÊÆÁ¦£©ÊÇ·ñÔâÓöÕ½¿ÉÓÃ  
+            è¯¥å®¶æ—ï¼ˆåŠ¿åŠ›ï¼‰æ˜¯å¦é­é‡æˆ˜å¯ç”¨  
             ; WallOwner = Will this house own walls that are placed near its 
             buildings (def=yes)?  
-            ¸Ã¼Ò×å£¨ÊÆÁ¦£©ÓĞÎŞ·À»¤Ç½  
-            UIName=Name:British ÓïÑÔ±à¼­CSFÎÄ¼şµÄ¶ÔÓ¦Ïî,´Ó¶ø¿ÉÒÔÔÚÓÎÏ·ÖĞÏÔÊ¾ºº×ÖÃû³Æ  
-            Name=Great Britain ËµÃ÷ÎÄ×Ö,Ëæ±ãÌí,Ã»Ê²Ã´ÒâÒå,ÎªµÄÊÇÍæ¼ÒºÃ±æÈÏ  
-            Suffix=Allied ºó×º=ÁªÃË,¼´ËùÊôÕóÓª  
-            Prefix=G Ç°×º=G,ËùÊôÕóÓª¼ò³Æ  
-            ; Color = ¹ú¼ÒÏÔÊ¾µÄÑÕÉ«(×÷ÓÃµÄµØ·½Î´Ã÷È·)(²Î¼ûÑÕÉ«°²ÅÅ) 
-            Multiplay=yes ÊÇ·ñÄÜÔÚÔâÓöÕ½ÖĞÑ¡Ôñ 
-            Side=GDI ±ß=GDI  
-            ; SmartAI = ÊÇ·ñ¸Ã¹ú¼ÒÓµÓĞ×î´ÏÃ÷µÄAI,Ä¬ÈÏ=no  
-            ;VeteranInfantry=GHOST,SNIPE ³õÊ¼µÄ²½±ø(²½±øÁĞ±íÄÚµÄ)ÎªÒ»¼¶,¿É¶àÉè  
-            ;VeteranAircraft=ORCA ³õÊ¼µÄ·ÉĞĞÆ÷(·ÉĞĞÆ÷ÁĞ±íÄÚµÄ)ÎªÒ»¼¶,¿É¶àÉè  
-            ;VeteranUnits=FV,CARRIER,SHAD ³õÊ¼µÄ³µ´¬(»ú¶¯³µÁĞ±íÄÚµÄ)ÎªÒ»¼¶,¿É¶àÉè  
-            ;BuildTimeInfantryMult=.5 ½¨Ôì²½±øÊ±¼äÎªÔ­À´Ê±¼äµÄ0.5±¶ 
-            ;BuildTimeAircraftMult=.5 ½¨Ôì¿Õ¾ü 
-            ;BuildTimeUnitsMult=.5 ½¨ÔìÂ½¾ü 
-            ;BuildTimeBuildingsMult=.5 ½¨Ôì½¨Öş 
-            ;SpeedInfantryMult=1.5 ²½±øËÙ¶ÈÎªÔ­À´µÄ1.5±¶ 
-            ;SpeedAircraftMult=1.5 ¿Õ¾ü 
-            ;SpeedUnitsMult=1.5 Â½¾ü 
-            ;SpeedBuildingsMult=1.5 ½¨Öş?! 
-            ;CostInfantryMult=.5 ²½±ø»¨·ÑÎªÔ­0.5±¶ 
-            ;CostAircraftMult=.5 ¿Õ¾ü 
-            ;CostUnitsMult=.5 Â½¾ü 
-            ;CostBuildingsMult=.5 ½¨Öş 
-            ;ArmorInfantryMult=2.0 ²½±øÑªÎªÔ­2±¶ 
+            è¯¥å®¶æ—ï¼ˆåŠ¿åŠ›ï¼‰æœ‰æ— é˜²æŠ¤å¢™  
+            UIName=Name:British è¯­è¨€ç¼–è¾‘CSFæ–‡ä»¶çš„å¯¹åº”é¡¹,ä»è€Œå¯ä»¥åœ¨æ¸¸æˆä¸­æ˜¾ç¤ºæ±‰å­—åç§°  
+            Name=Great Britain è¯´æ˜æ–‡å­—,éšä¾¿æ·»,æ²¡ä»€ä¹ˆæ„ä¹‰,ä¸ºçš„æ˜¯ç©å®¶å¥½è¾¨è®¤  
+            Suffix=Allied åç¼€=è”ç›Ÿ,å³æ‰€å±é˜µè¥  
+            Prefix=G å‰ç¼€=G,æ‰€å±é˜µè¥ç®€ç§°  
+            ; Color = å›½å®¶æ˜¾ç¤ºçš„é¢œè‰²(ä½œç”¨çš„åœ°æ–¹æœªæ˜ç¡®)(å‚è§é¢œè‰²å®‰æ’) 
+            Multiplay=yes æ˜¯å¦èƒ½åœ¨é­é‡æˆ˜ä¸­é€‰æ‹© 
+            Side=GDI è¾¹=GDI  
+            ; SmartAI = æ˜¯å¦è¯¥å›½å®¶æ‹¥æœ‰æœ€èªæ˜çš„AI,é»˜è®¤=no  
+            ;VeteranInfantry=GHOST,SNIPE åˆå§‹çš„æ­¥å…µ(æ­¥å…µåˆ—è¡¨å†…çš„)ä¸ºä¸€çº§,å¯å¤šè®¾  
+            ;VeteranAircraft=ORCA åˆå§‹çš„é£è¡Œå™¨(é£è¡Œå™¨åˆ—è¡¨å†…çš„)ä¸ºä¸€çº§,å¯å¤šè®¾  
+            ;VeteranUnits=FV,CARRIER,SHAD åˆå§‹çš„è½¦èˆ¹(æœºåŠ¨è½¦åˆ—è¡¨å†…çš„)ä¸ºä¸€çº§,å¯å¤šè®¾  
+            ;BuildTimeInfantryMult=.5 å»ºé€ æ­¥å…µæ—¶é—´ä¸ºåŸæ¥æ—¶é—´çš„0.5å€ 
+            ;BuildTimeAircraftMult=.5 å»ºé€ ç©ºå†› 
+            ;BuildTimeUnitsMult=.5 å»ºé€ é™†å†› 
+            ;BuildTimeBuildingsMult=.5 å»ºé€ å»ºç­‘ 
+            ;SpeedInfantryMult=1.5 æ­¥å…µé€Ÿåº¦ä¸ºåŸæ¥çš„1.5å€ 
+            ;SpeedAircraftMult=1.5 ç©ºå†› 
+            ;SpeedUnitsMult=1.5 é™†å†› 
+            ;SpeedBuildingsMult=1.5 å»ºç­‘?! 
+            ;CostInfantryMult=.5 æ­¥å…µèŠ±è´¹ä¸ºåŸ0.5å€ 
+            ;CostAircraftMult=.5 ç©ºå†› 
+            ;CostUnitsMult=.5 é™†å†› 
+            ;CostBuildingsMult=.5 å»ºç­‘ 
+            ;ArmorInfantryMult=2.0 æ­¥å…µè¡€ä¸ºåŸ2å€ 
             ;ArmorAircraftMult=2.0  
             ;ArmorUnitsMult=2.0  
             ;ArmorBuildingsMult=2.0  
 
-            ; ÌØ¶¨µÄ¹ú¼Ò¿ÉÒÔ¶Ô¸Ã¹ú¼ÒµÄµ¥Î»ºÍ½¨ÖşÎïµÄ¼ÛÖµºÍÄÜÁ¦×öÌØÊâµÄµ÷Õû  
+            ; ç‰¹å®šçš„å›½å®¶å¯ä»¥å¯¹è¯¥å›½å®¶çš„å•ä½å’Œå»ºç­‘ç‰©çš„ä»·å€¼å’Œèƒ½åŠ›åšç‰¹æ®Šçš„è°ƒæ•´  
 
-            ; ÕâÖÖµ÷Õû½«Ó°Ïì¸Ã¹ú¼ÒµÄËùÓĞµ¥Î»ºÍ½¨ÖşÎïµÄ¼ÛÖµºÍÄÜÁ¦  
-            ; ÕâÖ»ÊÊÓÃÓÚÔâÓöÕ½ºÍµ¥ÈËÈÎÎñÄ£Ê½,ÔÚ³£Ì¬ÓÎÏ·ÖĞ(ÊÇ·ñÖ¸ÍøÂç¶àÈËÀàÍæ¼Ò×÷Õ½)ËùÓĞ¼ÛÖµÊÇ"1.0"  
+            ; è¿™ç§è°ƒæ•´å°†å½±å“è¯¥å›½å®¶çš„æ‰€æœ‰å•ä½å’Œå»ºç­‘ç‰©çš„ä»·å€¼å’Œèƒ½åŠ›  
+            ; è¿™åªé€‚ç”¨äºé­é‡æˆ˜å’Œå•äººä»»åŠ¡æ¨¡å¼,åœ¨å¸¸æ€æ¸¸æˆä¸­(æ˜¯å¦æŒ‡ç½‘ç»œå¤šäººç±»ç©å®¶ä½œæˆ˜)æ‰€æœ‰ä»·å€¼æ˜¯"1.0"  
 
-            ; Airspeed = ËùÓĞ¿ÕÖĞµ¥Î»µÄËÙ¶È,ÌîµÄÊıÖµÔ½´óËÙ¶ÈÔ½¿ì,Ä¬ÈÏ=1.0  
-            ; Armor = ËùÓĞµ¥Î»ºÍ½¨ÖşµÄÉúÃüÁ¦,ÌîµÄÊıÖµÔ½´óÉúÃüÁ¦Ô½¸ß,Ä¬ÈÏ=1.0  
-            ; Cost = »¨·ÑµÄ½ğÇ®,ÌîµÄÊıÖµÔ½´óÔòÔ½·ÑÇ®,Ä¬ÈÏ=1.0  
-            ; Firepower = ËùÓĞÎäÆ÷»ğÁ¦µÄµ÷Õû,ÌîµÄÊıÖµÔ½´óÔòËğº¦Ô½¸ß,Ä¬ÈÏ=1.0  
-            ; Groundspeed = ËùÓĞµØÃæ²¿¶ÓµÄËÙ¶È,ÌîµÄÊıÔ½´óËÙ¶ÈÔ½¿ì,Ä¬ÈÏ=1.0  
-            ; ROF = ¶ÔËùÓĞÎäÆ÷»ğÁ¦ËÙ¶ÈµÄµ÷Õû,ÌîµÄÊıÔ½´óÔòÉäËÙÔ½Âı,Ä¬ÈÏdef=1.0  
-            ; BuildTime = ËùÓĞ½¨ÖşÎïµÄ½¨ÔìÊ±¼äµ÷Õû,ÌîµÄÊıÔ½´óÔò½¨ÔìµÄÊ±¼äÔ½³¤,Ä¬ÈÏ=1.0  
+            ; Airspeed = æ‰€æœ‰ç©ºä¸­å•ä½çš„é€Ÿåº¦,å¡«çš„æ•°å€¼è¶Šå¤§é€Ÿåº¦è¶Šå¿«,é»˜è®¤=1.0  
+            ; Armor = æ‰€æœ‰å•ä½å’Œå»ºç­‘çš„ç”Ÿå‘½åŠ›,å¡«çš„æ•°å€¼è¶Šå¤§ç”Ÿå‘½åŠ›è¶Šé«˜,é»˜è®¤=1.0  
+            ; Cost = èŠ±è´¹çš„é‡‘é’±,å¡«çš„æ•°å€¼è¶Šå¤§åˆ™è¶Šè´¹é’±,é»˜è®¤=1.0  
+            ; Firepower = æ‰€æœ‰æ­¦å™¨ç«åŠ›çš„è°ƒæ•´,å¡«çš„æ•°å€¼è¶Šå¤§åˆ™æŸå®³è¶Šé«˜,é»˜è®¤=1.0  
+            ; Groundspeed = æ‰€æœ‰åœ°é¢éƒ¨é˜Ÿçš„é€Ÿåº¦,å¡«çš„æ•°è¶Šå¤§é€Ÿåº¦è¶Šå¿«,é»˜è®¤=1.0  
+            ; ROF = å¯¹æ‰€æœ‰æ­¦å™¨ç«åŠ›é€Ÿåº¦çš„è°ƒæ•´,å¡«çš„æ•°è¶Šå¤§åˆ™å°„é€Ÿè¶Šæ…¢,é»˜è®¤def=1.0  
+            ; BuildTime = æ‰€æœ‰å»ºç­‘ç‰©çš„å»ºé€ æ—¶é—´è°ƒæ•´,å¡«çš„æ•°è¶Šå¤§åˆ™å»ºé€ çš„æ—¶é—´è¶Šé•¿,é»˜è®¤=1.0  
 
               
 
             ; ******* Color Schemes ******* 
-ÑÕÉ«ÌõÄ¿£¬¸ñÊ½ÊÇHSV£¬Ãû×ÖËæÒâÃüÃû£¬¿ÉÒÔÓÃÓÚËùÓĞÉæ¼°colourµÄÌõÄ¿
+é¢œè‰²æ¡ç›®ï¼Œæ ¼å¼æ˜¯HSVï¼Œåå­—éšæ„å‘½åï¼Œå¯ä»¥ç”¨äºæ‰€æœ‰æ¶‰åŠcolourçš„æ¡ç›®
             [Colors] 
             LightGold=25,255,255  0  Orange 
             Gold=43,239,255 41,240,230; 1  MP  Bright Yellow;Yellow 
@@ -1099,39 +1099,39 @@ HarvestersPerRefinery=2,2,1;Ã¿¸ö¿ó³§Åä±¸¼¸¸ö¿ó³µ
 
             ; ******* Difficulty Settings ******* 
             [Easy] 
-            Groundspeed=1.0 Â½¾üËÙ¶È1±¶ 
-            Airspeed=1.0 ¿Õ¾üËÙ¶È1±¶ 
-            BuildTime=.8 ½¨ÔìÊ±¼ä0.8±¶ÓÚÔ­À´ 
-            Armor=1.2 Ñª1.2±¶ÓÚÔ­À´ 
-            ROF=.8 ¹¥»÷¼ä¸ôÎªÔ­0.8±¶ 
-            Cost=1.0 »¨·Ñ1±¶ 
-            RepairDelay=.02 ĞŞÀíÖÍºó0.02·ÖÖÓ 
-            BuildDelay=.03 ½¨ÖşÖÍºó0.03·ÖÖÓ 
-            DestroyWalls=no µçÄÔÊÇ·ñ×Ô¶¯ÆÆ»µÖÜÎ§µĞ¾üµÄÇ½ 
+            Groundspeed=1.0 é™†å†›é€Ÿåº¦1å€ 
+            Airspeed=1.0 ç©ºå†›é€Ÿåº¦1å€ 
+            BuildTime=.8 å»ºé€ æ—¶é—´0.8å€äºåŸæ¥ 
+            Armor=1.2 è¡€1.2å€äºåŸæ¥ 
+            ROF=.8 æ”»å‡»é—´éš”ä¸ºåŸ0.8å€ 
+            Cost=1.0 èŠ±è´¹1å€ 
+            RepairDelay=.02 ä¿®ç†æ»å0.02åˆ†é’Ÿ 
+            BuildDelay=.03 å»ºç­‘æ»å0.03åˆ†é’Ÿ 
+            DestroyWalls=no ç”µè„‘æ˜¯å¦è‡ªåŠ¨ç ´åå‘¨å›´æ•Œå†›çš„å¢™ 
             ContentScan=yes  
 
-            ²¹³ä£º 
+            è¡¥å……ï¼š 
 
-            ChronoDelay=60 ´«ËÍ´ïµ½ºó½©Ö±60Ö¡Ê±¼ä²Å»Ö¸´Õı³££¬ÕâÊÇÊ±¿Õ´«ËÍ³¬ÎäµÄÏà¹Ø¶¨Òå 
-            ChronoReinfDelay=180 ´«ËÍµ½´ïºó½©Ö±180Ö¡£¬ÕâÊÇÈÎÎñ´¥·¢µÚ107Ìõ£º³¬Ê±¿Õ´«ËÍÔ®¾üµÄÏà¹Ø¶¨Òå 
-            ChronoDistanceFactor=48 ³¬Ê±¿ÕĞĞ¶¯·½Ê½Àë´«ËÍÄ¿±êµãµÄ¾àÀë¶Ô½©Ö±Ê±¼äµÄÓ°Ïì(»Ö¸´Ê±¼ä:èå/¸ñ) 
-            ChronoTrigger=yes ÊÇ·ñÈÃ½©Ö±Ê±¼äºÍ¾àÀëÏà¹Ø£¬ÊÇµÄ»°£¬¾àÀëÔ½³¤½©Ö±Ô½¾Ã£¬·ñÔòµÄ»°½«Ê¼ÖÕÊÇ¸öºãÁ¿ 
-            ChronoMinimumDelay=16 ³¬Ê±¿ÕÒÆ¶¯×îĞ¡Àä¶³Ê±¼ä16 
-            ChronoRangeMinimum=0 ÔÚÕâ¸ö·¶Î§ÄÚµÄ³¬Ê±¿ÕÒÆ¶¯£¬¾ù±»ÊÓÎªÓ²Ö±Ê±¼äÎªChronoMinimumDelay=¶¨ÒåµÄÊ±¼ä 
+            ChronoDelay=60 ä¼ é€è¾¾åˆ°ååƒµç›´60å¸§æ—¶é—´æ‰æ¢å¤æ­£å¸¸ï¼Œè¿™æ˜¯æ—¶ç©ºä¼ é€è¶…æ­¦çš„ç›¸å…³å®šä¹‰ 
+            ChronoReinfDelay=180 ä¼ é€åˆ°è¾¾ååƒµç›´180å¸§ï¼Œè¿™æ˜¯ä»»åŠ¡è§¦å‘ç¬¬107æ¡ï¼šè¶…æ—¶ç©ºä¼ é€æ´å†›çš„ç›¸å…³å®šä¹‰ 
+            ChronoDistanceFactor=48 è¶…æ—¶ç©ºè¡ŒåŠ¨æ–¹å¼ç¦»ä¼ é€ç›®æ ‡ç‚¹çš„è·ç¦»å¯¹åƒµç›´æ—¶é—´çš„å½±å“(æ¢å¤æ—¶é—´:æ¡¢/æ ¼) 
+            ChronoTrigger=yes æ˜¯å¦è®©åƒµç›´æ—¶é—´å’Œè·ç¦»ç›¸å…³ï¼Œæ˜¯çš„è¯ï¼Œè·ç¦»è¶Šé•¿åƒµç›´è¶Šä¹…ï¼Œå¦åˆ™çš„è¯å°†å§‹ç»ˆæ˜¯ä¸ªæ’é‡ 
+            ChronoMinimumDelay=16 è¶…æ—¶ç©ºç§»åŠ¨æœ€å°å†·å†»æ—¶é—´16 
+            ChronoRangeMinimum=0 åœ¨è¿™ä¸ªèŒƒå›´å†…çš„è¶…æ—¶ç©ºç§»åŠ¨ï¼Œå‡è¢«è§†ä¸ºç¡¬ç›´æ—¶é—´ä¸ºChronoMinimumDelay=å®šä¹‰çš„æ—¶é—´ 
 
 
-            ;AmerParaDropInf=E1,GHOST,ENGINEER ¿Õ½µ²¿¶ÓµÄÖÖÀà£¨Ã¿¸ö¶¼ĞèÒªÒ»¸ö·É»ú£© 
-            ;AmerParaDropNum=6,6,6 ¿Õ½µ²¿¶Ó¶ÔÓ¦ÊıÄ¿ 
+            ;AmerParaDropInf=E1,GHOST,ENGINEER ç©ºé™éƒ¨é˜Ÿçš„ç§ç±»ï¼ˆæ¯ä¸ªéƒ½éœ€è¦ä¸€ä¸ªé£æœºï¼‰ 
+            ;AmerParaDropNum=6,6,6 ç©ºé™éƒ¨é˜Ÿå¯¹åº”æ•°ç›® 
 
-            AmerÃÀ¹ú 
-            AllyÃË¾ü 
-            SovËÕÁª 
-            YuriÓÈÀï 
+            Amerç¾å›½ 
+            Allyç›Ÿå†› 
+            Sovè‹è” 
+            Yuriå°¤é‡Œ 
 
-            AnimToInfantry=BRUTE »ùÒòÍ»±ä³ÉBRUTE 
+            AnimToInfantry=BRUTE åŸºå› çªå˜æˆBRUTE 
             
             [Enter]
-            ÉÏ³µËÙ¶È
+            ä¸Šè½¦é€Ÿåº¦
             [Unload]
-            ÏÂ³µËÙ¶È
+            ä¸‹è½¦é€Ÿåº¦
 
