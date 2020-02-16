@@ -15,6 +15,11 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 - [Units](#units)
   - [混编队伍](#%e6%b7%b7%e7%bc%96%e9%98%9f%e4%bc%8d)
   - [新增单位](#%e6%96%b0%e5%a2%9e%e5%8d%95%e4%bd%8d)
+    - [`HIND`](#hind)
+    - [`HOWI`](#howi)
+    - [`NIMITZ`](#nimitz)
+    - [`VLAD`](#vlad)
+    - [`YURIG` (RA2尤里改)](#yurig-ra2%e5%b0%a4%e9%87%8c%e6%94%b9)
   - [单位晋升](#%e5%8d%95%e4%bd%8d%e6%99%8b%e5%8d%87)
   - [调整单位](#%e8%b0%83%e6%95%b4%e5%8d%95%e4%bd%8d)
 - [Weapon](#weapon)
@@ -45,12 +50,12 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 - 新增图标(带相应升级图标):
   1. `HIND` (YR)
-  1. `NIMITZ` (网图)
-  1. `HOWI` (YR)
-  1. `VLAD` (无畏镜像)
+  2. `HOWI` (YR)
+  3. `NIMITZ` (网图)
+  4. `VLAD` (无畏镜像)
 - 恢复升级图标:
-  1. `IVAN` (疯狂伊文)
   1. `CIVAN` (超时空伊文)
+  2. `IVAN` (疯狂伊文)
 - 新增升级图标(未使用):
   1. `AEGIS`
   1. `BEAG`
@@ -69,16 +74,16 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 扫描半径效果 (裂缝产生器):
 
-1. `GAPILL`
-1. `NASAM`
 1. `ATESLA`
-1. `GTGCAN`
-1. `NALASR`
-1. `NAFLAK`
-1. `TESLA`
-1. `YAGGUN`
-1. `YAPSYT`
-1. `CAOUTP`
+2. `CAOUTP`
+3. `GAPILL`
+4. `GTGCAN`
+5. `NAFLAK`
+6. `NALASR`
+7. `NASAM`
+8. `TESLA`
+9. `YAGGUN`
+10. `YAPSYT`
 
 ### 游戏中光标
 
@@ -114,27 +119,19 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 - 科技实验室调整科技:
   - 步兵:
     1. \+ `LUNR`,
-    2. \+ `SPY`,
-    3. \+ `SNIPE` (未验证),
-    4. \+ `YURIG`
-    5. \- `TERROR`;
-  - 飞机&战车&舰船:
-    1. \+ `BEAG`,
-    2. \+ `BFRT` (未验证),
-    3. \+ `HIND`,
-    4. \+ `HOWI`,
-    5. \+ `FV` (未验证),
-    6. \+ `NIMITZ`
-    7. \+ `SMIN` (未验证),
-    8. \+ `VLAD`,
-    9. \- `DTRUCK`;
+    2. \+ `SNIPE` (未验证),
+    3. \+ `SPY`,
+    4. *\- `TERROR`*;
+  - 载具:
+    1. \+ `TNKD`,
+    2. \+ `TTNK`,
+    3. \+ `BEAG`,
+    4. *\- `DTRUCK`*;
   - 建筑:
-    1. \+ `GAOREP` (未验证),
-    2. \+ `GASPYSAT` (未验证),
+    1. \+ `AMRADR` (未验证),
+    2. \+ `GAOREP` (未验证),
     3. \+ `NACLON` (未验证),
-    4. \+ `NAINDP` (未验证),
-    5. \+ `NANRCT` (未验证);
-    6. \+ `NAPSIS` (未验证),
+    4. \+ `NAINDP` (未验证).
 
 ## Building
 
@@ -142,8 +139,8 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 - 科技前哨站升级空军(飞行单位)至老兵等级;
 - 科技实验室升级海军至老兵等级;
-- 科技医院加生命单位初始经验 50% (新兵至老兵);
-- 科技机器商店加生命单位初始经验 50% (新兵至老兵);
+- 科技医院加步兵单位初始经验 50% (新兵至老兵);
+- 科技机器商店加载具单位初始经验 50% (新兵至老兵);
 
 ### 间谍渗透逻辑
 
@@ -176,32 +173,93 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 ### 新增单位
 
-- 重制单位:
-  - `NIMITZ` (原`CARRIERB`设定, vxl credit to **Mig Eater** from [*Project Perfect Mod*](https://ppmforums.com/viewtopic.php?highlight=nimitz&t=19484))
-  - `HIND` (螺旋桨与机体分离)
-- 复刻单位: `YURIG` (RA2尤里改)
+#### `HIND`
+
+重制，螺旋桨与机体分离。
+
+- 科技等级 7；
+- 建筑前提
+  - `NAWEAP`
+  - `CASLAB`
+
+#### `HOWI`
+
+复刻。可载 1 人攻击。
+
+- 科技等级 2；
+- 建筑前提
+  - `GAWEAP`
+  - `RADAR`
+  - `CASLAB`
+
+#### `NIMITZ`
+
+重制，原`CARRIERB`设定, vxl credit to **Mig Eater** from [*Project Perfect Mod*](https://ppmforums.com/viewtopic.php?highlight=nimitz&t=19484)，限造 1 艘。
+
+- Enhanced vs `CARRIER`
+  - 装甲 +50% (=1200);
+  - 航速 +50% (=6);
+  - 射程 +20% (=30);
+  - 子机上限 +33% (=4);
+  - 子机再生时间 -90% (=100);
+  - 子机装弹时间 -90% (=500)
+- 科技等级 8；
+- 建造前提
+  - `GAYARD`
+  - `TECH`
+  - `CASLAB`
+
+#### `VLAD`
+
+复刻，限造 1 艘。
+
+- Enhanced vs `DRED`
+  - 装甲 +50% (=1200);
+  - 航速 +100% (=8);
+  - 视野 +1 (=8);
+  - 装弹时间 -25% (=60);
+  - 伤害 +20% (=60);
+  - 射程 +20% (=30);
+  - 最短射程 -25% (=6);
+  - 导弹速度 +33% (=20).
+- 科技等级 7；
+- 建筑前提
+  - `NAYARD`
+  - `NATECH`
+  - `CASLAB`
+
+#### `YURIG` (RA2尤里改)
+
+复刻。
+
+- 科技等级 10；
+- 建筑前提
+  - `YABRCK`
+  - `YATECH`
+  - `CASLAB`
 
 ### 单位晋升
 
 - 单位可升级:
-  1. `IVAN`;
+  1. `CARRIER` (未定义精英武器);
   2. `CIVAN`;
-  3. `YURI`;
-  4. `YURIPR`;
-  5. `MIND`;
-  6. `CARRIER` (未定义精英武器);
-  7. `NIMITZ` (未定义精英武器);
+  3. `IVAN`;
+  4. `MIND`;
+  5. `NIMITZ` (未定义精英武器);
+  6. `YURI`;
+  7. `YURIPR`;
 - 分享子机经验 (Ares 0.2, spawn/spawner):
-  1. `DEST`        0.5/0.5;
+  1. `CARRIER`     0.5/0.5;
   2. `CDEST`       0.5/0.5;
-  3. `CARRIER`     0.5/0.5;
+  3. `DEST`        0.5/0.5;
   4. `NIMITZ`      0.6/0.6;
 - 分享空袭经验 (Ares 0.2): `BORIS` (0.2);
 - 满级后分享驻兵经验 (Ares 0.2):
-  1. `FV`                 0.6;
-  2. `BFRT`               0.6;
-  3. `TNKD`               0.8;
-  4. `TTNK`               0.8;
+  1. `BFRT`               0.6;
+  2. `FV`                 0.6;
+  3. `HOWI`               0.8;
+  4. `TNKD`               0.8;
+  5. `TTNK`               0.8;
 - 分享心控经验 (Ares 0.2, controller/victim):
   1. `YURI`        0.1/0.9;
   2. `MIND`        0.2/0.8;
@@ -215,28 +273,35 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 ### 调整单位
 
 - 载具可驻兵攻击:
-  1. `TTNK` (1);
-  1. `TNKD` (1);
+  1. `HOWI` (1);
+  2. `TNKD` (1);
+  3. `TTNK` (1).
+- 载具驻兵攻击可升级：
+  1. `BFRT` (5);
+  2. `FV` (1);
+  3. `HOWI` (1);
+  4. `TNKD` (1);
+  5. `TTNK` (1).
 - 赏金猎人: `TANY`, `BORIS` 消灭以下单位时将获得赏金：
-  1. `TANY`
-  2. `BORIS`
-  3. `YURIG`
-  4. `YURIPR`
-  5. `CMIN`
-  6. `HARV`
-  7. `SMIN`
-  8. `YAREFN`
+  1. `BORIS`
+  2. `CMIN`
+  3. `HARV`
+  4. `SMIN`
+  5. `TANY`
+  6. `YAREFN`
+  7. `YURIG`
+  8. `YURIPR`
 
 ## Weapon
 
 ### 精英武器加强
 
-- 尤里: 控制数 +2; 射程 +1; 攻击间隔 -20%;
-- 脑车: 控制数 +2; 射程 +1;
-- `HIND`同夜莺;
-- `YURIPR`控制数增至 3;
-- `HOWI`伤害, 攻速, 射程提升; 弹头效果小幅提升; 造价提升;
-- `FV`模式: 工程师, 美国大兵, 防空步兵, 磁暴步兵, 尤里新兵, 重装步兵;
+- `FV` 模式: 工程师, 美国大兵, 防空步兵, 磁暴步兵, 尤里新兵, 重装步兵;
+- `HIND` 同夜莺;
+- `HOWI` 伤害, 攻速, 射程提升; 弹头效果小幅提升; 造价提升;
+- `MIND`: 控制数 +2; 射程 +1;
+- `YURI`: 控制数 +2; 射程 +1; 攻击间隔 -20%;
+- `YURIPR` 控制数增至 3;
 
 ### 新增武器
 

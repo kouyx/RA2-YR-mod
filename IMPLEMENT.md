@@ -238,7 +238,7 @@ UIName=Name:YURIPR
 Name=Yuri G
 Category=Soldier
 ;Image=YURI
-Prerequisite=NAHAND
+Prerequisite=YABRCK,YATECH,CASLAB ;NAHAND
 ; RequiresStolenSovietTech=yes
 Primary=SuperMindControlG
 Secondary=PsiWave
@@ -247,11 +247,11 @@ Crushable=no
 TiberiumProof=yes
 Strength=200
 Armor=flak
-TechLevel=-1
+TechLevel=10;-1
 Pip=red
 Sight=8
 Speed=6
-Owner=Russians,Confederation,Africans,Arabs
+Owner=YuriCountry ;Russians,Confederation,Africans,Arabs
 AllowedToStartInMultiplayer=no
 Cost=2000
 Soylent=1000 ;250
@@ -272,6 +272,7 @@ ImmuneToVeins=yes
 VeteranAbilities=STRONGER,FIREPOWER,ROF,SIGHT,FASTER
 EliteAbilities=SELF_HEAL,STRONGER,FIREPOWER,ROF
 ImmuneToPsionics=yes
+ImmuneToPsionicWeapons=yes ;MOD
 ;Bombable=no
 Deployer=yes
 DeployFire=yes
@@ -279,10 +280,13 @@ UndeployDelay=75
 Size=1
 BuildLimit=1
 CanPassiveAquire=no ; Won't try to pick up own targets
-IFVMode=8
+IFVMode=15;8
+Unnatural=yes;MOD
+SelfHealing=yes;MOD
+Trainable=yes;MOD
 Experience.MindControlSelfModifier=0.3  ; Ares 0.2
 Experience.MindControlVictimModifier=0.7  ; Ares 0.2
-ursor.Deploy=PsiWave  ; Ares 0.D
+Cursor.Deploy=PsiWave  ; Ares 0.D
 Bounty.RookieValue=1000  ; Ares 0.C
 Bounty.VeteranValue=1500  ; Ares 0.C
 Bounty.EliteValue=2000  ; Ares 0.C
@@ -370,14 +374,32 @@ ElitePrimary=MedusaSE ; Anti-surface weapon for Aegis
 EliteSecondary=MedusaE
 
 [VLAD]
+Prerequisite=NAYARD,NATECH,CASLAB
+Primary=VladLauncher;DredLauncher
+SpawnRegenRate=60;80
+Strength=1200;1500
+TechLevel=7;-1
+Owner=Russians,Confederation,Africans,Arabs;,YuriCountry
 ; ForbiddenHouses=Russians
+MoveSound=DreadnoughtMoveStart
 EliteAbilities=SELF_HEAL,STRONGER,FIREPOWER,ROF,SENSORS,GUARD_AREA
 BuildLimit=1
 
 ;## Howitzer
 [HOWI]
+Prerequisite=GAWEAP,RADAR,CASLAB ; GAWEAP
+TechLevel=2;-1
+; RequiredHouses=Alliance
 Cost=900 ;750
 ElitePrimary=HowitzerGunE
+PipScale=Passengers
+Passengers=1
+OpenTopped=yes;passengers can shoot out
+SizeLimit=1
+EnterTransportSound=EnterTransport
+LeaveTransportSound=ExitTransport
+Experience.PromotePassengers=yes ; Ares 0.2
+Experience.PassengerModifier=0.8 ; Ares 0.2
 
 ;Aircraft Carrier for the Americans
 [NIMITZ];[CARRIERB]
@@ -385,16 +407,16 @@ UIName=Name:CARRIERB
 Name=Aircraft Carrier Nimitz
 ; Image=CARRIER
 Prerequisite=GAYARD,GATECH
-Primary=HornetLauncher
+Primary=HornetLauncherN
 CanPassiveAquire=no ; Won't try to pick up own targets
 Spawns=HORNET
 SpawnsNumber=4 ;3
-SpawnRegenRate=400 ;5000
+SpawnRegenRate=500 ;5000
 SpawnReloadRate=100 ;1000 ;150
 FireAngle=32
 ToProtect=yes
 Category=Support
-Strength=1500 ;800
+Strength=1200 ;800
 Naval=yes ;GS
 Armor=heavy
 TechLevel=-1
@@ -439,16 +461,24 @@ Trainable=yes
 Experience.SpawnOwnerModifier=0.5  ; Ares 0.2
 Experience.SpawnModifier=0.5  ; Ares 0.2
 
-[DEST],[CDEST],
+[DEST],[CDEST]
 Experience.SpawnOwnerModifier=0.5  ; Ares 0.2
 Experience.SpawnModifier=0.5  ; Ares 0.2
 
 ; Hind Transport
 [HIND]
-Prerequisite=NAWEAP
-TechLevel=-1
-RequiredHouses=Confederation
+Prerequisite=NAWEAP,CASLAB;NAWEAP
+TechLevel=7;-1
+; RequiredHouses=Confederation
 ElitePrimary=BlackHawkCannonE
+CanPassiveAquire=no ; Won't try to pick up own targets
+MoveSound=BlackOpsMoveLoop
+EnterTransportSound=EnterTransport
+LeaveTransportSound=ExitTransport
+;Bombable=no
+TooBigToFitUnderBridge=true
+Trainable=yes
+Bunkerable=no; Units default to yes, others default to no
 
 [CMIN],[AMCV],[SMCV],[PCV],[LCRF],[SAPC],[YHVR]
 Cursor.Move=Tote  ; Ares 0.D
@@ -472,7 +502,6 @@ Cursor.Deploy=DeployMove  ; Ares 0.D
 
 [SCHD]
 Cursor.Deploy=UnDeploy  ; Ares 0.D
-
 ```
 
 ### Aircraft
@@ -625,9 +654,7 @@ SpyEffect.SuperWeapon=ParaDropSpecial ; Ares 0.B
 Armory=yes
 Ammo=1
 SecretLab.GenerateOnCapture=yes ; Ares 0.9 (boolean)
-SecretLab.PossibleBoons=BEAG,BFRT,FV,GAOREP,GASPYSAT,HOWI,LUNR,NACLON,NAINDP,NANRCT,NAPSIS,NIMITZ,SMIN,SPY,SNIPE,VLAD ; Ares 0.9 (list of TechnoTypes)
-Academy.InfantryVeterancy=1.0  ; Ares 0.8
-Academy.VehicleVeterancy=1.0  ; Ares 0.8
+SecretLab.PossibleBoons=GAOREP,NACLON,NAINDP,AMRADR,TTNK,TNKD,BEAG,LUNR,SPY,SNIPE ; Ares 0.9 (list of TechnoTypes)
 Academy.Types=DEST,DLPH,AEGIS,CARRIER,HYD,SUB,SQD,DRED,BSUB,VLAD,NIMITZ  ; Ares 0.8
 ```
 
@@ -816,6 +843,31 @@ FireOnce=yes
 Cursor.Attack=MindControl  ; Ares 0.D
 Cursor.AttackOutOfRange=MindControl  ; Ares 0.D
 
+; NIMITZ Carrier's rangefinder virtual weapon
+[HornetLauncherN]
+Damage=1
+ROF=150
+Range=30
+;Range=-2 ; infinite
+Spawner=yes
+Projectile=Invisible
+Speed=10
+Warhead=Special
+OmniFire=yes
+
+; Vladamir's Dreadnought missile
+[VladLauncher]
+Damage=60;50
+ROF=50
+Burst=2
+Range=30;25
+;Range=-2
+MinimumRange=6;8; the missiles need time to align
+Spawner=yes
+Projectile=InvisibleHigh
+Speed=20;15
+Warhead=Special
+OmniFire=yes
 
 [MakeupKit]
 Cursor.Attack=Disguise  ; Ares 0.D
