@@ -8,6 +8,8 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
   - [单位图标](#%e5%8d%95%e4%bd%8d%e5%9b%be%e6%a0%87)
   - [防卫建筑射程显示](#%e9%98%b2%e5%8d%ab%e5%bb%ba%e7%ad%91%e5%b0%84%e7%a8%8b%e6%98%be%e7%a4%ba)
   - [游戏中光标](#%e6%b8%b8%e6%88%8f%e4%b8%ad%e5%85%89%e6%a0%87)
+  - [新战役](#%e6%96%b0%e6%88%98%e5%bd%b9)
+  - [CSF 标签](#csf-%e6%a0%87%e7%ad%be)
 - [Technology](#technology)
 - [Building](#building)
   - [学院建筑逻辑](#%e5%ad%a6%e9%99%a2%e5%bb%ba%e7%ad%91%e9%80%bb%e8%be%91)
@@ -108,6 +110,23 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
   1. 步兵吸收 (生化炉);
 - 更改光标:
   1. 自爆卡车射程外攻击 -> 核袭击;
+
+### 新战役
+
+新增第三方势力即尤里方的战役。
+
+尤里方战役地图命名格式（暂定）统一为 `YurXX.map`，`XX` 用 `01`-`07` 替换以对应战役的不同关卡，上限暂定为 7。与官方战役相比，地图命名规则在势力和关卡数字之间少了战场类型（如 `Sov06lmd.map` 中的 `l` 表示 `lunar`，该战役地图类型为月球环境）。
+
+### CSF 标签
+
+需自定义的标签列表（否则游戏中将展示 `Missing:blabla`）
+
+- `DESCmod:YUR1` 尤里新战役描述；
+- `STTmod:YuriCampaignIcon` 新战役尤里按钮鼠标悬浮提示；
+- `BriefMod:YurXX` 新战役尤里任务描述，`XX` 用 `01`-`07`替换对应不同关卡，下同；
+- `NameMod:YurXX` 新战役尤里任务关卡名称，也是存档默认显示名称；
+- `LoadMsgMod:YurXX` 任务载入界面 (LS) 的战役名称；
+- `LoadBriefMod:YurXX` 任务载入界面 (LS) 的目标简介。
 
 ## Technology
 

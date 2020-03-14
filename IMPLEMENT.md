@@ -2,6 +2,9 @@
 
 - [Path](#path)
 - [artmd.ini](#artmdini)
+- [battlemd.ini](#battlemdini)
+- [mapselmd.ini](#mapselmdini)
+- [missionmd.ini](#missionmdini)
 - [rulesmd.ini](#rulesmdini)
   - [Global](#global)
   - [House & Side](#house--side)
@@ -16,6 +19,8 @@
   - [Terrain & Smudge & Overlay](#terrain--smudge--overlay)
   - [Super Weapon](#super-weapon)
   - [Animation](#animation)
+- [soundmd.ini](#soundmdini)
+- [uimd.ini](#uimdini)
 
 ## Path
 
@@ -25,7 +30,7 @@
 - mouse cursors & infantry sequence:
   - RA2: *ra2.mix* -> *conquer.mix*
   - YR: *ra2md.mix* -> *conqmd.mix*
-- **rules(md).ini** & **art(md).ini** & .VXL & .HVA:
+- **rules(md).ini** & **art(md).ini** & **ui(md).ini** & **battle(md).ini** & .VXL & .HVA:
   - RA2: *ra2.mix* -> *local.mix*
   - YR: *ra2md.mix* -> *localmd.mix*
 
@@ -110,6 +115,245 @@ AltCameo=IVANUICO ; Add
 
 [CIVAN] ; Chrono Ivan
 AltCameo=IVNCUICO ; Add
+```
+
+## battlemd.ini
+
+列表注册新战役
+
+```ini
+[Battles]
+15=YUR1 ; ###### Mod Yuri's campaign start ######
+16=YUR02
+17=YUR03
+18=YUR04
+19=YUR05
+20=YUR06
+21=YUR07 ; ###### Mod Yuri's campaign end ######
+```
+
+新战役第一关入口，可配置战役按钮悬浮声音。
+
+```ini
+; Mod Yuri's campaign
+[YUR1]
+CD=-1
+Scenario=YUR01.MAP
+FinalMovie=
+Description=DESCmod:YUR1
+HoverSound=YuriCampaignSelect
+```
+
+战役明细关卡（实际上 `Scenario=` 的文件名对大小写不敏感）
+
+```ini
+; ###### Mod Yuri's campaign start ######
+
+[YUR02]
+CD=-1
+Scenario=YUR02.MAP
+FinalMovie=
+DebugOnly=yes
+Description=(YUR02.MAP)
+
+[YUR03]
+CD=-1
+Scenario=yur03.MAP
+FinalMovie=
+DebugOnly=yes
+Description=(yur03.MAP)
+
+[YUR04]
+CD=-1
+Scenario=yur04.MAP
+FinalMovie=
+DebugOnly=yes
+Description=(yur04.MAP)
+
+[YUR05]
+CD=-1
+Scenario=yur05.MAP
+FinalMovie=
+DebugOnly=yes
+Description=(yur05.MAP)
+
+[YUR06]
+CD=-1
+Scenario=yur06.MAP
+FinalMovie=
+DebugOnly=yes
+Description=(yur06.MAP)
+
+[YUR07]
+CD=-1
+Scenario=yur07.MAP
+FinalMovie=
+DebugOnly=yes
+Description=(yur07.MAP)
+
+; ###### Mod Yuri's campaign end ######
+```
+
+## mapselmd.ini
+
+战役中的玩家方添加新势力
+
+```ini
+; ThirdSide Progression
+; side defined in *rulemd.ini* [Sides]
+[ThirdSide]
+Anims=Anims
+Sounds=NODSFX ; Seems obsolete from TS; defines sounds played on the obsolete mission selection screen. If needed better define a new one like YURSFX
+1=Yur01
+2=Yur02
+3=Yur03
+4=Yur04
+5=Yur05
+6=Yur06
+7=Yur07
+```
+
+指明当前关卡和**下一关卡**的地图文件，如未指明下一关卡且地图属性 `End of game:no` 将会报 IE (**I**nternal **E**rror)。
+
+```ini
+
+;****************************************************************************
+; Yuri STAGES ; Mod
+;****************************************************************************
+
+[Yur01]
+Scenario=Yur01.MAP
+2=Yur02
+; Other properties seem obsolete from TS, thus ingnored
+
+[Yur02]
+Scenario=YUR02.MAP
+3=Yur03
+; Other properties seem obsolete from TS, thus ingnored
+
+[Yur03]
+Scenario=Yur03.MAP
+4=Yur04
+; Other properties seem obsolete from TS, thus ingnored
+
+[Yur04]
+Scenario=Yur04.MAP
+5=Yur05
+; Other properties seem obsolete from TS, thus ingnored
+
+[Yur05]
+Scenario=Yur05.MAP
+6=Yur06
+; Other properties seem obsolete from TS, thus ingnored
+
+[Yur06]
+Scenario=Yur06.MAP
+7=Yur07
+; Other properties seem obsolete from TS, thus ingnored
+
+[Yur07]
+Scenario=Yur07.MAP
+; Other properties seem obsolete from TS, thus ingnored
+```
+
+## missionmd.ini
+
+设定战役简介相关的 CSF String，以及 LS (**L**oad **S**creen)。LS 暂用苏联界面。
+
+```ini
+; ###### Mod Yuri's campaign start ######
+[YUR01.MAP]
+Briefing=BriefMod:Yur01
+UIName=NameMod:Yur01
+LSLoadMessage=LoadMsgMod:Yur01
+LSLoadBriefing=LoadBriefMod:Yur01
+LS640BriefLocX=20
+LS640BriefLocY=20
+LS800BriefLocX=20
+LS800BriefLocY=20
+LS640BkgdName=LS640S01.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdName=LS800S01.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdPal=LS800S01.PAL ; TODO: replace with Yuri's Load Screen
+
+[YUR02.MAP]
+Briefing=BriefMod:Yur02
+UIName=NameMod:Yur02
+LSLoadMessage=LoadMsgMod:Yur02
+LSLoadBriefing=LoadBriefMod:Yur02
+LS640BriefLocX=20
+LS640BriefLocY=20
+LS800BriefLocX=20
+LS800BriefLocY=20
+LS640BkgdName=LS640S02.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdName=LS800S02.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdPal=LS800S02.PAL ; TODO: replace with Yuri's Load Screen
+
+[YUR03.MAP]
+Briefing=BriefMod:Yur03
+UIName=NameMod:Yur03
+LSLoadMessage=LoadMsgMod:Yur03
+LSLoadBriefing=LoadBriefMod:Yur03
+LS640BriefLocX=20
+LS640BriefLocY=20
+LS800BriefLocX=20
+LS800BriefLocY=20
+LS640BkgdName=LS640S03.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdName=LS800S03.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdPal=LS800S03.PAL ; TODO: replace with Yuri's Load Screen
+
+[YUR04.MAP]
+Briefing=BriefMod:Yur04
+UIName=NameMod:Yur04
+LSLoadMessage=LoadMsgMod:Yur04
+LSLoadBriefing=LoadBriefMod:Yur04
+LS640BriefLocX=20
+LS640BriefLocY=20
+LS800BriefLocX=20
+LS800BriefLocY=20
+LS640BkgdName=LS640S04.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdName=LS800S04.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdPal=LS800S04.PAL ; TODO: replace with Yuri's Load Screen
+
+[YUR05.MAP]
+Briefing=BriefMod:Yur05
+UIName=NameMod:Yur05
+LSLoadMessage=LoadMsgMod:Yur05
+LSLoadBriefing=LoadBriefMod:Yur05
+LS640BriefLocX=20
+LS640BriefLocY=20
+LS800BriefLocX=20
+LS800BriefLocY=20
+LS640BkgdName=LS640S05.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdName=LS800S05.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdPal=LS800S05.PAL ; TODO: replace with Yuri's Load Screen
+
+[YUR06.MAP]
+Briefing=BriefMod:Yur06
+UIName=NameMod:Yur06
+LSLoadMessage=LoadMsgMod:Yur06
+LSLoadBriefing=LoadBriefMod:Yur06
+LS640BriefLocX=20
+LS640BriefLocY=20
+LS800BriefLocX=20
+LS800BriefLocY=20
+LS640BkgdName=LS640S06.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdName=LS800S06.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdPal=LS800S06.PAL ; TODO: replace with Yuri's Load Screen
+
+[YUR07.MAP]
+Briefing=BriefMod:Yur07
+UIName=NameMod:Yur07
+LSLoadMessage=LoadMsgMod:Yur07
+LSLoadBriefing=LoadBriefMod:Yur07
+LS640BriefLocX=20
+LS640BriefLocY=20
+LS800BriefLocX=20
+LS800BriefLocY=20
+LS640BkgdName=LS640S07.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdName=LS800S07.SHP ; TODO: replace with Yuri's Load Screen
+LS800BkgdPal=LS800S07.PAL ; TODO: replace with Yuri's Load Screen
+
+; ###### Mod Yuri's campaign end ######
 ```
 
 ## rulesmd.ini
@@ -950,4 +1194,63 @@ Register list below.
 ```ini
 [Animations]
 1072=APOCEXP  ; Ares
+```
+
+## soundmd.ini
+
+配置声音，如新战役按钮鼠标悬浮时的声音。
+
+```ini
+[SoundList]
+856=YuriCampaignSelect ; Mod
+
+[SovietCampaignSelect]
+Sounds= $iborate ; Mod from $vgrsatc
+
+[YuriCampaignSelect] ; # Mod
+Sounds= $iyupatg
+Volume= 90
+```
+
+## uimd.ini
+
+配置新战役按钮。
+
+Credits to Blade for making the Yuri icon (fsyrlg.shp & fsyrlg.pal) on the campaign selecting screen, from mod mission [Psychic Denial](http://www.yrargentina.com/old/downloads/yrsp/pyschic_dential.zip) created by [Des08tor](mailto:Des08tor@cncguild.net) and his/her partners.
+
+```ini
+;
+; This section customize campaign buttons on Yuri’s Revenge‘s campaign selection menu.
+; The number X in [CampaignX] can range from 1 to 4
+; New in Ares version 0.2.
+;
+[UISettings]
+Campaign1=ALL1 ; The mission from *battlemd.ini* started
+Campaign1.Image=fsalg.shp ; The 260x136 .shp image shown on the campaign selection menu
+Campaign1.Palette=fsalg.pal ; The palette used to render the image.
+Campaign1.Subline=STT:AlliedCampaignIcon ; (CSF label) The subline displayed beneath the campaign image.
+; CampaignX.Tooltip= ; (CSF label) The text displayed as tooltip when the player hovers over the image. Defaults to CampaignX.Subline.
+
+Campaign2=SOV1 ; The mission from *battlemd.ini* started
+Campaign2.Image=fsslg.shp ; The 260x136 .shp image shown on the campaign selection menu
+Campaign2.Palette=fsslg.pal ; The palette used to render the image.
+Campaign2.Subline=STT:SovietCampaignIcon ; (CSF label) The subline displayed beneath the campaign image.
+; CampaignX.Tooltip= ; (CSF label) The text displayed as tooltip when the player hovers over the image. Defaults to CampaignX.Subline.
+
+Campaign3= ; The mission from *battlemd.ini* started
+Campaign3.Image= ; The 260x136 .shp image shown on the campaign selection menu
+Campaign3.Palette= ; The palette used to render the image.
+Campaign3.Subline= ; (CSF label) The subline displayed beneath the campaign image.
+; CampaignX.Tooltip= ; (CSF label) The text displayed as tooltip when the player hovers over the image. Defaults to CampaignX.Subline.
+
+Campaign4=YUR1 ; The mission from *battlemd.ini* started
+Campaign4.Image=fsyrlg.shp ; The 260x136 .shp image shown on the campaign selection menu
+Campaign4.Palette=fsyrlg.pal ; The palette used to render the image.
+Campaign4.Subline=STTmod:YuriCampaignIcon ; (CSF label) The subline displayed beneath the campaign image.
+; CampaignX.Tooltip= ; (CSF label) The text displayed as tooltip when the player hovers over the image. Defaults to CampaignX.Subline.
+
+; customize the sound that is played when the player hovers over the image by editing *battlemd.ini*:
+
+; [Battle]►HoverSound= (sound)
+; The sound to be played when the player selects a campaign. This defaults to AlliedCampaignSelect, SovietCampaignSelect, and BootCampSelect for the original in-game campaigns. The selection menu plays them when the mouse hovers over the respective campaign’s image.
 ```
