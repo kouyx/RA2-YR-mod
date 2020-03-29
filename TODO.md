@@ -55,7 +55,7 @@
 - Saboteurs 建筑爆破步兵;
 - Self Heal 自定义自愈逻辑;
 - Survivors 建筑载具生还;
-- Team Retaliate 队伍反击;
+<!-- - Team Retaliate 队伍反击; -->
 - Turret ROT 载具炮塔转速;
 - Veteran and Elite Abilities 新升级能力;
 - Assaulter 定义爆破等级;
