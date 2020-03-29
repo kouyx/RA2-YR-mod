@@ -189,7 +189,12 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 - 部署后实际不同注册名的单位分组 (如 MCV 和奴矿);
   > `DeploysInto` and `UndeploysInto`
-- 实质同类单位合编 (如不同阵营的警犬和工程师).
+- 实质同类单位合编
+  - 警犬
+  - 工程师
+  - 兵营 & 复制中心
+  - 战车工厂
+  - 造船厂
 
 ### 新增单位
 
