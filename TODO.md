@@ -87,7 +87,7 @@
 - Berserk Reloading Time Modifier 狂暴状态攻速;
 - Suppress Death Weapons 熄火死亡武器;
 - Suppress Unit Lost Message 静默杀手;
-- Cost 超武花费;
+<!-- - Cost 超武花费; -->
 
 ## Ares 新增UI
 
