@@ -51,8 +51,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
   - 闪电风暴 / 核弹攻击 / 心灵控制： -1000 / 发；
   - 超时空 / 铁幕 / 基因突变： -750 / 发；
   - 力场护盾： -500 / 发；
-  - 心灵探测： -250 / 发；
-  - 空降部队 / 伞兵 / 侦察机（可能被拦截）： +50 / 发。
+  - 心灵探测： -250 / 发。
 
 ## UI
 
@@ -184,10 +183,6 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
   - 空军渗透: `GAAIRC`,`AMRADR`,`NARADR`,`NAPSIS`
 - 获得雷达视野: `GASPYSAT`
 - 断电时间分化: `GAPOWR`,`NAPOWR`,`NANRCT`,`YAPOWR`
-- 超武重置 + 获得一发
-  - 第二超武: `GACSPH`,`NAIRON`,`YAGNTC`
-  - 雷达超武: `NARADR`,`NAPSIS`
-  - 伞兵超武: `AMRADR`,`CAAIRP`
 - 建筑爆破: `GAROBO`
 
 ## Units
