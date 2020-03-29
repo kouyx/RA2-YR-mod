@@ -21,7 +21,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
     - [`HOWI`](#howi)
     - [`NIMITZ`](#nimitz)
     - [`VLAD`](#vlad)
-    - [`YURIG` (RA2尤里改)](#yurig-ra2%e5%b0%a4%e9%87%8c%e6%94%b9)
+    - [`YURIG` (RA2 尤里改)](#yurig-ra2-%e5%b0%a4%e9%87%8c%e6%94%b9)
   - [单位晋升](#%e5%8d%95%e4%bd%8d%e6%99%8b%e5%8d%87)
   - [调整单位](#%e8%b0%83%e6%95%b4%e5%8d%95%e4%bd%8d)
 - [Weapon](#weapon)
@@ -45,6 +45,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 - 伊文炸弹可手动引爆;
 - 单位反击中立单位袭击;
 - 遭遇战中战败方返还中立建筑;
+- 科技树微调。
 
 ## UI
 
@@ -138,7 +139,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 - 科技实验室调整科技:
   - 步兵:
     1. \+ `LUNR`,
-    2. \+ `SNIPE` (未验证),
+    2. \+ `SNIPE`,
     3. \+ `SPY`,
     4. *\- `TERROR`*;
   - 载具:
@@ -148,9 +149,9 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
     4. *\- `DTRUCK`*;
   - 建筑:
     1. \+ `AMRADR` (未验证),
-    2. \+ `GAOREP` (未验证),
-    3. \+ `NACLON` (未验证),
-    4. \+ `NAINDP` (未验证).
+    2. \+ `GAOREP`,
+    3. \+ `NACLON`,
+    4. \+ `NAINDP`.
 
 ## Building
 
@@ -247,7 +248,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
   - `NATECH`
   - `CASLAB`
 
-#### `YURIG` (RA2尤里改)
+#### `YURIG` (RA2 尤里改)
 
 复刻。
 
@@ -318,9 +319,9 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 - `FV` 模式: 工程师, 美国大兵, 防空步兵, 磁暴步兵, 尤里新兵, 重装步兵;
 - `HIND` 同夜莺;
 - `HOWI` 伤害, 攻速, 射程提升; 弹头效果小幅提升; 造价提升;
-- `MIND`: 控制数 +2; 射程 +1;
-- `YURI`: 控制数 +2; 射程 +1; 攻击间隔 -20%;
-- `YURIPR` 控制数增至 3;
+- `MIND`: ~~控制数 +2;~~ 射程 +1;
+- `YURI`: ~~控制数 +2;~~ 射程 +1; 攻击间隔 -20%;
+- ~~`YURIPR` 控制数增至 3;~~
 
 ### 新增武器
 
