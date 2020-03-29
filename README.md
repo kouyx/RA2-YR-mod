@@ -214,7 +214,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 #### `NIMITZ`
 
-重制，原`CARRIERB`设定, vxl credit to **Mig Eater** from [*Project Perfect Mod*](https://ppmforums.com/viewtopic.php?highlight=nimitz&t=19484)，限造 1 艘。
+重制，原`CARRIERB`设定, vxl credit to **Mig Eater** from [*Project Perfect Mod*](https://ppmforums.com/viewtopic.php?highlight=nimitz&t=19484)，限造 2 艘。
 
 - Enhanced vs `CARRIER`
   - 装甲 +50% (=1200);
@@ -231,7 +231,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 
 #### `VLAD`
 
-复刻，限造 1 艘。
+复刻，限造 2 艘。
 
 - Enhanced vs `DRED`
   - 装甲 +50% (=1200);

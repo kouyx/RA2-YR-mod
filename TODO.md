@@ -1,9 +1,9 @@
 # Modifications to implement in YR
 
-- [Ares 新增逻辑](#ares-新增逻辑)
-- [Ares 新增UI](#ares-新增ui)
-- [单位](#单位)
-- [科技条件](#科技条件)
+- [Ares 新增逻辑](#ares-%e6%96%b0%e5%a2%9e%e9%80%bb%e8%be%91)
+- [Ares 新增UI](#ares-%e6%96%b0%e5%a2%9eui)
+- [单位](#%e5%8d%95%e4%bd%8d)
+- [科技条件](#%e7%a7%91%e6%8a%80%e6%9d%a1%e4%bb%b6)
 
 ## Ares 新增逻辑
 
@@ -11,6 +11,7 @@
 > 升级后的建筑可作为 Prerequisite 和超武的 AuxBuilding;  
 > Gate 可置于围墙上;  
 > Vehicle 可为建筑充能(overpowering, 如磁暴线圈);  
+
 - 不同气候的建筑皮肤`NewTheater=yes`;
 - 超武卖单位动作`Action=SellUnit`;
 - 两栖单位可改变外观`[VehicleType]WaterImage=`;
@@ -47,7 +48,7 @@
 - NoAmmoWeapon 装填弹药期间换武器;
 - Operator 操作员逻辑 (ai不会用);
 - Specific Passengers 载具限定乘客;
-- Tech Structures Return to Neutral 中立建筑归还与通知；
+<!-- - Tech Structures Return to Neutral 中立建筑归还与通知； -->
 - Pips 新定义;
 - Multiple Alternative Prerequisites Lists 可替代建造前提;
 - Radar Jammers 雷达干扰;
@@ -73,7 +74,7 @@
 - Tunnel Networks 传送门逻辑（隧道）;
 - Urban Combat - Trenches 战壕、废墟逻辑;
 - Cloak, Stealth and Sensor Arrays 隐形与反隐逻辑;
-- Bounty 各单位赏金;
+<!-- - Bounty 各单位赏金; -->
 - Sensor Arrays 探测阵列;
 - Projectile Range 导弹航程;
 - Ivan Bombs 伊文炸弹自定义;
@@ -90,7 +91,7 @@
 
 ## Ares 新增UI
 
-- *uimd.ini* 可增加新战役的任务图标 (至多4个) `[UISettings]CampaignX=`;
+<!-- - *uimd.ini* 可增加新战役的任务图标 (至多4个) `[UISettings]CampaignX=`; -->
 - 直接退出游戏,不确认 `[UISettings]QuickExit=`;
 - 新增可编辑快捷键:
   - FPS Counter;
@@ -110,9 +111,9 @@
 
 ## 科技条件
 
-- `HIND`
-- `HOWI`
+<!-- - `HIND` -->
+<!-- - `HOWI` -->
 - `LUNR`
-- `NIMITZ`
-- `VLAD`
-- `YURIG`
+<!-- - `NIMITZ` -->
+<!-- - `VLAD` -->
+<!-- - `YURIG` -->
