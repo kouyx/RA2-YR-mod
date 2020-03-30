@@ -27,7 +27,7 @@
 - AttachEffect 附加持续效果;
 - 飞机可空中爆炸而非坠机`[AircraftType]Crashable=`;
 - Crush Damage 载具碾压损耗;
-- Reverse Engineer logic 技术复制逻辑;
+<!-- - Reverse Engineer logic 技术复制逻辑; -->
 - Hiding Enemy Insignia 隐藏敌军等级;
 - Dimming Deactivated Units 自定义非激活等级;
 - Disk Laser Animations 飞碟激光动画;
