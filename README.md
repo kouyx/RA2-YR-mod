@@ -52,6 +52,8 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
   - 超时空 / 铁幕 / 基因突变： -750 / 发；
   - 力场护盾： -500 / 发；
   - 心灵探测： -250 / 发。
+- 国家特色兵种建造前提改为工厂建筑原产国（未验证）;
+  - 例外: 美军伞兵 & 法国巨炮。
 
 ## UI
 

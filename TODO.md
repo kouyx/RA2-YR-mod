@@ -89,7 +89,7 @@
 - Suppress Unit Lost Message 静默杀手;
 <!-- - Cost 超武花费; -->
 <!-- - 中立科技建筑满足模糊建造前提； -->
-- 国家特色兵种建造前提附属建筑 `FactoryOwners`。
+<!-- - 国家特色兵种建造前提附属建筑 `FactoryOwners`。 -->
 
 ## Ares 新增UI
 
