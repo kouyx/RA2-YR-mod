@@ -14,7 +14,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 - [Building](#building)
   - [学院建筑逻辑](#%e5%ad%a6%e9%99%a2%e5%bb%ba%e7%ad%91%e9%80%bb%e8%be%91)
   - [间谍渗透逻辑](#%e9%97%b4%e8%b0%8d%e6%b8%97%e9%80%8f%e9%80%bb%e8%be%91)
-  - [逆向工程逻辑（未验证）](#%e9%80%86%e5%90%91%e5%b7%a5%e7%a8%8b%e9%80%bb%e8%be%91%e6%9c%aa%e9%aa%8c%e8%af%81)
+  - [逆向工程逻辑](#%e9%80%86%e5%90%91%e5%b7%a5%e7%a8%8b%e9%80%bb%e8%be%91)
 - [Units](#units)
   - [混编队伍](#%e6%b7%b7%e7%bc%96%e9%98%9f%e4%bc%8d)
   - [新增单位](#%e6%96%b0%e5%a2%9e%e5%8d%95%e4%bd%8d)
@@ -47,12 +47,12 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 - 单位反击中立单位袭击;
 - 遭遇战中战败方返还中立建筑;
 - Team 成员被攻击时将会整个 Team 反击挑衅（未验证）；
-- 超级武器花费（未验证）：
+- 超级武器花费：
   - 闪电风暴 / 核弹攻击 / 心灵控制： -1000 / 发；
   - 超时空 / 铁幕 / 基因突变： -750 / 发；
   - 力场护盾： -500 / 发；
   - 心灵探测： -250 / 发。
-- 国家特色兵种建造前提改为工厂建筑原产国（未验证）;
+- 国家特色兵种建造前提改为工厂建筑原产国;
   - 例外: 美军伞兵 & 法国巨炮。
 
 ## UI
@@ -160,7 +160,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
     3. \+ `BEAG`,
     4. *\- `DTRUCK`*;
   - 建筑:
-    1. \+ `AMRADR` (未验证),
+    1. \+ `AMRADR`,
     2. \+ `GAOREP`,
     3. \+ `NACLON`,
     4. \+ `NAINDP`.
@@ -192,7 +192,7 @@ Modifications in [*IMPLEMENT.md*](./IMPLEMENT.md) would be summarized on the fol
 - 断电时间分化: `GAPOWR`,`NAPOWR`,`NANRCT`,`YAPOWR`
 - 建筑爆破: `GAROBO`
 
-### 逆向工程逻辑（未验证）
+### 逆向工程逻辑
 
 对于送进部队回收厂的部队，将可以在对应的建造工厂中制造/训练。
 
@@ -206,7 +206,7 @@ Ares 官方文档提醒该逻辑可能会有小 bug，论坛有帖子反馈称�
 
 - 部署后实际不同注册名的单位分组 (如 MCV 和奴矿);
   > `DeploysInto` and `UndeploysInto`
-- 实质同类单位合编
+- 实质同类单位合编（建筑无实际效果）
   - 警犬
   - 工程师
   - 兵营 & 复制中心
